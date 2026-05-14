@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learniokidslearning</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">🌈 Learniokidslearning</h1>
+
+            <ul class="nav-links">
+                <!-- Main Navigation Links -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- Visible only when user is NOT logged in -->
+                <li id="loginNav">
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li id="signupNav">
+                    <a href="signup.html">Sign Up</a>
+                </li>
+
+                <!-- Visible only when user IS logged in -->
+                <li id="welcomeNav" style="display: none; color: white; font-weight: bold;">
+                    Welcome, <span id="userEmail"></span>
+                </li>
+
+                <li id="logoutNav" style="display: none;">
+                    <a href="#" onclick="logoutUser(); return false;">Logout</a>
+                </li>
+
+                <!-- Admin link (visible only to your admin account) -->
+                <li id="adminNav" style="display: none;">
+                    <a href="admin.html">Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Fun Animated Learning for Kids!</h2>
+        <p>Explore exciting educational videos, games, and lessons.</p>
+        <a href="#pricing" class="btn">Start Learning</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>📚 Our Learning Categories</h2>
+
+        <div class="course-grid">
+           <div class="card">
+    <h3>🔤 Alphabet & Phonics</h3>
+    <p>Interactive animations to learn letters and sounds.</p>
+    <a href="alphabet.html" class="btn">Open</a>
+</div>
+           <div class="card">
+    <h3>🔢 Numbers & Math</h3>
+    <p>Counting, addition, subtraction, and fun math games.</p>
+    <a href="math.html" class="btn">Open</a>
+</div>
+
+
+        <div class="card">
+    <h3>🌍 Science & Nature</h3>
+    <p>Discover animals, planets, and exciting experiments.</p>
+    <a href="science.html" class="btn">Open</a>
+</div>
+
+            <div class="card">
+                <h3>🎨 Drawing & Creativity</h3>
+                <p>Art lessons and imagination-building activities.</p>
+                <a href="drawing.html" class="btn">Open Drawing Board</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2>💎 Subscription Plans</h2>
+
+        <div class="pricing-grid">
+            <div class="plan">
+                <h3>Free Plan</h3>
+                <p class="price">₹0 / month</p>
+                <ul>
+                    <li>5 Free Lessons</li>
+                    <li>Basic Activities</li>
+                    <li>Community Access</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <div class="plan premium">
+                <h3>Premium Plan</h3>
+                <p class="price">₹199 / month</p>
+                <ul>
+                    <li>Unlimited Lessons</li>
+                    <li>Exclusive Animations</li>
+                    <li>Download Worksheets</li>
+                    <li>Parent Dashboard</li>
+                </ul>
+                <button>Subscribe Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>📧 Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Learniokidslearning. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Firebase Script -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
