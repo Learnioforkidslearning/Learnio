@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - Learniokidslearning</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.admin-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Title */
+.admin-container h2 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 5px;
+}
+
+.admin-container p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Sections */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Upload form */
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #6a5acd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #483d8b;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background: #6a5acd;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9ff;
+}
+
+.refresh-btn {
+    margin-bottom: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <h2>👨‍💼 Admin Dashboard</h2>
+    <p>Manage users & upload learning content</p>
+
+    <!-- ================= USERS SECTION ================= -->
+    <div class="section">
+        <h3>👥 Registered Users</h3>
+
+        <button class="refresh-btn" onclick="loadUsers()">🔄 Refresh Users</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Signup Date</th>
+                </tr>
+            </thead>
+
+            <tbody id="usersTableBody">
+                <tr>
+                    <td colspan="3">Loading users...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ================= UPLOAD SECTION ================= -->
+    <div class="section">
+        <h3>📤 Upload Learning Content</h3>
+
+        <!-- Category -->
+        <label>Choose Category</label>
+        <select id="category">
+            <option value="alphabet">🔤 Alphabet & Phonics</option>
+            <option value="math">🔢 Numbers & Math</option>
+            <option value="science">🌍 Science & Nature</option>
+        </select>
+
+        <!-- Title -->
+        <input type="text" id="title" placeholder="Enter Video Title">
+
+        <!-- File -->
+        <input type="file" id="videoFile">
+
+        <!-- Upload Button -->
+        <button onclick="uploadVideo()">Upload Video</button>
+    </div>
+
+</div>
+
+<!-- ================= FIREBASE SCRIPT ================= -->
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+import {
+    getFirestore,
+    collection,
+    getDocs,
+    addDoc
+} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+
+import {
+    getStorage,
+    ref,
+    uploadBytes,
+    getDownloadURL
+} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-storage.js";
+
+
+// 🔥 Firebase Config
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "learniokidslearning-ee6f9.firebaseapp.com",
+  projectId: "learniokidslearning-ee6f9",
+  storageBucket: "learniokidslearning-ee6f9.firebasestorage.app",
+  messagingSenderId: "39907579353",
+  appId: "1:39907579353:web:91ccb1a083f2ac5f67f5c8"
+};
+
+// Init Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+
+/* ================= USERS FUNCTION ================= */
+window.loadUsers = async function () {
+
+    const tableBody = document.getElementById("usersTableBody");
+    tableBody.innerHTML = '<tr><td colspan="3">Loading...</td></tr>';
+
+    try {
+        const snapshot = await getDocs(collection(db, "users"));
+
+        if (snapshot.empty) {
+            tableBody.innerHTML =
+                '<tr><td colspan="3">No users found</td></tr>';
+            return;
+        }
+
+        let rows = "";
+
+        snapshot.forEach((doc) => {
+            const user = doc.data();
+
+            rows += `
+                <tr>
+                    <td>${user.name || "N/A"}</td>
+                    <td>${user.email || "N/A"}</td>
+                    <td>${user.createdAt || "N/A"}</td>
+                </tr>
+            `;
+        });
+
+        tableBody.innerHTML = rows;
+
+    } catch (error) {
+        tableBody.innerHTML =
+            `<tr><td colspan="3">Error loading users</td></tr>`;
+        console.error(error);
+    }
+};
+
+
+/* ================= UPLOAD FUNCTION ================= */
+window.uploadVideo = async function () {
+
+    const file = document.getElementById("videoFile").files[0];
+    const title = document.getElementById("title").value;
+    const category = document.getElementById("category").value;
+
+    if (!file || !title) {
+        alert("Please fill all fields");
+        return;
+    }
+
+    try {
+
+        // Upload to storage
+        const storageRef = ref(storage, `${category}/${file.name}`);
+        await uploadBytes(storageRef, file);
+
+        // Get URL
+        const videoURL = await getDownloadURL(storageRef);
+
+        // Save in Firestore
+        await addDoc(collection(db, category), {
+            title: title,
+            videoUrl: videoURL,
+            createdAt: new Date().toString()
+        });
+
+        alert("Upload successful!");
+
+        // Reset form
+        document.getElementById("title").value = "";
+        document.getElementById("videoFile").value = "";
+
+    } catch (error) {
+        console.error(error);
+        alert("Upload failed");
+    }
+};
+
+
+// Auto load users
+loadUsers();
+
+</script>
+
+</body>
+</html>
