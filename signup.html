@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Learniokidslearning</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<section class="contact">
+    <h2>📝 Create Your Account</h2>
+
+    <!-- IMPORTANT: onsubmit="signupUser(event)" -->
+    <form onsubmit="signupUser(event)">
+        <input
+            type="text"
+            id="signupName"
+            placeholder="Parent or Student Name"
+            required
+        />
+
+        <input
+            type="email"
+            id="signupEmail"
+            placeholder="Email Address"
+            required
+        />
+
+        <input
+            type="password"
+            id="signupPassword"
+            placeholder="Create Password"
+            required
+        />
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <p style="text-align:center; margin-top:20px;">
+        Already have an account?
+        <a href="login.html">Login Here</a>
+    </p>
+</section>
+
+<!-- IMPORTANT: type="module" is required for Firebase imports -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
