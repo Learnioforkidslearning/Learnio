@@ -13,6 +13,8 @@
 
     <!-- IMPORTANT: onsubmit="signupUser(event)" -->
     <form onsubmit="signupUser(event)">
+        
+        <!-- Full Name -->
         <input
             type="text"
             id="signupName"
@@ -20,6 +22,7 @@
             required
         />
 
+        <!-- Email Address -->
         <input
             type="email"
             id="signupEmail"
@@ -27,13 +30,61 @@
             required
         />
 
+        <!-- Password -->
         <input
             type="password"
             id="signupPassword"
             placeholder="Create Password"
+            minlength="6"
             required
         />
 
+        <!-- Gender Selection -->
+        <div style="margin: 20px 0; text-align: left;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600;">
+                Select Gender:
+            </label>
+
+            <label style="margin-right: 20px;">
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                    required
+                />
+                Male
+            </label>
+
+            <label style="margin-right: 20px;">
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                />
+                Female
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Other"
+                />
+                Other
+            </label>
+        </div>
+
+        <!-- Age -->
+        <input
+            type="number"
+            id="signupAge"
+            placeholder="Enter Age"
+            min="1"
+            max="100"
+            required
+        />
+
+        <!-- Submit Button -->
         <button type="submit">Create Account</button>
     </form>
 
