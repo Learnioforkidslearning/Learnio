@@ -47,7 +47,7 @@ const db = getFirestore(app);
 
 
 // ========================================
-// SIGN UP
+// SIGNUP FORM
 // ========================================
 const signupForm = document.getElementById("signupForm");
 
@@ -63,12 +63,12 @@ if (signupForm) {
 
     try {
 
-      // Create User
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
+      const userCredential =
+        await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
 
       const user = userCredential.user;
 
@@ -97,7 +97,7 @@ if (signupForm) {
 
 
 // ========================================
-// LOGIN
+// LOGIN FORM
 // ========================================
 const loginForm = document.getElementById("loginForm");
 
@@ -112,7 +112,11 @@ if (loginForm) {
 
     try {
 
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
 
       alert("Login Successful!");
 
@@ -130,7 +134,7 @@ if (loginForm) {
 
 
 // ========================================
-// LOGOUT
+// LOGOUT BUTTON
 // ========================================
 const logoutBtn = document.getElementById("logoutBtn");
 
@@ -158,7 +162,7 @@ if (logoutBtn) {
 
 
 // ========================================
-// GET USERNAME FROM FIRESTORE
+// GET USER NAME
 // ========================================
 async function getUserName(user) {
 
@@ -181,7 +185,7 @@ async function getUserName(user) {
 
   } catch (error) {
 
-    console.error("Error Fetching Username:", error);
+    console.error(error);
 
     return user.email;
 
@@ -191,7 +195,7 @@ async function getUserName(user) {
 
 
 // ========================================
-// AUTH STATE HANDLER
+// AUTH STATE
 // ========================================
 onAuthStateChanged(auth, async (user) => {
 
@@ -208,9 +212,7 @@ onAuthStateChanged(auth, async (user) => {
   const adminNav = document.getElementById("adminNav");
 
 
-  const adminEmail = "learniokidslearning@gmail.com";
-
-
+  // Only run if navbar exists
   if (
     loginNav &&
     signupNav &&
@@ -235,10 +237,10 @@ onAuthStateChanged(auth, async (user) => {
       // Show Username
       userNameSpan.textContent = userName;
 
-      // Admin Panel
+      // Admin Check
       if (adminNav) {
 
-        if (user.email === adminEmail) {
+        if (user.email === "learniokidslearning@gmail.com") {
 
           adminNav.style.display = "inline-block";
 
