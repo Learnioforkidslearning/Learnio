@@ -11,179 +11,155 @@
 <section class="contact">
     <h2>📝 Create Your Account</h2>
 
-    <!-- IMPORTANT: onsubmit="signupUser(event)" -->
-  <form onsubmit="signupUser(event)">
-    
-    <!-- Full Name -->
-    <input
-        type="text"
-        id="signupName"
-        placeholder="Parent or Student Name"
-        required
-    />
+    <!-- Signup Form -->
+    <form onsubmit="signupUser(event)">
 
-    <!-- Email Address -->
-    <input
-        type="email"
-        id="signupEmail"
-        placeholder="Email Address"
-        required
-    />
-<input
-    type="email"
-    id="signupEmail"
-    placeholder="Email Address"
-    required
-/>
-
-<!-- Gender Selection -->
-<div class="gender-group">
-    <label>Select Gender:</label>
-
-    <div class="gender-options">
-        <label>
-            <input type="radio" name="gender" value="Male" required>
-            Male
-        </label>
-
-        <label>
-            <input type="radio" name="gender" value="Female">
-            Female
-        </label>
-
-        <label>
-            <input type="radio" name="gender" value="Other">
-            Other
-        </label>
-    </div>
-</div>
-
-<input
-    type="password"
-    id="signupPassword"
-    placeholder="Create Password"
-    required
-/>
-    <!-- Password -->
-    <input
-        type="password"
-        id="signupPassword"
-        placeholder="Create Password"
-        minlength="6"
-        required
-    />
-
-    <!-- Gender Selection -->
-    <div style="margin: 20px 0; text-align: left;">
-        <p style="margin-bottom: 10px; font-weight: 600; color: #334155;">
-            Select Gender:
-        </p>
-
-        <label style="display: block; margin-bottom: 8px; cursor: pointer;">
-            <input
-                type="radio"
-                name="gender"
-                value="Male"
-                required
-                style="margin-right: 8px;"
-            />
-            Male
-        </label>
-
-        <label style="display: block; margin-bottom: 8px; cursor: pointer;">
-            <input
-                type="radio"
-                name="gender"
-                value="Female"
-                style="margin-right: 8px;"
-            />
-            Female
-        </label>
-
-        <label style="display: block; cursor: pointer;">
-            <input
-                type="radio"
-                name="gender"
-                value="Other"
-                style="margin-right: 8px;"
-            />
-            Other
-        </label>
-    </div>
-
-    <!-- Age -->
-    <input
-        type="number"
-        id="signupAge"
-        placeholder="Enter Age"
-        min="1"
-        max="100"
-        required
-    />
-
-    <!-- Date of Birth -->
-    <div style="margin: 20px 0; text-align: left;">
-        <label
-            for="signupDOB"
-            style="display: block; margin-bottom: 8px; font-weight: 600; color: #334155;"
-        >
-            Select Date of Birth:
-        </label>
+        <!-- Full Name -->
         <input
-            type="date"
-            id="signupDOB"
+            type="text"
+            id="signupName"
+            placeholder="Parent or Student Name"
             required
         />
-    </div>
 
-    <!-- Country Selection -->
-    <div style="margin: 20px 0; text-align: left;">
-        <label
-            for="signupCountry"
-            style="display: block; margin-bottom: 8px; font-weight: 600; color: #334155;"
-        >
-            Select Country:
-        </label>
-        <select
-            id="signupCountry"
+        <!-- Email Address -->
+        <input
+            type="email"
+            id="signupEmail"
+            placeholder="Email Address"
             required
-            style="
-                width: 100%;
-                padding: 15px;
-                border: 1px solid rgba(203, 213, 225, 0.8);
-                border-radius: 14px;
-                background: rgba(255, 255, 255, 0.92);
-                color: #334155;
-                font-size: 1rem;
-                font-family: inherit;
-            "
-        >
-            <option value="">Choose your country</option>
-            <option value="India">India</option>
-            <option value="Bangladesh">Bangladesh</option>
-            <option value="Nepal">Nepal</option>
-            <option value="Bhutan">Bhutan</option>
-            <option value="Sri Lanka">Sri Lanka</option>
-            <option value="Pakistan">Pakistan</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="United States">United States</option>
-            <option value="Canada">Canada</option>
-            <option value="Australia">Australia</option>
-            <option value="Other">Other</option>
-        </select>
-    </div>
+        />
 
-    <!-- Submit Button -->
-    <button type="submit">Create Account</button>
-</form>
+        <!-- Gender Selection -->
+        <div class="gender-group">
+            <label>Select Gender:</label>
 
-    <p style="text-align:center; margin-top:20px;">
+            <div class="gender-options">
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        required
+                    />
+                    Male
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                    />
+                    Female
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                    />
+                    Other
+                </label>
+            </div>
+        </div>
+
+        <!-- Age -->
+        <input
+            type="number"
+            id="signupAge"
+            placeholder="Enter Age"
+            min="1"
+            max="100"
+            required
+        />
+
+        <!-- Date of Birth -->
+        <div style="margin: 20px 0; text-align: left;">
+            <label
+                for="signupDOB"
+                style="
+                    display: block;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                    color: #334155;
+                "
+            >
+                Select Date of Birth:
+            </label>
+
+            <input
+                type="date"
+                id="signupDOB"
+                required
+            />
+        </div>
+
+        <!-- Country Selection -->
+        <div style="margin: 20px 0; text-align: left;">
+            <label
+                for="signupCountry"
+                style="
+                    display: block;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                    color: #334155;
+                "
+            >
+                Select Country:
+            </label>
+
+            <select
+                id="signupCountry"
+                required
+                style="
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid rgba(203, 213, 225, 0.8);
+                    border-radius: 14px;
+                    background: rgba(255, 255, 255, 0.92);
+                    color: #334155;
+                    font-size: 1rem;
+                    font-family: inherit;
+                "
+            >
+                <option value="">Choose your country</option>
+                <option value="India">India</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Password -->
+        <input
+            type="password"
+            id="signupPassword"
+            placeholder="Create Password"
+            minlength="6"
+            required
+        />
+
+        <!-- Submit Button -->
+        <button type="submit">Create Account</button>
+    </form>
+
+    <!-- Login Link -->
+    <p style="text-align: center; margin-top: 20px;">
         Already have an account?
         <a href="login.html">Login Here</a>
     </p>
 </section>
 
-<!-- IMPORTANT: type="module" is required for Firebase imports -->
+<!-- Firebase Script -->
 <script type="module" src="script.js"></script>
 
 </body>
