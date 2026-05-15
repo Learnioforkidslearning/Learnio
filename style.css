@@ -715,3 +715,36 @@ footer {
     line-height: 1.7;
 
 }
+/* ==========================================
+   LEARNING PAGES
+========================================== */
+
+.learning-page {
+
+    padding: 80px 10%;
+
+}
+
+
+.learning-page h1 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.lesson-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
