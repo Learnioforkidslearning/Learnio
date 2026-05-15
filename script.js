@@ -81,7 +81,6 @@ window.signupUser = async function (event) {
   const password = document.getElementById("signupPassword").value;
 
   // Additional fields
-  const age = document.getElementById("signupAge").value;
   const dob = document.getElementById("signupDOB").value;
   const country = document.getElementById("signupCountry").value;
 
