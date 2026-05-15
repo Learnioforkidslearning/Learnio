@@ -25,14 +25,13 @@ import {
 // FIREBASE CONFIG
 // ========================================
 const firebaseConfig = {
-
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-
+  apiKey: "AIzaSyCHq7VSO1G4mgZlEOYCdGBNHtjPFSvNVsU",
+  authDomain: "learnio-d0f2a.firebaseapp.com",
+  projectId: "learnio-d0f2a",
+  storageBucket: "learnio-d0f2a.firebasestorage.app",
+  messagingSenderId: "213606684378",
+  appId: "1:213606684378:web:ffe4c0762d007df3cdb7e3",
+  measurementId: "G-T02E7YRSGF"
 };
 
 
@@ -47,118 +46,103 @@ const db = getFirestore(app);
 
 
 // ========================================
-// SIGNUP FORM
+// SIGNUP FUNCTION
 // ========================================
-const signupForm = document.getElementById("signupForm");
+window.signupUser = async function (event) {
 
-if (signupForm) {
+  event.preventDefault();
 
-  signupForm.addEventListener("submit", async (e) => {
+  const name = document.getElementById("signupName").value;
 
-    e.preventDefault();
+  const email = document.getElementById("signupEmail").value;
 
-    const name = document.getElementById("signupName").value;
-    const email = document.getElementById("signupEmail").value;
-    const password = document.getElementById("signupPassword").value;
+  const password = document.getElementById("signupPassword").value;
 
-    try {
+  try {
 
-      const userCredential =
-        await createUserWithEmailAndPassword(
-          auth,
-          email,
-          password
-        );
-
-      const user = userCredential.user;
-
-      // Save User Data
-      await addDoc(collection(db, "users"), {
-
-        uid: user.uid,
-        name: name,
-        email: email
-
-      });
-
-      alert("Signup Successful!");
-
-      window.location.href = "index.html";
-
-    } catch (error) {
-
-      alert(error.message);
-
-    }
-
-  });
-
-}
-
-
-// ========================================
-// LOGIN FORM
-// ========================================
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-
-  loginForm.addEventListener("submit", async (e) => {
-
-    e.preventDefault();
-
-    const email = document.getElementById("loginEmail").value;
-    const password = document.getElementById("loginPassword").value;
-
-    try {
-
-      await signInWithEmailAndPassword(
+    const userCredential =
+      await createUserWithEmailAndPassword(
         auth,
         email,
         password
       );
 
-      alert("Login Successful!");
+    const user = userCredential.user;
 
-      window.location.href = "index.html";
+    // Save user in Firestore
+    await addDoc(collection(db, "users"), {
 
-    } catch (error) {
+      uid: user.uid,
+      name: name,
+      email: email
 
-      alert(error.message);
+    });
 
-    }
+    alert("Signup Successful!");
 
-  });
+    window.location.href = "index.html";
 
-}
+  } catch (error) {
+
+    alert(error.message);
+
+  }
+
+};
 
 
 // ========================================
-// LOGOUT BUTTON
+// LOGIN FUNCTION
 // ========================================
-const logoutBtn = document.getElementById("logoutBtn");
+window.loginUser = async function (event) {
 
-if (logoutBtn) {
+  event.preventDefault();
 
-  logoutBtn.addEventListener("click", async () => {
+  const email = document.getElementById("loginEmail").value;
 
-    try {
+  const password = document.getElementById("loginPassword").value;
 
-      await signOut(auth);
+  try {
 
-      alert("Logged Out Successfully!");
+    await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
 
-      window.location.href = "index.html";
+    alert("Login Successful!");
 
-    } catch (error) {
+    window.location.href = "index.html";
 
-      alert(error.message);
+  } catch (error) {
 
-    }
+    alert(error.message);
 
-  });
+  }
 
-}
+};
+
+
+// ========================================
+// LOGOUT FUNCTION
+// ========================================
+window.logoutUser = async function () {
+
+  try {
+
+    await signOut(auth);
+
+    alert("Logged Out Successfully!");
+
+    window.location.href = "index.html";
+
+  } catch (error) {
+
+    alert(error.message);
+
+  }
+
+};
 
 
 // ========================================
@@ -195,7 +179,7 @@ async function getUserName(user) {
 
 
 // ========================================
-// AUTH STATE
+// AUTH STATE CHANGES
 // ========================================
 onAuthStateChanged(auth, async (user) => {
 
@@ -212,7 +196,7 @@ onAuthStateChanged(auth, async (user) => {
   const adminNav = document.getElementById("adminNav");
 
 
-  // Only run if navbar exists
+  // Run only if navbar exists
   if (
     loginNav &&
     signupNav &&
@@ -223,21 +207,21 @@ onAuthStateChanged(auth, async (user) => {
 
     if (user) {
 
-      // Get Username
+      // Fetch username
       const userName = await getUserName(user);
 
-      // Hide Login & Signup
+      // Hide Login + Signup
       loginNav.style.display = "none";
       signupNav.style.display = "none";
 
-      // Show Welcome & Logout
+      // Show Welcome + Logout
       welcomeNav.style.display = "inline-block";
       logoutNav.style.display = "inline-block";
 
-      // Show Username
+      // Set username
       userNameSpan.textContent = userName;
 
-      // Admin Check
+      // Admin Panel
       if (adminNav) {
 
         if (user.email === "learniokidslearning@gmail.com") {
@@ -254,15 +238,15 @@ onAuthStateChanged(auth, async (user) => {
 
     } else {
 
-      // Show Login & Signup
+      // Show Login + Signup
       loginNav.style.display = "inline-block";
       signupNav.style.display = "inline-block";
 
-      // Hide Welcome & Logout
+      // Hide Welcome + Logout
       welcomeNav.style.display = "none";
       logoutNav.style.display = "none";
 
-      // Clear Username
+      // Clear username
       userNameSpan.textContent = "";
 
       // Hide Admin
