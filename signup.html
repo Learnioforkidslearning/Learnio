@@ -41,37 +41,80 @@
 
         <!-- Gender Selection -->
         <div style="margin: 20px 0; text-align: left;">
-            <label style="display: block; margin-bottom: 10px; font-weight: 600;">
+            <label
+                style="
+                    display: block;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    color: #334155;
+                "
+            >
                 Select Gender:
             </label>
 
-            <label style="margin-right: 20px;">
-                <input
-                    type="radio"
-                    name="gender"
-                    value="Male"
-                    required
-                />
-                Male
-            </label>
+            <div
+                style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    align-items: center;
+                "
+            >
+                <label
+                    style="
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    "
+                >
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        required
+                        style="margin: 0; width: auto;"
+                    />
+                    Male
+                </label>
 
-            <label style="margin-right: 20px;">
-                <input
-                    type="radio"
-                    name="gender"
-                    value="Female"
-                />
-                Female
-            </label>
+                <label
+                    style="
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    "
+                >
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                        style="margin: 0; width: auto;"
+                    />
+                    Female
+                </label>
 
-            <label>
-                <input
-                    type="radio"
-                    name="gender"
-                    value="Other"
-                />
-                Other
-            </label>
+                <label
+                    style="
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    "
+                >
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                        style="margin: 0; width: auto;"
+                    />
+                    Other
+                </label>
+            </div>
         </div>
 
         <!-- Age -->
