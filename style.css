@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
 
-/* =========================
-   RESET
-========================= */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -13,21 +11,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/* =========================
-   BODY - 3D PASTEL BACKGROUND
-========================= */
+/* BODY */
 body {
     font-family: 'Fredoka', sans-serif;
     color: #334155;
     line-height: 1.7;
     min-height: 100vh;
     overflow-x: hidden;
-
-    /* 3D Perspective */
     perspective: 1500px;
     transform-style: preserve-3d;
 
-    /* Warm pastel animated background */
     background: linear-gradient(
         135deg,
         #FFF8E7,
@@ -41,53 +34,106 @@ body {
     animation: gradientMove 20s ease infinite;
 }
 
-/* Animated Background */
 @keyframes gradientMove {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* =========================
-   HEADER
-========================= */
+/* FLOATING 3D OBJECTS */
+.floating-3d {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble,
+.cube {
+    position: absolute;
+    animation: float3d linear infinite;
+}
+
+.bubble {
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(255,255,255,0.95),
+        rgba(255,255,255,0.25)
+    );
+    box-shadow:
+        0 25px 60px rgba(148,163,184,0.15),
+        inset -10px -10px 20px rgba(255,255,255,0.65),
+        inset 10px 10px 20px rgba(255,255,255,0.25);
+}
+
+.cube {
+    border-radius: 24px;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.75),
+        rgba(255,255,255,0.25)
+    );
+    box-shadow:
+        0 30px 60px rgba(148,163,184,0.15);
+}
+
+/* Individual Shapes */
+.bubble1 { width: 140px; height: 140px; left: 8%;  top: 100%; animation-duration: 26s; }
+.bubble2 { width: 200px; height: 200px; left: 25%; top: 100%; animation-duration: 32s; }
+.bubble3 { width: 110px; height: 110px; left: 52%; top: 100%; animation-duration: 22s; }
+.bubble4 { width: 240px; height: 240px; left: 72%; top: 100%; animation-duration: 36s; }
+.bubble5 { width: 160px; height: 160px; left: 90%; top: 100%; animation-duration: 28s; }
+
+.cube1 { width: 120px; height: 120px; left: 40%; top: 100%; animation-duration: 30s; }
+.cube2 { width: 180px; height: 180px; left: 82%; top: 100%; animation-duration: 34s; }
+
+@keyframes float3d {
+    0% {
+        transform: translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg);
+        opacity: 0;
+    }
+    10% { opacity: 0.7; }
+    50% {
+        transform: translateY(-50vh) translateZ(200px)
+                   rotateX(180deg) rotateY(180deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-120vh) translateZ(400px)
+                   rotateX(360deg) rotateY(360deg);
+        opacity: 0;
+    }
+}
+
+/* HEADER */
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 15px 0;
-
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255,255,255,0.45);
     backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    box-shadow:
-        0 8px 30px rgba(148, 163, 184, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.7);
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    box-shadow: 0 8px 30px rgba(148,163,184,0.12);
 }
 
-/* Navbar */
 .navbar {
     width: 92%;
     max-width: 1300px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo */
 .logo {
     font-size: 2.2rem;
     font-weight: 700;
     color: #6D7FCC;
-    text-shadow: 0 4px 12px rgba(109, 127, 204, 0.15);
 }
 
-/* Navigation */
 .nav-links {
     list-style: none;
     display: flex;
@@ -106,83 +152,76 @@ header {
 }
 
 .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.55);
-    transform: translateY(-3px) translateZ(20px);
-    box-shadow: 0 10px 25px rgba(148, 163, 184, 0.15);
+    background: rgba(255,255,255,0.55);
+    transform: translateY(-3px);
 }
 
-#welcomeNav {
-    color: #6D7FCC;
-    font-weight: 700;
-    background: rgba(255, 255, 255, 0.55);
-    padding: 10px 16px;
-    border-radius: 999px;
-}
-
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO */
 .hero {
     text-align: center;
     padding: 120px 20px;
-    transform-style: preserve-3d;
+}
+
+.hero-3d-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px;
+    border-radius: 40px;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.8);
+    box-shadow:
+        0 30px 80px rgba(148,163,184,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.9);
+    transform: rotateX(4deg) rotateY(-4deg);
+}
+
+.hero-icons {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero h2 {
     font-size: 4rem;
-    font-weight: 700;
     color: #5B6BB2;
     margin-bottom: 20px;
-
-    text-shadow:
-        0 6px 20px rgba(91, 107, 178, 0.12),
-        0 2px 6px rgba(255, 255, 255, 0.7);
-
-    transform: translateZ(50px);
 }
 
 .hero p {
     font-size: 1.3rem;
-    max-width: 760px;
+    max-width: 700px;
     margin: 0 auto 35px;
     color: #64748B;
-    transform: translateZ(30px);
 }
 
-/* =========================
-   BUTTONS - 3D EFFECT
-========================= */
+/* BUTTONS */
 .btn,
 button {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.72);
+    margin: 8px;
+    background: rgba(255,255,255,0.75);
     color: #4F46E5;
-    border: 2px solid rgba(255, 255, 255, 0.85);
+    border: 2px solid rgba(255,255,255,0.85);
     padding: 14px 30px;
     border-radius: 999px;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
-    backdrop-filter: blur(10px);
-
-    box-shadow:
-        0 12px 30px rgba(148, 163, 184, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-
     transition: all 0.35s ease;
+    box-shadow: 0 12px 30px rgba(148,163,184,0.15);
 }
 
 .btn:hover,
 button:hover {
-    transform: translateY(-6px) translateZ(30px) scale(1.04);
-    box-shadow:
-        0 20px 40px rgba(148, 163, 184, 0.20),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transform: translateY(-6px) scale(1.04);
 }
 
-/* =========================
-   SECTIONS
-========================= */
+.premium-btn {
+    background: #6366F1;
+    color: white;
+}
+
+/* SECTIONS */
 section {
     padding: 90px 20px;
 }
@@ -191,71 +230,34 @@ section h2 {
     text-align: center;
     font-size: 2.8rem;
     margin-bottom: 50px;
-    color: #334155;
 }
 
-/* =========================
-   GRID LAYOUTS
-========================= */
+/* CARDS */
 .course-grid,
 .pricing-grid {
     width: 92%;
     max-width: 1250px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
-/* =========================
-   3D GLASS CARDS
-========================= */
 .card,
 .plan,
 form {
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(255,255,255,0.72);
     backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    border: 1px solid rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255,255,255,0.85);
     border-radius: 28px;
     padding: 32px;
-
-    box-shadow:
-        0 18px 40px rgba(148, 163, 184, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.85);
-
-    transform-style: preserve-3d;
+    box-shadow: 0 18px 40px rgba(148,163,184,0.12);
     transition: all 0.45s ease;
 }
 
 .card:hover,
 .plan:hover {
-    transform:
-        translateY(-14px)
-        rotateX(6deg)
-        rotateY(-6deg)
-        scale(1.03);
-
-    box-shadow:
-        0 28px 60px rgba(148, 163, 184, 0.18),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
-}
-
-.card h3,
-.plan h3 {
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-    color: #334155;
-    transform: translateZ(20px);
-}
-
-.card p,
-.plan p,
-.plan li {
-    color: #64748B;
-    transform: translateZ(12px);
+    transform: translateY(-14px) rotateX(6deg) rotateY(-6deg);
 }
 
 .price {
@@ -274,163 +276,33 @@ form {
     margin-bottom: 10px;
 }
 
-.premium {
-    border: 3px solid rgba(109, 127, 204, 0.18);
-}
-
-/* =========================
-   FORM INPUTS
-========================= */
+/* FORMS */
 input,
 textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-
-    border: 1px solid rgba(203, 213, 225, 0.8);
+    border: 1px solid rgba(203,213,225,0.8);
     border-radius: 14px;
-
-    background: rgba(255, 255, 255, 0.92);
-    color: #334155;
-    font-size: 1rem;
+    background: rgba(255,255,255,0.92);
     font-family: inherit;
-
-    transition: all 0.3s ease;
 }
 
-input::placeholder,
-textarea::placeholder {
-    color: #94A3B8;
+textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #B4C6FC;
-    box-shadow: 0 0 0 4px rgba(180, 198, 252, 0.15);
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 30px 20px;
-
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255,255,255,0.45);
     backdrop-filter: blur(10px);
-
     color: #64748B;
-    font-weight: 500;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-/* =========================
-   TRUE 3D FLOATING OBJECTS
-========================= */
-.floating-3d {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-    transform-style: preserve-3d;
-}
-
-.bubble,
-.cube {
-    position: absolute;
-    transform-style: preserve-3d;
-    animation: float3d linear infinite;
-}
-
-/* Bubbles */
-.bubble {
-    border-radius: 50%;
-    background: radial-gradient(
-        circle at 30% 30%,
-        rgba(255, 255, 255, 0.95),
-        rgba(255, 255, 255, 0.35)
-    );
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.08),
-        inset -10px -10px 20px rgba(255, 255, 255, 0.7),
-        inset 10px 10px 20px rgba(255, 255, 255, 0.3);
-}
-
-/* Cubes */
-.cube {
-    border-radius: 20px;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.25)
-    );
-    box-shadow:
-        0 30px 60px rgba(0, 0, 0, 0.08),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.9);
-}
-
-/* Object Positions */
-.bubble1 { width: 140px; height: 140px; left: 8%;  top: 80%; animation-duration: 26s; }
-.bubble2 { width: 200px; height: 200px; left: 25%; top: 90%; animation-duration: 32s; }
-.bubble3 { width: 110px; height: 110px; left: 52%; top: 85%; animation-duration: 22s; }
-.bubble4 { width: 240px; height: 240px; left: 72%; top: 95%; animation-duration: 36s; }
-.bubble5 { width: 160px; height: 160px; left: 90%; top: 88%; animation-duration: 28s; }
-
-.cube1 {
-    width: 120px;
-    height: 120px;
-    left: 40%;
-    top: 92%;
-    animation-duration: 30s;
-}
-
-.cube2 {
-    width: 180px;
-    height: 180px;
-    left: 82%;
-    top: 96%;
-    animation-duration: 34s;
-}
-
-/* Floating Animation */
-@keyframes float3d {
-    0% {
-        transform:
-            translateY(0)
-            translateZ(0)
-            rotateX(0deg)
-            rotateY(0deg)
-            rotateZ(0deg);
-        opacity: 0.65;
-    }
-
-    50% {
-        transform:
-            translateY(-50vh)
-            translateZ(200px)
-            rotateX(180deg)
-            rotateY(180deg)
-            rotateZ(180deg);
-        opacity: 0.85;
-    }
-
-    100% {
-        transform:
-            translateY(-120vh)
-            translateZ(400px)
-            rotateX(360deg)
-            rotateY(360deg)
-            rotateZ(360deg);
-        opacity: 0;
-    }
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -439,6 +311,11 @@ footer {
 
     .nav-links {
         justify-content: center;
+    }
+
+    .hero-3d-card {
+        padding: 35px 25px;
+        transform: none;
     }
 
     .hero h2 {
@@ -451,11 +328,5 @@ footer {
 
     section h2 {
         font-size: 2rem;
-    }
-
-    .card,
-    .plan,
-    form {
-        padding: 24px;
     }
 }
