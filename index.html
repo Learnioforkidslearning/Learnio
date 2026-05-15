@@ -8,39 +8,41 @@
 </head>
 <body>
 
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <!-- Navigation -->
     <header>
         <nav class="navbar">
             <h1 class="logo">🌈 Learniokidslearning</h1>
 
             <ul class="nav-links">
-                <!-- Main Navigation Links -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
 
-                <!-- Visible only when user is NOT logged in -->
-                <li id="loginNav">
-                    <a href="login.html">Login</a>
+                <!-- Visible when logged out -->
+                <li id="loginNav"><a href="login.html">Login</a></li>
+                <li id="signupNav"><a href="signup.html">Sign Up</a></li>
+
+                <!-- Visible when logged in -->
+                <li id="welcomeNav" style="display:none;">
+                    Welcome, <span id="userEmail"></span>
                 </li>
 
-                <li id="signupNav">
-                    <a href="signup.html">Sign Up</a>
-                </li>
-
-                <!-- Visible only when user IS logged in -->
-                <li id="welcomeNav"
-                    style="display: none; color: white; font-weight: bold;">
-                    Welcome, <span id="userName"></span>
-                </li>
-
-                <li id="logoutNav" style="display: none;">
+                <li id="logoutNav" style="display:none;">
                     <a href="#" onclick="logoutUser(); return false;">Logout</a>
                 </li>
 
-                <!-- Admin link (visible only to your admin account) -->
-                <li id="adminNav" style="display: none;">
+                <!-- Admin only -->
+                <li id="adminNav" style="display:none;">
                     <a href="admin.html">Admin</a>
                 </li>
             </ul>
@@ -49,9 +51,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Fun Animated Learning for Kids!</h2>
-        <p>Explore exciting educational videos, games, and lessons.</p>
-        <a href="#pricing" class="btn">Start Learning</a>
+        <h2>Fun Animated Learning for Kids! 🎓✨</h2>
+        <p>
+            Explore exciting educational videos, games, drawing tools,
+            and interactive lessons designed especially for children.
+        </p>
+        <a href="#pricing" class="btn">Start Learning 🚀</a>
     </section>
 
     <!-- Courses Section -->
@@ -59,23 +64,19 @@
         <h2>📚 Our Learning Categories</h2>
 
         <div class="course-grid">
-
             <div class="card">
                 <h3>🔤 Alphabet & Phonics</h3>
                 <p>Interactive animations to learn letters and sounds.</p>
-                <a href="alphabet.html" class="btn">Open</a>
             </div>
 
             <div class="card">
                 <h3>🔢 Numbers & Math</h3>
                 <p>Counting, addition, subtraction, and fun math games.</p>
-                <a href="math.html" class="btn">Open</a>
             </div>
 
             <div class="card">
                 <h3>🌍 Science & Nature</h3>
                 <p>Discover animals, planets, and exciting experiments.</p>
-                <a href="science.html" class="btn">Open</a>
             </div>
 
             <div class="card">
@@ -83,7 +84,6 @@
                 <p>Art lessons and imagination-building activities.</p>
                 <a href="drawing.html" class="btn">Open Drawing Board</a>
             </div>
-
         </div>
     </section>
 
@@ -120,6 +120,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>📧 Contact Us</h2>
+
         <form>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
