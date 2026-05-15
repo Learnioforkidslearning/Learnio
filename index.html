@@ -48,29 +48,35 @@
             <h1 class="logo">🌈 Learniokidslearning</h1>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Main Navigation Links -->
+    <li><a href="#home">Home</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
 
-                <!-- Logged Out -->
-                <li id="loginNav"><a href="login.html">Login</a></li>
-                <li id="signupNav"><a href="signup.html">Sign Up</a></li>
+    <!-- Visible only when user is NOT logged in -->
+    <li id="loginNav">
+        <a href="login.html">Login</a>
+    </li>
 
-                <!-- Logged In -->
-                <li id="welcomeNav" style="display:none;">
-                    Welcome, <span id="userEmail"></span>
-                </li>
+    <li id="signupNav">
+        <a href="signup.html">Sign Up</a>
+    </li>
 
-                <li id="logoutNav" style="display:none;">
-                    <a href="#" onclick="logoutUser(); return false;">Logout</a>
-                </li>
+    <!-- Visible only when user IS logged in -->
+    <li id="welcomeNav" style="display: none;">
+        Welcome, <span id="userEmail"></span>
+    </li>
 
-                <!-- Admin Only -->
-                <li id="adminNav" style="display:none;">
-                    <a href="admin.html">Admin</a>
-                </li>
-            </ul>
+    <li id="logoutNav" style="display: none;">
+        <a href="#" onclick="logoutUser(); return false;">Logout</a>
+    </li>
+
+    <!-- Visible only for your admin account -->
+    <li id="adminNav" style="display: none;">
+        <a href="admin.html">Admin</a>
+    </li>
+</ul>
         </nav>
     </header>
 
