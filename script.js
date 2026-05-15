@@ -44,7 +44,6 @@ const auth = getAuth(app);
 async function getUserName(user) {
   try {
     const usersSnapshot = await getDocs(collection(db, "users"));
-
     let userName = "";
 
     usersSnapshot.forEach((doc) => {
@@ -55,7 +54,7 @@ async function getUserName(user) {
       }
     });
 
-    // Fallback to email if name is not found
+    // If name is not found, use email as fallback
     return userName || user.email;
   } catch (error) {
     console.error("Error fetching user name:", error);
@@ -65,16 +64,35 @@ async function getUserName(user) {
 
 // ========================================
 // SIGNUP FUNCTION
+// Saves:
+// - Name
+// - Email
+// - Gender
+// - Age
+// - Date of Birth
+// - Country
 // ========================================
 window.signupUser = async function (event) {
   event.preventDefault();
 
-  const name = document.getElementById("signupName").value;
-  const email = document.getElementById("signupEmail").value;
+  // Basic fields
+  const name = document.getElementById("signupName").value.trim();
+  const email = document.getElementById("signupEmail").value.trim();
   const password = document.getElementById("signupPassword").value;
 
+  // Additional fields
+  const age = document.getElementById("signupAge").value;
+  const dob = document.getElementById("signupDOB").value;
+  const country = document.getElementById("signupCountry").value;
+
+  // Selected gender
+  const genderInput = document.querySelector(
+    'input[name="gender"]:checked'
+  );
+  const gender = genderInput ? genderInput.value : "";
+
   try {
-    // Create account with Firebase Authentication
+    // Create account in Firebase Authentication
     const userCredential = await createUserWithEmailAndPassword(
       auth,
       email,
@@ -83,15 +101,22 @@ window.signupUser = async function (event) {
 
     const user = userCredential.user;
 
-    // Save additional information in Firestore
+    // Save all user information in Firestore
     await addDoc(collection(db, "users"), {
       uid: user.uid,
       name: name,
       email: email,
+      gender: gender,
+      age: Number(age),
+      dateOfBirth: dob,
+      country: country,
       createdAt: new Date().toISOString()
     });
 
-    alert("Account created successfully!");
+    // Success message
+    alert(`Account created successfully! Welcome, ${name}.`);
+
+    // Redirect to login page
     window.location.href = "login.html";
 
   } catch (error) {
@@ -122,7 +147,7 @@ window.loginUser = async function (event) {
     // Get user's name from Firestore
     const userName = await getUserName(user);
 
-    // Show personalized popup
+    // Personalized welcome popup
     alert(`Welcome, ${userName}! Login successful.`);
 
     // Redirect to homepage
@@ -150,12 +175,16 @@ window.logoutUser = async function () {
 
 // ========================================
 // AUTH STATE HANDLER
+// Handles:
+// - Dashboard welcome text
+// - Homepage navigation
+// - Admin visibility
 // ========================================
 onAuthStateChanged(auth, async (user) => {
 
-  // ------------------------
+  // ------------------------------------
   // Dashboard Page Support
-  // ------------------------
+  // ------------------------------------
   const userInfo = document.getElementById("userInfo");
 
   if (userInfo) {
@@ -168,9 +197,9 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 
-  // ------------------------
+  // ------------------------------------
   // Homepage Navigation Support
-  // ------------------------
+  // ------------------------------------
   const loginNav = document.getElementById("loginNav");
   const signupNav = document.getElementById("signupNav");
   const welcomeNav = document.getElementById("welcomeNav");
@@ -178,26 +207,33 @@ onAuthStateChanged(auth, async (user) => {
   const userNameSpan = document.getElementById("userName");
   const adminNav = document.getElementById("adminNav");
 
-  // Admin email
+  // Your admin email
   const adminEmail = "learniokidslearning@gmail.com";
 
-  // Run only if these elements exist on index.html
-  if (loginNav && signupNav && welcomeNav && logoutNav && userNameSpan) {
-
+  // Only run if navigation elements exist
+  if (
+    loginNav &&
+    signupNav &&
+    welcomeNav &&
+    logoutNav &&
+    userNameSpan
+  ) {
     if (user) {
-      // Get user's name from Firestore
+      // Get user's name
       const userName = await getUserName(user);
 
-      // User is logged in
+      // Hide Login and Sign Up
       loginNav.style.display = "none";
       signupNav.style.display = "none";
+
+      // Show Welcome and Logout
       welcomeNav.style.display = "inline-block";
       logoutNav.style.display = "inline-block";
 
       // Show user's name
       userNameSpan.textContent = userName;
 
-      // Show Admin link only to the admin account
+      // Show Admin only to admin account
       if (adminNav) {
         if (user.email === adminEmail) {
           adminNav.style.display = "inline-block";
@@ -207,26 +243,28 @@ onAuthStateChanged(auth, async (user) => {
       }
 
     } else {
-      // User is logged out
+      // Show Login and Sign Up
       loginNav.style.display = "inline-block";
       signupNav.style.display = "inline-block";
+
+      // Hide Welcome and Logout
       welcomeNav.style.display = "none";
       logoutNav.style.display = "none";
 
-      // Clear displayed name
+      // Clear username
       userNameSpan.textContent = "";
 
-      // Hide Admin link
+      // Hide Admin
       if (adminNav) {
         adminNav.style.display = "none";
       }
     }
   }
 });
-// ==========================================
-// MOUSE PARALLAX EFFECT
-// ==========================================
 
+// ========================================
+// 3D MOUSE PARALLAX EFFECT
+// ========================================
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(
     ".hero-3d-card, .card, .plan"
@@ -239,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      // Convert mouse position to rotation values
+      // Convert mouse position to rotation
       const rotateY = ((x / rect.width) - 0.5) * 12;
       const rotateX = ((0.5 - y / rect.height)) * 12;
 
@@ -253,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     element.addEventListener("mouseleave", () => {
-      // Reset to normal position
+      // Reset transform
       if (element.classList.contains("hero-3d-card")) {
         element.style.transform = "rotateX(4deg) rotateY(-4deg)";
       } else {
