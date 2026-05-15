@@ -1,3 +1,4 @@
+```javascript
 // ========================================
 // FIREBASE IMPORTS
 // ========================================
@@ -7,7 +8,9 @@ import {
   getFirestore,
   collection,
   addDoc,
-  getDocs
+  getDocs,
+  query,
+  where
 } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
 
 import {
@@ -39,38 +42,32 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 // ========================================
-// HELPER FUNCTION: GET USER NAME FROM FIRESTORE
+// HELPER FUNCTION: GET USER NAME
 // ========================================
 async function getUserName(user) {
   try {
-    const usersSnapshot = await getDocs(collection(db, "users"));
-    let userName = "";
 
-    usersSnapshot.forEach((doc) => {
-      const data = doc.data();
+    const q = query(
+      collection(db, "users"),
+      where("uid", "==", user.uid)
+    );
 
-      if (data.uid === user.uid) {
-        userName = data.name || "";
-      }
-    });
+    const querySnapshot = await getDocs(q);
 
-    // If name is not found, use email as fallback
-    return userName || user.email;
+    if (!querySnapshot.empty) {
+      return querySnapshot.docs[0].data().name;
+    }
+
+    return user.email;
+
   } catch (error) {
-    console.error("Error fetching user name:", error);
+    console.error("Error fetching username:", error);
     return user.email;
   }
 }
 
 // ========================================
 // SIGNUP FUNCTION
-// Saves:
-// - Name
-// - Email
-// - Gender
-// - Age
-// - Date of Birth
-// - Country
 // ========================================
 window.signupUser = async function (event) {
   event.preventDefault();
@@ -88,9 +85,11 @@ window.signupUser = async function (event) {
   const genderInput = document.querySelector(
     'input[name="gender"]:checked'
   );
+
   const gender = genderInput ? genderInput.value : "";
 
   try {
+
     // Create Firebase Authentication account
     const userCredential = await createUserWithEmailAndPassword(
       auth,
@@ -100,7 +99,7 @@ window.signupUser = async function (event) {
 
     const user = userCredential.user;
 
-    // Save data to Firestore
+    // Save user data to Firestore
     await addDoc(collection(db, "users"), {
       uid: user.uid,
       name: name,
@@ -111,13 +110,14 @@ window.signupUser = async function (event) {
       createdAt: new Date().toISOString()
     });
 
-    // Success message
+    // Success alert
     alert(`Account created successfully! Welcome, ${name}.`);
 
     // Redirect to login page
     window.location.href = "login.html";
 
   } catch (error) {
+
     alert("Signup Error: " + error.message);
     console.error(error);
   }
@@ -133,7 +133,8 @@ window.loginUser = async function (event) {
   const password = document.getElementById("loginPassword").value;
 
   try {
-    // Login using Firebase Authentication
+
+    // Firebase login
     const userCredential = await signInWithEmailAndPassword(
       auth,
       email,
@@ -142,16 +143,17 @@ window.loginUser = async function (event) {
 
     const user = userCredential.user;
 
-    // Get user's name from Firestore
+    // Get username
     const userName = await getUserName(user);
 
-    // Personalized welcome popup
+    // Welcome popup
     alert(`Welcome, ${userName}! Login successful.`);
 
     // Redirect to homepage
     window.location.href = "index.html";
 
   } catch (error) {
+
     alert("Login Error: " + error.message);
     console.error(error);
   }
@@ -162,10 +164,15 @@ window.loginUser = async function (event) {
 // ========================================
 window.logoutUser = async function () {
   try {
+
     await signOut(auth);
+
     alert("Logged out successfully.");
+
     window.location.href = "index.html";
+
   } catch (error) {
+
     alert("Logout Error: " + error.message);
     console.error(error);
   }
@@ -173,30 +180,30 @@ window.logoutUser = async function () {
 
 // ========================================
 // AUTH STATE HANDLER
-// Handles:
-// - Dashboard welcome text
-// - Homepage navigation
-// - Admin visibility
 // ========================================
 onAuthStateChanged(auth, async (user) => {
 
   // ------------------------------------
-  // Dashboard Page Support
+  // DASHBOARD PAGE SUPPORT
   // ------------------------------------
   const userInfo = document.getElementById("userInfo");
 
   if (userInfo) {
+
     if (user) {
+
       const userName = await getUserName(user);
       userInfo.textContent = `Welcome, ${userName}`;
+
     } else {
+
       window.location.href = "login.html";
       return;
     }
   }
 
   // ------------------------------------
-  // Homepage Navigation Support
+  // NAVIGATION SUPPORT
   // ------------------------------------
   const loginNav = document.getElementById("loginNav");
   const signupNav = document.getElementById("signupNav");
@@ -205,10 +212,10 @@ onAuthStateChanged(auth, async (user) => {
   const userNameSpan = document.getElementById("userName");
   const adminNav = document.getElementById("adminNav");
 
-  // Your admin email
+  // Admin email
   const adminEmail = "learniokidslearning@gmail.com";
 
-  // Only run if navigation elements exist
+  // Only run if elements exist
   if (
     loginNav &&
     signupNav &&
@@ -216,23 +223,26 @@ onAuthStateChanged(auth, async (user) => {
     logoutNav &&
     userNameSpan
   ) {
+
     if (user) {
-      // Get user's name
+
+      // Get username from Firestore
       const userName = await getUserName(user);
 
-      // Hide Login and Sign Up
+      // Hide Login + Signup
       loginNav.style.display = "none";
       signupNav.style.display = "none";
 
-      // Show Welcome and Logout
+      // Show Welcome + Logout
       welcomeNav.style.display = "inline-block";
       logoutNav.style.display = "inline-block";
 
-      // Show user's name
+      // Show Username
       userNameSpan.textContent = userName;
 
-      // Show Admin only to admin account
+      // Admin Check
       if (adminNav) {
+
         if (user.email === adminEmail) {
           adminNav.style.display = "inline-block";
         } else {
@@ -241,15 +251,16 @@ onAuthStateChanged(auth, async (user) => {
       }
 
     } else {
-      // Show Login and Sign Up
+
+      // Show Login + Signup
       loginNav.style.display = "inline-block";
       signupNav.style.display = "inline-block";
 
-      // Hide Welcome and Logout
+      // Hide Welcome + Logout
       welcomeNav.style.display = "none";
       logoutNav.style.display = "none";
 
-      // Clear username
+      // Clear Username
       userNameSpan.textContent = "";
 
       // Hide Admin
@@ -264,18 +275,21 @@ onAuthStateChanged(auth, async (user) => {
 // 3D MOUSE PARALLAX EFFECT
 // ========================================
 document.addEventListener("DOMContentLoaded", () => {
+
   const elements = document.querySelectorAll(
     ".hero-3d-card, .card, .plan"
   );
 
   elements.forEach((element) => {
+
     element.addEventListener("mousemove", (e) => {
+
       const rect = element.getBoundingClientRect();
 
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      // Convert mouse position to rotation
+      // Mouse rotation
       const rotateY = ((x / rect.width) - 0.5) * 12;
       const rotateX = ((0.5 - y / rect.height)) * 12;
 
@@ -289,6 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     element.addEventListener("mouseleave", () => {
+
       // Reset transform
       if (element.classList.contains("hero-3d-card")) {
         element.style.transform = "rotateX(4deg) rotateY(-4deg)";
@@ -298,3 +313,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+```
