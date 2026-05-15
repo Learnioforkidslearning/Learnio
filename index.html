@@ -8,116 +8,149 @@
 </head>
 <body>
 
-    <!-- Floating Background Shapes -->
-    <div class="floating-shapes">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- ==========================================
+         TRUE 3D FLOATING BACKGROUND OBJECTS
+    =========================================== -->
+    <div class="floating-3d">
+        <!-- Glass Bubbles -->
+        <span class="bubble bubble1"></span>
+        <span class="bubble bubble2"></span>
+        <span class="bubble bubble3"></span>
+        <span class="bubble bubble4"></span>
+        <span class="bubble bubble5"></span>
+
+        <!-- Floating Cubes -->
+        <span class="cube cube1"></span>
+        <span class="cube cube2"></span>
     </div>
 
-    <!-- Navigation -->
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
     <header>
         <nav class="navbar">
             <h1 class="logo">🌈 Learniokidslearning</h1>
 
             <ul class="nav-links">
+                <!-- Main Navigation -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
 
                 <!-- Visible when logged out -->
-                <li id="loginNav"><a href="login.html">Login</a></li>
-                <li id="signupNav"><a href="signup.html">Sign Up</a></li>
+                <li id="loginNav">
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li id="signupNav">
+                    <a href="signup.html">Sign Up</a>
+                </li>
 
                 <!-- Visible when logged in -->
-                <li id="welcomeNav" style="display:none;">
+                <li id="welcomeNav" style="display: none;">
                     Welcome, <span id="userEmail"></span>
                 </li>
 
-                <li id="logoutNav" style="display:none;">
-                    <a href="#" onclick="logoutUser(); return false;">Logout</a>
+                <li id="logoutNav" style="display: none;">
+                    <a href="#" onclick="logoutUser(); return false;">
+                        Logout
+                    </a>
                 </li>
 
                 <!-- Admin only -->
-                <li id="adminNav" style="display:none;">
+                <li id="adminNav" style="display: none;">
                     <a href="admin.html">Admin</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
     <section id="home" class="hero">
         <h2>Fun Animated Learning for Kids! 🎓✨</h2>
+
         <p>
             Explore exciting educational videos, games, drawing tools,
             and interactive lessons designed especially for children.
         </p>
+
         <a href="#pricing" class="btn">Start Learning 🚀</a>
     </section>
 
-    <!-- Courses Section -->
+    <!-- ==========================================
+         COURSES SECTION
+    =========================================== -->
     <section id="courses" class="courses">
         <h2>📚 Our Learning Categories</h2>
 
         <div class="course-grid">
             <div class="card">
-                <h3>🔤 Alphabet & Phonics</h3>
+                <h3>🔤 Alphabet &amp; Phonics</h3>
                 <p>Interactive animations to learn letters and sounds.</p>
             </div>
 
             <div class="card">
-                <h3>🔢 Numbers & Math</h3>
+                <h3>🔢 Numbers &amp; Math</h3>
                 <p>Counting, addition, subtraction, and fun math games.</p>
             </div>
 
             <div class="card">
-                <h3>🌍 Science & Nature</h3>
+                <h3>🌍 Science &amp; Nature</h3>
                 <p>Discover animals, planets, and exciting experiments.</p>
             </div>
 
             <div class="card">
-                <h3>🎨 Drawing & Creativity</h3>
+                <h3>🎨 Drawing &amp; Creativity</h3>
                 <p>Art lessons and imagination-building activities.</p>
                 <a href="drawing.html" class="btn">Open Drawing Board</a>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- ==========================================
+         PRICING SECTION
+    =========================================== -->
     <section id="pricing" class="pricing">
         <h2>💎 Subscription Plans</h2>
 
         <div class="pricing-grid">
+            <!-- Free Plan -->
             <div class="plan">
                 <h3>Free Plan</h3>
                 <p class="price">₹0 / month</p>
+
                 <ul>
                     <li>5 Free Lessons</li>
                     <li>Basic Activities</li>
                     <li>Community Access</li>
                 </ul>
+
                 <button>Get Started</button>
             </div>
 
+            <!-- Premium Plan -->
             <div class="plan premium">
                 <h3>Premium Plan</h3>
                 <p class="price">₹199 / month</p>
+
                 <ul>
                     <li>Unlimited Lessons</li>
                     <li>Exclusive Animations</li>
                     <li>Download Worksheets</li>
                     <li>Parent Dashboard</li>
                 </ul>
+
                 <button>Subscribe Now</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ==========================================
+         CONTACT SECTION
+    =========================================== -->
     <section id="contact" class="contact">
         <h2>📧 Contact Us</h2>
 
@@ -129,12 +162,16 @@
         </form>
     </section>
 
-    <!-- Footer -->
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
     <footer>
         <p>© 2026 Learniokidslearning. All Rights Reserved.</p>
     </footer>
 
-    <!-- Firebase Script -->
+    <!-- ==========================================
+         FIREBASE SCRIPT
+    =========================================== -->
     <script type="module" src="script.js"></script>
 
 </body>
