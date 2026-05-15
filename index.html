@@ -47,14 +47,14 @@
         <nav class="navbar">
             <h1 class="logo">🌈 Learniokidslearning</h1>
 
-            <ul class="nav-links">
-    <!-- Main Navigation Links -->
+           <ul class="nav-links">
+
     <li><a href="#home">Home</a></li>
     <li><a href="#courses">Courses</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#contact">Contact</a></li>
 
-    <!-- Visible only when user is NOT logged in -->
+    <!-- Show when logged OUT -->
     <li id="loginNav">
         <a href="login.html">Login</a>
     </li>
@@ -63,19 +63,20 @@
         <a href="signup.html">Sign Up</a>
     </li>
 
-    <!-- Visible only when user IS logged in -->
- <li id="welcomeNav" style="display: none;">
-    Welcome, <span id="userName"></span>
-</li>
+    <!-- Show when logged IN -->
+    <li id="welcomeNav" style="display: none;">
+        Welcome, <span id="userName"></span>
+    </li>
 
-   <li id="logoutNav" style="display: none;">
-    <button id="logoutBtn">Logout</button>
-</li>
+    <li id="logoutNav" style="display: none;">
+        <a href="#" onclick="logoutUser(); return false;">Logout</a>
+    </li>
 
-    <!-- Visible only for your admin account -->
+    <!-- Admin -->
     <li id="adminNav" style="display: none;">
         <a href="admin.html">Admin</a>
     </li>
+
 </ul>
         </nav>
     </header>
