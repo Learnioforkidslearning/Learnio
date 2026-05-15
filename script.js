@@ -106,7 +106,6 @@ window.signupUser = async function (event) {
       name: name,
       email: email,
       gender: gender,
-      age: Number(age),
       dateOfBirth: dob,
       country: country,
       createdAt: new Date().toISOString()
