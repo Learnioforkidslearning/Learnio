@@ -585,11 +585,11 @@ footer {
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
     gap: 30px;
 
-    padding: 40px;
+    margin-top: 40px;
 
 }
 
@@ -600,34 +600,24 @@ footer {
 
 .card {
 
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255,255,255,0.9);
+
+    padding: 20px;
 
     border-radius: 25px;
 
-    overflow: hidden;
-
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    overflow: hidden;
 
     transition: 0.3s ease;
 
     text-align: left;
 
-    padding-bottom: 20px;
-
 }
-
-
-.card:hover {
-
-    transform: translateY(-10px);
-
-}
-
-
 /* ==========================================
    COURSE IMAGE
 ========================================== */
-
 .course-image {
 
     width: 100%;
@@ -636,7 +626,11 @@ footer {
 
     object-fit: cover;
 
+    border-radius: 20px;
+
     display: block;
+
+    margin-bottom: 20px;
 
 }
 
