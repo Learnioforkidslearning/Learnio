@@ -223,3 +223,42 @@ onAuthStateChanged(auth, async (user) => {
     }
   }
 });
+// ==========================================
+// MOUSE PARALLAX EFFECT
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(
+    ".hero-3d-card, .card, .plan"
+  );
+
+  elements.forEach((element) => {
+    element.addEventListener("mousemove", (e) => {
+      const rect = element.getBoundingClientRect();
+
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      // Convert mouse position to rotation values
+      const rotateY = ((x / rect.width) - 0.5) * 12;
+      const rotateX = ((0.5 - y / rect.height)) * 12;
+
+      element.style.transform = `
+        perspective(1000px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        translateY(-8px)
+        scale(1.02)
+      `;
+    });
+
+    element.addEventListener("mouseleave", () => {
+      // Reset to normal position
+      if (element.classList.contains("hero-3d-card")) {
+        element.style.transform = "rotateX(4deg) rotateY(-4deg)";
+      } else {
+        element.style.transform = "";
+      }
+    });
+  });
+});
