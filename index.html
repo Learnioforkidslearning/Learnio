@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Learniokidslearning</title>
+
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <!-- Floating Soap Bubbles -->
-<div class="floating-3d">
-    <div class="bubble bubble1"></div>
-    <div class="bubble bubble2"></div>
-    <div class="bubble bubble3"></div>
-    <div class="bubble bubble4"></div>
-    <div class="bubble bubble5"></div>
-    <div class="bubble bubble6"></div>
-    <div class="bubble bubble7"></div>
-</div>
-    <!-- ==========================================
-     FLOATING 3D BACKGROUND OBJECTS
-========================================== -->
-<div class="floating-3d">
-    <div class="bubble bubble1"></div>
-    <div class="bubble bubble2"></div>
-    <div class="bubble bubble3"></div>
-    <div class="bubble bubble4"></div>
-    <div class="bubble bubble5"></div>
 
-    <div class="cube cube1"></div>
-    <div class="cube cube2"></div>
-</div>
-    <!-- Floating 3D Background Objects -->
+<body>
+
+    <!-- ==========================================
+         FLOATING BACKGROUND
+    =========================================== -->
+
     <div class="floating-3d">
+
         <div class="bubble bubble1"></div>
         <div class="bubble bubble2"></div>
         <div class="bubble bubble3"></div>
@@ -40,145 +26,282 @@
 
         <div class="cube cube1"></div>
         <div class="cube cube2"></div>
+
     </div>
 
-    <!-- Navigation -->
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
     <header>
+
         <nav class="navbar">
+
             <h1 class="logo">🌈 Learniokidslearning</h1>
 
-           <ul class="nav-links">
+            <ul class="nav-links">
 
-    <li><a href="#home">Home</a></li>
-    <li><a href="#courses">Courses</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact">Contact</a></li>
+                <!-- Main Links -->
+                <li><a href="#home">Home</a></li>
 
-    <!-- Show when logged OUT -->
-    <li id="loginNav">
-        <a href="login.html">Login</a>
-    </li>
+                <li><a href="#courses">Courses</a></li>
 
-    <li id="signupNav">
-        <a href="signup.html">Sign Up</a>
-    </li>
+                <li><a href="#pricing">Pricing</a></li>
 
-    <!-- Show when logged IN -->
-    <li id="welcomeNav" style="display: none;">
-        Welcome, <span id="userName"></span>
-    </li>
+                <li><a href="#contact">Contact</a></li>
 
-    <li id="logoutNav" style="display: none;">
-        <a href="#" onclick="logoutUser(); return false;">Logout</a>
-    </li>
 
-    <!-- Admin -->
-    <li id="adminNav" style="display: none;">
-        <a href="admin.html">Admin</a>
-    </li>
+                <!-- Logged OUT -->
+                <li id="loginNav">
+                    <a href="login.html">Login</a>
+                </li>
 
-</ul>
+                <li id="signupNav">
+                    <a href="signup.html">Sign Up</a>
+                </li>
+
+
+                <!-- Logged IN -->
+                <li id="welcomeNav" style="display: none;">
+                    Welcome, <span id="userName"></span>
+                </li>
+
+                <li id="logoutNav" style="display: none;">
+                    <a href="#" onclick="logoutUser(); return false;">
+                        Logout
+                    </a>
+                </li>
+
+
+                <!-- Admin -->
+                <li id="adminNav" style="display: none;">
+                    <a href="admin.html">Admin</a>
+                </li>
+
+            </ul>
+
         </nav>
+
     </header>
 
-    <!-- Hero Section -->
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+
     <section id="home" class="hero">
+
         <div class="hero-3d-card">
+
             <div class="hero-icons">
+
                 <span>🎈</span>
                 <span>🧸</span>
                 <span>🎨</span>
                 <span>📚</span>
                 <span>🌍</span>
+
             </div>
 
             <h2>Learn Through Play & Creativity ✨</h2>
+
             <p>
-                Animated lessons, interactive games, drawing tools,
-                and fun activities designed especially for children.
+                Animated lessons, interactive games,
+                drawing tools, and fun activities
+                designed especially for children.
             </p>
 
-            <a href="#courses" class="btn">🚀 Start Learning</a>
-            <a href="#pricing" class="btn premium-btn">💎 Premium Access</a>
+            <a href="#courses" class="btn">
+                🚀 Start Learning
+            </a>
+
+            <a href="#pricing" class="btn premium-btn">
+                💎 Premium Access
+            </a>
+
         </div>
+
     </section>
 
-    <!-- Courses Section -->
+
+    <!-- ==========================================
+         COURSES
+    =========================================== -->
+
     <section id="courses" class="courses">
+
         <h2>📚 Learning Categories</h2>
 
         <div class="course-grid">
+
             <div class="card">
+
                 <h3>🔤 Alphabet & Phonics</h3>
-                <p>Learn letters, sounds, and words through colorful animations.</p>
+
+                <p>
+                    Learn letters, sounds, and words
+                    through colorful animations.
+                </p>
+
             </div>
 
+
             <div class="card">
+
                 <h3>🔢 Numbers & Math</h3>
-                <p>Counting, addition, subtraction, and exciting math adventures.</p>
+
+                <p>
+                    Counting, addition, subtraction,
+                    and exciting math adventures.
+                </p>
+
             </div>
 
+
             <div class="card">
+
                 <h3>🌍 Science & Nature</h3>
-                <p>Discover animals, planets, weather, and simple experiments.</p>
+
+                <p>
+                    Discover animals, planets,
+                    weather, and simple experiments.
+                </p>
+
             </div>
 
+
             <div class="card">
+
                 <h3>🎨 Drawing & Creativity</h3>
-                <p>Paint, draw, and build imagination with interactive tools.</p>
-                <a href="drawing.html" class="btn">Open Drawing Board</a>
+
+                <p>
+                    Paint, draw, and build imagination
+                    with interactive tools.
+                </p>
+
+                <a href="drawing.html" class="btn">
+                    Open Drawing Board
+                </a>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Pricing -->
+
+    <!-- ==========================================
+         PRICING
+    =========================================== -->
+
     <section id="pricing" class="pricing">
+
         <h2>💎 Subscription Plans</h2>
 
         <div class="pricing-grid">
+
             <div class="plan">
+
                 <h3>Free Plan</h3>
+
                 <p class="price">₹0 / month</p>
+
                 <ul>
+
                     <li>5 Free Lessons</li>
                     <li>Basic Activities</li>
                     <li>Community Access</li>
+
                 </ul>
+
                 <button>Get Started</button>
+
             </div>
 
+
             <div class="plan premium">
+
                 <h3>Premium Plan</h3>
+
                 <p class="price">₹199 / month</p>
+
                 <ul>
+
                     <li>Unlimited Lessons</li>
                     <li>Exclusive Animations</li>
                     <li>Download Worksheets</li>
                     <li>Parent Dashboard</li>
+
                 </ul>
+
                 <button>Subscribe Now</button>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Contact -->
+
+    <!-- ==========================================
+         CONTACT
+    =========================================== -->
+
     <section id="contact" class="contact">
+
         <h2>📧 Contact Us</h2>
 
         <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            />
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            />
+
+            <textarea
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
         </form>
+
     </section>
 
-    <!-- Footer -->
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
     <footer>
-        <p>© 2026 Learniokidslearning. All Rights Reserved.</p>
+
+        <p>
+            © 2026 Learniokidslearning.
+            All Rights Reserved.
+        </p>
+
     </footer>
 
-    <!-- Firebase / Login Script -->
-    <script type="module" src="script.js"></script>
+
+    <!-- ==========================================
+         FIREBASE SCRIPT
+    =========================================== -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
 </body>
+
 </html>
