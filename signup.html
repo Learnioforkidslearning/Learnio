@@ -12,124 +12,84 @@
     <h2>📝 Create Your Account</h2>
 
     <!-- IMPORTANT: onsubmit="signupUser(event)" -->
-    <form onsubmit="signupUser(event)">
-        
-        <!-- Full Name -->
-        <input
-            type="text"
-            id="signupName"
-            placeholder="Parent or Student Name"
-            required
-        />
+   <form onsubmit="signupUser(event)">
+    
+    <!-- Full Name -->
+    <input
+        type="text"
+        id="signupName"
+        placeholder="Parent or Student Name"
+        required
+    />
 
-        <!-- Email Address -->
-        <input
-            type="email"
-            id="signupEmail"
-            placeholder="Email Address"
-            required
-        />
+    <!-- Email Address -->
+    <input
+        type="email"
+        id="signupEmail"
+        placeholder="Email Address"
+        required
+    />
 
-        <!-- Password -->
-        <input
-            type="password"
-            id="signupPassword"
-            placeholder="Create Password"
-            minlength="6"
-            required
-        />
+    <!-- Password -->
+    <input
+        type="password"
+        id="signupPassword"
+        placeholder="Create Password"
+        minlength="6"
+        required
+    />
 
-        <!-- Gender Selection -->
-        <div style="margin: 20px 0; text-align: left;">
-            <label
-                style="
-                    display: block;
-                    margin-bottom: 12px;
-                    font-weight: 600;
-                    color: #334155;
-                "
-            >
-                Select Gender:
-            </label>
+    <!-- Gender Selection -->
+    <div style="margin: 20px 0; text-align: left;">
+        <p style="margin-bottom: 10px; font-weight: 600; color: #334155;">
+            Select Gender:
+        </p>
 
-            <div
-                style="
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    align-items: center;
-                "
-            >
-                <label
-                    style="
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-                        cursor: pointer;
-                        font-weight: 500;
-                    "
-                >
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="Male"
-                        required
-                        style="margin: 0; width: auto;"
-                    />
-                    Male
-                </label>
+        <label style="display: block; margin-bottom: 8px; cursor: pointer;">
+            <input
+                type="radio"
+                name="gender"
+                value="Male"
+                required
+                style="margin-right: 8px;"
+            />
+            Male
+        </label>
 
-                <label
-                    style="
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-                        cursor: pointer;
-                        font-weight: 500;
-                    "
-                >
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="Female"
-                        style="margin: 0; width: auto;"
-                    />
-                    Female
-                </label>
+        <label style="display: block; margin-bottom: 8px; cursor: pointer;">
+            <input
+                type="radio"
+                name="gender"
+                value="Female"
+                style="margin-right: 8px;"
+            />
+            Female
+        </label>
 
-                <label
-                    style="
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-                        cursor: pointer;
-                        font-weight: 500;
-                    "
-                >
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="Other"
-                        style="margin: 0; width: auto;"
-                    />
-                    Other
-                </label>
-            </div>
-        </div>
+        <label style="display: block; cursor: pointer;">
+            <input
+                type="radio"
+                name="gender"
+                value="Other"
+                style="margin-right: 8px;"
+            />
+            Other
+        </label>
+    </div>
 
-        <!-- Age -->
-        <input
-            type="number"
-            id="signupAge"
-            placeholder="Enter Age"
-            min="1"
-            max="100"
-            required
-        />
+    <!-- Age -->
+    <input
+        type="number"
+        id="signupAge"
+        placeholder="Enter Age"
+        min="1"
+        max="100"
+        required
+    />
 
-        <!-- Submit Button -->
-        <button type="submit">Create Account</button>
-    </form>
+    <!-- Submit Button -->
+    <button type="submit">Create Account</button>
+</form>
 
     <p style="text-align:center; margin-top:20px;">
         Already have an account?
