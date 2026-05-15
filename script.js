@@ -91,7 +91,7 @@ window.signupUser = async function (event) {
   const gender = genderInput ? genderInput.value : "";
 
   try {
-    // Create account in Firebase Authentication
+    // Create Firebase Authentication account
     const userCredential = await createUserWithEmailAndPassword(
       auth,
       email,
@@ -100,7 +100,7 @@ window.signupUser = async function (event) {
 
     const user = userCredential.user;
 
-    // Save all user information in Firestore
+    // Save data to Firestore
     await addDoc(collection(db, "users"), {
       uid: user.uid,
       name: name,
