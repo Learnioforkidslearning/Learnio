@@ -1,109 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kids Drawing Board - Learniokidslearning</title>
+
 <link rel="stylesheet" href="style.css">
 
 <style>
+
 body {
+
     text-align: center;
+
     padding: 20px;
+
 }
 
 .drawing-container {
+
     max-width: 1000px;
+
     margin: auto;
+
     padding: 20px;
+
 }
 
 .toolbar {
+
     margin-bottom: 20px;
+
 }
 
 .toolbar label {
+
     margin: 0 10px;
+
     font-weight: bold;
+
 }
 
 canvas {
+
     background: white;
+
     border: 4px solid #ffffff;
+
     border-radius: 20px;
+
     cursor: crosshair;
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
     width: 100%;
+
     max-width: 900px;
+
     height: 500px;
+
     touch-action: none;
+
 }
 
-button, .btn {
+button,
+.btn {
+
     margin: 5px;
+
 }
+
 </style>
+
 </head>
+
 <body>
 
 <div class="drawing-container">
+
     <h1>🎨 Kids Drawing Board</h1>
+
     <p>Draw anything you like!</p>
 
     <div class="toolbar">
+
         <label>
+
             🎨 Color:
-            <input type="color" id="colorPicker" value="#ff0000">
+
+            <input
+                type="color"
+                id="colorPicker"
+                value="#ff0000"
+            >
+
         </label>
 
         <label>
+
             🖌️ Brush Size:
-            <input type="range" id="brushSize" min="1" max="20" value="5">
+
+            <input
+                type="range"
+                id="brushSize"
+                min="1"
+                max="20"
+                value="5"
+            >
+
         </label>
 
-     <button onclick="clearCanvas()">🧹 Clear</button>
+        <button onclick="clearCanvas()">
+            🧹 Clear
+        </button>
 
-<button id="eraserBtn">🩹 Eraser</button>
+        <button onclick="enableEraser()">
+            🩹 Eraser
+        </button>
 
-<button onclick="downloadDrawing()">💾 Download</button>
-        <a href="index.html" class="btn">🏠 Back Home</a>
+        <button onclick="downloadDrawing()">
+            💾 Download
+        </button>
+
+        <a href="index.html" class="btn">
+            🏠 Back Home
+        </a>
+
     </div>
 
-    <canvas id="drawingCanvas" width="900" height="500"></canvas>
+    <canvas
+        id="drawingCanvas"
+        width="900"
+        height="500">
+    </canvas>
+
 </div>
 
 <script>
 
 const canvas = document.getElementById("drawingCanvas");
+
 const ctx = canvas.getContext("2d");
 
 const colorPicker = document.getElementById("colorPicker");
+
 const brushSize = document.getElementById("brushSize");
+
+
+/* ==============================
+   WHITE CANVAS BACKGROUND
+============================== */
+
+ctx.fillStyle = "white";
+
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+/* ==============================
+   VARIABLES
+============================== */
 
 let isDrawing = false;
 
-/* Current Drawing Color */
 let currentColor = colorPicker.value;
 
 
 /* ==============================
-   GET MOUSE / TOUCH POSITION
+   GET POSITION
 ============================== */
 
 function getMousePos(event) {
 
     const rect = canvas.getBoundingClientRect();
 
-    let clientX, clientY;
+    let clientX;
+    let clientY;
 
     if (event.touches && event.touches.length > 0) {
 
         clientX = event.touches[0].clientX;
+
         clientY = event.touches[0].clientY;
 
     } else {
 
         clientX = event.clientX;
+
         clientY = event.clientY;
 
     }
@@ -182,6 +268,10 @@ function clearCanvas() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    ctx.fillStyle = "white";
+
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 }
 
 
@@ -206,15 +296,15 @@ function downloadDrawing() {
    COLOR PICKER
 ============================== */
 
-colorPicker.addEventListener("input", () => {
+colorPicker.addEventListener("input", function() {
 
-    currentColor = colorPicker.value;
+    currentColor = this.value;
 
 });
 
 
 /* ==============================
-   ERASER FUNCTION
+   ERASER
 ============================== */
 
 function enableEraser() {
@@ -268,4 +358,5 @@ canvas.addEventListener("touchend", function(e) {
 </script>
 
 </body>
+
 </html>
