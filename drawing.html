@@ -152,7 +152,7 @@ const brushSize = document.getElementById("brushSize");
 
 
 /* ==============================
-   WHITE CANVAS BACKGROUND
+   WHITE BACKGROUND
 ============================== */
 
 ctx.fillStyle = "white";
@@ -238,7 +238,11 @@ function draw(event) {
 
     ctx.lineJoin = "round";
 
-    ctx.strokeStyle = currentColor;
+    if (ctx.globalCompositeOperation !== "destination-out") {
+
+        ctx.strokeStyle = currentColor;
+
+    }
 
     ctx.lineTo(pos.x, pos.y);
 
@@ -265,6 +269,8 @@ function stopDrawing() {
 ============================== */
 
 function clearCanvas() {
+
+    ctx.globalCompositeOperation = "source-over";
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -300,6 +306,8 @@ colorPicker.addEventListener("input", function() {
 
     currentColor = this.value;
 
+    ctx.globalCompositeOperation = "source-over";
+
 });
 
 
@@ -309,7 +317,7 @@ colorPicker.addEventListener("input", function() {
 
 function enableEraser() {
 
-    currentColor = "#ffffff";
+    ctx.globalCompositeOperation = "destination-out";
 
 }
 
