@@ -73,89 +73,198 @@ button, .btn {
 </div>
 
 <script>
+
 const canvas = document.getElementById("drawingCanvas");
 const ctx = canvas.getContext("2d");
 
+const colorPicker = document.getElementById("colorPicker");
+const brushSize = document.getElementById("brushSize");
+
 let isDrawing = false;
 
+/* Current Drawing Color */
+let currentColor = colorPicker.value;
+
+
+/* ==============================
+   GET MOUSE / TOUCH POSITION
+============================== */
+
 function getMousePos(event) {
+
     const rect = canvas.getBoundingClientRect();
 
     let clientX, clientY;
 
     if (event.touches && event.touches.length > 0) {
+
         clientX = event.touches[0].clientX;
         clientY = event.touches[0].clientY;
+
     } else {
+
         clientX = event.clientX;
         clientY = event.clientY;
+
     }
 
     return {
+
         x: (clientX - rect.left) * (canvas.width / rect.width),
+
         y: (clientY - rect.top) * (canvas.height / rect.height)
+
     };
+
 }
 
+
+/* ==============================
+   START DRAWING
+============================== */
+
 function startDrawing(event) {
+
     isDrawing = true;
+
     const pos = getMousePos(event);
 
     ctx.beginPath();
+
     ctx.moveTo(pos.x, pos.y);
+
 }
 
+
+/* ==============================
+   DRAW
+============================== */
+
 function draw(event) {
+
     if (!isDrawing) return;
 
     const pos = getMousePos(event);
 
-    ctx.lineWidth = document.getElementById("brushSize").value;
+    ctx.lineWidth = brushSize.value;
+
     ctx.lineCap = "round";
+
     ctx.lineJoin = "round";
-    ctx.strokeStyle = document.getElementById("colorPicker").value;
+
+    ctx.strokeStyle = currentColor;
 
     ctx.lineTo(pos.x, pos.y);
+
     ctx.stroke();
+
 }
+
+
+/* ==============================
+   STOP DRAWING
+============================== */
 
 function stopDrawing() {
+
     isDrawing = false;
+
     ctx.beginPath();
+
 }
+
+
+/* ==============================
+   CLEAR CANVAS
+============================== */
 
 function clearCanvas() {
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
 }
+
+
+/* ==============================
+   DOWNLOAD DRAWING
+============================== */
 
 function downloadDrawing() {
+
     const link = document.createElement("a");
+
     link.download = "my-drawing.png";
+
     link.href = canvas.toDataURL("image/png");
+
     link.click();
+
 }
 
-/* Mouse Events */
+
+/* ==============================
+   COLOR PICKER
+============================== */
+
+colorPicker.addEventListener("input", () => {
+
+    currentColor = colorPicker.value;
+
+});
+
+
+/* ==============================
+   ERASER FUNCTION
+============================== */
+
+function enableEraser() {
+
+    currentColor = "#ffffff";
+
+}
+
+
+/* ==============================
+   MOUSE EVENTS
+============================== */
+
 canvas.addEventListener("mousedown", startDrawing);
+
 canvas.addEventListener("mousemove", draw);
+
 canvas.addEventListener("mouseup", stopDrawing);
+
 canvas.addEventListener("mouseleave", stopDrawing);
 
-/* Touch Events */
+
+/* ==============================
+   TOUCH EVENTS
+============================== */
+
 canvas.addEventListener("touchstart", function(e) {
+
     e.preventDefault();
+
     startDrawing(e);
+
 });
 
 canvas.addEventListener("touchmove", function(e) {
+
     e.preventDefault();
+
     draw(e);
+
 });
 
 canvas.addEventListener("touchend", function(e) {
+
     e.preventDefault();
+
     stopDrawing();
+
 });
+
 </script>
 
 </body>
