@@ -3,32 +3,38 @@
 /* ==========================================
    RESET
 ========================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
 /* ==========================================
-   BODY - SOFT 3D PASTEL BACKGROUND
+   BODY
 ========================================== */
-body {
-    font-family: 'Fredoka', sans-serif;
-    color: #334155;
-    line-height: 1.7;
-    min-height: 100vh;
-    overflow-x: hidden;
 
-    /* 3D Perspective */
-    perspective: 1500px;
-    transform-style: preserve-3d;
+body{
 
-    /* Warm pastel gradient */
-    background: linear-gradient(
+    font-family:'Fredoka',sans-serif;
+
+    color:#334155;
+
+    line-height:1.7;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    perspective:1500px;
+
+    transform-style:preserve-3d;
+
+    background:linear-gradient(
         135deg,
         #FFF8E7,
         #FFE5D9,
@@ -37,156 +43,174 @@ body {
         #DCEEFF,
         #DFF7E3
     );
-    background-size: 400% 400%;
-    animation: gradientMove 20s ease infinite;
-}
 
-/* Animated gradient movement */
-@keyframes gradientMove {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    background-size:400% 400%;
+
+    animation:gradientMove 20s ease infinite;
 }
 
 /* ==========================================
-   FLOATING SOAP BUBBLES ACROSS WEBSITE
+   GRADIENT ANIMATION
 ========================================== */
-.floating-3d {
-    position: fixed;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 0;
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
 }
 
-/* Keep website content above bubbles */
+/* ==========================================
+   FLOATING BACKGROUND
+========================================== */
+
+.floating-3d{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
 header,
 section,
-footer {
-    position: relative;
-    z-index: 1;
+footer{
+
+    position:relative;
+
+    z-index:1;
 }
 
-/* Bubble base style */
-.bubble {
-    position: absolute;
-    bottom: -220px;
-    border-radius: 50%;
+/* ==========================================
+   BUBBLES
+========================================== */
 
-    background: radial-gradient(
+.bubble{
+
+    position:absolute;
+
+    bottom:-220px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
         circle at 30% 30%,
-        rgba(255, 255, 255, 0.98),
-        rgba(255, 255, 255, 0.40),
-        rgba(255, 255, 255, 0.08)
+        rgba(255,255,255,0.98),
+        rgba(255,255,255,0.40),
+        rgba(255,255,255,0.08)
     );
 
     box-shadow:
-        0 20px 40px rgba(148, 163, 184, 0.18),
-        inset -10px -10px 20px rgba(255, 255, 255, 0.70),
-        inset 10px 10px 20px rgba(255, 255, 255, 0.25);
+        0 20px 40px rgba(148,163,184,0.18),
+        inset -10px -10px 20px rgba(255,255,255,0.70),
+        inset 10px 10px 20px rgba(255,255,255,0.25);
 
-    animation-name: floatBubble;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-name:floatBubble;
+
+    animation-timing-function:linear;
+
+    animation-iteration-count:infinite;
 }
 
-/* Optional cubes */
-.cube {
-    position: absolute;
-    bottom: -250px;
-    border-radius: 24px;
+.cube{
 
-    background: linear-gradient(
+    position:absolute;
+
+    bottom:-250px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.75),
-        rgba(255, 255, 255, 0.25)
+        rgba(255,255,255,0.75),
+        rgba(255,255,255,0.25)
     );
 
     box-shadow:
-        0 30px 60px rgba(148, 163, 184, 0.15);
+        0 30px 60px rgba(148,163,184,0.15);
 
-    animation-name: floatBubble;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-name:floatBubble;
+
+    animation-timing-function:linear;
+
+    animation-iteration-count:infinite;
 }
 
-/* Bubble sizes and positions */
-.bubble1 {
-    width: 80px;
-    height: 80px;
-    left: 5%;
-    animation-duration: 18s;
-    animation-delay: 0s;
+/* ==========================================
+   BUBBLE SIZES
+========================================== */
+
+.bubble1{
+    width:80px;
+    height:80px;
+    left:5%;
+    animation-duration:18s;
 }
 
-.bubble2 {
-    width: 120px;
-    height: 120px;
-    left: 18%;
-    animation-duration: 24s;
-    animation-delay: 2s;
+.bubble2{
+    width:120px;
+    height:120px;
+    left:18%;
+    animation-duration:24s;
 }
 
-.bubble3 {
-    width: 60px;
-    height: 60px;
-    left: 35%;
-    animation-duration: 20s;
-    animation-delay: 4s;
+.bubble3{
+    width:60px;
+    height:60px;
+    left:35%;
+    animation-duration:20s;
 }
 
-.bubble4 {
-    width: 150px;
-    height: 150px;
-    left: 52%;
-    animation-duration: 28s;
-    animation-delay: 1s;
+.bubble4{
+    width:150px;
+    height:150px;
+    left:52%;
+    animation-duration:28s;
 }
 
-.bubble5 {
-    width: 90px;
-    height: 90px;
-    left: 68%;
-    animation-duration: 22s;
-    animation-delay: 5s;
+.bubble5{
+    width:90px;
+    height:90px;
+    left:68%;
+    animation-duration:22s;
 }
 
-.bubble6 {
-    width: 180px;
-    height: 180px;
-    left: 82%;
-    animation-duration: 32s;
-    animation-delay: 3s;
+.cube1{
+    width:120px;
+    height:120px;
+    left:40%;
+    animation-duration:30s;
 }
 
-.bubble7 {
-    width: 70px;
-    height: 70px;
-    left: 92%;
-    animation-duration: 19s;
-    animation-delay: 6s;
+.cube2{
+    width:180px;
+    height:180px;
+    left:75%;
+    animation-duration:34s;
 }
 
-/* Cubes */
-.cube1 {
-    width: 120px;
-    height: 120px;
-    left: 40%;
-    animation-duration: 30s;
-    animation-delay: 1s;
-}
+/* ==========================================
+   FLOAT ANIMATION
+========================================== */
 
-.cube2 {
-    width: 180px;
-    height: 180px;
-    left: 75%;
-    animation-duration: 34s;
-    animation-delay: 4s;
-}
+@keyframes floatBubble{
 
-/* Bubble floating animation */
-@keyframes floatBubble {
-    0% {
+    0%{
+
         transform:
             translateY(0)
             translateX(0)
@@ -194,14 +218,16 @@ footer {
             rotateX(0deg)
             rotateY(0deg)
             scale(0.8);
-        opacity: 0;
+
+        opacity:0;
     }
 
-    10% {
-        opacity: 0.7;
+    10%{
+        opacity:0.7;
     }
 
-    50% {
+    50%{
+
         transform:
             translateY(-50vh)
             translateX(40px)
@@ -209,10 +235,12 @@ footer {
             rotateX(180deg)
             rotateY(180deg)
             scale(1);
-        opacity: 0.9;
+
+        opacity:0.9;
     }
 
-    100% {
+    100%{
+
         transform:
             translateY(-120vh)
             translateX(-30px)
@@ -220,550 +248,641 @@ footer {
             rotateX(360deg)
             rotateY(360deg)
             scale(1.15);
-        opacity: 0;
+
+        opacity:0;
     }
+
 }
 
 /* ==========================================
    HEADER
 ========================================== */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 15px 0;
 
-    background: rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+header{
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    padding:15px 0;
+
+    background:rgba(255,255,255,0.45);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(255,255,255,0.7);
 
     box-shadow:
-        0 8px 30px rgba(148, 163, 184, 0.12);
+        0 8px 30px rgba(148,163,184,0.12);
 }
 
-/* Navbar */
-.navbar {
-    width: 92%;
-    max-width: 1300px;
-    margin: auto;
+/* ==========================================
+   NAVBAR
+========================================== */
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar{
+
+    width:92%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
 }
 
-/* Logo */
-.logo {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #6D7FCC;
+.logo{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:#6D7FCC;
 }
 
-/* Navigation */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    align-items: center;
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    align-items:center;
 }
 
-.nav-links a {
-    color: #6D7FCC;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 999px;
-    transition: all 0.35s ease;
+.nav-links a{
+
+    color:#6D7FCC;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    transition:0.35s;
 }
 
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.55);
-    transform: translateY(-3px);
+.nav-links a:hover{
+
+    background:rgba(255,255,255,0.55);
+
+    transform:translateY(-3px);
 }
 
-#welcomeNav {
-    color: #6D7FCC;
-    font-weight: 700;
-    background: rgba(255, 255, 255, 0.55);
-    padding: 10px 16px;
-    border-radius: 999px;
+#welcomeNav{
+
+    color:#6D7FCC;
+
+    font-weight:700;
+
+    background:rgba(255,255,255,0.55);
+
+    padding:10px 16px;
+
+    border-radius:999px;
 }
 
 /* ==========================================
    HERO SECTION
 ========================================== */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
+
+.hero{
+
+    text-align:center;
+
+    padding:120px 20px;
 }
 
-.hero-3d-card {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px;
-    border-radius: 40px;
+.hero-3d-card{
 
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    max-width:900px;
 
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,0.65);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.8);
 
     box-shadow:
-        0 30px 80px rgba(148, 163, 184, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        0 30px 80px rgba(148,163,184,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.9);
 
-    transform: rotateX(4deg) rotateY(-4deg);
+    transform:rotateX(4deg) rotateY(-4deg);
 }
 
-.hero-icons {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.hero-icons{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
 }
 
-.hero h2 {
-    font-size: 4rem;
-    color: #5B6BB2;
-    margin-bottom: 20px;
+.hero h2{
+
+    font-size:4rem;
+
+    color:#5B6BB2;
+
+    margin-bottom:20px;
 }
 
-.hero p {
-    font-size: 1.3rem;
-    max-width: 700px;
-    margin: 0 auto 35px;
-    color: #64748B;
+.hero p{
+
+    font-size:1.3rem;
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    color:#64748B;
 }
 
 /* ==========================================
    BUTTONS
 ========================================== */
+
 .btn,
-button {
-    display: inline-block;
-    margin: 8px;
-    background: rgba(255, 255, 255, 0.75);
-    color: #4F46E5;
-    border: 2px solid rgba(255, 255, 255, 0.85);
-    padding: 14px 30px;
-    border-radius: 999px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.35s ease;
-    box-shadow: 0 12px 30px rgba(148, 163, 184, 0.15);
+button{
+
+    display:inline-block;
+
+    margin:8px;
+
+    background:rgba(255,255,255,0.75);
+
+    color:#4F46E5;
+
+    border:2px solid rgba(255,255,255,0.85);
+
+    padding:14px 30px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:0.35s;
+
+    box-shadow:
+        0 12px 30px rgba(148,163,184,0.15);
 }
 
 .btn:hover,
-button:hover {
-    transform: translateY(-6px) scale(1.04);
+button:hover{
+
+    transform:translateY(-6px) scale(1.04);
 }
 
-.premium-btn {
-    background: #6366F1;
-    color: white;
-}
+.premium-btn{
 
-/* ==========================================
-   SECTIONS
-========================================== */
-section {
-    padding: 90px 20px;
-}
+    background:#6366F1;
 
-section h2 {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    color: #334155;
+    color:white;
 }
 
 /* ==========================================
-   GRID LAYOUTS
-========================================== */
-.course-grid,
-.pricing-grid {
-    width: 92%;
-    max-width: 1250px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-/* ==========================================
-   GLASS CARDS
-========================================== */
-.card,
-.plan,
-form {
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    border: 1px solid rgba(255, 255, 255, 0.85);
-    border-radius: 28px;
-    padding: 32px;
-
-    box-shadow:
-        0 18px 40px rgba(148, 163, 184, 0.12);
-
-    transition: all 0.45s ease;
-}
-
-.card:hover,
-.plan:hover {
-    transform: translateY(-14px) rotateX(6deg) rotateY(-6deg);
-}
-
-.card h3,
-.plan h3 {
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-    color: #334155;
-}
-
-.card p,
-.plan p,
-.plan li {
-    color: #64748B;
-}
-
-.price {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin: 20px 0;
-    color: #6D7FCC;
-}
-
-.plan ul {
-    padding-left: 20px;
-    margin: 20px 0;
-}
-
-.plan li {
-    margin-bottom: 10px;
-}
-
-/* ==========================================
-   FORMS
-========================================== */
-input,
-textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-
-    border: 1px solid rgba(203, 213, 225, 0.8);
-    border-radius: 14px;
-
-    background: rgba(255, 255, 255, 0.92);
-    font-family: inherit;
-    color: #334155;
-}
-
-textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: #94A3B8;
-}
-
-/* ==========================================
-   FOOTER
-========================================== */
-footer {
-    text-align: center;
-    padding: 30px 20px;
-
-    background: rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(10px);
-
-    color: #64748B;
-}
-
-/* ==========================================
-   MOUSE PARALLAX SUPPORT
-========================================== */
-.hero-3d-card,
-.card,
-.plan {
-    transform-style: preserve-3d;
-    transition: transform 0.25s ease-out;
-    will-change: transform;
-}
-
-/* ==========================================
-   RESPONSIVE DESIGN
-========================================== */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .nav-links {
-        justify-content: center;
-    }
-
-    .hero-3d-card {
-        padding: 35px 25px;
-        transform: none;
-    }
-
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-}
-/* ==========================================
-   FIX RADIO BUTTON ALIGNMENT
+   SECTION
 ========================================== */
 
-/* Gender section container */
-.gender-group {
-    margin-bottom: 20px;
-    text-align: left;
+section{
+
+    padding:90px 20px;
 }
 
-/* "Select Gender:" label */
-.gender-group > label {
-    display: block;
-    margin-bottom: 12px;
-    font-weight: 600;
-    color: #334155;
+section h2{
+
+    text-align:center;
+
+    font-size:2.8rem;
+
+    margin-bottom:50px;
+
+    color:#334155;
 }
 
-/* Vertical list of options */
-.gender-options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Each row: radio button + text */
-.gender-options label {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    margin: 0;
-    font-weight: 500;
-    color: #475569;
-    cursor: pointer;
-    width: auto;
-}
-
-/* IMPORTANT: Override global input styles for radio buttons */
-.gender-options input[type="radio"] {
-    width: auto !important;
-    margin: 0;
-    padding: 0;
-    accent-color: #6D7FCC;
-    transform: scale(1.1);
-    flex-shrink: 0;
-    display: inline-block;
-}
 /* ==========================================
    COURSE GRID
 ========================================== */
 
-.course-grid {
+.course-grid{
 
-    display: grid;
+    width:92%;
 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width:1250px;
 
-    gap: 30px;
+    margin:auto;
 
-    margin-top: 40px;
+    display:grid;
 
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
 }
-
 
 /* ==========================================
    COURSE CARD
 ========================================== */
 
-.card {
+.card{
 
-    background: rgba(255,255,255,0.9);
+    background:rgba(255,255,255,0.75);
 
-    padding: 20px;
+    backdrop-filter:blur(14px);
 
-    border-radius: 25px;
+    border:1px solid rgba(255,255,255,0.85);
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius:28px;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    transition: 0.3s ease;
+    box-shadow:
+        0 18px 40px rgba(148,163,184,0.12);
 
-    text-align: left;
+    transition:0.4s ease;
 
+    text-align:left;
+
+    padding-bottom:25px;
 }
+
+.card:hover{
+
+    transform:
+        translateY(-10px)
+        rotateX(4deg)
+        rotateY(-4deg);
+}
+
 /* ==========================================
    COURSE IMAGE
 ========================================== */
-.course-image {
 
-    width: 100%;
+.course-image{
 
-    height: 220px;
+    width:100%;
 
-    object-fit: cover;
+    height:240px;
 
-    border-radius: 20px;
+    object-fit:cover;
 
-    display: block;
-
-    margin-bottom: 20px;
-
+    display:block;
 }
-
 
 /* ==========================================
    CARD CONTENT
 ========================================== */
 
-.card h3 {
+.card h3{
 
-    padding: 15px 20px 10px;
+    font-size:1.5rem;
 
-    font-size: 24px;
+    padding:20px 25px 10px;
 
+    color:#334155;
 }
 
+.card p{
 
-.card p {
+    padding:0 25px 20px;
 
-    padding: 0 20px 20px;
+    color:#64748B;
 
-    line-height: 1.6;
-
+    line-height:1.7;
 }
 
+.card .btn{
+
+    margin-left:25px;
+}
 
 /* ==========================================
-   BUTTON
+   PRICING GRID
 ========================================== */
 
-.card .btn {
+.pricing-grid{
 
-    margin-left: 20px;
+    width:92%;
 
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
 }
+
 /* ==========================================
-   LEARNING PAGES
+   PLAN CARD
 ========================================== */
 
-.learning-page {
+.plan{
 
-    padding: 80px 10%;
+    background:rgba(255,255,255,0.75);
 
+    backdrop-filter:blur(15px);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.1);
+
+    transition:0.3s;
 }
 
+.plan:hover{
 
-.learning-page h1 {
-
-    text-align: center;
-
-    margin-bottom: 40px;
-
-    font-size: 42px;
-
+    transform:translateY(-10px);
 }
 
+.plan h3{
 
-.lesson-card {
+    font-size:2rem;
 
-    background: white;
-
-    padding: 30px;
-
-    border-radius: 25px;
-
-    margin-bottom: 30px;
-
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-
+    margin-bottom:20px;
 }
 
+.price{
 
-.lesson-card h2 {
+    font-size:2.5rem;
 
-    margin-bottom: 15px;
+    font-weight:700;
 
+    color:#6D7FCC;
+
+    margin-bottom:25px;
 }
 
+.plan ul{
 
-.lesson-card p {
+    padding-left:20px;
 
-    line-height: 1.7;
-
+    margin-bottom:30px;
 }
+
+.plan li{
+
+    margin-bottom:12px;
+
+    color:#64748B;
+}
+
 /* ==========================================
-   LEARNING PAGES
+   FORMS
 ========================================== */
 
-.learning-page {
+form{
 
-    padding: 80px 10%;
+    max-width:700px;
 
+    margin:auto;
+
+    background:rgba(255,255,255,0.75);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(14px);
 }
 
+input,
+textarea{
 
-.learning-page h1 {
+    width:100%;
 
-    text-align: center;
+    padding:15px;
 
-    margin-bottom: 40px;
+    margin-bottom:15px;
 
+    border:1px solid rgba(203,213,225,0.8);
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.92);
+
+    font-family:inherit;
+
+    color:#334155;
 }
 
+textarea{
 
-.lesson-card {
+    min-height:120px;
 
-    background: white;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    margin-bottom: 30px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
+    resize:vertical;
 }
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    background:rgba(255,255,255,0.45);
+
+    backdrop-filter:blur(10px);
+
+    color:#64748B;
+}
+
+/* ==========================================
+   LEARNING PAGE
+========================================== */
+
+.learning-page{
+
+    padding:80px 10%;
+}
+
+.learning-page h1{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+}
+
+/* ==========================================
+   LESSON CARD
+========================================== */
+
+.lesson-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.1);
+}
+
+.lesson-card h2{
+
+    margin-bottom:15px;
+}
+
+.lesson-card p{
+
+    line-height:1.7;
+}
+
 /* ==========================================
    LESSON VIDEO
 ========================================== */
 
-.lesson-video {
+.lesson-video{
 
-    width: 100%;
+    width:100%;
 
-    max-width: 800px;
+    max-width:850px;
 
-    display: block;
+    display:block;
 
-    margin: 40px auto;
+    margin:40px auto;
 
-    border-radius: 25px;
+    border-radius:25px;
 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ==========================================
+   GENDER SECTION
+========================================== */
+
+.gender-group{
+
+    margin-bottom:20px;
+
+    text-align:left;
+}
+
+.gender-group > label{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+    color:#334155;
+}
+
+.gender-options{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.gender-options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:500;
+
+    color:#475569;
+
+    cursor:pointer;
+}
+
+.gender-options input[type="radio"]{
+
+    width:auto !important;
+
+    margin:0;
+
+    padding:0;
+
+    accent-color:#6D7FCC;
+
+    transform:scale(1.1);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:18px;
+    }
+
+    .nav-links{
+
+        justify-content:center;
+    }
+
+    .hero-3d-card{
+
+        padding:35px 25px;
+
+        transform:none;
+    }
+
+    .hero h2{
+
+        font-size:2.5rem;
+    }
+
+    .hero p{
+
+        font-size:1.1rem;
+    }
+
+    section h2{
+
+        font-size:2rem;
+    }
+
+    .course-image{
+
+        height:220px;
+    }
 
 }
