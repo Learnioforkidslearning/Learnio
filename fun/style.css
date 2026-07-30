@@ -1,0 +1,356 @@
+/* ============================
+   Learnio Fun Activities
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#fde7ff,#ece6ff,#dfefff);
+
+    overflow-x:hidden;
+
+    color:#2d2d4d;
+
+}
+
+/* Background */
+
+.bg-blur{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.45;
+
+    z-index:-1;
+
+}
+
+.blur1{
+
+    width:350px;
+    height:350px;
+
+    background:#b77cff;
+
+    left:-100px;
+    top:-100px;
+
+}
+
+.blur2{
+
+    width:320px;
+    height:320px;
+
+    background:#7ec8ff;
+
+    right:-80px;
+    bottom:-80px;
+
+}
+
+/* Header */
+
+.topbar{
+
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.4);
+
+}
+
+.logo{
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    color:#5d4fe6;
+
+    font-size:28px;
+
+}
+
+.logo span{
+
+    font-family:'Baloo 2',cursive;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#6d5dfc;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(109,93,252,.35);
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    margin:70px auto;
+
+    width:min(900px,90%);
+
+}
+
+.hero-icon{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:30px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:60px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.hero h1{
+
+    margin-top:25px;
+
+    font-size:55px;
+
+    font-family:'Baloo 2',cursive;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* Cards */
+
+.games-grid{
+
+    width:min(1300px,92%);
+
+    margin:0 auto 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.game-card{
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:28px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.game-image{
+
+    width:100%;
+    height:220px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+}
+
+.game-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.game-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.game-card h2{
+
+    margin-top:25px;
+
+    font-size:30px;
+
+    font-family:'Baloo 2',cursive;
+
+}
+
+.game-card p{
+
+    margin:18px 0 30px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+.play-btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#6d5dfc;
+
+    transition:.3s;
+
+}
+
+.play-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+.coming{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    background:#ece8ff;
+
+    color:#6d5dfc;
+
+    font-weight:600;
+
+}
+
+.locked{
+
+    opacity:.85;
+
+}
+
+.featured{
+
+    border:3px solid #7a6cff;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+.topbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+}

@@ -489,15 +489,16 @@ section h2{
 
     width:92%;
 
-    max-width:1250px;
+    max-width:1500px;
 
     margin:auto;
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(5,1fr);
 
     gap:30px;
+
 }
 
 /* ==========================================
@@ -523,7 +524,11 @@ section h2{
 
     text-align:left;
 
-    padding-bottom:25px;
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
 }
 
 .card:hover{
@@ -564,18 +569,23 @@ section h2{
 
 .card p{
 
-    padding:0 25px 20px;
+    padding:0 25px;
 
     color:#64748B;
 
     line-height:1.7;
+
+    flex-grow:1;
 }
 
 .card .btn{
 
-    margin-left:25px;
-}
+    margin:25px;
 
+    margin-top:auto;
+
+    align-self:flex-start;
+}
 /* ==========================================
    PRICING GRID
 ========================================== */
@@ -843,7 +853,35 @@ footer{
 /* ==========================================
    RESPONSIVE
 ========================================== */
+@media(max-width:1200px){
 
+    .course-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .course-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .course-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 @media(max-width:768px){
 
     .navbar{
