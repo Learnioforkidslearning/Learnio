@@ -1,0 +1,230 @@
+
+male-african-10.png
+size: 1485, 523
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-african-10-egypt/arm_L
+  rotate: true
+  xy: 1252, 172
+  size: 107, 222
+  orig: 107, 222
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/arm_R
+  rotate: true
+  xy: 1065, 17
+  size: 87, 208
+  orig: 87, 208
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/body_egypt
+  rotate: false
+  xy: 2, 135
+  size: 231, 386
+  orig: 231, 386
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/eyebrows
+  rotate: true
+  xy: 567, 13
+  size: 138, 18
+  orig: 138, 18
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/eyes_closed
+  rotate: true
+  xy: 2, 7
+  size: 126, 11
+  orig: 126, 11
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/eyes_open
+  rotate: true
+  xy: 15, 13
+  size: 120, 47
+  orig: 120, 47
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/foot_L
+  rotate: true
+  xy: 587, 2
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/foot_R
+  rotate: false
+  xy: 402, 15
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/forearm_R
+  rotate: false
+  xy: 937, 32
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/forerarm_L
+  rotate: true
+  xy: 1021, 106
+  size: 81, 221
+  orig: 81, 221
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/hair
+  rotate: false
+  xy: 705, 11
+  size: 230, 154
+  orig: 230, 154
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/hand_R
+  rotate: false
+  xy: 1392, 59
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/hat
+  rotate: false
+  xy: 571, 167
+  size: 309, 354
+  orig: 309, 354
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/head
+  rotate: true
+  xy: 1252, 281
+  size: 240, 231
+  orig: 240, 231
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/leg_L
+  rotate: true
+  xy: 64, 14
+  size: 119, 336
+  orig: 119, 336
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/leg_R
+  rotate: false
+  xy: 882, 186
+  size: 112, 335
+  orig: 112, 335
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-a
+  rotate: false
+  xy: 64, 2
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-x
+  rotate: false
+  xy: 64, 2
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-b
+  rotate: false
+  xy: 468, 138
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-c
+  rotate: false
+  xy: 937, 5
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-d
+  rotate: true
+  xy: 1021, 34
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-e
+  rotate: true
+  xy: 1367, 138
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-f
+  rotate: true
+  xy: 996, 167
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-g
+  rotate: false
+  xy: 882, 167
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/mouth-h
+  rotate: false
+  xy: 1001, 5
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/neck
+  rotate: false
+  xy: 1244, 123
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/nose
+  rotate: false
+  xy: 1321, 123
+  size: 44, 47
+  orig: 44, 47
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/pupils
+  rotate: true
+  xy: 1352, 9
+  size: 112, 34
+  orig: 112, 34
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/shade
+  rotate: true
+  xy: 468, 153
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-african-10-egypt/wijzen_R
+  rotate: false
+  xy: 1275, 8
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+male-african-10/body
+  rotate: false
+  xy: 235, 135
+  size: 231, 386
+  orig: 231, 386
+  offset: 0, 0
+  index: -1
+male-african-10/skirt
+  rotate: false
+  xy: 996, 189
+  size: 254, 332
+  orig: 254, 332
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,230 @@
+
+female-southam-35-45.png
+size: 1763, 523
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 565, 2
+  size: 127, 296
+  orig: 127, 296
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 565, 131
+  size: 134, 317
+  orig: 134, 317
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 245
+  size: 276, 533
+  orig: 276, 533
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 1071, 12
+  size: 128, 17
+  orig: 128, 17
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 320, 8
+  size: 116, 10
+  orig: 116, 10
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 1724, 95
+  size: 120, 30
+  orig: 120, 30
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 1071, 145
+  size: 201, 113
+  orig: 201, 113
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 1071, 31
+  size: 201, 112
+  orig: 201, 112
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 1274, 55
+  size: 89, 203
+  orig: 89, 203
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: false
+  xy: 1365, 53
+  size: 84, 205
+  orig: 84, 205
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 884, 27
+  size: 238, 185
+  orig: 238, 185
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 1514, 279
+  size: 242, 242
+  orig: 242, 242
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 1634, 123
+  size: 88, 154
+  orig: 88, 154
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 1451, 88
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 2, 13
+  size: 230, 316
+  orig: 230, 316
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 320, 20
+  size: 223, 243
+  orig: 223, 243
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 537, 394
+  size: 127, 584
+  orig: 127, 584
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 537, 267
+  size: 125, 581
+  orig: 125, 581
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 1522, 25
+  size: 61, 20
+  orig: 61, 20
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 1274, 22
+  size: 63, 31
+  orig: 63, 31
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 1451, 54
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 1724, 217
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 1670, 35
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1339, 31
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1004, 3
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 1670, 66
+  size: 55, 31
+  orig: 55, 31
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 1201, 9
+  size: 61, 20
+  orig: 61, 20
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 1544, 5
+  size: 105, 124
+  orig: 105, 124
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 965, 2
+  size: 37, 23
+  orig: 37, 23
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 863, 2
+  size: 100, 23
+  orig: 100, 23
+  offset: 0, 0
+  index: -1
+skirt
+  rotate: false
+  xy: 1123, 260
+  size: 389, 261
+  orig: 389, 261
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 1544, 112
+  size: 88, 165
+  orig: 88, 165
+  offset: 0, 0
+  index: -1

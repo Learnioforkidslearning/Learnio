@@ -1,0 +1,426 @@
+
+male-pirate-old.png
+size: 1242, 1027
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-pirate-old-doctor/arm_L-doctor
+  rotate: false
+  xy: 620, 110
+  size: 134, 296
+  orig: 134, 296
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/arm_R-doctor
+  rotate: false
+  xy: 214, 28
+  size: 133, 318
+  orig: 133, 318
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/body-doctor
+  rotate: false
+  xy: 2, 348
+  size: 317, 677
+  orig: 317, 677
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/eyebrows
+  rotate: false
+  xy: 484, 142
+  size: 132, 13
+  orig: 132, 13
+  offset: 0, 0
+  index: -1
+male-pirate-old/eyebrows
+  rotate: false
+  xy: 484, 142
+  size: 132, 13
+  orig: 132, 13
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/eyes_closed
+  rotate: false
+  xy: 1001, 179
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-pirate-old/eyes_closed
+  rotate: false
+  xy: 1001, 179
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/eyes_open
+  rotate: true
+  xy: 1145, 460
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+male-pirate-old/eyes_open
+  rotate: true
+  xy: 1145, 460
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/foot_L
+  rotate: false
+  xy: 349, 23
+  size: 216, 112
+  orig: 216, 112
+  offset: 0, 0
+  index: -1
+male-pirate-old/foot_L
+  rotate: false
+  xy: 349, 23
+  size: 216, 112
+  orig: 216, 112
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/foot_R
+  rotate: true
+  xy: 1127, 193
+  size: 217, 112
+  orig: 217, 112
+  offset: 0, 0
+  index: -1
+male-pirate-old/foot_R
+  rotate: true
+  xy: 1127, 193
+  size: 217, 112
+  orig: 217, 112
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/forearm_L-doctor
+  rotate: false
+  xy: 756, 180
+  size: 124, 219
+  orig: 124, 219
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/forearm_R-doctor
+  rotate: false
+  xy: 882, 179
+  size: 117, 220
+  orig: 117, 220
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/hand_L
+  rotate: false
+  xy: 1132, 749
+  size: 107, 170
+  orig: 107, 170
+  offset: 0, 0
+  index: -1
+male-pirate-old/hand_L
+  rotate: false
+  xy: 1132, 749
+  size: 107, 170
+  orig: 107, 170
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/hand_R
+  rotate: false
+  xy: 1145, 577
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-pirate-old/hand_R
+  rotate: false
+  xy: 1145, 577
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/hat-doctor
+  rotate: true
+  xy: 921, 695
+  size: 330, 209
+  orig: 330, 209
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/head
+  rotate: false
+  xy: 921, 412
+  size: 222, 281
+  orig: 222, 281
+  offset: 0, 0
+  index: -1
+male-pirate-old/head
+  rotate: false
+  xy: 921, 412
+  size: 222, 281
+  orig: 222, 281
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/leg_L
+  rotate: false
+  xy: 624, 408
+  size: 147, 617
+  orig: 147, 617
+  offset: 0, 0
+  index: -1
+male-pirate-old/leg_L
+  rotate: false
+  xy: 624, 408
+  size: 147, 617
+  orig: 147, 617
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/leg_R
+  rotate: false
+  xy: 773, 401
+  size: 146, 624
+  orig: 146, 624
+  offset: 0, 0
+  index: -1
+male-pirate-old/leg_R
+  rotate: false
+  xy: 773, 401
+  size: 146, 624
+  orig: 146, 624
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-a
+  rotate: false
+  xy: 734, 45
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-x
+  rotate: false
+  xy: 734, 45
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-a
+  rotate: false
+  xy: 734, 45
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-x
+  rotate: false
+  xy: 734, 45
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-b
+  rotate: false
+  xy: 734, 13
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-b
+  rotate: false
+  xy: 734, 13
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-c
+  rotate: true
+  xy: 1180, 494
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-c
+  rotate: true
+  xy: 1180, 494
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-d
+  rotate: false
+  xy: 1145, 414
+  size: 69, 44
+  orig: 69, 44
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-d
+  rotate: false
+  xy: 1145, 414
+  size: 69, 44
+  orig: 69, 44
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-e
+  rotate: false
+  xy: 1180, 460
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-e
+  rotate: false
+  xy: 1180, 460
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-f
+  rotate: false
+  xy: 910, 33
+  size: 26, 25
+  orig: 26, 25
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-f
+  rotate: false
+  xy: 910, 33
+  size: 26, 25
+  orig: 26, 25
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-g
+  rotate: true
+  xy: 1216, 428
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-g
+  rotate: true
+  xy: 1216, 428
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/mouth-h
+  rotate: true
+  xy: 820, 13
+  size: 63, 36
+  orig: 63, 36
+  offset: 0, 0
+  index: -1
+male-pirate-old/mouth-h
+  rotate: true
+  xy: 820, 13
+  size: 63, 36
+  orig: 63, 36
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/neck
+  rotate: false
+  xy: 1132, 921
+  size: 108, 104
+  orig: 108, 104
+  offset: 0, 0
+  index: -1
+male-pirate-old/neck
+  rotate: false
+  xy: 1132, 921
+  size: 108, 104
+  orig: 108, 104
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/nose
+  rotate: true
+  xy: 858, 9
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+male-pirate-old/nose
+  rotate: true
+  xy: 858, 9
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/pupils
+  rotate: true
+  xy: 321, 356
+  size: 98, 22
+  orig: 98, 22
+  offset: 0, 0
+  index: -1
+male-pirate-old/pupils
+  rotate: true
+  xy: 321, 356
+  size: 98, 22
+  orig: 98, 22
+  offset: 0, 0
+  index: -1
+male-pirate-old-doctor/wijzen_R
+  rotate: true
+  xy: 567, 19
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1
+male-pirate-old/wijzen_R
+  rotate: true
+  xy: 567, 19
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1
+male-pirate-old/arm_L
+  rotate: false
+  xy: 484, 157
+  size: 134, 297
+  orig: 134, 297
+  offset: 0, 0
+  index: -1
+male-pirate-old/arm_R
+  rotate: false
+  xy: 349, 137
+  size: 133, 317
+  orig: 133, 317
+  offset: 0, 0
+  index: -1
+male-pirate-old/body
+  rotate: false
+  xy: 321, 456
+  size: 301, 569
+  orig: 301, 569
+  offset: 0, 0
+  index: -1
+male-pirate-old/forearm_R
+  rotate: true
+  xy: 867, 60
+  size: 117, 221
+  orig: 117, 221
+  offset: 0, 0
+  index: -1
+male-pirate-old/forerarm_L
+  rotate: false
+  xy: 1001, 191
+  size: 124, 219
+  orig: 124, 219
+  offset: 0, 0
+  index: -1
+male-pirate-old/hat
+  rotate: true
+  xy: 2, 16
+  size: 330, 210
+  orig: 330, 210
+  offset: 0, 0
+  index: -1
+male-pirate-old/sjaal
+  rotate: false
+  xy: 1090, 2
+  size: 147, 175
+  orig: 147, 175
+  offset: 0, 0
+  index: -1
+male-pirate-old/tail
+  rotate: false
+  xy: 756, 78
+  size: 109, 100
+  orig: 109, 100
+  offset: 0, 0
+  index: -1

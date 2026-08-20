@@ -1,0 +1,209 @@
+
+male-atlantic-10-15.png
+size: 1043, 523
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-atlantic-10-15/arm_L
+  rotate: false
+  xy: 521, 3
+  size: 105, 197
+  orig: 105, 197
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/arm_R
+  rotate: false
+  xy: 387, 3
+  size: 132, 197
+  orig: 132, 197
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/body
+  rotate: false
+  xy: 2, 135
+  size: 248, 386
+  orig: 248, 386
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/eyebrows
+  rotate: false
+  xy: 681, 230
+  size: 144, 17
+  orig: 144, 17
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/eyes_closed
+  rotate: true
+  xy: 2, 6
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/eyes_open
+  rotate: true
+  xy: 15, 11
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/foot_L
+  rotate: true
+  xy: 726, 66
+  size: 162, 117
+  orig: 162, 117
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/foot_R
+  rotate: true
+  xy: 845, 85
+  size: 162, 117
+  orig: 162, 117
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/forearm_R
+  rotate: false
+  xy: 628, 54
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/forerarm_L
+  rotate: false
+  xy: 938, 270
+  size: 91, 251
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/hair
+  rotate: true
+  xy: 478, 230
+  size: 291, 201
+  orig: 291, 201
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/hand_R
+  rotate: false
+  xy: 964, 152
+  size: 77, 116
+  orig: 77, 116
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/head
+  rotate: true
+  xy: 681, 249
+  size: 272, 255
+  orig: 272, 255
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/leg_L
+  rotate: true
+  xy: 66, 12
+  size: 121, 319
+  orig: 121, 319
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/leg_R
+  rotate: false
+  xy: 355, 202
+  size: 121, 319
+  orig: 121, 319
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-a
+  rotate: false
+  xy: 315, 140
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-x
+  rotate: false
+  xy: 315, 140
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-b
+  rotate: false
+  xy: 252, 137
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-c
+  rotate: false
+  xy: 478, 202
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-d
+  rotate: false
+  xy: 753, 29
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-e
+  rotate: true
+  xy: 355, 167
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-f
+  rotate: true
+  xy: 608, 208
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-g
+  rotate: false
+  xy: 753, 9
+  size: 64, 18
+  orig: 64, 18
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/mouth-h
+  rotate: false
+  xy: 543, 202
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/neck
+  rotate: false
+  xy: 663, 6
+  size: 88, 46
+  orig: 88, 46
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/nose
+  rotate: false
+  xy: 628, 2
+  size: 33, 50
+  orig: 33, 50
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/pupils
+  rotate: false
+  xy: 826, 30
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/shade
+  rotate: true
+  xy: 252, 153
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-atlantic-10-15/wijzen_R
+  rotate: false
+  xy: 964, 37
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1

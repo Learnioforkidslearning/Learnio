@@ -1,0 +1,426 @@
+
+male-rus-10.png
+size: 1065, 1032
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-rus-10-winter/arm_L
+  rotate: true
+  xy: 578, 229
+  size: 105, 224
+  orig: 105, 224
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/arm_R
+  rotate: false
+  xy: 92, 23
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/body
+  rotate: false
+  xy: 2, 631
+  size: 251, 399
+  orig: 251, 399
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/collar_behind
+  rotate: false
+  xy: 255, 601
+  size: 356, 172
+  orig: 356, 172
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/collar_front
+  rotate: false
+  xy: 573, 120
+  size: 212, 107
+  orig: 212, 107
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/eyebrows
+  rotate: true
+  xy: 1046, 886
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/eyes_closed
+  rotate: false
+  xy: 872, 104
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/eyes_open
+  rotate: true
+  xy: 994, 908
+  size: 122, 50
+  orig: 122, 50
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/foot_L
+  rotate: false
+  xy: 901, 529
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/foot_R
+  rotate: false
+  xy: 901, 422
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/forearm_L
+  rotate: false
+  xy: 2, 2
+  size: 88, 238
+  orig: 88, 238
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/forearm_R
+  rotate: true
+  xy: 862, 117
+  size: 98, 153
+  orig: 98, 153
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/hair
+  rotate: true
+  xy: 827, 753
+  size: 277, 165
+  orig: 277, 165
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/hand_R
+  rotate: false
+  xy: 787, 123
+  size: 73, 98
+  orig: 73, 98
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/head
+  rotate: false
+  xy: 255, 775
+  size: 284, 255
+  orig: 284, 255
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/leg_L
+  rotate: true
+  xy: 252, 373
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/leg_R
+  rotate: true
+  xy: 252, 124
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-a
+  rotate: true
+  xy: 1052, 77
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-x
+  rotate: true
+  xy: 1052, 77
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-b
+  rotate: true
+  xy: 228, 179
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-b
+  rotate: true
+  xy: 228, 179
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-c
+  rotate: false
+  xy: 945, 14
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-d
+  rotate: true
+  xy: 1017, 144
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-e
+  rotate: false
+  xy: 1017, 119
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-e
+  rotate: false
+  xy: 1017, 119
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-f
+  rotate: true
+  xy: 1025, 762
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-g
+  rotate: true
+  xy: 1046, 820
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-g
+  rotate: true
+  xy: 1046, 820
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/mouth-h
+  rotate: false
+  xy: 238, 3
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/neck
+  rotate: false
+  xy: 872, 42
+  size: 88, 47
+  orig: 88, 47
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/nose
+  rotate: false
+  xy: 994, 753
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/pupils
+  rotate: true
+  xy: 798, 8
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/shade
+  rotate: false
+  xy: 252, 498
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-rus-10/shade
+  rotate: false
+  xy: 252, 498
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-rus-10-winter/wijzen_R
+  rotate: false
+  xy: 480, 10
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+male-rus-10/arm_L
+  rotate: true
+  xy: 817, 636
+  size: 115, 203
+  orig: 115, 203
+  offset: 0, 0
+  index: -1
+male-rus-10/arm_R
+  rotate: true
+  xy: 613, 627
+  size: 146, 202
+  orig: 146, 202
+  offset: 0, 0
+  index: -1
+male-rus-10/body
+  rotate: false
+  xy: 2, 242
+  size: 248, 387
+  orig: 248, 387
+  offset: 0, 0
+  index: -1
+male-rus-10/eyebrows
+  rotate: false
+  xy: 92, 5
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+male-rus-10/eyes_closed
+  rotate: false
+  xy: 872, 91
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-rus-10/eyes_open
+  rotate: true
+  xy: 994, 784
+  size: 122, 50
+  orig: 122, 50
+  offset: 0, 0
+  index: -1
+male-rus-10/foot_L
+  rotate: false
+  xy: 899, 315
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+male-rus-10/foot_R
+  rotate: false
+  xy: 557, 13
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+male-rus-10/forearm_R
+  rotate: true
+  xy: 883, 217
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+male-rus-10/forerarm_L
+  rotate: true
+  xy: 228, 31
+  size: 91, 250
+  orig: 91, 250
+  offset: 0, 0
+  index: -1
+male-rus-10/hair
+  rotate: false
+  xy: 622, 460
+  size: 277, 165
+  orig: 277, 165
+  offset: 0, 0
+  index: -1
+male-rus-10/hand_R
+  rotate: false
+  xy: 804, 223
+  size: 77, 111
+  orig: 77, 111
+  offset: 0, 0
+  index: -1
+male-rus-10/head
+  rotate: false
+  xy: 541, 775
+  size: 284, 255
+  orig: 284, 255
+  offset: 0, 0
+  index: -1
+male-rus-10/leg_L
+  rotate: true
+  xy: 252, 248
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+male-rus-10/leg_R
+  rotate: true
+  xy: 578, 336
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-a
+  rotate: true
+  xy: 1052, 10
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-x
+  rotate: true
+  xy: 1052, 10
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-c
+  rotate: false
+  xy: 303, 3
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-d
+  rotate: false
+  xy: 872, 5
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-f
+  rotate: true
+  xy: 1045, 762
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-rus-10/mouth-h
+  rotate: false
+  xy: 368, 3
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-rus-10/neck
+  rotate: false
+  xy: 962, 42
+  size: 88, 47
+  orig: 88, 47
+  offset: 0, 0
+  index: -1
+male-rus-10/nose
+  rotate: false
+  xy: 578, 467
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+male-rus-10/pupils
+  rotate: true
+  xy: 835, 2
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+male-rus-10/wijzen_R
+  rotate: false
+  xy: 721, 6
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

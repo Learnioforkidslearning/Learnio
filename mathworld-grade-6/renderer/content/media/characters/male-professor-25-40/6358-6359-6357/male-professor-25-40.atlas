@@ -1,0 +1,643 @@
+
+male-professor-25-40.png
+size: 1731, 777
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-professor-25-40-prof1/arm_L
+  rotate: true
+  xy: 584, 195
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/arm_L
+  rotate: true
+  xy: 584, 195
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/arm_R
+  rotate: true
+  xy: 1215, 631
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/arm_R
+  rotate: true
+  xy: 1215, 631
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/body
+  rotate: false
+  xy: 294, 244
+  size: 288, 531
+  orig: 288, 531
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/body
+  rotate: false
+  xy: 294, 244
+  size: 288, 531
+  orig: 288, 531
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/eyebrows
+  rotate: false
+  xy: 346, 2
+  size: 136, 12
+  orig: 136, 12
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/eyes_closed
+  rotate: true
+  xy: 1718, 654
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/eyes_closed
+  rotate: true
+  xy: 1718, 654
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/eyes_closed
+  rotate: true
+  xy: 1718, 654
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/eyes_open
+  rotate: false
+  xy: 1596, 22
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/eyes_open
+  rotate: false
+  xy: 1596, 22
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/eyes_open
+  rotate: false
+  xy: 1596, 22
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/foot_L
+  rotate: false
+  xy: 340, 130
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/foot_L
+  rotate: false
+  xy: 340, 130
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/foot_L
+  rotate: false
+  xy: 340, 130
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/foot_R
+  rotate: false
+  xy: 346, 16
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/foot_R
+  rotate: false
+  xy: 346, 16
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/foot_R
+  rotate: false
+  xy: 346, 16
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/forearm_R
+  rotate: true
+  xy: 1153, 37
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/forearm_R
+  rotate: true
+  xy: 1153, 37
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/forerarm_L
+  rotate: true
+  xy: 897, 4
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/forerarm_L
+  rotate: true
+  xy: 897, 4
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/glasses
+  rotate: true
+  xy: 1603, 177
+  size: 176, 42
+  orig: 176, 42
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/hair
+  rotate: false
+  xy: 922, 310
+  size: 241, 175
+  orig: 241, 175
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/hand_L
+  rotate: true
+  xy: 1478, 355
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/hand_L
+  rotate: true
+  xy: 1478, 355
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/hand_R
+  rotate: true
+  xy: 2, 2
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/hand_R
+  rotate: true
+  xy: 2, 2
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/head
+  rotate: true
+  xy: 897, 88
+  size: 220, 254
+  orig: 220, 254
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/head
+  rotate: true
+  xy: 897, 88
+  size: 220, 254
+  orig: 220, 254
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/leg_L
+  rotate: true
+  xy: 584, 632
+  size: 143, 629
+  orig: 143, 629
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/leg_L
+  rotate: true
+  xy: 584, 632
+  size: 143, 629
+  orig: 143, 629
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/leg_L
+  rotate: true
+  xy: 584, 632
+  size: 143, 629
+  orig: 143, 629
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/leg_R
+  rotate: true
+  xy: 584, 487
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/leg_R
+  rotate: true
+  xy: 584, 487
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/leg_R
+  rotate: true
+  xy: 584, 487
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-a
+  rotate: true
+  xy: 1674, 368
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-x
+  rotate: true
+  xy: 1674, 368
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-a
+  rotate: true
+  xy: 1674, 368
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-x
+  rotate: true
+  xy: 1674, 368
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-a
+  rotate: true
+  xy: 1674, 368
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-x
+  rotate: true
+  xy: 1674, 368
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-b
+  rotate: false
+  xy: 1145, 4
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-b
+  rotate: false
+  xy: 1145, 4
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-b
+  rotate: false
+  xy: 1145, 4
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-c
+  rotate: true
+  xy: 1107, 5
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-c
+  rotate: true
+  xy: 1107, 5
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-c
+  rotate: true
+  xy: 1107, 5
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-d
+  rotate: true
+  xy: 1647, 279
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-d
+  rotate: true
+  xy: 1647, 279
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-d
+  rotate: true
+  xy: 1647, 279
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-e
+  rotate: true
+  xy: 1225, 2
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-e
+  rotate: true
+  xy: 1225, 2
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-e
+  rotate: true
+  xy: 1225, 2
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-f
+  rotate: false
+  xy: 557, 217
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-f
+  rotate: false
+  xy: 557, 217
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-f
+  rotate: false
+  xy: 557, 217
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-g
+  rotate: false
+  xy: 1258, 12
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-g
+  rotate: false
+  xy: 1258, 12
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-g
+  rotate: false
+  xy: 1258, 12
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/mouth-h
+  rotate: true
+  xy: 1688, 214
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/mouth-h
+  rotate: true
+  xy: 1688, 214
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/mouth-h
+  rotate: true
+  xy: 1688, 214
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/neck
+  rotate: true
+  xy: 1355, 11
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/neck
+  rotate: true
+  xy: 1355, 11
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/necktie
+  rotate: true
+  xy: 2, 95
+  size: 147, 336
+  orig: 147, 336
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/necktie
+  rotate: true
+  xy: 2, 95
+  size: 147, 336
+  orig: 147, 336
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/nose
+  rotate: false
+  xy: 1500, 561
+  size: 39, 68
+  orig: 39, 68
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/nose
+  rotate: false
+  xy: 1500, 561
+  size: 39, 68
+  orig: 39, 68
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/pupils
+  rotate: true
+  xy: 1650, 350
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/pupils
+  rotate: true
+  xy: 1650, 350
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/pupils
+  rotate: true
+  xy: 1650, 350
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof1/wijzen_R
+  rotate: false
+  xy: 1506, 17
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/wijzen_R
+  rotate: false
+  xy: 1506, 17
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/arm_L
+  rotate: true
+  xy: 1165, 341
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/arm_R
+  rotate: true
+  xy: 1174, 485
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/body
+  rotate: false
+  xy: 2, 244
+  size: 290, 531
+  orig: 290, 531
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/eyebrows
+  rotate: false
+  xy: 484, 2
+  size: 136, 12
+  orig: 136, 12
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/eyebrows
+  rotate: false
+  xy: 484, 2
+  size: 136, 12
+  orig: 136, 12
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/hair
+  rotate: true
+  xy: 1541, 534
+  size: 241, 175
+  orig: 241, 175
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof2/necktie
+  rotate: true
+  xy: 584, 339
+  size: 146, 336
+  orig: 146, 336
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/forearm_R
+  rotate: true
+  xy: 1500, 452
+  size: 80, 200
+  orig: 80, 200
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/forerarm_L
+  rotate: false
+  xy: 1421, 131
+  size: 83, 208
+  orig: 83, 208
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/hair
+  rotate: false
+  xy: 563, 18
+  size: 241, 175
+  orig: 241, 175
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/hand_L
+  rotate: false
+  xy: 1506, 183
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/hand_R
+  rotate: true
+  xy: 174, 2
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/head
+  rotate: true
+  xy: 1165, 118
+  size: 221, 254
+  orig: 221, 254
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/neck
+  rotate: false
+  xy: 1596, 53
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/nose
+  rotate: false
+  xy: 1647, 209
+  size: 39, 68
+  orig: 39, 68
+  offset: 0, 0
+  index: -1
+male-professor-25-40-prof3/wijzen_R
+  rotate: false
+  xy: 806, 29
+  size: 89, 164
+  orig: 89, 164
+  offset: 0, 0
+  index: -1

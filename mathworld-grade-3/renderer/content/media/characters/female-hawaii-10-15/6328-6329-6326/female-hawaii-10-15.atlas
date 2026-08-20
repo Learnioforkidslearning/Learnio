@@ -1,0 +1,412 @@
+
+female-hawaii-10-15.png
+size: 2031, 491
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-hawaii-10-15-swim/arm_L
+  rotate: true
+  xy: 466, 36
+  size: 99, 220
+  orig: 99, 220
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/arm_R
+  rotate: true
+  xy: 856, 16
+  size: 136, 216
+  orig: 136, 216
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/body
+  rotate: false
+  xy: 2, 100
+  size: 230, 389
+  orig: 230, 389
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/eyebrows
+  rotate: false
+  xy: 448, 16
+  size: 145, 18
+  orig: 145, 18
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/eyes_closed
+  rotate: false
+  xy: 856, 3
+  size: 126, 11
+  orig: 126, 11
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/eyes_open
+  rotate: true
+  xy: 1475, 33
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/foot_L
+  rotate: false
+  xy: 1309, 37
+  size: 164, 116
+  orig: 164, 116
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/foot_R
+  rotate: false
+  xy: 1697, 136
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/forearm_R
+  rotate: false
+  xy: 688, 2
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/forerarm_L
+  rotate: true
+  xy: 2, 17
+  size: 81, 221
+  orig: 81, 221
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/hair
+  rotate: false
+  xy: 466, 314
+  size: 333, 175
+  orig: 333, 175
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/hand_R
+  rotate: false
+  xy: 1074, 41
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/head
+  rotate: false
+  xy: 801, 257
+  size: 265, 232
+  orig: 265, 232
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/leg_L
+  rotate: true
+  xy: 1335, 370
+  size: 119, 336
+  orig: 119, 336
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/leg_R
+  rotate: true
+  xy: 1335, 256
+  size: 112, 335
+  orig: 112, 335
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-a
+  rotate: false
+  xy: 256, 5
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-b
+  rotate: false
+  xy: 2, 2
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-c
+  rotate: false
+  xy: 1218, 12
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-d
+  rotate: false
+  xy: 1074, 4
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-e
+  rotate: true
+  xy: 644, 2
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-e
+  rotate: true
+  xy: 644, 2
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-f
+  rotate: false
+  xy: 1832, 39
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-g
+  rotate: true
+  xy: 2009, 279
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-h
+  rotate: true
+  xy: 1992, 72
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/mouth-x
+  rotate: true
+  xy: 1154, 78
+  size: 74, 14
+  orig: 74, 14
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/neck
+  rotate: false
+  xy: 1755, 10
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/nose
+  rotate: false
+  xy: 595, 2
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/nose
+  rotate: false
+  xy: 595, 2
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/pupils
+  rotate: false
+  xy: 1527, 22
+  size: 112, 34
+  orig: 112, 34
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/shade
+  rotate: false
+  xy: 801, 154
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/shade
+  rotate: false
+  xy: 801, 154
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15-swim/wijzen_R
+  rotate: true
+  xy: 1640, 59
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/arm_L
+  rotate: true
+  xy: 1309, 155
+  size: 99, 220
+  orig: 99, 220
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/arm_R
+  rotate: false
+  xy: 1171, 39
+  size: 136, 216
+  orig: 136, 216
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/body
+  rotate: false
+  xy: 234, 100
+  size: 230, 389
+  orig: 230, 389
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/eyebrows
+  rotate: true
+  xy: 2011, 344
+  size: 145, 18
+  orig: 145, 18
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/eyes_closed
+  rotate: false
+  xy: 65, 4
+  size: 126, 11
+  orig: 126, 11
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/eyes_open
+  rotate: false
+  xy: 1870, 84
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/foot_L
+  rotate: false
+  xy: 1531, 138
+  size: 164, 116
+  orig: 164, 116
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/foot_R
+  rotate: false
+  xy: 1862, 136
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/forearm_R
+  rotate: false
+  xy: 772, 2
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/forerarm_L
+  rotate: true
+  xy: 225, 17
+  size: 81, 221
+  orig: 81, 221
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/hair
+  rotate: false
+  xy: 466, 137
+  size: 333, 175
+  orig: 333, 175
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/hand_R
+  rotate: true
+  xy: 1527, 58
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/head
+  rotate: false
+  xy: 1068, 257
+  size: 265, 232
+  orig: 265, 232
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/leg_L
+  rotate: true
+  xy: 1673, 370
+  size: 119, 336
+  orig: 119, 336
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/leg_R
+  rotate: true
+  xy: 1672, 256
+  size: 112, 335
+  orig: 112, 335
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-a
+  rotate: false
+  xy: 984, 4
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-x
+  rotate: false
+  xy: 984, 4
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-b
+  rotate: false
+  xy: 193, 2
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-c
+  rotate: true
+  xy: 1947, 20
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-d
+  rotate: false
+  xy: 1146, 2
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-f
+  rotate: false
+  xy: 1346, 17
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-g
+  rotate: false
+  xy: 1641, 4
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/mouth-h
+  rotate: false
+  xy: 1282, 10
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/neck
+  rotate: false
+  xy: 1870, 35
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/pupils
+  rotate: false
+  xy: 1641, 23
+  size: 112, 34
+  orig: 112, 34
+  offset: 0, 0
+  index: -1
+female-hawaii-10-15/wijzen_R
+  rotate: true
+  xy: 1755, 59
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1

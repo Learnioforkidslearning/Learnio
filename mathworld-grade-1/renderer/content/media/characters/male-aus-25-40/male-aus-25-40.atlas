@@ -1,0 +1,419 @@
+
+male-aus-25-40.png
+size: 2033, 520
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-aus-25-40-farm/arm_L
+  rotate: true
+  xy: 1018, 86
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/arm_R
+  rotate: true
+  xy: 1699, 373
+  size: 145, 324
+  orig: 145, 324
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/body
+  rotate: true
+  xy: 535, 231
+  size: 287, 531
+  orig: 287, 531
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/eyebrows
+  rotate: false
+  xy: 2, 38
+  size: 136, 12
+  orig: 136, 12
+  offset: 0, 0
+  index: -1
+male-aus-25-40/eyebrows
+  rotate: false
+  xy: 2, 38
+  size: 136, 12
+  orig: 136, 12
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/eyes_closed
+  rotate: false
+  xy: 1430, 73
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-aus-25-40/eyes_closed
+  rotate: false
+  xy: 1430, 73
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/eyes_open
+  rotate: true
+  xy: 1984, 252
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-aus-25-40/eyes_open
+  rotate: true
+  xy: 1984, 252
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/foot_L
+  rotate: false
+  xy: 801, 117
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-aus-25-40/foot_L
+  rotate: false
+  xy: 801, 117
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/foot_R
+  rotate: false
+  xy: 801, 3
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-aus-25-40/foot_R
+  rotate: false
+  xy: 801, 3
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/forearm_R
+  rotate: true
+  xy: 1228, 5
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+male-aus-25-40/forearm_R
+  rotate: true
+  xy: 1228, 5
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/forerarm_L
+  rotate: true
+  xy: 1018, 2
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+male-aus-25-40/forerarm_L
+  rotate: true
+  xy: 1018, 2
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/hair
+  rotate: true
+  xy: 383, 17
+  size: 211, 160
+  orig: 211, 160
+  offset: 0, 0
+  index: -1
+male-aus-25-40/hair
+  rotate: true
+  xy: 383, 17
+  size: 211, 160
+  orig: 211, 160
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/hand_L
+  rotate: true
+  xy: 1644, 130
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-aus-25-40/hand_L
+  rotate: true
+  xy: 1644, 130
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/hand_R
+  rotate: true
+  xy: 1816, 134
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-aus-25-40/hand_R
+  rotate: true
+  xy: 1816, 134
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/hat
+  rotate: false
+  xy: 2, 52
+  size: 379, 176
+  orig: 379, 176
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/head
+  rotate: true
+  xy: 545, 9
+  size: 220, 254
+  orig: 220, 254
+  offset: 0, 0
+  index: -1
+male-aus-25-40/head
+  rotate: true
+  xy: 545, 9
+  size: 220, 254
+  orig: 220, 254
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/leg_L
+  rotate: true
+  xy: 1068, 375
+  size: 143, 629
+  orig: 143, 629
+  offset: 0, 0
+  index: -1
+male-aus-25-40/leg_L
+  rotate: true
+  xy: 1068, 375
+  size: 143, 629
+  orig: 143, 629
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/leg_R
+  rotate: true
+  xy: 1068, 230
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-aus-25-40/leg_R
+  rotate: true
+  xy: 1068, 230
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-a
+  rotate: true
+  xy: 1940, 50
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-x
+  rotate: true
+  xy: 1940, 50
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-a
+  rotate: true
+  xy: 1940, 50
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-x
+  rotate: true
+  xy: 1940, 50
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-b
+  rotate: false
+  xy: 1430, 2
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-b
+  rotate: false
+  xy: 1430, 2
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-c
+  rotate: false
+  xy: 1430, 35
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-c
+  rotate: false
+  xy: 1430, 35
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-d
+  rotate: true
+  xy: 1988, 181
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-d
+  rotate: true
+  xy: 1988, 181
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-e
+  rotate: false
+  xy: 1513, 40
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-e
+  rotate: false
+  xy: 1513, 40
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-f
+  rotate: false
+  xy: 104, 11
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-f
+  rotate: false
+  xy: 104, 11
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-g
+  rotate: true
+  xy: 2008, 46
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-g
+  rotate: true
+  xy: 2008, 46
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/mouth-h
+  rotate: true
+  xy: 1971, 47
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-aus-25-40/mouth-h
+  rotate: true
+  xy: 1971, 47
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/neck
+  rotate: true
+  xy: 1816, 27
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+male-aus-25-40/neck
+  rotate: true
+  xy: 1816, 27
+  size: 105, 122
+  orig: 105, 122
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/nose
+  rotate: false
+  xy: 1988, 112
+  size: 38, 67
+  orig: 38, 67
+  offset: 0, 0
+  index: -1
+male-aus-25-40/nose
+  rotate: false
+  xy: 1988, 112
+  size: 38, 67
+  orig: 38, 67
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/pupils
+  rotate: false
+  xy: 2, 14
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-aus-25-40/pupils
+  rotate: false
+  xy: 2, 14
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-aus-25-40-farm/wijzen_R
+  rotate: true
+  xy: 1644, 40
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-aus-25-40/wijzen_R
+  rotate: true
+  xy: 1644, 40
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-aus-25-40/arm_L
+  rotate: true
+  xy: 1331, 86
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-aus-25-40/arm_R
+  rotate: true
+  xy: 1658, 227
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-aus-25-40/body
+  rotate: true
+  xy: 2, 230
+  size: 288, 531
+  orig: 288, 531
+  offset: 0, 0
+  index: -1

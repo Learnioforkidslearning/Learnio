@@ -1,0 +1,174 @@
+
+male-dog-adult.png
+size: 1807, 522
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+body
+  rotate: false
+  xy: 942, 214
+  size: 623, 306
+  orig: 623, 306
+  offset: 0, 0
+  index: -1
+ear_L
+  rotate: true
+  xy: 353, 31
+  size: 57, 146
+  orig: 57, 146
+  offset: 0, 0
+  index: -1
+ear_R
+  rotate: true
+  xy: 240, 27
+  size: 61, 111
+  orig: 61, 111
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 81, 2
+  size: 84, 19
+  orig: 84, 19
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 152, 32
+  size: 76, 16
+  orig: 76, 16
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 2, 11
+  size: 77, 37
+  orig: 77, 37
+  offset: 0, 0
+  index: -1
+foreleg_L
+  rotate: false
+  xy: 465, 158
+  size: 126, 362
+  orig: 126, 362
+  offset: 0, 0
+  index: -1
+foreleg_R
+  rotate: false
+  xy: 593, 158
+  size: 126, 362
+  orig: 126, 362
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 723, 14
+  size: 189, 220
+  orig: 189, 220
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 2, 50
+  size: 236, 470
+  orig: 236, 470
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 240, 90
+  size: 223, 430
+  orig: 223, 430
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 501, 21
+  size: 135, 99
+  orig: 135, 99
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 501, 21
+  size: 135, 99
+  orig: 135, 99
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 1315, 10
+  size: 133, 99
+  orig: 133, 99
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 945, 4
+  size: 133, 105
+  orig: 133, 105
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 602, 23
+  size: 133, 119
+  orig: 133, 119
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 1215, 9
+  size: 98, 100
+  orig: 98, 100
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: true
+  xy: 1450, 11
+  size: 98, 97
+  orig: 98, 97
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1549, 12
+  size: 133, 97
+  orig: 133, 97
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1080, 4
+  size: 133, 105
+  orig: 133, 105
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 721, 205
+  size: 219, 315
+  orig: 219, 315
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 81, 23
+  size: 69, 25
+  orig: 69, 25
+  offset: 0, 0
+  index: -1
+shade
+  rotate: false
+  xy: 945, 111
+  size: 860, 101
+  orig: 860, 101
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 1567, 214
+  size: 181, 306
+  orig: 181, 306
+  offset: 0, 0
+  index: -1

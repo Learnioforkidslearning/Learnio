@@ -1,0 +1,244 @@
+
+male-thor-adult.png
+size: 1462, 1032
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 1169, 440
+  size: 145, 298
+  orig: 145, 298
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 1316, 418
+  size: 138, 320
+  orig: 138, 320
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 538, 482
+  size: 300, 548
+  orig: 300, 548
+  offset: 0, 0
+  index: -1
+cape_achterkant
+  rotate: false
+  xy: 2, 217
+  size: 534, 813
+  orig: 534, 813
+  offset: 0, 0
+  index: -1
+cape_voorkant
+  rotate: true
+  xy: 1313, 2
+  size: 197, 68
+  orig: 197, 68
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 528, 25
+  size: 143, 26
+  orig: 143, 26
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: true
+  xy: 1448, 908
+  size: 122, 11
+  orig: 122, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 1437, 753
+  size: 127, 23
+  orig: 127, 23
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 528, 53
+  size: 216, 112
+  orig: 216, 112
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: true
+  xy: 1314, 201
+  size: 215, 111
+  orig: 215, 111
+  offset: 0, 0
+  index: -1
+forarm_R
+  rotate: false
+  xy: 443, 11
+  size: 83, 204
+  orig: 83, 204
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: false
+  xy: 351, 3
+  size: 90, 212
+  orig: 90, 212
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 538, 167
+  size: 313, 292
+  orig: 313, 292
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: true
+  xy: 840, 439
+  size: 299, 327
+  orig: 299, 327
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 2, 2
+  size: 347, 213
+  orig: 347, 213
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 746, 35
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+harnass
+  rotate: false
+  xy: 1383, 118
+  size: 77, 81
+  orig: 77, 81
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 1147, 216
+  size: 221, 165
+  orig: 221, 165
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 832, 128
+  size: 309, 313
+  orig: 309, 313
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 840, 882
+  size: 148, 606
+  orig: 148, 606
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 840, 740
+  size: 140, 595
+  orig: 140, 595
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 746, 136
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 746, 136
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 1421, 38
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 1383, 35
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 1060, 83
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 1383, 2
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1427, 226
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 1427, 253
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 673, 16
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 918, 21
+  size: 105, 140
+  orig: 105, 140
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 1060, 23
+  size: 48, 58
+  orig: 48, 58
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 1427, 319
+  size: 97, 22
+  orig: 97, 22
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 1147, 126
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1

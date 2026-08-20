@@ -1,0 +1,244 @@
+
+male-wizard-young.png
+size: 1928, 491
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Belt
+  rotate: false
+  xy: 540, 12
+  size: 222, 47
+  orig: 222, 47
+  offset: 0, 0
+  index: -1
+arm_L
+  rotate: true
+  xy: 895, 35
+  size: 113, 224
+  orig: 113, 224
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 1121, 39
+  size: 109, 211
+  orig: 109, 211
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 981, 253
+  size: 236, 394
+  orig: 236, 394
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 2, 17
+  size: 128, 14
+  orig: 128, 14
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 132, 19
+  size: 130, 12
+  orig: 130, 12
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 1878, 365
+  size: 124, 48
+  orig: 124, 48
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 1683, 137
+  size: 167, 125
+  orig: 167, 125
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 1526, 7
+  size: 167, 118
+  orig: 167, 118
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 1695, 11
+  size: 81, 124
+  orig: 81, 124
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 1643, 264
+  size: 78, 202
+  orig: 78, 202
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 1643, 344
+  size: 233, 145
+  orig: 233, 145
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: true
+  xy: 1334, 8
+  size: 117, 190
+  orig: 117, 190
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 1852, 172
+  size: 73, 102
+  orig: 73, 102
+  offset: 0, 0
+  index: -1
+hat_behind
+  rotate: false
+  xy: 2, 33
+  size: 536, 121
+  orig: 536, 121
+  offset: 0, 0
+  index: -1
+hat_front
+  rotate: false
+  xy: 2, 156
+  size: 561, 333
+  orig: 561, 333
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1377, 251
+  size: 264, 238
+  orig: 264, 238
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 1351, 127
+  size: 122, 330
+  orig: 122, 330
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 565, 61
+  size: 115, 328
+  orig: 115, 328
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 764, 14
+  size: 60, 10
+  orig: 60, 10
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 74, 2
+  size: 58, 13
+  orig: 58, 13
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 895, 152
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 1847, 276
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 540, 61
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: true
+  xy: 1844, 2
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 540, 94
+  size: 60, 16
+  orig: 60, 16
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1852, 146
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 2, 2
+  size: 70, 13
+  orig: 70, 13
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 1778, 13
+  size: 122, 64
+  orig: 122, 64
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 1882, 303
+  size: 40, 60
+  orig: 40, 60
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 764, 26
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+shade
+  rotate: false
+  xy: 981, 150
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+skirt_black
+  rotate: true
+  xy: 565, 178
+  size: 311, 414
+  orig: 311, 414
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 1844, 23
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

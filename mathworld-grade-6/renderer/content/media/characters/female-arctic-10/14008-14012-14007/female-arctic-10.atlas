@@ -1,0 +1,650 @@
+
+female-arctic-10.png
+size: 1985, 777
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-arctic-10-autumn/arm_L
+  rotate: true
+  xy: 1081, 385
+  size: 109, 220
+  orig: 109, 220
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/arm_R
+  rotate: true
+  xy: 1369, 496
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/body
+  rotate: false
+  xy: 2, 377
+  size: 243, 398
+  orig: 243, 398
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/eyebrows
+  rotate: true
+  xy: 1967, 568
+  size: 144, 12
+  orig: 144, 12
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/eyes_closed
+  rotate: false
+  xy: 595, 2
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/eyes_open
+  rotate: false
+  xy: 724, 2
+  size: 122, 52
+  orig: 122, 52
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/foot_L
+  rotate: false
+  xy: 1725, 132
+  size: 161, 105
+  orig: 161, 105
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/foot_R
+  rotate: false
+  xy: 1525, 389
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/forearm_R
+  rotate: false
+  xy: 1369, 640
+  size: 88, 135
+  orig: 88, 135
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/forerarm_L
+  rotate: true
+  xy: 1729, 514
+  size: 83, 235
+  orig: 83, 235
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/hair
+  rotate: true
+  xy: 1444, 121
+  size: 262, 172
+  orig: 262, 172
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/hair
+  rotate: true
+  xy: 1444, 121
+  size: 262, 172
+  orig: 262, 172
+  offset: 0, 0
+  index: -1
+female-arctic-10/hair
+  rotate: true
+  xy: 1444, 121
+  size: 262, 172
+  orig: 262, 172
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/hair_back
+  rotate: true
+  xy: 1150, 114
+  size: 269, 96
+  orig: 269, 96
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/hand_R
+  rotate: true
+  xy: 1618, 150
+  size: 73, 103
+  orig: 73, 103
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/head
+  rotate: true
+  xy: 895, 98
+  size: 279, 253
+  orig: 279, 253
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/leg_L
+  rotate: false
+  xy: 527, 52
+  size: 122, 323
+  orig: 122, 323
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/leg_R
+  rotate: false
+  xy: 773, 59
+  size: 120, 318
+  orig: 120, 318
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-a
+  rotate: true
+  xy: 1588, 500
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-x
+  rotate: true
+  xy: 1588, 500
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-b
+  rotate: true
+  xy: 1967, 714
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-b
+  rotate: true
+  xy: 1967, 714
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-b
+  rotate: true
+  xy: 1967, 714
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-c
+  rotate: false
+  xy: 198, 7
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-d
+  rotate: false
+  xy: 859, 459
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-e
+  rotate: false
+  xy: 972, 36
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-e
+  rotate: false
+  xy: 972, 36
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-e
+  rotate: false
+  xy: 972, 36
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-f
+  rotate: true
+  xy: 972, 14
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-f
+  rotate: true
+  xy: 972, 14
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-f
+  rotate: true
+  xy: 972, 14
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-g
+  rotate: true
+  xy: 1966, 502
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-g
+  rotate: true
+  xy: 1966, 502
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-g
+  rotate: true
+  xy: 1966, 502
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/mouth-h
+  rotate: false
+  xy: 263, 7
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/neck
+  rotate: false
+  xy: 328, 3
+  size: 87, 46
+  orig: 87, 46
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/nose
+  rotate: false
+  xy: 105, 4
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/pupils
+  rotate: false
+  xy: 595, 15
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/shade
+  rotate: true
+  xy: 2, 7
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/shade
+  rotate: true
+  xy: 2, 7
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-arctic-10/shade
+  rotate: true
+  xy: 2, 7
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-arctic-10-autumn/wijzen_R
+  rotate: true
+  xy: 737, 379
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/arm_L
+  rotate: true
+  xy: 1155, 3
+  size: 109, 220
+  orig: 109, 220
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/arm_R
+  rotate: true
+  xy: 1729, 378
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/body
+  rotate: false
+  xy: 247, 377
+  size: 243, 398
+  orig: 243, 398
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/eyebrows
+  rotate: true
+  xy: 1948, 368
+  size: 144, 12
+  orig: 144, 12
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/eyes_closed
+  rotate: true
+  xy: 1948, 239
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/eyes_open
+  rotate: false
+  xy: 848, 5
+  size: 122, 52
+  orig: 122, 52
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/foot_L
+  rotate: false
+  xy: 1561, 14
+  size: 166, 105
+  orig: 166, 105
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/foot_R
+  rotate: true
+  xy: 1618, 609
+  size: 166, 105
+  orig: 166, 105
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/forearm_R
+  rotate: true
+  xy: 1010, 5
+  size: 91, 143
+  orig: 91, 143
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/forerarm_L
+  rotate: true
+  xy: 1729, 688
+  size: 87, 236
+  orig: 87, 236
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/hair_back
+  rotate: true
+  xy: 1248, 114
+  size: 269, 96
+  orig: 269, 96
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/hand_R
+  rotate: false
+  xy: 1905, 13
+  size: 73, 103
+  orig: 73, 103
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/head
+  rotate: true
+  xy: 859, 496
+  size: 279, 253
+  orig: 279, 253
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/leg_L
+  rotate: false
+  xy: 279, 51
+  size: 122, 324
+  orig: 122, 324
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/leg_R
+  rotate: false
+  xy: 651, 56
+  size: 120, 319
+  orig: 120, 319
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-a
+  rotate: true
+  xy: 1601, 500
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-x
+  rotate: true
+  xy: 1601, 500
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-c
+  rotate: true
+  xy: 1588, 567
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-d
+  rotate: false
+  xy: 1627, 497
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/mouth-h
+  rotate: true
+  xy: 1700, 469
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/neck
+  rotate: false
+  xy: 417, 3
+  size: 87, 46
+  orig: 87, 46
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/nose
+  rotate: false
+  xy: 136, 4
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/pupils
+  rotate: false
+  xy: 895, 61
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+female-arctic-10-summer/wijzen_R
+  rotate: true
+  xy: 852, 379
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+female-arctic-10/arm_L
+  rotate: true
+  xy: 1303, 385
+  size: 109, 220
+  orig: 109, 220
+  offset: 0, 0
+  index: -1
+female-arctic-10/arm_R
+  rotate: true
+  xy: 1729, 242
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+female-arctic-10/body
+  rotate: false
+  xy: 492, 377
+  size: 243, 398
+  orig: 243, 398
+  offset: 0, 0
+  index: -1
+female-arctic-10/collar_behind
+  rotate: true
+  xy: 105, 35
+  size: 340, 172
+  orig: 340, 172
+  offset: 0, 0
+  index: -1
+female-arctic-10/collar_front
+  rotate: false
+  xy: 1377, 5
+  size: 182, 107
+  orig: 182, 107
+  offset: 0, 0
+  index: -1
+female-arctic-10/eyebrows
+  rotate: true
+  xy: 1962, 356
+  size: 144, 12
+  orig: 144, 12
+  offset: 0, 0
+  index: -1
+female-arctic-10/eyes_closed
+  rotate: true
+  xy: 1729, 3
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10/eyes_open
+  rotate: true
+  xy: 1888, 118
+  size: 122, 52
+  orig: 122, 52
+  offset: 0, 0
+  index: -1
+female-arctic-10/foot_L
+  rotate: false
+  xy: 1742, 11
+  size: 161, 105
+  orig: 161, 105
+  offset: 0, 0
+  index: -1
+female-arctic-10/foot_R
+  rotate: true
+  xy: 1618, 225
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+female-arctic-10/forearm_R
+  rotate: false
+  xy: 1525, 632
+  size: 91, 143
+  orig: 91, 143
+  offset: 0, 0
+  index: -1
+female-arctic-10/forerarm_L
+  rotate: true
+  xy: 1729, 599
+  size: 87, 236
+  orig: 87, 236
+  offset: 0, 0
+  index: -1
+female-arctic-10/hair_back
+  rotate: true
+  xy: 1346, 114
+  size: 269, 96
+  orig: 269, 96
+  offset: 0, 0
+  index: -1
+female-arctic-10/hand_R
+  rotate: true
+  xy: 1627, 534
+  size: 73, 98
+  orig: 73, 98
+  offset: 0, 0
+  index: -1
+female-arctic-10/head
+  rotate: true
+  xy: 1114, 496
+  size: 279, 253
+  orig: 279, 253
+  offset: 0, 0
+  index: -1
+female-arctic-10/leg_L
+  rotate: false
+  xy: 403, 51
+  size: 122, 324
+  orig: 122, 324
+  offset: 0, 0
+  index: -1
+female-arctic-10/leg_R
+  rotate: false
+  xy: 737, 456
+  size: 120, 319
+  orig: 120, 319
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-a
+  rotate: true
+  xy: 1614, 500
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-x
+  rotate: true
+  xy: 1614, 500
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-c
+  rotate: false
+  xy: 1459, 749
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-d
+  rotate: true
+  xy: 1459, 648
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+female-arctic-10/mouth-h
+  rotate: false
+  xy: 1459, 721
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+female-arctic-10/neck
+  rotate: false
+  xy: 506, 3
+  size: 87, 46
+  orig: 87, 46
+  offset: 0, 0
+  index: -1
+female-arctic-10/nose
+  rotate: false
+  xy: 167, 4
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+female-arctic-10/pupils
+  rotate: true
+  xy: 967, 381
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+female-arctic-10/wijzen_R
+  rotate: false
+  xy: 1004, 382
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,223 @@
+
+male-arctic-10-15.png
+size: 572, 1030
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 344, 453
+  size: 107, 224
+  orig: 107, 224
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 2, 4
+  size: 134, 210
+  orig: 134, 217
+  offset: 0, 7
+  index: -1
+body
+  rotate: true
+  xy: 2, 785
+  size: 243, 398
+  orig: 243, 398
+  offset: 0, 0
+  index: -1
+collar_behind
+  rotate: false
+  xy: 2, 508
+  size: 340, 172
+  orig: 340, 172
+  offset: 0, 0
+  index: -1
+collar_front
+  rotate: false
+  xy: 138, 150
+  size: 182, 107
+  orig: 182, 107
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 372, 647
+  size: 136, 23
+  orig: 136, 23
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: true
+  xy: 232, 3
+  size: 122, 11
+  orig: 122, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 322, 12
+  size: 113, 50
+  orig: 113, 50
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 402, 816
+  size: 161, 105
+  orig: 161, 105
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 402, 923
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 138, 5
+  size: 92, 143
+  orig: 92, 143
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 322, 127
+  size: 87, 236
+  orig: 87, 236
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 402, 562
+  size: 252, 160
+  orig: 252, 160
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 374, 27
+  size: 73, 98
+  orig: 73, 98
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 328, 216
+  size: 239, 231
+  orig: 239, 231
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 2, 383
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 2, 259
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 560, 155
+  size: 59, 10
+  orig: 59, 10
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 328, 449
+  size: 57, 13
+  orig: 57, 13
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 344, 622
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 245, 2
+  size: 65, 32
+  orig: 65, 32
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 369, 592
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: true
+  xy: 369, 571
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 374, 9
+  size: 59, 16
+  orig: 59, 16
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 344, 562
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 435, 13
+  size: 67, 12
+  orig: 68, 13
+  offset: 1, 0
+  index: -1
+neck
+  rotate: true
+  xy: 504, 49
+  size: 76, 46
+  orig: 76, 46
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 369, 615
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 2, 221
+  size: 114, 36
+  orig: 216, 144
+  offset: 51, 54
+  index: -1
+shade
+  rotate: false
+  xy: 2, 682
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 245, 36
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

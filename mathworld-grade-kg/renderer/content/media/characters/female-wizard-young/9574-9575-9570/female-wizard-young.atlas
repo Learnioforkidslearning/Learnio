@@ -1,0 +1,237 @@
+
+female-wizard-young.png
+size: 890, 1032
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 780, 573
+  size: 105, 221
+  orig: 105, 221
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 243, 79
+  size: 123, 201
+  orig: 123, 201
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 494, 796
+  size: 234, 394
+  orig: 234, 394
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 357, 5
+  size: 128, 14
+  orig: 128, 14
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: true
+  xy: 779, 430
+  size: 130, 12
+  orig: 130, 12
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 2, 3
+  size: 124, 48
+  orig: 124, 48
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 698, 158
+  size: 167, 105
+  orig: 167, 105
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 595, 41
+  size: 167, 105
+  orig: 167, 105
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 764, 20
+  size: 105, 136
+  orig: 105, 136
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 368, 56
+  size: 90, 225
+  orig: 90, 225
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 504, 389
+  size: 273, 171
+  orig: 273, 171
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 2, 365
+  size: 290, 378
+  orig: 290, 378
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 401, 271
+  size: 73, 102
+  orig: 73, 102
+  offset: 0, 0
+  index: -1
+hat_behind
+  rotate: true
+  xy: 294, 282
+  size: 461, 105
+  orig: 461, 105
+  offset: 0, 0
+  index: -1
+hat_front
+  rotate: false
+  xy: 2, 745
+  size: 490, 285
+  orig: 490, 285
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 504, 562
+  size: 274, 232
+  orig: 274, 232
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 504, 265
+  size: 122, 330
+  orig: 122, 330
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 368, 148
+  size: 115, 328
+  orig: 115, 328
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 793, 561
+  size: 60, 10
+  orig: 60, 10
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 487, 6
+  size: 58, 13
+  orig: 58, 13
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 128, 27
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 474, 21
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 476, 281
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 189, 35
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 128, 9
+  size: 60, 16
+  orig: 60, 16
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 476, 314
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 275, 293
+  size: 70, 13
+  orig: 70, 13
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 243, 286
+  size: 77, 30
+  orig: 77, 30
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 542, 24
+  size: 30, 38
+  orig: 30, 38
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 357, 21
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 401, 375
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+skirt
+  rotate: true
+  xy: 2, 53
+  size: 310, 239
+  orig: 310, 239
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 243, 2
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

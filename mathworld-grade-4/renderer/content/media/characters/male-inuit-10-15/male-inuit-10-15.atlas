@@ -1,0 +1,223 @@
+
+male-inuit-10-15.png
+size: 1873, 364
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 1444, 138
+  size: 107, 224
+  orig: 107, 224
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 1458, 2
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 649, 98
+  size: 264, 402
+  orig: 264, 402
+  offset: 0, 0
+  index: -1
+collar_behind
+  rotate: false
+  xy: 2, 17
+  size: 396, 345
+  orig: 396, 345
+  offset: 0, 0
+  index: -1
+collar_front
+  rotate: false
+  xy: 1677, 255
+  size: 182, 107
+  orig: 182, 107
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 1677, 10
+  size: 133, 21
+  orig: 133, 21
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 61, 4
+  size: 118, 11
+  orig: 118, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 467, 5
+  size: 120, 31
+  orig: 120, 31
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 1630, 145
+  size: 170, 108
+  orig: 170, 108
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 1700, 38
+  size: 171, 105
+  orig: 171, 105
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 657, 4
+  size: 92, 143
+  orig: 92, 143
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 802, 9
+  size: 87, 236
+  orig: 87, 236
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 1286, 123
+  size: 239, 156
+  orig: 239, 156
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 1582, 264
+  size: 73, 98
+  orig: 73, 98
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 1053, 123
+  size: 239, 231
+  orig: 239, 231
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 400, 38
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 525, 43
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 181, 5
+  size: 59, 10
+  orig: 59, 10
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 181, 5
+  size: 59, 10
+  orig: 59, 10
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 2, 2
+  size: 57, 13
+  orig: 57, 13
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 1700, 13
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 400, 4
+  size: 65, 32
+  orig: 65, 32
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 589, 10
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: true
+  xy: 1053, 102
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1040, 2
+  size: 59, 16
+  orig: 59, 16
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1760, 13
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 1040, 20
+  size: 76, 46
+  orig: 76, 46
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 612, 12
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 1553, 263
+  size: 99, 27
+  orig: 99, 27
+  offset: 0, 0
+  index: -1
+shade
+  rotate: false
+  xy: 1088, 20
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 1553, 141
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

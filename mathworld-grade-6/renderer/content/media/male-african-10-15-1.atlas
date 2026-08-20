@@ -1,0 +1,209 @@
+
+male-african-10-15.png
+size: 983, 523
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 2, 18
+  size: 114, 219
+  orig: 114, 219
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 484, 25
+  size: 144, 221
+  orig: 144, 221
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 134
+  size: 248, 387
+  orig: 248, 387
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 223, 13
+  size: 123, 17
+  orig: 123, 17
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 2, 5
+  size: 122, 11
+  orig: 122, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 902, 76
+  size: 116, 47
+  orig: 116, 47
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: true
+  xy: 707, 6
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: true
+  xy: 863, 358
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 819, 274
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 223, 32
+  size: 81, 221
+  orig: 81, 221
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 252, 115
+  size: 230, 172
+  orig: 230, 172
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 814, 194
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 252, 289
+  size: 239, 232
+  orig: 239, 232
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 493, 295
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 493, 171
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 126, 6
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 126, 6
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 482, 10
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 874, 15
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 927, 202
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 901, 51
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 954, 274
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 348, 13
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 954, 294
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 825, 2
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 819, 374
+  size: 44, 27
+  orig: 44, 27
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 446, 5
+  size: 108, 34
+  orig: 108, 34
+  offset: 0, 0
+  index: -1
+shade
+  rotate: false
+  xy: 493, 420
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 825, 79
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1

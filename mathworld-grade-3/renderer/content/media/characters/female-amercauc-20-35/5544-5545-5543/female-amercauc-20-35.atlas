@@ -1,0 +1,923 @@
+
+female-amercauc-20-35.png
+size: 1985, 1413
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-amercauc-20-35-gala/arm_L
+  rotate: false
+  xy: 1542, 856
+  size: 133, 306
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/arm_L
+  rotate: false
+  xy: 1542, 856
+  size: 133, 306
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/arm_R
+  rotate: true
+  xy: 763, 139
+  size: 138, 321
+  orig: 143, 325
+  offset: 5, 0
+  index: -1
+female-amercauc-20-35-halloween/arm_R
+  rotate: true
+  xy: 763, 139
+  size: 138, 321
+  orig: 143, 325
+  offset: 5, 0
+  index: -1
+female-amercauc-20-35-gala/body
+  rotate: true
+  xy: 1009, 852
+  size: 278, 531
+  orig: 280, 533
+  offset: 2, 1
+  index: -1
+female-amercauc-20-35-gala/dress
+  rotate: false
+  xy: 2, 628
+  size: 472, 783
+  orig: 472, 783
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/eyebrows
+  rotate: true
+  xy: 1903, 916
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/eyebrows
+  rotate: true
+  xy: 1903, 916
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/eyebrows
+  rotate: true
+  xy: 1903, 916
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/eyebrows
+  rotate: true
+  xy: 1903, 916
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/eyes_closed
+  rotate: false
+  xy: 763, 128
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/eyes_closed
+  rotate: false
+  xy: 763, 128
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/eyes_closed
+  rotate: false
+  xy: 763, 128
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/eyes_closed
+  rotate: false
+  xy: 763, 128
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/eyes_open
+  rotate: false
+  xy: 2, 35
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/eyes_open
+  rotate: false
+  xy: 2, 35
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/eyes_open
+  rotate: false
+  xy: 2, 35
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/eyes_open
+  rotate: false
+  xy: 2, 35
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/foot_L
+  rotate: false
+  xy: 483, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/foot_R
+  rotate: false
+  xy: 483, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/foot_L
+  rotate: false
+  xy: 483, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/foot_R
+  rotate: false
+  xy: 483, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/foot_L
+  rotate: false
+  xy: 483, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/foot_R
+  rotate: false
+  xy: 483, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/forearm_R
+  rotate: false
+  xy: 1877, 486
+  size: 88, 211
+  orig: 88, 223
+  offset: 0, 12
+  index: -1
+female-amercauc-20-35-halloween/forearm_R
+  rotate: false
+  xy: 1877, 486
+  size: 88, 211
+  orig: 88, 223
+  offset: 0, 12
+  index: -1
+female-amercauc-20-35-waitress/forearm_R
+  rotate: false
+  xy: 1877, 486
+  size: 88, 211
+  orig: 88, 223
+  offset: 0, 12
+  index: -1
+female-amercauc-20-35/forearm_R
+  rotate: false
+  xy: 1877, 486
+  size: 88, 211
+  orig: 88, 223
+  offset: 0, 12
+  index: -1
+female-amercauc-20-35-gala/forerarm_L
+  rotate: false
+  xy: 1903, 1046
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/forerarm_L
+  rotate: false
+  xy: 1903, 1046
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/forerarm_L
+  rotate: false
+  xy: 1903, 1046
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/forerarm_L
+  rotate: false
+  xy: 1903, 1046
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/hair
+  rotate: false
+  xy: 1744, 1237
+  size: 239, 174
+  orig: 239, 174
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/hair
+  rotate: false
+  xy: 1744, 1237
+  size: 239, 174
+  orig: 239, 174
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/hair
+  rotate: false
+  xy: 1744, 1237
+  size: 239, 174
+  orig: 239, 174
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/hair
+  rotate: false
+  xy: 1744, 1237
+  size: 239, 174
+  orig: 239, 174
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/hair_back
+  rotate: false
+  xy: 763, 279
+  size: 335, 363
+  orig: 335, 363
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/hair_back
+  rotate: false
+  xy: 763, 279
+  size: 335, 363
+  orig: 335, 363
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/hair_back
+  rotate: false
+  xy: 763, 279
+  size: 335, 363
+  orig: 335, 363
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/hair_back
+  rotate: false
+  xy: 763, 279
+  size: 335, 363
+  orig: 335, 363
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/hand_L
+  rotate: true
+  xy: 1684, 211
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/hand_L
+  rotate: true
+  xy: 1684, 211
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/hand_L
+  rotate: true
+  xy: 1684, 211
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/hand_L
+  rotate: true
+  xy: 1684, 211
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/hand_R
+  rotate: true
+  xy: 897, 46
+  size: 91, 169
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/hand_R
+  rotate: true
+  xy: 897, 46
+  size: 91, 169
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/hand_R
+  rotate: true
+  xy: 897, 46
+  size: 91, 169
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/hand_R
+  rotate: true
+  xy: 897, 46
+  size: 91, 169
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/head
+  rotate: false
+  xy: 1519, 1164
+  size: 223, 247
+  orig: 225, 248
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35-halloween/head
+  rotate: false
+  xy: 1519, 1164
+  size: 223, 247
+  orig: 225, 248
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35-waitress/head
+  rotate: false
+  xy: 1519, 1164
+  size: 223, 247
+  orig: 225, 248
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35/head
+  rotate: false
+  xy: 1519, 1164
+  size: 223, 247
+  orig: 225, 248
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35-gala/leg_L
+  rotate: true
+  xy: 1066, 724
+  size: 126, 585
+  orig: 126, 585
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/leg_L
+  rotate: true
+  xy: 1066, 724
+  size: 126, 585
+  orig: 126, 585
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/leg_R
+  rotate: true
+  xy: 1100, 274
+  size: 123, 582
+  orig: 123, 582
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/leg_R
+  rotate: true
+  xy: 1100, 274
+  size: 123, 582
+  orig: 123, 582
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-a
+  rotate: false
+  xy: 124, 42
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-a
+  rotate: false
+  xy: 124, 42
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-a
+  rotate: false
+  xy: 124, 42
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-a
+  rotate: false
+  xy: 124, 42
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-b
+  rotate: false
+  xy: 1920, 1014
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-b
+  rotate: false
+  xy: 1920, 1014
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-b
+  rotate: false
+  xy: 1920, 1014
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-b
+  rotate: false
+  xy: 1920, 1014
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-c
+  rotate: true
+  xy: 1066, 653
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-c
+  rotate: true
+  xy: 1066, 653
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-c
+  rotate: true
+  xy: 1066, 653
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-c
+  rotate: true
+  xy: 1066, 653
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-d
+  rotate: true
+  xy: 1009, 790
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-d
+  rotate: true
+  xy: 1009, 790
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-d
+  rotate: true
+  xy: 1009, 790
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-d
+  rotate: true
+  xy: 1009, 790
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-e
+  rotate: false
+  xy: 1653, 724
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-e
+  rotate: false
+  xy: 1653, 724
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-e
+  rotate: false
+  xy: 1653, 724
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-e
+  rotate: false
+  xy: 1653, 724
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-f
+  rotate: false
+  xy: 87, 11
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-f
+  rotate: false
+  xy: 87, 11
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-f
+  rotate: false
+  xy: 87, 11
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-f
+  rotate: false
+  xy: 87, 11
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-g
+  rotate: true
+  xy: 1813, 148
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-g
+  rotate: true
+  xy: 1813, 148
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-g
+  rotate: true
+  xy: 1813, 148
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-g
+  rotate: true
+  xy: 1813, 148
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-h
+  rotate: true
+  xy: 1744, 1180
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-h
+  rotate: true
+  xy: 1744, 1180
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-h
+  rotate: true
+  xy: 1744, 1180
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-h
+  rotate: true
+  xy: 1744, 1180
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/mouth-x
+  rotate: false
+  xy: 1920, 991
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/mouth-x
+  rotate: false
+  xy: 1920, 991
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/mouth-x
+  rotate: false
+  xy: 1920, 991
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/mouth-x
+  rotate: false
+  xy: 1920, 991
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/neck
+  rotate: true
+  xy: 1672, 114
+  size: 95, 139
+  orig: 95, 139
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/neck
+  rotate: true
+  xy: 1672, 114
+  size: 95, 139
+  orig: 95, 139
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/neck
+  rotate: true
+  xy: 1672, 114
+  size: 95, 139
+  orig: 95, 139
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/neck
+  rotate: true
+  xy: 1672, 114
+  size: 95, 139
+  orig: 95, 139
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/necklace
+  rotate: false
+  xy: 897, 22
+  size: 86, 22
+  orig: 86, 22
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/nose
+  rotate: false
+  xy: 1877, 435
+  size: 39, 49
+  orig: 39, 49
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/nose
+  rotate: false
+  xy: 1877, 435
+  size: 39, 49
+  orig: 39, 49
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/nose
+  rotate: false
+  xy: 1877, 435
+  size: 39, 49
+  orig: 39, 49
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/nose
+  rotate: false
+  xy: 1877, 435
+  size: 39, 49
+  orig: 39, 49
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/pupils
+  rotate: true
+  xy: 1653, 755
+  size: 99, 22
+  orig: 99, 24
+  offset: 0, 1
+  index: -1
+female-amercauc-20-35-halloween/pupils
+  rotate: true
+  xy: 1653, 755
+  size: 99, 22
+  orig: 99, 24
+  offset: 0, 1
+  index: -1
+female-amercauc-20-35-waitress/pupils
+  rotate: true
+  xy: 1653, 755
+  size: 99, 22
+  orig: 99, 24
+  offset: 0, 1
+  index: -1
+female-amercauc-20-35/pupils
+  rotate: true
+  xy: 1653, 755
+  size: 99, 22
+  orig: 99, 24
+  offset: 0, 1
+  index: -1
+female-amercauc-20-35-gala/shade
+  rotate: true
+  xy: 1677, 794
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/shade
+  rotate: true
+  xy: 1677, 794
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/shade
+  rotate: true
+  xy: 1677, 794
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/shade
+  rotate: true
+  xy: 1677, 794
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-gala/wijzen_R
+  rotate: true
+  xy: 1684, 301
+  size: 88, 164
+  orig: 90, 165
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35-halloween/wijzen_R
+  rotate: true
+  xy: 1684, 301
+  size: 88, 164
+  orig: 90, 165
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35-waitress/wijzen_R
+  rotate: true
+  xy: 1684, 301
+  size: 88, 164
+  orig: 90, 165
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35/wijzen_R
+  rotate: true
+  xy: 1684, 301
+  size: 88, 164
+  orig: 90, 165
+  offset: 1, 0
+  index: -1
+female-amercauc-20-35-halloween/body
+  rotate: false
+  xy: 483, 111
+  size: 278, 531
+  orig: 280, 533
+  offset: 2, 1
+  index: -1
+female-amercauc-20-35-halloween/foot_L
+  rotate: false
+  xy: 690, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/foot_R
+  rotate: false
+  xy: 690, 2
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/hat_back
+  rotate: true
+  xy: 1780, 699
+  size: 536, 121
+  orig: 536, 121
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/hat_halloween
+  rotate: true
+  xy: 2, 65
+  size: 561, 333
+  orig: 561, 333
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/leg_L
+  rotate: true
+  xy: 1086, 21
+  size: 123, 582
+  orig: 123, 582
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/leg_R
+  rotate: true
+  xy: 1086, 146
+  size: 126, 584
+  orig: 126, 584
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/necklace
+  rotate: false
+  xy: 2, 2
+  size: 83, 31
+  orig: 83, 31
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-halloween/skirt
+  rotate: false
+  xy: 476, 1071
+  size: 508, 340
+  orig: 508, 340
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/arm_L
+  rotate: false
+  xy: 1742, 391
+  size: 133, 306
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35-waitress/arm_R
+  rotate: false
+  xy: 1462, 401
+  size: 138, 321
+  orig: 143, 325
+  offset: 5, 0
+  index: -1
+female-amercauc-20-35-waitress/body
+  rotate: true
+  xy: 986, 1132
+  size: 279, 531
+  orig: 281, 533
+  offset: 2, 1
+  index: -1
+female-amercauc-20-35-waitress/skirt
+  rotate: false
+  xy: 1100, 399
+  size: 360, 323
+  orig: 360, 323
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/arm_L
+  rotate: false
+  xy: 1850, 83
+  size: 133, 306
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/arm_R
+  rotate: false
+  xy: 1602, 401
+  size: 138, 321
+  orig: 143, 325
+  offset: 5, 0
+  index: -1
+female-amercauc-20-35/body
+  rotate: true
+  xy: 476, 790
+  size: 279, 531
+  orig: 281, 533
+  offset: 2, 1
+  index: -1
+female-amercauc-20-35/leg_L
+  rotate: false
+  xy: 337, 16
+  size: 144, 610
+  orig: 144, 610
+  offset: 0, 0
+  index: -1
+female-amercauc-20-35/leg_R
+  rotate: true
+  xy: 476, 644
+  size: 144, 588
+  orig: 144, 588
+  offset: 0, 0
+  index: -1

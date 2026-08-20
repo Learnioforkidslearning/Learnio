@@ -2,94 +2,249 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Math Learning</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        .math-page {
+            min-height: 100vh;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .grade-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .grade-btn {
+            border: none;
+            border-radius: 15px;
+            padding: 18px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transition: 0.2s;
+        }
+
+        .grade-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .grade-btn.active {
+            background: #1976d2;
+            color: white;
+        }
+
+        .mathworld-container {
+            width: 100%;
+            height: 750px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            border-radius: 12px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background: #555;
+        }
+    </style>
 </head>
 
 <body>
 
-    <section class="learning-page">
+    <section class="math-page">
 
         <h1>🔢 Math Learning</h1>
 
+        <p class="subtitle">
+            Choose your grade
+        </p>
 
-        <!-- Math Video -->
+        <div class="grade-buttons">
 
-        <div class="lesson-card">
+            <button class="grade-btn active"
+                    onclick="openGrade('kg', this)">
+                KG
+            </button>
 
-            <h2>🎥 Math Learning Video</h2>
+            <button class="grade-btn"
+                    onclick="openGrade('grade1', this)">
+                Grade 1
+            </button>
 
-            <video
-                width="100%"
-                controls
-                style="border-radius: 20px;"
-            >
+            <button class="grade-btn"
+                    onclick="openGrade('grade2', this)">
+                Grade 2
+            </button>
 
-                <source
-                    src="videos/math-video.mp4"
-                    type="video/mp4"
-                >
+            <button class="grade-btn"
+                    onclick="openGrade('grade3', this)">
+                Grade 3
+            </button>
 
-                Your browser does not support the video tag.
+            <button class="grade-btn"
+                    onclick="openGrade('grade4', this)">
+                Grade 4
+            </button>
 
-            </video>
+            <button class="grade-btn"
+                    onclick="openGrade('grade5', this)">
+                Grade 5
+            </button>
 
-        </div>
-
-
-        <!-- Lesson 1 -->
-
-        <div class="lesson-card">
-
-            <h2>2 + 2 = 4</h2>
-
-            <p>
-                Simple addition lesson.
-            </p>
-
-        </div>
-
-
-        <!-- Lesson 2 -->
-
-        <div class="lesson-card">
-
-            <h2>5 - 2 = 3</h2>
-
-            <p>
-                Simple subtraction lesson.
-            </p>
+            <button class="grade-btn"
+                    onclick="openGrade('grade6', this)">
+                Grade 6
+            </button>
 
         </div>
 
 
-        <!-- Bonus Lesson -->
+        <div class="mathworld-container">
 
-        <div class="lesson-card">
-
-            <h2>10 × 2 = 20</h2>
-
-            <p>
-                Learn multiplication easily.
-            </p>
+            <iframe
+                id="mathworldFrame"
+                src="http://127.0.0.1:8080/index.html"
+                title="MathWorld">
+            </iframe>
 
         </div>
 
 
-        <!-- Back Button -->
-
-        <a href="index.html" class="btn">
+        <a href="index.html" class="back-button">
             ⬅ Back to Home
         </a>
 
     </section>
+
+
+    <script>
+
+        function openGrade(grade, button) {
+
+            const frame =
+                document.getElementById("mathworldFrame");
+
+            document
+                .querySelectorAll(".grade-btn")
+                .forEach(function (btn) {
+                    btn.classList.remove("active");
+                });
+
+            button.classList.add("active");
+
+
+            // KG
+            if (grade === "kg") {
+
+                frame.src =
+                    "http://127.0.0.1:8080/index.html";
+
+            }
+
+
+            // Grade 1
+            else if (grade === "grade1") {
+
+                frame.src =
+                    "http://127.0.0.1:8081/index.html";
+
+            }
+
+
+            // Grade 2
+            else if (grade === "grade2") {
+
+                frame.src =
+                    "http://127.0.0.1:8082/index.html";
+
+            }
+
+
+            // Grade 3
+            else if (grade === "grade3") {
+
+                frame.src =
+                    "http://127.0.0.1:8083/index.html";
+
+            }
+
+
+            // Grade 4
+            else if (grade === "grade4") {
+
+                frame.src =
+                    "http://127.0.0.1:8084/index.html";
+
+            }
+
+
+            // Grade 5
+            else if (grade === "grade5") {
+
+                frame.src =
+                    "http://127.0.0.1:8085/index.html";
+
+            }
+
+
+         // Grade 6
+else if (grade === "grade6") {
+
+    frame.src =
+        "http://127.0.0.1:8086/index.html";
+
+}
+
+        }
+
+    </script>
 
 </body>
 

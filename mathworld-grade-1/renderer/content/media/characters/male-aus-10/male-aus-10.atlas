@@ -1,0 +1,426 @@
+
+male-aus-10.png
+size: 1922, 490
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-aus-10-swim/arm_L
+  rotate: true
+  xy: 1044, 7
+  size: 105, 197
+  orig: 105, 197
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/arm_R
+  rotate: false
+  xy: 1363, 11
+  size: 131, 197
+  orig: 132, 197
+  offset: 1, 0
+  index: -1
+male-aus-10-swim/body
+  rotate: false
+  xy: 475, 105
+  size: 249, 383
+  orig: 249, 383
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/eyebrows
+  rotate: false
+  xy: 876, 114
+  size: 144, 18
+  orig: 144, 18
+  offset: 0, 0
+  index: -1
+male-aus-10/eyebrows
+  rotate: false
+  xy: 876, 114
+  size: 144, 18
+  orig: 144, 18
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/eyes_closed
+  rotate: true
+  xy: 1909, 361
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-aus-10/eyes_closed
+  rotate: true
+  xy: 1909, 361
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/eyes_open
+  rotate: false
+  xy: 1088, 118
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+male-aus-10/eyes_open
+  rotate: false
+  xy: 1088, 118
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/foot_L
+  rotate: false
+  xy: 1710, 133
+  size: 163, 115
+  orig: 163, 115
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/foot_R
+  rotate: true
+  xy: 1243, 11
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/forearm_R
+  rotate: true
+  xy: 245, 4
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+male-aus-10/forearm_R
+  rotate: true
+  xy: 245, 4
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/forerarm_L
+  rotate: true
+  xy: 421, 9
+  size: 91, 251
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+male-aus-10/forerarm_L
+  rotate: true
+  xy: 421, 9
+  size: 91, 251
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/hair
+  rotate: true
+  xy: 1264, 210
+  size: 278, 184
+  orig: 278, 184
+  offset: 0, 0
+  index: -1
+male-aus-10/hair
+  rotate: true
+  xy: 1264, 210
+  size: 278, 184
+  orig: 278, 184
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/hand_R
+  rotate: true
+  xy: 1496, 137
+  size: 77, 112
+  orig: 77, 112
+  offset: 0, 0
+  index: -1
+male-aus-10/hand_R
+  rotate: true
+  xy: 1496, 137
+  size: 77, 112
+  orig: 77, 112
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/hat
+  rotate: false
+  xy: 726, 134
+  size: 295, 354
+  orig: 295, 354
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/head
+  rotate: true
+  xy: 1450, 216
+  size: 272, 258
+  orig: 272, 258
+  offset: 0, 0
+  index: -1
+male-aus-10/head
+  rotate: true
+  xy: 1450, 216
+  size: 272, 258
+  orig: 272, 258
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/leg_L
+  rotate: false
+  xy: 1023, 169
+  size: 120, 319
+  orig: 120, 319
+  offset: 0, 0
+  index: -1
+male-aus-10/leg_L
+  rotate: false
+  xy: 1023, 169
+  size: 120, 319
+  orig: 120, 319
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/leg_R
+  rotate: false
+  xy: 1145, 176
+  size: 117, 312
+  orig: 117, 312
+  offset: 0, 0
+  index: -1
+male-aus-10/leg_R
+  rotate: false
+  xy: 1145, 176
+  size: 117, 312
+  orig: 117, 312
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-a
+  rotate: true
+  xy: 1909, 294
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-x
+  rotate: true
+  xy: 1909, 294
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-a
+  rotate: true
+  xy: 1909, 294
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-x
+  rotate: true
+  xy: 1909, 294
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-b
+  rotate: false
+  xy: 1023, 153
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-b
+  rotate: false
+  xy: 1023, 153
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-c
+  rotate: false
+  xy: 726, 106
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-c
+  rotate: false
+  xy: 726, 106
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-d
+  rotate: false
+  xy: 2, 3
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-d
+  rotate: false
+  xy: 2, 3
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-e
+  rotate: true
+  xy: 220, 5
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-e
+  rotate: true
+  xy: 220, 5
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-f
+  rotate: true
+  xy: 856, 112
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-f
+  rotate: true
+  xy: 856, 112
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-g
+  rotate: false
+  xy: 1022, 114
+  size: 64, 18
+  orig: 64, 18
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-g
+  rotate: false
+  xy: 1022, 114
+  size: 64, 18
+  orig: 64, 18
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/mouth-h
+  rotate: false
+  xy: 791, 106
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-aus-10/mouth-h
+  rotate: false
+  xy: 791, 106
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/neck
+  rotate: true
+  xy: 1660, 126
+  size: 88, 46
+  orig: 88, 46
+  offset: 0, 0
+  index: -1
+male-aus-10/neck
+  rotate: true
+  xy: 1660, 126
+  size: 88, 46
+  orig: 88, 46
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/nose
+  rotate: true
+  xy: 190, 5
+  size: 33, 28
+  orig: 33, 28
+  offset: 0, 0
+  index: -1
+male-aus-10/nose
+  rotate: true
+  xy: 190, 5
+  size: 33, 28
+  orig: 33, 28
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/pupils
+  rotate: false
+  xy: 75, 4
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+male-aus-10/pupils
+  rotate: false
+  xy: 75, 4
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/shade
+  rotate: false
+  xy: 674, 2
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-aus-10/shade
+  rotate: false
+  xy: 674, 2
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-aus-10-swim/wijzen_R
+  rotate: false
+  xy: 1824, 18
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+male-aus-10/wijzen_R
+  rotate: false
+  xy: 1824, 18
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+male-aus-10/arm_L
+  rotate: true
+  xy: 1710, 250
+  size: 105, 197
+  orig: 105, 197
+  offset: 0, 0
+  index: -1
+male-aus-10/arm_R
+  rotate: true
+  xy: 1710, 357
+  size: 131, 197
+  orig: 132, 197
+  offset: 1, 0
+  index: -1
+male-aus-10/body
+  rotate: false
+  xy: 226, 102
+  size: 247, 386
+  orig: 247, 386
+  offset: 0, 0
+  index: -1
+male-aus-10/foot_L
+  rotate: false
+  xy: 1496, 14
+  size: 162, 117
+  orig: 162, 117
+  offset: 0, 0
+  index: -1
+male-aus-10/foot_R
+  rotate: false
+  xy: 1660, 7
+  size: 162, 117
+  orig: 162, 117
+  offset: 0, 0
+  index: -1
+male-aus-10/hat
+  rotate: true
+  xy: 2, 40
+  size: 448, 222
+  orig: 448, 222
+  offset: 0, 0
+  index: -1
