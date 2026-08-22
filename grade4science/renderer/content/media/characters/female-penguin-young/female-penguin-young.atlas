@@ -1,0 +1,153 @@
+
+female-penguin-young.png
+size: 771, 1013
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 334, 477
+  size: 134, 534
+  orig: 134, 534
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 573, 517
+  size: 106, 494
+  orig: 106, 494
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 289
+  size: 330, 722
+  orig: 330, 722
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 681, 567
+  size: 87, 14
+  orig: 87, 14
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 83, 21
+  size: 80, 20
+  orig: 80, 20
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 2, 2
+  size: 79, 39
+  orig: 79, 39
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 43
+  size: 203, 244
+  orig: 203, 244
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 334, 307
+  size: 127, 168
+  orig: 127, 168
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 466, 131
+  size: 122, 323
+  orig: 122, 323
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 681, 798
+  size: 213, 88
+  orig: 213, 88
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 681, 798
+  size: 213, 88
+  orig: 213, 88
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 590, 302
+  size: 213, 87
+  orig: 213, 87
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 679, 85
+  size: 213, 83
+  orig: 213, 83
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 356, 92
+  size: 213, 108
+  orig: 213, 108
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 590, 96
+  size: 204, 87
+  orig: 204, 87
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 356, 3
+  size: 196, 87
+  orig: 196, 87
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 681, 583
+  size: 213, 88
+  orig: 213, 88
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 679, 300
+  size: 215, 82
+  orig: 215, 82
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 466, 101
+  size: 73, 28
+  orig: 73, 28
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 470, 456
+  size: 555, 101
+  orig: 555, 101
+  offset: 0, 0
+  index: -1
+staart
+  rotate: false
+  xy: 207, 6
+  size: 147, 281
+  orig: 147, 281
+  offset: 0, 0
+  index: -1

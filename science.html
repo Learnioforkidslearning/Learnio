@@ -1,38 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Learning</title>
+
+    <title>Science Learning | Learniokidslearning</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================
+           SCIENCE PAGE
+        ========================= */
+
+        .science-page {
+            min-height: 100vh;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .science-header {
+            margin-bottom: 35px;
+        }
+
+        .science-header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        .science-header p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #666;
+        }
+
+
+        /* =========================
+           GRADE GRID
+        ========================= */
+
+        .science-grade-grid {
+
+            max-width: 1100px;
+
+            margin: 0 auto 40px;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .science-grade-card {
+
+            background: white;
+
+            border-radius: 24px;
+
+            padding: 30px 20px;
+
+            min-height: 180px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.10);
+
+            cursor: pointer;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .science-grade-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 14px 30px rgba(0, 0, 0, 0.16);
+        }
+
+
+        .science-grade-icon {
+
+            font-size: 48px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .science-grade-card h2 {
+
+            margin: 5px 0 8px;
+
+            font-size: 24px;
+        }
+
+
+        .science-grade-card p {
+
+            margin: 0;
+
+            color: #66818c;
+
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           SCIENCE CONTENT
+        ========================= */
+
+        .science-content-container {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            width: 100vw;
+
+            height: 100vh;
+
+            margin: 0;
+
+            background: #ffffff;
+
+            overflow: hidden;
+
+            z-index: 9999;
+        }
+
+
+        .science-content-header {
+
+            position: absolute;
+
+            top: 15px;
+
+            left: 15px;
+
+            z-index: 10000;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 8px;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, 0.25);
+        }
+
+
+        .science-back-button {
+
+            border: none;
+
+            background: #20a99d;
+
+            color: white;
+
+            padding: 11px 18px;
+
+            border-radius: 10px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            white-space: nowrap;
+        }
+
+
+        .science-back-button:hover {
+
+            background: #168d84;
+        }
+
+
+        #scienceFrame {
+
+            width: 100vw;
+
+            height: 100vh;
+
+            border: none;
+
+            display: block;
+        }
+
+
+        /* =========================
+           BACK HOME
+        ========================= */
+
+        .science-home-button {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 13px 25px;
+
+            border-radius: 14px;
+
+            background: #173b4d;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+
+        .science-home-button:hover {
+
+            background: #28576c;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .science-grade-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .science-header h1 {
+
+                font-size: 34px;
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 550px) {
+
+            .science-page {
+
+                padding: 25px 15px;
+            }
+
+            .science-grade-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 16px;
+            }
+
+            .science-grade-card {
+
+                min-height: 150px;
+
+                padding: 25px 15px;
+            }
+
+            .science-header h1 {
+
+                font-size: 30px;
+            }
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <section class="learning-page">
+<section class="science-page">
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <div class="science-header">
 
         <h1>🌍 Science Learning</h1>
 
-        <video class="lesson-video" controls>
-            <source src="videos/science-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <p>
+            Choose your grade and explore the world of science!
+        </p>
 
-        <div class="lesson-card">
-            <h2>Earth 🌎</h2>
-            <p>Earth is our home planet.</p>
+    </div>
+
+
+
+    <!-- =========================
+         GRADE CARDS
+    ========================= -->
+
+    <div class="science-grade-grid">
+
+
+        <!-- KG -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'KG',
+                'gradekgscience/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                🌱
+            </div>
+
+            <h2>KG</h2>
+
+            <p>
+                Discover animals, plants and our world
+            </p>
+
         </div>
 
-        <div class="lesson-card">
-            <h2>Animals 🦁</h2>
-            <p>Learn about wild animals.</p>
+
+
+        <!-- GRADE 1 -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'Grade 1',
+                'grade1science/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                🔬
+            </div>
+
+            <h2>Grade 1</h2>
+
+            <p>
+                Explore simple science ideas
+            </p>
+
         </div>
 
-        <a href="index.html" class="btn">
-            ⬅ Back to Home
-        </a>
 
-    </section>
+
+        <!-- GRADE 2 -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'Grade 2',
+                'grade2science/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                🌎
+            </div>
+
+            <h2>Grade 2</h2>
+
+            <p>
+                Explore nature and our planet
+            </p>
+
+        </div>
+
+
+
+        <!-- GRADE 3 -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'Grade 3',
+                'grade3science/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                🧪
+            </div>
+
+            <h2>Grade 3</h2>
+
+            <p>
+                Learn about science around us
+            </p>
+
+        </div>
+
+
+
+        <!-- GRADE 4 -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'Grade 4',
+                'grade4science/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                🌿
+            </div>
+
+            <h2>Grade 4</h2>
+
+            <p>
+                Discover plants, animals and nature
+            </p>
+
+        </div>
+
+
+
+        <!-- GRADE 5 -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'Grade 5',
+                'grade5science/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                🌌
+            </div>
+
+            <h2>Grade 5</h2>
+
+            <p>
+                Explore Earth, space and science
+            </p>
+
+        </div>
+
+
+
+        <!-- GRADE 6 -->
+
+        <div
+            class="science-grade-card"
+            onclick="openScienceGrade(
+                'Grade 6',
+                'grade6science/renderer/index.html'
+            )">
+
+            <div class="science-grade-icon">
+                ⚗️
+            </div>
+
+            <h2>Grade 6</h2>
+
+            <p>
+                Explore advanced science concepts
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         SCIENCE CONTENT
+    ========================= -->
+
+    <div
+        class="science-content-container"
+        id="scienceContentContainer">
+
+
+        <div class="science-content-header">
+
+            <button
+                class="science-back-button"
+                onclick="backToScienceGrades()">
+
+                ← Choose Another Grade
+
+            </button>
+
+        </div>
+
+
+        <iframe
+            id="scienceFrame"
+            title="Science Learning Content">
+        </iframe>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         BACK TO HOME
+    ========================= -->
+
+    <a
+        href="index.html"
+        class="science-home-button">
+
+        🏠 Back to Home
+
+    </a>
+
+
+</section>
+
+
+
+<script>
+
+
+    function openScienceGrade(
+        gradeName,
+        gradePath
+    ) {
+
+
+        const gradeGrid =
+            document.querySelector(
+                ".science-grade-grid"
+            );
+
+
+        const contentContainer =
+            document.getElementById(
+                "scienceContentContainer"
+            );
+
+
+        const scienceFrame =
+            document.getElementById(
+                "scienceFrame"
+            );
+
+
+        /*
+         * Hide grade cards
+         */
+
+        gradeGrid.style.display =
+            "none";
+
+
+        /*
+         * Show Science content
+         */
+
+        contentContainer.style.display =
+            "block";
+
+
+        /*
+         * Load selected grade
+
+         */
+
+        scienceFrame.src =
+            gradePath;
+
+
+    }
+
+
+
+    function backToScienceGrades() {
+
+
+        const gradeGrid =
+            document.querySelector(
+                ".science-grade-grid"
+            );
+
+
+        const contentContainer =
+            document.getElementById(
+                "scienceContentContainer"
+            );
+
+
+        const scienceFrame =
+            document.getElementById(
+                "scienceFrame"
+            );
+
+
+        /*
+         * Hide Science content
+         */
+
+        contentContainer.style.display =
+            "none";
+
+
+        /*
+         * Show grade cards
+
+         */
+
+        gradeGrid.style.display =
+            "grid";
+
+
+        /*
+         * Clear iframe
+
+         */
+
+        scienceFrame.src =
+            "";
+
+
+    }
+
+
+</script>
+
 
 </body>
+
 </html>

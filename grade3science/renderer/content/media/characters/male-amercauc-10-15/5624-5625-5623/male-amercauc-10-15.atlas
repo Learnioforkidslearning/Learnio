@@ -1,0 +1,419 @@
+
+male-amercauc-10-15.png
+size: 886, 1032
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-amercauc-10-15-halloween/arm_L
+  rotate: true
+  xy: 505, 359
+  size: 105, 197
+  orig: 105, 197
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/arm_R
+  rotate: true
+  xy: 372, 5
+  size: 132, 197
+  orig: 132, 197
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/body
+  rotate: false
+  xy: 2, 258
+  size: 248, 384
+  orig: 248, 384
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/eyebrows
+  rotate: false
+  xy: 2, 13
+  size: 144, 17
+  orig: 144, 17
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/eyebrows
+  rotate: false
+  xy: 2, 13
+  size: 144, 17
+  orig: 144, 17
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/eyes_closed
+  rotate: false
+  xy: 474, 147
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/eyes_closed
+  rotate: false
+  xy: 474, 147
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/eyes_open
+  rotate: true
+  xy: 832, 908
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/eyes_open
+  rotate: true
+  xy: 832, 908
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/foot_L
+  rotate: false
+  xy: 252, 258
+  size: 163, 115
+  orig: 163, 115
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/foot_R
+  rotate: false
+  xy: 704, 346
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/forearm_R
+  rotate: true
+  xy: 608, 141
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/forearm_R
+  rotate: true
+  xy: 608, 141
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/forerarm_L
+  rotate: true
+  xy: 252, 375
+  size: 91, 251
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/forerarm_L
+  rotate: true
+  xy: 252, 375
+  size: 91, 251
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/hair
+  rotate: false
+  xy: 539, 829
+  size: 291, 201
+  orig: 291, 201
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/hair
+  rotate: false
+  xy: 539, 829
+  size: 291, 201
+  orig: 291, 201
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/hand_R
+  rotate: false
+  xy: 807, 228
+  size: 77, 116
+  orig: 77, 116
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/hand_R
+  rotate: false
+  xy: 807, 228
+  size: 77, 116
+  orig: 77, 116
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/hat
+  rotate: false
+  xy: 252, 725
+  size: 285, 305
+  orig: 285, 305
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/head
+  rotate: false
+  xy: 252, 468
+  size: 272, 255
+  orig: 272, 255
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/head
+  rotate: false
+  xy: 252, 468
+  size: 272, 255
+  orig: 272, 255
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/leg_L
+  rotate: true
+  xy: 539, 712
+  size: 115, 299
+  orig: 115, 299
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/leg_R
+  rotate: true
+  xy: 2, 135
+  size: 121, 306
+  orig: 121, 306
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-a
+  rotate: false
+  xy: 608, 346
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-x
+  rotate: false
+  xy: 608, 346
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-a
+  rotate: false
+  xy: 608, 346
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-x
+  rotate: false
+  xy: 608, 346
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-b
+  rotate: false
+  xy: 148, 16
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-b
+  rotate: false
+  xy: 148, 16
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-c
+  rotate: false
+  xy: 784, 152
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-c
+  rotate: false
+  xy: 784, 152
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-d
+  rotate: true
+  xy: 832, 835
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-d
+  rotate: true
+  xy: 832, 835
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-e
+  rotate: true
+  xy: 847, 683
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-e
+  rotate: true
+  xy: 847, 683
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-f
+  rotate: false
+  xy: 637, 2
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-f
+  rotate: false
+  xy: 637, 2
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-g
+  rotate: false
+  xy: 571, 2
+  size: 64, 18
+  orig: 64, 18
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-g
+  rotate: false
+  xy: 571, 2
+  size: 64, 18
+  orig: 64, 18
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/mouth-h
+  rotate: true
+  xy: 840, 770
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/mouth-h
+  rotate: true
+  xy: 840, 770
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/neck
+  rotate: false
+  xy: 784, 180
+  size: 88, 46
+  orig: 88, 46
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/neck
+  rotate: false
+  xy: 784, 180
+  size: 88, 46
+  orig: 88, 46
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/nose
+  rotate: false
+  xy: 840, 718
+  size: 33, 50
+  orig: 33, 50
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/nose
+  rotate: false
+  xy: 840, 718
+  size: 33, 50
+  orig: 33, 50
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/pupils
+  rotate: true
+  xy: 417, 260
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/pupils
+  rotate: true
+  xy: 417, 260
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/shade
+  rotate: false
+  xy: 2, 32
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/shade
+  rotate: false
+  xy: 2, 32
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15-halloween/wijzen_R
+  rotate: false
+  xy: 735, 26
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/wijzen_R
+  rotate: false
+  xy: 735, 26
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/arm_L
+  rotate: true
+  xy: 608, 239
+  size: 105, 197
+  orig: 105, 197
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/arm_R
+  rotate: false
+  xy: 474, 160
+  size: 132, 197
+  orig: 132, 197
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/body
+  rotate: false
+  xy: 2, 644
+  size: 248, 386
+  orig: 248, 386
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/foot_L
+  rotate: false
+  xy: 310, 139
+  size: 162, 117
+  orig: 162, 117
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/foot_R
+  rotate: false
+  xy: 571, 22
+  size: 162, 117
+  orig: 162, 117
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/leg_L
+  rotate: true
+  xy: 526, 589
+  size: 121, 319
+  orig: 121, 319
+  offset: 0, 0
+  index: -1
+male-amercauc-10-15/leg_R
+  rotate: true
+  xy: 526, 466
+  size: 121, 319
+  orig: 121, 319
+  offset: 0, 0
+  index: -1

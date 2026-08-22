@@ -1,0 +1,447 @@
+
+female-atlantic-20-35.png
+size: 1937, 839
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-atlantic-20-35-swim/arm_L
+  rotate: false
+  xy: 1259, 2
+  size: 133, 315
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/arm_R
+  rotate: true
+  xy: 1049, 319
+  size: 143, 326
+  orig: 143, 326
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/body
+  rotate: false
+  xy: 586, 303
+  size: 281, 534
+  orig: 281, 534
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/eyebrows
+  rotate: false
+  xy: 294, 232
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/eyes_closed
+  rotate: false
+  xy: 490, 3
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/eyes_open
+  rotate: true
+  xy: 1907, 355
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/foot_L
+  rotate: false
+  xy: 1496, 730
+  size: 206, 107
+  orig: 206, 107
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/foot_R
+  rotate: false
+  xy: 1705, 646
+  size: 206, 107
+  orig: 206, 107
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/forearm_R
+  rotate: true
+  xy: 1705, 389
+  size: 86, 200
+  orig: 86, 200
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/forerarm_L
+  rotate: true
+  xy: 1705, 755
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/hair
+  rotate: true
+  xy: 554, 15
+  size: 232, 167
+  orig: 232, 167
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/hair_behind
+  rotate: false
+  xy: 869, 464
+  size: 260, 373
+  orig: 260, 373
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/hand_L
+  rotate: false
+  xy: 869, 307
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/hand_R
+  rotate: true
+  xy: 1529, 226
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/head
+  rotate: true
+  xy: 2, 5
+  size: 220, 242
+  orig: 220, 242
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/leg_L
+  rotate: false
+  xy: 2, 227
+  size: 144, 610
+  orig: 144, 610
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/leg_R
+  rotate: false
+  xy: 294, 249
+  size: 144, 588
+  orig: 144, 588
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-a
+  rotate: false
+  xy: 490, 161
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-b
+  rotate: true
+  xy: 1496, 466
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-c
+  rotate: false
+  xy: 1624, 497
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-d
+  rotate: false
+  xy: 490, 53
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-e
+  rotate: true
+  xy: 1624, 465
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-f
+  rotate: false
+  xy: 1913, 731
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-g
+  rotate: false
+  xy: 490, 208
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-h
+  rotate: true
+  xy: 1560, 474
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/mouth-x
+  rotate: false
+  xy: 490, 138
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/neck
+  rotate: true
+  xy: 1791, 122
+  size: 95, 139
+  orig: 95, 139
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/nose
+  rotate: true
+  xy: 586, 262
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/nose
+  rotate: true
+  xy: 586, 262
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/pupils
+  rotate: false
+  xy: 616, 277
+  size: 99, 24
+  orig: 99, 24
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/shade
+  rotate: true
+  xy: 1393, 469
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/shade
+  rotate: true
+  xy: 1393, 469
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35-swim/wijzen_R
+  rotate: true
+  xy: 1529, 137
+  size: 87, 164
+  orig: 89, 165
+  offset: 1, 0
+  index: -1
+female-atlantic-20-35/arm_L
+  rotate: false
+  xy: 1394, 2
+  size: 133, 315
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/arm_R
+  rotate: true
+  xy: 1377, 319
+  size: 143, 326
+  orig: 143, 326
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/body
+  rotate: true
+  xy: 723, 20
+  size: 281, 534
+  orig: 281, 534
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/collar
+  rotate: false
+  xy: 1559, 18
+  size: 141, 117
+  orig: 141, 117
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/eyebrows
+  rotate: false
+  xy: 424, 232
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/eyes_closed
+  rotate: false
+  xy: 608, 4
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/eyes_open
+  rotate: true
+  xy: 1529, 15
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/foot_L
+  rotate: false
+  xy: 1496, 621
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/foot_R
+  rotate: false
+  xy: 1496, 621
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/forearm_R
+  rotate: true
+  xy: 1496, 531
+  size: 88, 204
+  orig: 88, 204
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/forerarm_L
+  rotate: true
+  xy: 1705, 312
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/hair
+  rotate: false
+  xy: 1703, 477
+  size: 232, 167
+  orig: 232, 167
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/hair_behind
+  rotate: false
+  xy: 1131, 464
+  size: 260, 373
+  orig: 260, 373
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/hand_L
+  rotate: false
+  xy: 959, 307
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/hand_R
+  rotate: true
+  xy: 1701, 219
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/head
+  rotate: true
+  xy: 246, 5
+  size: 220, 242
+  orig: 220, 242
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/leg_L
+  rotate: false
+  xy: 148, 227
+  size: 144, 610
+  orig: 144, 610
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/leg_R
+  rotate: false
+  xy: 440, 249
+  size: 144, 588
+  orig: 144, 588
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-a
+  rotate: false
+  xy: 490, 115
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-b
+  rotate: true
+  xy: 1528, 466
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-c
+  rotate: true
+  xy: 1896, 284
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-d
+  rotate: false
+  xy: 490, 14
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-e
+  rotate: true
+  xy: 1654, 465
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-f
+  rotate: false
+  xy: 1913, 707
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-g
+  rotate: false
+  xy: 490, 184
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-h
+  rotate: true
+  xy: 1592, 474
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/mouth-x
+  rotate: false
+  xy: 490, 92
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/neck
+  rotate: true
+  xy: 1791, 25
+  size: 95, 139
+  orig: 95, 139
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/pupils
+  rotate: false
+  xy: 616, 251
+  size: 99, 24
+  orig: 99, 24
+  offset: 0, 0
+  index: -1
+female-atlantic-20-35/wijzen_R
+  rotate: false
+  xy: 1702, 53
+  size: 87, 164
+  orig: 89, 165
+  offset: 1, 0
+  index: -1

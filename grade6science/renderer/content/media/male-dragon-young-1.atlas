@@ -1,0 +1,216 @@
+
+male-dragon-young.png
+size: 2031, 1001
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 1796, 805
+  size: 102, 222
+  orig: 102, 222
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 1796, 909
+  size: 90, 232
+  orig: 90, 232
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 105, 289
+  size: 424, 710
+  orig: 424, 710
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 1561, 333
+  size: 129, 32
+  orig: 129, 32
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 2, 11
+  size: 105, 19
+  orig: 105, 19
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 1918, 111
+  size: 111, 77
+  orig: 111, 77
+  offset: 0, 0
+  index: -1
+forearm_L
+  rotate: false
+  xy: 1728, 16
+  size: 103, 172
+  orig: 103, 172
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 1796, 655
+  size: 100, 148
+  orig: 100, 148
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 1833, 53
+  size: 83, 135
+  orig: 83, 135
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 1898, 712
+  size: 91, 130
+  orig: 91, 130
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1408, 655
+  size: 386, 344
+  orig: 386, 344
+  offset: 0, 0
+  index: -1
+hindleg_L
+  rotate: true
+  xy: 1405, 322
+  size: 331, 76
+  orig: 331, 76
+  offset: 0, 0
+  index: -1
+hindleg_R
+  rotate: true
+  xy: 1483, 323
+  size: 330, 76
+  orig: 330, 76
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 109, 2
+  size: 285, 446
+  orig: 285, 446
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 557, 10
+  size: 288, 417
+  orig: 288, 417
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 1727, 341
+  size: 286, 149
+  orig: 286, 149
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 1727, 341
+  size: 286, 149
+  orig: 286, 149
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 1577, 45
+  size: 286, 149
+  orig: 286, 149
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 1408, 34
+  size: 286, 167
+  orig: 286, 167
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 829, 315
+  size: 286, 182
+  orig: 286, 182
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 1561, 367
+  size: 286, 164
+  orig: 286, 164
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1727, 492
+  size: 286, 161
+  orig: 286, 161
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1728, 190
+  size: 286, 149
+  orig: 286, 149
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1117, 348
+  size: 286, 182
+  orig: 286, 182
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 531, 300
+  size: 197, 296
+  orig: 197, 296
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 1898, 659
+  size: 102, 51
+  orig: 102, 51
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 2, 32
+  size: 967, 101
+  orig: 967, 101
+  offset: 0, 0
+  index: -1
+staart
+  rotate: false
+  xy: 973, 532
+  size: 430, 467
+  orig: 430, 467
+  offset: 0, 0
+  index: -1
+wing_L
+  rotate: true
+  xy: 531, 499
+  size: 500, 440
+  orig: 500, 440
+  offset: 0, 0
+  index: -1
+wing_R
+  rotate: true
+  xy: 976, 3
+  size: 310, 430
+  orig: 310, 430
+  offset: 0, 0
+  index: -1

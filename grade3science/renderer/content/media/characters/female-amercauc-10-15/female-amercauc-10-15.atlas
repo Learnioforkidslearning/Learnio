@@ -1,0 +1,482 @@
+
+female-amercauc-10-15.png
+size: 1953, 729
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-amercauc-10-15-halloween/arm_L
+  rotate: true
+  xy: 1420, 137
+  size: 109, 225
+  orig: 109, 225
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/arm_R
+  rotate: false
+  xy: 1724, 412
+  size: 135, 212
+  orig: 137, 212
+  offset: 2, 0
+  index: -1
+female-amercauc-10-15-halloween/belt
+  rotate: false
+  xy: 2, 8
+  size: 228, 54
+  orig: 228, 54
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/belt
+  rotate: false
+  xy: 2, 8
+  size: 228, 54
+  orig: 228, 54
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/body
+  rotate: true
+  xy: 917, 368
+  size: 236, 392
+  orig: 236, 394
+  offset: 0, 1
+  index: -1
+female-amercauc-10-15-halloween/eyebrows
+  rotate: false
+  xy: 1648, 2
+  size: 128, 14
+  orig: 128, 14
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/eyebrows
+  rotate: false
+  xy: 1648, 2
+  size: 128, 14
+  orig: 128, 14
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/eyes_closed
+  rotate: false
+  xy: 1159, 3
+  size: 128, 12
+  orig: 130, 12
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15/eyes_closed
+  rotate: false
+  xy: 1159, 3
+  size: 128, 12
+  orig: 130, 12
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15-halloween/eyes_open
+  rotate: false
+  xy: 1648, 18
+  size: 124, 48
+  orig: 124, 48
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/eyes_open
+  rotate: false
+  xy: 1648, 18
+  size: 124, 48
+  orig: 124, 48
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/foot_L
+  rotate: false
+  xy: 1648, 68
+  size: 165, 116
+  orig: 167, 120
+  offset: 1, 2
+  index: -1
+female-amercauc-10-15/foot_L
+  rotate: false
+  xy: 1648, 68
+  size: 165, 116
+  orig: 167, 120
+  offset: 1, 2
+  index: -1
+female-amercauc-10-15-halloween/foot_R
+  rotate: false
+  xy: 1481, 15
+  size: 165, 120
+  orig: 167, 120
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15/foot_R
+  rotate: false
+  xy: 1481, 15
+  size: 165, 120
+  orig: 167, 120
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15-halloween/forearm_R
+  rotate: false
+  xy: 1815, 60
+  size: 76, 124
+  orig: 76, 124
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/forearm_R
+  rotate: false
+  xy: 1815, 60
+  size: 76, 124
+  orig: 76, 124
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/forerarm_L
+  rotate: true
+  xy: 354, 2
+  size: 77, 219
+  orig: 77, 219
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/forerarm_L
+  rotate: true
+  xy: 354, 2
+  size: 77, 219
+  orig: 77, 219
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/hair
+  rotate: false
+  xy: 1456, 437
+  size: 266, 187
+  orig: 266, 187
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/hair_back
+  rotate: false
+  xy: 2, 64
+  size: 350, 328
+  orig: 350, 328
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/hand_R
+  rotate: false
+  xy: 1843, 194
+  size: 73, 102
+  orig: 73, 102
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/hand_R
+  rotate: false
+  xy: 1843, 194
+  size: 73, 102
+  orig: 73, 102
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/hat_back
+  rotate: false
+  xy: 917, 606
+  size: 537, 121
+  orig: 537, 121
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/hat_front
+  rotate: false
+  xy: 2, 394
+  size: 561, 333
+  orig: 561, 333
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/head
+  rotate: false
+  xy: 1144, 134
+  size: 274, 232
+  orig: 274, 232
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/head
+  rotate: false
+  xy: 1144, 134
+  size: 274, 232
+  orig: 274, 232
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/leg_L
+  rotate: true
+  xy: 832, 3
+  size: 122, 325
+  orig: 122, 330
+  offset: 0, 2
+  index: -1
+female-amercauc-10-15/leg_L
+  rotate: true
+  xy: 832, 3
+  size: 122, 325
+  orig: 122, 330
+  offset: 0, 2
+  index: -1
+female-amercauc-10-15-halloween/leg_R
+  rotate: true
+  xy: 1159, 17
+  size: 115, 320
+  orig: 115, 328
+  offset: 0, 4
+  index: -1
+female-amercauc-10-15/leg_R
+  rotate: true
+  xy: 1159, 17
+  size: 115, 320
+  orig: 115, 328
+  offset: 0, 4
+  index: -1
+female-amercauc-10-15-halloween/mouth-a
+  rotate: true
+  xy: 1691, 186
+  size: 60, 10
+  orig: 60, 10
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-a
+  rotate: true
+  xy: 1691, 186
+  size: 60, 10
+  orig: 60, 10
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-b
+  rotate: false
+  xy: 1289, 2
+  size: 58, 13
+  orig: 58, 13
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-b
+  rotate: false
+  xy: 1289, 2
+  size: 58, 13
+  orig: 58, 13
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-c
+  rotate: false
+  xy: 832, 373
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-c
+  rotate: false
+  xy: 832, 373
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-d
+  rotate: true
+  xy: 1826, 661
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-d
+  rotate: true
+  xy: 1826, 661
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-e
+  rotate: false
+  xy: 1826, 638
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-e
+  rotate: false
+  xy: 1826, 638
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-f
+  rotate: false
+  xy: 232, 11
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-f
+  rotate: false
+  xy: 232, 11
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-g
+  rotate: true
+  xy: 1647, 186
+  size: 60, 16
+  orig: 60, 16
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-g
+  rotate: true
+  xy: 1647, 186
+  size: 60, 16
+  orig: 60, 16
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-h
+  rotate: true
+  xy: 1665, 187
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-h
+  rotate: true
+  xy: 1665, 187
+  size: 59, 24
+  orig: 59, 24
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/mouth-x
+  rotate: true
+  xy: 575, 13
+  size: 66, 9
+  orig: 70, 13
+  offset: 2, 2
+  index: -1
+female-amercauc-10-15-halloween/neck
+  rotate: true
+  xy: 1420, 313
+  size: 77, 30
+  orig: 77, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/neck
+  rotate: true
+  xy: 1420, 313
+  size: 77, 30
+  orig: 77, 30
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/nose
+  rotate: false
+  xy: 1420, 273
+  size: 30, 38
+  orig: 30, 38
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/nose
+  rotate: false
+  xy: 1420, 273
+  size: 30, 38
+  orig: 30, 38
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/pupils
+  rotate: false
+  xy: 232, 29
+  size: 113, 33
+  orig: 115, 33
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15/pupils
+  rotate: false
+  xy: 232, 29
+  size: 113, 33
+  orig: 115, 33
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15-halloween/shade
+  rotate: false
+  xy: 1456, 626
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/shade
+  rotate: false
+  xy: 1456, 626
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/skirt
+  rotate: true
+  xy: 354, 81
+  size: 311, 239
+  orig: 311, 239
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/sock_L
+  rotate: false
+  xy: 1861, 580
+  size: 90, 147
+  orig: 90, 147
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/sock_R
+  rotate: false
+  xy: 1861, 436
+  size: 89, 142
+  orig: 89, 142
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15-halloween/wijzen_R
+  rotate: false
+  xy: 1843, 298
+  size: 73, 112
+  orig: 75, 112
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15/wijzen_R
+  rotate: false
+  xy: 1843, 298
+  size: 73, 112
+  orig: 75, 112
+  offset: 1, 0
+  index: -1
+female-amercauc-10-15/arm_L
+  rotate: false
+  xy: 1720, 186
+  size: 121, 224
+  orig: 121, 224
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/arm_R
+  rotate: false
+  xy: 1311, 392
+  size: 139, 212
+  orig: 141, 212
+  offset: 2, 0
+  index: -1
+female-amercauc-10-15/body
+  rotate: false
+  xy: 595, 6
+  size: 235, 391
+  orig: 235, 393
+  offset: 0, 1
+  index: -1
+female-amercauc-10-15/hair
+  rotate: false
+  xy: 1452, 248
+  size: 266, 187
+  orig: 266, 187
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/hair_back
+  rotate: false
+  xy: 565, 399
+  size: 350, 328
+  orig: 350, 328
+  offset: 0, 0
+  index: -1
+female-amercauc-10-15/mouth-x
+  rotate: false
+  xy: 1311, 382
+  size: 56, 8
+  orig: 60, 10
+  offset: 2, 1
+  index: -1
+female-amercauc-10-15/skirt
+  rotate: false
+  xy: 832, 127
+  size: 310, 239
+  orig: 310, 239
+  offset: 0, 0
+  index: -1

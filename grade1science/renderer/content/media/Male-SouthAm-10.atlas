@@ -1,0 +1,412 @@
+
+Male-SouthAm-10.png
+size: 920, 1028
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Male-SouthAm-10-skeleton/arm_L
+  rotate: true
+  xy: 319, 120
+  size: 122, 216
+  orig: 122, 216
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/arm_R
+  rotate: false
+  xy: 747, 435
+  size: 126, 217
+  orig: 126, 217
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/body
+  rotate: false
+  xy: 2, 640
+  size: 249, 386
+  orig: 249, 386
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/eyebrows
+  rotate: false
+  xy: 126, 40
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/eyebrows
+  rotate: false
+  xy: 126, 40
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/eyes_closed
+  rotate: true
+  xy: 875, 525
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/eyes_closed
+  rotate: true
+  xy: 875, 525
+  size: 127, 11
+  orig: 127, 11
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/eyes_open
+  rotate: false
+  xy: 2, 6
+  size: 122, 50
+  orig: 122, 50
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/eyes_open
+  rotate: false
+  xy: 2, 6
+  size: 122, 50
+  orig: 122, 50
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/foot_L
+  rotate: false
+  xy: 711, 212
+  size: 162, 109
+  orig: 162, 109
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/foot_R
+  rotate: true
+  xy: 599, 286
+  size: 162, 110
+  orig: 162, 110
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/forearm_L
+  rotate: true
+  xy: 355, 244
+  size: 81, 233
+  orig: 81, 233
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/forearm_R
+  rotate: false
+  xy: 537, 105
+  size: 87, 137
+  orig: 87, 137
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/hair
+  rotate: false
+  xy: 2, 58
+  size: 315, 191
+  orig: 315, 191
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/hair
+  rotate: false
+  xy: 2, 58
+  size: 315, 191
+  orig: 315, 191
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/hand_R
+  rotate: false
+  xy: 802, 99
+  size: 77, 111
+  orig: 77, 111
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/hand_R
+  rotate: false
+  xy: 802, 99
+  size: 77, 111
+  orig: 77, 111
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/head
+  rotate: false
+  xy: 540, 773
+  size: 285, 253
+  orig: 285, 253
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/leg_L
+  rotate: true
+  xy: 253, 648
+  size: 122, 325
+  orig: 122, 325
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/leg_R
+  rotate: false
+  xy: 355, 327
+  size: 121, 319
+  orig: 121, 319
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-a
+  rotate: false
+  xy: 789, 9
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-x
+  rotate: false
+  xy: 789, 9
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-a
+  rotate: false
+  xy: 789, 9
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-x
+  rotate: false
+  xy: 789, 9
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-b
+  rotate: false
+  xy: 524, 4
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-b
+  rotate: false
+  xy: 524, 4
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-c
+  rotate: false
+  xy: 590, 258
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-c
+  rotate: false
+  xy: 590, 258
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-d
+  rotate: false
+  xy: 524, 19
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-d
+  rotate: false
+  xy: 524, 19
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-e
+  rotate: false
+  xy: 272, 33
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-e
+  rotate: false
+  xy: 272, 33
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-f
+  rotate: false
+  xy: 875, 440
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-f
+  rotate: false
+  xy: 875, 440
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-g
+  rotate: false
+  xy: 252, 251
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-g
+  rotate: false
+  xy: 252, 251
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/mouth-h
+  rotate: true
+  xy: 875, 460
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/mouth-h
+  rotate: true
+  xy: 875, 460
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/neck
+  rotate: false
+  xy: 524, 56
+  size: 88, 47
+  orig: 88, 47
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/neck
+  rotate: false
+  xy: 524, 56
+  size: 88, 47
+  orig: 88, 47
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/nose
+  rotate: true
+  xy: 655, 254
+  size: 30, 39
+  orig: 30, 39
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/pupils
+  rotate: false
+  xy: 126, 3
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/pupils
+  rotate: false
+  xy: 126, 3
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/shade
+  rotate: true
+  xy: 252, 270
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/shade
+  rotate: true
+  xy: 252, 270
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10-skeleton/wijzen_R
+  rotate: true
+  xy: 789, 22
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/wijzen_R
+  rotate: true
+  xy: 789, 22
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/arm_L
+  rotate: true
+  xy: 319, 3
+  size: 115, 203
+  orig: 115, 203
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/arm_R
+  rotate: false
+  xy: 599, 450
+  size: 146, 202
+  orig: 146, 202
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/body
+  rotate: false
+  xy: 2, 251
+  size: 248, 387
+  orig: 248, 387
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/foot_L
+  rotate: false
+  xy: 626, 2
+  size: 161, 110
+  orig: 161, 110
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/foot_R
+  rotate: false
+  xy: 711, 323
+  size: 162, 110
+  orig: 162, 110
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/forearm_R
+  rotate: true
+  xy: 626, 114
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/forerarm_L
+  rotate: false
+  xy: 827, 776
+  size: 91, 250
+  orig: 91, 250
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/head
+  rotate: false
+  xy: 253, 772
+  size: 285, 254
+  orig: 285, 254
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/leg_L
+  rotate: false
+  xy: 478, 327
+  size: 119, 319
+  orig: 119, 319
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/leg_R
+  rotate: true
+  xy: 580, 654
+  size: 117, 313
+  orig: 117, 313
+  offset: 0, 0
+  index: -1
+Male-SouthAm-10/nose
+  rotate: false
+  xy: 241, 9
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1

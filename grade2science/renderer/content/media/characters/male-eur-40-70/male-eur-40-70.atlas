@@ -1,0 +1,440 @@
+
+male-eur-40-70.png
+size: 1526, 777
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-eu-40-70-cook/arm_L
+  rotate: true
+  xy: 1216, 641
+  size: 134, 297
+  orig: 134, 297
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/arm_R
+  rotate: true
+  xy: 586, 172
+  size: 123, 317
+  orig: 133, 317
+  offset: 5, 0
+  index: -1
+male-eu-40-70-cook/body
+  rotate: false
+  xy: 2, 241
+  size: 290, 534
+  orig: 290, 534
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/eyebrows
+  rotate: false
+  xy: 2, 6
+  size: 132, 14
+  orig: 132, 14
+  offset: 0, 0
+  index: -1
+male-eu-40-70/eyebrows
+  rotate: false
+  xy: 2, 6
+  size: 132, 14
+  orig: 132, 14
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/eyes_closed
+  rotate: false
+  xy: 1251, 321
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-eu-40-70/eyes_closed
+  rotate: false
+  xy: 1251, 321
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/eyes_open
+  rotate: true
+  xy: 1176, 515
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+male-eu-40-70/eyes_open
+  rotate: true
+  xy: 1176, 515
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/foot_L
+  rotate: false
+  xy: 1128, 162
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-eu-40-70/foot_L
+  rotate: false
+  xy: 1128, 162
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/foot_R
+  rotate: true
+  xy: 1263, 333
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-eu-40-70/foot_R
+  rotate: true
+  xy: 1263, 333
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/forearm_R
+  rotate: true
+  xy: 905, 160
+  size: 114, 221
+  orig: 114, 221
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/forerarm_L
+  rotate: true
+  xy: 1216, 550
+  size: 89, 219
+  orig: 89, 219
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/hair
+  rotate: false
+  xy: 1092, 9
+  size: 172, 60
+  orig: 172, 60
+  offset: 0, 0
+  index: -1
+male-eu-40-70/hair
+  rotate: false
+  xy: 1092, 9
+  size: 172, 60
+  orig: 172, 60
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/hand_L
+  rotate: false
+  xy: 1377, 321
+  size: 107, 170
+  orig: 107, 170
+  offset: 0, 0
+  index: -1
+male-eu-40-70/hand_L
+  rotate: false
+  xy: 1377, 321
+  size: 107, 170
+  orig: 107, 170
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/hand_R
+  rotate: true
+  xy: 1345, 228
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-eu-40-70/hand_R
+  rotate: true
+  xy: 1345, 228
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/hat_cook
+  rotate: false
+  xy: 300, 16
+  size: 248, 225
+  orig: 248, 225
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/head
+  rotate: true
+  xy: 2, 22
+  size: 217, 296
+  orig: 217, 296
+  offset: 0, 0
+  index: -1
+male-eu-40-70/head
+  rotate: true
+  xy: 2, 22
+  size: 217, 296
+  orig: 217, 296
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/leg_L
+  rotate: true
+  xy: 586, 632
+  size: 143, 628
+  orig: 143, 628
+  offset: 0, 0
+  index: -1
+male-eu-40-70/leg_L
+  rotate: true
+  xy: 586, 632
+  size: 143, 628
+  orig: 143, 628
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/leg_R
+  rotate: true
+  xy: 586, 487
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-eu-40-70/leg_R
+  rotate: true
+  xy: 586, 487
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-a
+  rotate: true
+  xy: 1092, 76
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-x
+  rotate: true
+  xy: 1092, 76
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-a
+  rotate: true
+  xy: 1092, 76
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-x
+  rotate: true
+  xy: 1092, 76
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-b
+  rotate: true
+  xy: 1486, 413
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-b
+  rotate: true
+  xy: 1486, 413
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-c
+  rotate: false
+  xy: 1266, 32
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-c
+  rotate: false
+  xy: 1266, 32
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-d
+  rotate: false
+  xy: 550, 2
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-d
+  rotate: false
+  xy: 550, 2
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-e
+  rotate: false
+  xy: 1377, 516
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-e
+  rotate: false
+  xy: 1377, 516
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-f
+  rotate: false
+  xy: 1251, 294
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-f
+  rotate: false
+  xy: 1251, 294
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-g
+  rotate: true
+  xy: 550, 177
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-g
+  rotate: true
+  xy: 550, 177
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/mouth-h
+  rotate: true
+  xy: 1458, 72
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-eu-40-70/mouth-h
+  rotate: true
+  xy: 1458, 72
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/neck
+  rotate: false
+  xy: 1349, 31
+  size: 107, 104
+  orig: 107, 104
+  offset: 0, 0
+  index: -1
+male-eu-40-70/neck
+  rotate: false
+  xy: 1349, 31
+  size: 107, 104
+  orig: 107, 104
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/nose
+  rotate: true
+  xy: 1211, 499
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+male-eu-40-70/nose
+  rotate: true
+  xy: 1211, 499
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/pupils
+  rotate: false
+  xy: 621, 23
+  size: 98, 22
+  orig: 98, 22
+  offset: 0, 0
+  index: -1
+male-eu-40-70/pupils
+  rotate: false
+  xy: 621, 23
+  size: 98, 22
+  orig: 98, 22
+  offset: 0, 0
+  index: -1
+male-eu-40-70-cook/wijzen_R
+  rotate: true
+  xy: 1349, 137
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1
+male-eu-40-70/wijzen_R
+  rotate: true
+  xy: 1349, 137
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1
+male-eu-40-70/arm_L
+  rotate: true
+  xy: 964, 351
+  size: 134, 297
+  orig: 134, 297
+  offset: 0, 0
+  index: -1
+male-eu-40-70/arm_R
+  rotate: true
+  xy: 550, 47
+  size: 123, 317
+  orig: 133, 317
+  offset: 5, 0
+  index: -1
+male-eu-40-70/body
+  rotate: false
+  xy: 294, 243
+  size: 290, 532
+  orig: 290, 532
+  offset: 0, 0
+  index: -1
+male-eu-40-70/collar
+  rotate: true
+  xy: 1437, 493
+  size: 146, 87
+  orig: 146, 87
+  offset: 0, 0
+  index: -1
+male-eu-40-70/forearm_R
+  rotate: true
+  xy: 869, 44
+  size: 114, 221
+  orig: 114, 221
+  offset: 0, 0
+  index: -1
+male-eu-40-70/forerarm_L
+  rotate: true
+  xy: 1128, 71
+  size: 89, 219
+  orig: 89, 219
+  offset: 0, 0
+  index: -1
+male-eu-40-70/hat_farmer
+  rotate: false
+  xy: 586, 297
+  size: 376, 188
+  orig: 376, 188
+  offset: 0, 0
+  index: -1
+male-eu-40-70/tie
+  rotate: true
+  xy: 964, 276
+  size: 73, 285
+  orig: 73, 285
+  offset: 0, 0
+  index: -1

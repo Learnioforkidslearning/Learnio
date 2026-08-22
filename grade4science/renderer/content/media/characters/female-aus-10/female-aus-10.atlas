@@ -1,0 +1,440 @@
+
+female-aus-10.png
+size: 1789, 522
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-aus-10-swim/arm_L
+  rotate: false
+  xy: 1195, 10
+  size: 99, 220
+  orig: 99, 220
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/arm_R
+  rotate: false
+  xy: 1060, 7
+  size: 133, 213
+  orig: 133, 213
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/body
+  rotate: false
+  xy: 2, 128
+  size: 242, 394
+  orig: 242, 394
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/eyebrows
+  rotate: false
+  xy: 1476, 16
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-aus-10/eyebrows
+  rotate: false
+  xy: 1476, 16
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/eyes_closed
+  rotate: false
+  xy: 620, 130
+  size: 130, 11
+  orig: 130, 11
+  offset: 0, 0
+  index: -1
+female-aus-10/eyes_closed
+  rotate: false
+  xy: 620, 130
+  size: 130, 11
+  orig: 130, 11
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/eyes_open
+  rotate: false
+  xy: 620, 143
+  size: 124, 48
+  orig: 124, 48
+  offset: 0, 0
+  index: -1
+female-aus-10/eyes_open
+  rotate: false
+  xy: 620, 143
+  size: 124, 48
+  orig: 124, 48
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/foot_L
+  rotate: true
+  xy: 1667, 186
+  size: 167, 118
+  orig: 167, 118
+  offset: 0, 0
+  index: -1
+female-aus-10/foot_L
+  rotate: true
+  xy: 1667, 186
+  size: 167, 118
+  orig: 167, 118
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/foot_R
+  rotate: true
+  xy: 1667, 355
+  size: 167, 120
+  orig: 167, 120
+  offset: 0, 0
+  index: -1
+female-aus-10/foot_R
+  rotate: true
+  xy: 1667, 355
+  size: 167, 120
+  orig: 167, 120
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/forearm_R
+  rotate: false
+  xy: 664, 4
+  size: 76, 124
+  orig: 76, 124
+  offset: 0, 0
+  index: -1
+female-aus-10/forearm_R
+  rotate: false
+  xy: 664, 4
+  size: 76, 124
+  orig: 76, 124
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/forerarm_L
+  rotate: false
+  xy: 1397, 12
+  size: 77, 218
+  orig: 77, 218
+  offset: 0, 0
+  index: -1
+female-aus-10/forerarm_L
+  rotate: false
+  xy: 1397, 12
+  size: 77, 218
+  orig: 77, 218
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/hair
+  rotate: false
+  xy: 752, 8
+  size: 228, 134
+  orig: 228, 134
+  offset: 0, 0
+  index: -1
+female-aus-10/hair
+  rotate: false
+  xy: 752, 8
+  size: 228, 134
+  orig: 228, 134
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/hand_R
+  rotate: true
+  xy: 955, 147
+  size: 73, 103
+  orig: 73, 103
+  offset: 0, 0
+  index: -1
+female-aus-10/hand_R
+  rotate: true
+  xy: 955, 147
+  size: 73, 103
+  orig: 73, 103
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/head
+  rotate: true
+  xy: 1433, 248
+  size: 274, 232
+  orig: 274, 232
+  offset: 0, 0
+  index: -1
+female-aus-10/head
+  rotate: true
+  xy: 1433, 248
+  size: 274, 232
+  orig: 274, 232
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/leg_L
+  rotate: true
+  xy: 2, 4
+  size: 122, 329
+  orig: 122, 329
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/leg_R
+  rotate: false
+  xy: 585, 193
+  size: 115, 329
+  orig: 115, 329
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-a
+  rotate: false
+  xy: 982, 97
+  size: 66, 11
+  orig: 66, 11
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-a
+  rotate: false
+  xy: 982, 97
+  size: 66, 11
+  orig: 66, 11
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-b
+  rotate: true
+  xy: 605, 128
+  size: 63, 13
+  orig: 63, 13
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-b
+  rotate: true
+  xy: 605, 128
+  size: 63, 13
+  orig: 63, 13
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-c
+  rotate: false
+  xy: 982, 69
+  size: 65, 26
+  orig: 65, 26
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-c
+  rotate: false
+  xy: 982, 69
+  size: 65, 26
+  orig: 65, 26
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-d
+  rotate: false
+  xy: 982, 110
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-d
+  rotate: false
+  xy: 982, 110
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-e
+  rotate: false
+  xy: 482, 129
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-e
+  rotate: false
+  xy: 482, 129
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-f
+  rotate: true
+  xy: 517, 131
+  size: 21, 18
+  orig: 21, 18
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-f
+  rotate: true
+  xy: 517, 131
+  size: 21, 18
+  orig: 21, 18
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-g
+  rotate: false
+  xy: 537, 135
+  size: 66, 17
+  orig: 66, 17
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-g
+  rotate: false
+  xy: 537, 135
+  size: 66, 17
+  orig: 66, 17
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-h
+  rotate: false
+  xy: 982, 41
+  size: 65, 26
+  orig: 65, 26
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-h
+  rotate: false
+  xy: 982, 41
+  size: 65, 26
+  orig: 65, 26
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/mouth-x
+  rotate: true
+  xy: 825, 144
+  size: 76, 14
+  orig: 76, 14
+  offset: 0, 0
+  index: -1
+female-aus-10/mouth-x
+  rotate: true
+  xy: 825, 144
+  size: 76, 14
+  orig: 76, 14
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/neck
+  rotate: false
+  xy: 746, 144
+  size: 77, 47
+  orig: 77, 47
+  offset: 0, 0
+  index: -1
+female-aus-10/neck
+  rotate: false
+  xy: 746, 144
+  size: 77, 47
+  orig: 77, 47
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/nose
+  rotate: false
+  xy: 982, 5
+  size: 30, 34
+  orig: 30, 34
+  offset: 0, 0
+  index: -1
+female-aus-10/nose
+  rotate: false
+  xy: 982, 5
+  size: 30, 34
+  orig: 30, 34
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/pupils
+  rotate: true
+  xy: 1611, 131
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+female-aus-10/pupils
+  rotate: true
+  xy: 1611, 131
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/shade
+  rotate: true
+  xy: 482, 154
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-aus-10/shade
+  rotate: true
+  xy: 482, 154
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/staart_links
+  rotate: false
+  xy: 819, 222
+  size: 155, 300
+  orig: 155, 300
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/staart_rechts
+  rotate: false
+  xy: 1133, 232
+  size: 148, 290
+  orig: 148, 290
+  offset: 0, 0
+  index: -1
+female-aus-10-swim/wijzen_R
+  rotate: true
+  xy: 841, 145
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+female-aus-10/wijzen_R
+  rotate: true
+  xy: 841, 145
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+female-aus-10/arm_L
+  rotate: false
+  xy: 1296, 10
+  size: 99, 220
+  orig: 99, 220
+  offset: 0, 0
+  index: -1
+female-aus-10/arm_R
+  rotate: false
+  xy: 1476, 33
+  size: 133, 213
+  orig: 133, 213
+  offset: 0, 0
+  index: -1
+female-aus-10/body
+  rotate: false
+  xy: 246, 128
+  size: 234, 394
+  orig: 234, 394
+  offset: 0, 0
+  index: -1
+female-aus-10/leg_L
+  rotate: true
+  xy: 333, 4
+  size: 122, 329
+  orig: 122, 329
+  offset: 0, 0
+  index: -1
+female-aus-10/leg_R
+  rotate: false
+  xy: 702, 193
+  size: 115, 329
+  orig: 115, 329
+  offset: 0, 0
+  index: -1
+female-aus-10/staart_links
+  rotate: false
+  xy: 976, 222
+  size: 155, 300
+  orig: 155, 300
+  offset: 0, 0
+  index: -1
+female-aus-10/staart_rechts
+  rotate: false
+  xy: 1283, 232
+  size: 148, 290
+  orig: 148, 290
+  offset: 0, 0
+  index: -1

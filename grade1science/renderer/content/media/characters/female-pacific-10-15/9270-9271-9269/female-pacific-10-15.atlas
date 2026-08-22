@@ -1,0 +1,643 @@
+
+female-pacific-10-15.png
+size: 1144, 1032
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-pacific-10-15-surf/arm_L
+  rotate: true
+  xy: 851, 558
+  size: 107, 222
+  orig: 107, 222
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/arm_R
+  rotate: false
+  xy: 751, 351
+  size: 87, 208
+  orig: 87, 208
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/body
+  rotate: false
+  xy: 2, 278
+  size: 233, 375
+  orig: 233, 375
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/eyebrows
+  rotate: false
+  xy: 235, 33
+  size: 145, 18
+  orig: 145, 18
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/eyes_closed
+  rotate: true
+  xy: 1125, 839
+  size: 126, 11
+  orig: 126, 11
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/eyes_open
+  rotate: true
+  xy: 684, 273
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/foot_L
+  rotate: false
+  xy: 471, 40
+  size: 167, 116
+  orig: 167, 118
+  offset: 0, 1
+  index: -1
+female-pacific-10-15-surf/foot_R
+  rotate: false
+  xy: 640, 36
+  size: 166, 120
+  orig: 166, 120
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/forearm_R
+  rotate: false
+  xy: 808, 26
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/forerarm_L
+  rotate: true
+  xy: 840, 366
+  size: 81, 220
+  orig: 81, 220
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/hair_behind_surf
+  rotate: false
+  xy: 473, 247
+  size: 209, 146
+  orig: 209, 146
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/hair_surf
+  rotate: false
+  xy: 237, 240
+  size: 234, 146
+  orig: 234, 146
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/hand_R
+  rotate: false
+  xy: 1064, 445
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/head
+  rotate: true
+  xy: 2, 11
+  size: 265, 231
+  orig: 265, 231
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/leg_L
+  rotate: true
+  xy: 794, 908
+  size: 122, 329
+  orig: 122, 329
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/leg_R
+  rotate: true
+  xy: 481, 664
+  size: 115, 329
+  orig: 115, 329
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-a
+  rotate: true
+  xy: 1132, 216
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-b
+  rotate: true
+  xy: 736, 332
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-b
+  rotate: true
+  xy: 736, 332
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-b
+  rotate: true
+  xy: 736, 332
+  size: 61, 13
+  orig: 61, 13
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-c
+  rotate: false
+  xy: 751, 324
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-d
+  rotate: false
+  xy: 382, 16
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-e
+  rotate: true
+  xy: 815, 317
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-e
+  rotate: true
+  xy: 815, 317
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-e
+  rotate: true
+  xy: 815, 317
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-f
+  rotate: false
+  xy: 736, 277
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-f
+  rotate: false
+  xy: 736, 277
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-f
+  rotate: false
+  xy: 736, 277
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-g
+  rotate: true
+  xy: 1125, 967
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-g
+  rotate: true
+  xy: 1125, 967
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-g
+  rotate: true
+  xy: 1125, 967
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-h
+  rotate: false
+  xy: 1048, 16
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/mouth-x
+  rotate: true
+  xy: 470, 588
+  size: 65, 9
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/neck
+  rotate: false
+  xy: 1062, 283
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/nose
+  rotate: false
+  xy: 582, 6
+  size: 40, 32
+  orig: 40, 32
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/pupils
+  rotate: true
+  xy: 1096, 169
+  size: 112, 34
+  orig: 112, 34
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/shade
+  rotate: false
+  xy: 481, 561
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/shade
+  rotate: false
+  xy: 481, 561
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/shade
+  rotate: false
+  xy: 481, 561
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-surf/wijzen_R
+  rotate: false
+  xy: 684, 158
+  size: 73, 113
+  orig: 75, 113
+  offset: 1, 0
+  index: -1
+female-pacific-10-15-swim/arm_L
+  rotate: true
+  xy: 840, 449
+  size: 107, 222
+  orig: 107, 222
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/arm_L
+  rotate: true
+  xy: 840, 449
+  size: 107, 222
+  orig: 107, 222
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/arm_R
+  rotate: true
+  xy: 473, 158
+  size: 87, 208
+  orig: 87, 208
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/arm_R
+  rotate: true
+  xy: 473, 158
+  size: 87, 208
+  orig: 87, 208
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/body
+  rotate: false
+  xy: 246, 655
+  size: 233, 375
+  orig: 233, 375
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/eyebrows
+  rotate: false
+  xy: 235, 13
+  size: 145, 18
+  orig: 145, 18
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/eyebrows
+  rotate: false
+  xy: 235, 13
+  size: 145, 18
+  orig: 145, 18
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/eyes_closed
+  rotate: false
+  xy: 454, 27
+  size: 126, 11
+  orig: 126, 11
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/eyes_closed
+  rotate: false
+  xy: 454, 27
+  size: 126, 11
+  orig: 126, 11
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/eyes_open
+  rotate: true
+  xy: 1051, 43
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/eyes_open
+  rotate: true
+  xy: 1051, 43
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/foot_L
+  rotate: false
+  xy: 927, 165
+  size: 167, 116
+  orig: 167, 118
+  offset: 0, 1
+  index: -1
+female-pacific-10-15/foot_L
+  rotate: false
+  xy: 927, 165
+  size: 167, 116
+  orig: 167, 118
+  offset: 0, 1
+  index: -1
+female-pacific-10-15-swim/foot_R
+  rotate: false
+  xy: 759, 161
+  size: 166, 120
+  orig: 166, 120
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/foot_R
+  rotate: false
+  xy: 759, 161
+  size: 166, 120
+  orig: 166, 120
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/forearm_R
+  rotate: false
+  xy: 892, 26
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/forearm_R
+  rotate: false
+  xy: 892, 26
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/forerarm_L
+  rotate: true
+  xy: 840, 283
+  size: 81, 220
+  orig: 81, 220
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/forerarm_L
+  rotate: true
+  xy: 840, 283
+  size: 81, 220
+  orig: 81, 220
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/hair
+  rotate: false
+  xy: 235, 53
+  size: 234, 185
+  orig: 234, 185
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/hair
+  rotate: false
+  xy: 235, 53
+  size: 234, 185
+  orig: 234, 185
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/hair_behind
+  rotate: true
+  xy: 470, 395
+  size: 164, 279
+  orig: 164, 279
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/hair_behind
+  rotate: true
+  xy: 470, 395
+  size: 164, 279
+  orig: 164, 279
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/hand_R
+  rotate: false
+  xy: 1062, 332
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/hand_R
+  rotate: false
+  xy: 1062, 332
+  size: 78, 111
+  orig: 78, 111
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/head
+  rotate: true
+  xy: 237, 388
+  size: 265, 231
+  orig: 265, 231
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/head
+  rotate: true
+  xy: 237, 388
+  size: 265, 231
+  orig: 265, 231
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/leg_L
+  rotate: true
+  xy: 794, 784
+  size: 122, 329
+  orig: 122, 329
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/leg_L
+  rotate: true
+  xy: 794, 784
+  size: 122, 329
+  orig: 122, 329
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/leg_R
+  rotate: true
+  xy: 812, 667
+  size: 115, 329
+  orig: 115, 329
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/leg_R
+  rotate: true
+  xy: 812, 667
+  size: 115, 329
+  orig: 115, 329
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-a
+  rotate: true
+  xy: 1124, 600
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-a
+  rotate: true
+  xy: 1124, 600
+  size: 65, 10
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-c
+  rotate: false
+  xy: 1075, 563
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-c
+  rotate: false
+  xy: 1075, 563
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-d
+  rotate: false
+  xy: 976, 13
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-d
+  rotate: false
+  xy: 976, 13
+  size: 70, 35
+  orig: 70, 35
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-h
+  rotate: false
+  xy: 736, 297
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-h
+  rotate: false
+  xy: 736, 297
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/mouth-x
+  rotate: false
+  xy: 235, 2
+  size: 65, 9
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/mouth-x
+  rotate: false
+  xy: 235, 2
+  size: 65, 9
+  orig: 65, 10
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/neck
+  rotate: true
+  xy: 1075, 590
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/neck
+  rotate: true
+  xy: 1075, 590
+  size: 75, 47
+  orig: 75, 47
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/nose
+  rotate: false
+  xy: 624, 2
+  size: 40, 32
+  orig: 40, 32
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/nose
+  rotate: false
+  xy: 624, 2
+  size: 40, 32
+  orig: 40, 32
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/pupils
+  rotate: true
+  xy: 1103, 55
+  size: 112, 34
+  orig: 112, 34
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/pupils
+  rotate: true
+  xy: 1103, 55
+  size: 112, 34
+  orig: 112, 34
+  offset: 0, 0
+  index: -1
+female-pacific-10-15-swim/wijzen_R
+  rotate: false
+  xy: 976, 50
+  size: 73, 113
+  orig: 75, 113
+  offset: 1, 0
+  index: -1
+female-pacific-10-15/wijzen_R
+  rotate: false
+  xy: 976, 50
+  size: 73, 113
+  orig: 75, 113
+  offset: 1, 0
+  index: -1
+female-pacific-10-15/body
+  rotate: false
+  xy: 2, 655
+  size: 242, 375
+  orig: 242, 375
+  offset: 0, 0
+  index: -1
+female-pacific-10-15/skirt
+  rotate: false
+  xy: 481, 781
+  size: 311, 249
+  orig: 311, 249
+  offset: 0, 0
+  index: -1

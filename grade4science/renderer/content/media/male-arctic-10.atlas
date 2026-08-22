@@ -1,0 +1,230 @@
+
+male-antarc-10.png
+size: 1936, 332
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Layer_34
+  rotate: false
+  xy: 383, 19
+  size: 184, 54
+  orig: 184, 54
+  offset: 0, 0
+  index: -1
+arm_L
+  rotate: false
+  xy: 1042, 105
+  size: 105, 225
+  orig: 105, 225
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 1149, 113
+  size: 134, 217
+  orig: 134, 217
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 410, 87
+  size: 243, 397
+  orig: 243, 397
+  offset: 0, 0
+  index: -1
+collar_behind
+  rotate: false
+  xy: 1540, 158
+  size: 340, 172
+  orig: 340, 172
+  offset: 0, 0
+  index: -1
+collar_front
+  rotate: true
+  xy: 1431, 148
+  size: 182, 107
+  orig: 182, 107
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 1533, 7
+  size: 139, 19
+  orig: 139, 19
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 361, 2
+  size: 122, 11
+  orig: 122, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 1882, 217
+  size: 113, 50
+  orig: 113, 50
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 1554, 48
+  size: 170, 108
+  orig: 170, 108
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 1726, 51
+  size: 171, 105
+  orig: 171, 105
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 1439, 3
+  size: 92, 143
+  orig: 92, 143
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 831, 2
+  size: 87, 236
+  orig: 87, 236
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 251, 75
+  size: 255, 157
+  orig: 255, 157
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 731, 12
+  size: 73, 98
+  orig: 73, 98
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 809, 91
+  size: 239, 231
+  orig: 239, 231
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 2, 6
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 127, 11
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 300, 2
+  size: 59, 10
+  orig: 59, 10
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 368, 16
+  size: 57, 13
+  orig: 57, 13
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 318, 15
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 266, 8
+  size: 65, 32
+  orig: 65, 32
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 1882, 162
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1915, 198
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 300, 14
+  size: 59, 16
+  orig: 59, 16
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 343, 15
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 251, 5
+  size: 68, 13
+  orig: 68, 13
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 569, 9
+  size: 76, 46
+  orig: 76, 46
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 1882, 185
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 1285, 114
+  size: 216, 144
+  orig: 216, 144
+  offset: 0, 0
+  index: -1
+shade
+  rotate: false
+  xy: 1069, 2
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 617, 10
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1

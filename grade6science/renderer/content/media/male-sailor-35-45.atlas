@@ -1,0 +1,223 @@
+
+male-sailor-35-45.png
+size: 1536, 523
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 1111, 214
+  size: 161, 297
+  orig: 161, 297
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 1134, 377
+  size: 144, 302
+  orig: 144, 302
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 231
+  size: 290, 537
+  orig: 290, 537
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 278, 32
+  size: 143, 23
+  orig: 143, 23
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 1031, 2
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 278, 3
+  size: 122, 27
+  orig: 122, 27
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 819, 116
+  size: 213, 112
+  orig: 213, 112
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 819, 2
+  size: 210, 112
+  orig: 210, 112
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 523, 2
+  size: 82, 200
+  orig: 82, 200
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 1034, 109
+  size: 103, 216
+  orig: 103, 216
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 278, 57
+  size: 243, 172
+  orig: 243, 172
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 1438, 351
+  size: 96, 170
+  orig: 96, 170
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 1031, 14
+  size: 93, 170
+  orig: 93, 170
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 523, 86
+  size: 294, 142
+  orig: 294, 142
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 5
+  size: 224, 274
+  orig: 224, 274
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 541, 377
+  size: 144, 591
+  orig: 144, 591
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 541, 230
+  size: 145, 568
+  orig: 145, 568
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 725, 2
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 725, 2
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 1399, 134
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 1369, 25
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 1432, 179
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 1503, 189
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 402, 5
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1432, 117
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1432, 142
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 1410, 224
+  size: 108, 125
+  orig: 108, 125
+  offset: 0, 0
+  index: -1
+necktie
+  rotate: false
+  xy: 1252, 108
+  size: 145, 104
+  orig: 145, 104
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 756, 17
+  size: 52, 67
+  orig: 52, 67
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 423, 33
+  size: 97, 22
+  orig: 97, 22
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 1203, 17
+  size: 89, 164
+  orig: 89, 164
+  offset: 0, 0
+  index: -1

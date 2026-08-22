@@ -1,0 +1,328 @@
+
+tim.png
+size: 1969, 491
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+tim-pirate/head
+  rotate: true
+  xy: 1115, 7
+  size: 212, 205
+  orig: 212, 205
+  offset: 0, 0
+  index: -1
+tim-winter/head
+  rotate: true
+  xy: 1115, 7
+  size: 212, 205
+  orig: 212, 205
+  offset: 0, 0
+  index: -1
+tim-pirate/piratehat
+  rotate: true
+  xy: 670, 197
+  size: 292, 222
+  orig: 292, 222
+  offset: 0, 0
+  index: -1
+tim-swim/snorkel
+  rotate: false
+  xy: 894, 220
+  size: 206, 269
+  orig: 206, 269
+  offset: 0, 0
+  index: -1
+tim-winter/arm_L
+  rotate: false
+  xy: 1698, 366
+  size: 106, 123
+  orig: 106, 123
+  offset: 0, 0
+  index: -1
+tim-winter/arm_R
+  rotate: false
+  xy: 1640, 96
+  size: 105, 124
+  orig: 105, 124
+  offset: 0, 0
+  index: -1
+tim-winter/forearm_L_sweater
+  rotate: true
+  xy: 1739, 223
+  size: 85, 101
+  orig: 85, 101
+  offset: 0, 0
+  index: -1
+tim-winter/forearm_R_sweater
+  rotate: true
+  xy: 527, 87
+  size: 84, 89
+  orig: 84, 89
+  offset: 0, 0
+  index: -1
+tim-winter/hat
+  rotate: true
+  xy: 1331, 225
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+tim-winter/sweater
+  rotate: false
+  xy: 1102, 221
+  size: 227, 268
+  orig: 227, 268
+  offset: 0, 0
+  index: -1
+tim/arm_L
+  rotate: true
+  xy: 696, 88
+  size: 107, 123
+  orig: 107, 123
+  offset: 0, 0
+  index: -1
+tim/arm_R
+  rotate: false
+  xy: 1529, 96
+  size: 109, 124
+  orig: 109, 124
+  offset: 0, 0
+  index: -1
+tim/body
+  rotate: false
+  xy: 2, 86
+  size: 215, 403
+  orig: 215, 403
+  offset: 0, 0
+  index: -1
+tim/eyes_closed
+  rotate: false
+  xy: 894, 207
+  size: 117, 11
+  orig: 117, 11
+  offset: 0, 0
+  index: -1
+tim/eyes_open
+  rotate: true
+  xy: 1806, 370
+  size: 119, 52
+  orig: 119, 52
+  offset: 0, 0
+  index: -1
+tim/fire_L_big
+  rotate: true
+  xy: 219, 86
+  size: 55, 152
+  orig: 55, 152
+  offset: 0, 0
+  index: -1
+tim/fire_L_small
+  rotate: true
+  xy: 1698, 310
+  size: 54, 111
+  orig: 54, 111
+  offset: 0, 0
+  index: -1
+tim/fire_R_big
+  rotate: true
+  xy: 373, 87
+  size: 54, 152
+  orig: 54, 152
+  offset: 0, 0
+  index: -1
+tim/fire_R_small
+  rotate: true
+  xy: 1811, 314
+  size: 54, 111
+  orig: 54, 111
+  offset: 0, 0
+  index: -1
+tim/forearm_L
+  rotate: true
+  xy: 1489, 222
+  size: 79, 123
+  orig: 79, 123
+  offset: 0, 0
+  index: -1
+tim/forearm_R
+  rotate: true
+  xy: 1614, 222
+  size: 79, 123
+  orig: 79, 123
+  offset: 0, 0
+  index: -1
+tim/glasses_L
+  rotate: true
+  xy: 1747, 128
+  size: 93, 78
+  orig: 93, 78
+  offset: 0, 0
+  index: -1
+tim/glasses_R
+  rotate: true
+  xy: 1860, 372
+  size: 117, 78
+  orig: 117, 78
+  offset: 0, 0
+  index: -1
+tim/hand_L
+  rotate: true
+  xy: 1529, 8
+  size: 86, 78
+  orig: 86, 78
+  offset: 0, 0
+  index: -1
+tim/hand_R_point
+  rotate: true
+  xy: 1899, 169
+  size: 66, 68
+  orig: 66, 68
+  offset: 0, 0
+  index: -1
+tim/hand_R_rest
+  rotate: true
+  xy: 1609, 8
+  size: 86, 78
+  orig: 86, 78
+  offset: 0, 0
+  index: -1
+tim/hand_R_wave
+  rotate: false
+  xy: 618, 87
+  size: 76, 84
+  orig: 76, 84
+  offset: 0, 0
+  index: -1
+tim/head
+  rotate: true
+  xy: 1322, 7
+  size: 212, 205
+  orig: 212, 205
+  offset: 0, 0
+  index: -1
+tim/jetpack_L
+  rotate: false
+  xy: 821, 6
+  size: 292, 189
+  orig: 292, 189
+  offset: 0, 0
+  index: -1
+tim/jetpack_R
+  rotate: true
+  xy: 479, 173
+  size: 316, 189
+  orig: 316, 189
+  offset: 0, 0
+  index: -1
+tim/leg_L
+  rotate: false
+  xy: 1489, 303
+  size: 103, 186
+  orig: 103, 186
+  offset: 0, 0
+  index: -1
+tim/leg_R
+  rotate: false
+  xy: 1594, 303
+  size: 102, 186
+  orig: 102, 186
+  offset: 0, 0
+  index: -1
+tim/mouth-a
+  rotate: true
+  xy: 1827, 142
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+tim/mouth-x
+  rotate: true
+  xy: 1827, 142
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+tim/mouth-b
+  rotate: true
+  xy: 604, 4
+  size: 81, 76
+  orig: 81, 76
+  offset: 0, 0
+  index: -1
+tim/mouth-c
+  rotate: false
+  xy: 1689, 8
+  size: 77, 86
+  orig: 77, 86
+  offset: 0, 0
+  index: -1
+tim/mouth-d
+  rotate: false
+  xy: 1768, 33
+  size: 78, 93
+  orig: 78, 93
+  offset: 0, 0
+  index: -1
+tim/mouth-e
+  rotate: false
+  xy: 2, 2
+  size: 77, 82
+  orig: 77, 82
+  offset: 0, 0
+  index: -1
+tim/mouth-f
+  rotate: true
+  xy: 682, 5
+  size: 80, 74
+  orig: 80, 74
+  offset: 0, 0
+  index: -1
+tim/mouth-g
+  rotate: false
+  xy: 1842, 237
+  size: 79, 75
+  orig: 79, 75
+  offset: 0, 0
+  index: -1
+tim/mouth-h
+  rotate: false
+  xy: 525, 2
+  size: 77, 83
+  orig: 77, 83
+  offset: 0, 0
+  index: -1
+tim/pupils
+  rotate: true
+  xy: 1924, 269
+  size: 101, 32
+  orig: 101, 32
+  offset: 0, 0
+  index: -1
+tim/scarf_L
+  rotate: false
+  xy: 758, 23
+  size: 58, 63
+  orig: 58, 63
+  offset: 0, 0
+  index: -1
+tim/scarf_R
+  rotate: true
+  xy: 81, 2
+  size: 82, 65
+  orig: 82, 65
+  offset: 0, 0
+  index: -1
+tim/shade
+  rotate: false
+  xy: 148, 3
+  size: 375, 81
+  orig: 375, 81
+  offset: 0, 0
+  index: -1
+tim/shield
+  rotate: false
+  xy: 219, 143
+  size: 258, 346
+  orig: 258, 346
+  offset: 0, 0
+  index: -1

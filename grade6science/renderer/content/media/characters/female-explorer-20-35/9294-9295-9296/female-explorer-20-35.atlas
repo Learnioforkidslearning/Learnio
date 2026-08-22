@@ -1,0 +1,223 @@
+
+female-explorer-20-35.png
+size: 860, 1027
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 404, 120
+  size: 133, 315
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 259, 110
+  size: 143, 325
+  orig: 143, 325
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 490
+  size: 281, 535
+  orig: 281, 535
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 837, 894
+  size: 131, 16
+  orig: 131, 16
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 2, 2
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 803, 533
+  size: 126, 27
+  orig: 126, 27
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 539, 137
+  size: 201, 113
+  orig: 201, 113
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 539, 21
+  size: 200, 114
+  orig: 200, 114
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 2, 13
+  size: 87, 200
+  orig: 87, 200
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: false
+  xy: 760, 836
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 539, 252
+  size: 209, 155
+  orig: 209, 155
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 2, 102
+  size: 255, 386
+  orig: 255, 386
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 750, 252
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 760, 661
+  size: 91, 173
+  orig: 91, 173
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 577, 654
+  size: 371, 181
+  orig: 371, 181
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 577, 409
+  size: 224, 243
+  orig: 224, 243
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 434, 437
+  size: 141, 588
+  orig: 141, 588
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 285, 437
+  size: 147, 588
+  orig: 147, 588
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 832, 598
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 832, 598
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 741, 36
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 204, 31
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 741, 68
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 829, 466
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 259, 466
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 832, 535
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 803, 75
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 742, 107
+  size: 95, 143
+  orig: 95, 143
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 829, 498
+  size: 33, 29
+  orig: 33, 29
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 803, 432
+  size: 99, 24
+  orig: 99, 24
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 259, 19
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1

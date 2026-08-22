@@ -1,0 +1,433 @@
+
+female-african-10-15.png
+size: 2012, 475
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+female-african-10-15-egypt/arm_L
+  rotate: true
+  xy: 1789, 225
+  size: 110, 221
+  orig: 110, 221
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/arm_R
+  rotate: true
+  xy: 1789, 337
+  size: 136, 219
+  orig: 136, 219
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/body
+  rotate: false
+  xy: 2, 87
+  size: 229, 386
+  orig: 229, 386
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/collar
+  rotate: false
+  xy: 1313, 20
+  size: 261, 127
+  orig: 261, 127
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/eyebrows
+  rotate: true
+  xy: 1628, 2
+  size: 145, 17
+  orig: 145, 17
+  offset: 0, 0
+  index: -1
+female-african-10-15/eyebrows
+  rotate: true
+  xy: 1628, 2
+  size: 145, 17
+  orig: 145, 17
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/eyes_closed
+  rotate: false
+  xy: 834, 133
+  size: 126, 12
+  orig: 126, 12
+  offset: 0, 0
+  index: -1
+female-african-10-15/eyes_closed
+  rotate: false
+  xy: 834, 133
+  size: 126, 12
+  orig: 126, 12
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/eyes_open
+  rotate: true
+  xy: 1576, 27
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-african-10-15/eyes_open
+  rotate: true
+  xy: 1576, 27
+  size: 120, 50
+  orig: 120, 50
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/foot_L
+  rotate: false
+  xy: 834, 2
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+female-african-10-15/foot_L
+  rotate: false
+  xy: 834, 2
+  size: 163, 116
+  orig: 163, 116
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/foot_R
+  rotate: false
+  xy: 1788, 105
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+female-african-10-15/foot_R
+  rotate: false
+  xy: 1788, 105
+  size: 163, 118
+  orig: 163, 118
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/forearm_R
+  rotate: true
+  xy: 225, 3
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-african-10-15/forearm_R
+  rotate: true
+  xy: 225, 3
+  size: 82, 133
+  orig: 82, 133
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/forerarm_L
+  rotate: true
+  xy: 2, 4
+  size: 81, 221
+  orig: 81, 221
+  offset: 0, 0
+  index: -1
+female-african-10-15/forerarm_L
+  rotate: true
+  xy: 2, 4
+  size: 81, 221
+  orig: 81, 221
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/hair
+  rotate: false
+  xy: 1243, 263
+  size: 271, 210
+  orig: 271, 210
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/hand_R
+  rotate: false
+  xy: 1222, 6
+  size: 78, 112
+  orig: 78, 112
+  offset: 0, 0
+  index: -1
+female-african-10-15/hand_R
+  rotate: false
+  xy: 1222, 6
+  size: 78, 112
+  orig: 78, 112
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/head
+  rotate: false
+  xy: 976, 241
+  size: 265, 232
+  orig: 265, 232
+  offset: 0, 0
+  index: -1
+female-african-10-15/head
+  rotate: false
+  xy: 976, 241
+  size: 265, 232
+  orig: 265, 232
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/leg_L
+  rotate: true
+  xy: 976, 120
+  size: 119, 335
+  orig: 119, 335
+  offset: 0, 0
+  index: -1
+female-african-10-15/leg_L
+  rotate: true
+  xy: 976, 120
+  size: 119, 335
+  orig: 119, 335
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/leg_R
+  rotate: true
+  xy: 1313, 149
+  size: 112, 335
+  orig: 112, 335
+  offset: 0, 0
+  index: -1
+female-african-10-15/leg_R
+  rotate: true
+  xy: 1313, 149
+  size: 112, 335
+  orig: 112, 335
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-a
+  rotate: false
+  xy: 834, 120
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-a
+  rotate: false
+  xy: 834, 120
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-b
+  rotate: false
+  xy: 1711, 26
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-b
+  rotate: false
+  xy: 1711, 26
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-c
+  rotate: false
+  xy: 360, 11
+  size: 62, 26
+  orig: 62, 26
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-c
+  rotate: false
+  xy: 360, 11
+  size: 62, 26
+  orig: 62, 26
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-d
+  rotate: true
+  xy: 1903, 33
+  size: 70, 34
+  orig: 70, 34
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-d
+  rotate: true
+  xy: 1903, 33
+  size: 70, 34
+  orig: 70, 34
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-e
+  rotate: false
+  xy: 1576, 2
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-e
+  rotate: false
+  xy: 1576, 2
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-f
+  rotate: false
+  xy: 437, 66
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-f
+  rotate: false
+  xy: 437, 66
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-g
+  rotate: false
+  xy: 1243, 244
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-g
+  rotate: false
+  xy: 1243, 244
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-h
+  rotate: false
+  xy: 1647, 14
+  size: 62, 26
+  orig: 62, 26
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-h
+  rotate: false
+  xy: 1647, 14
+  size: 62, 26
+  orig: 62, 26
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/mouth-x
+  rotate: true
+  xy: 1988, 149
+  size: 74, 14
+  orig: 74, 14
+  offset: 0, 0
+  index: -1
+female-african-10-15/mouth-x
+  rotate: true
+  xy: 1988, 149
+  size: 74, 14
+  orig: 74, 14
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/neck
+  rotate: false
+  xy: 360, 39
+  size: 75, 46
+  orig: 75, 46
+  offset: 0, 0
+  index: -1
+female-african-10-15/neck
+  rotate: false
+  xy: 360, 39
+  size: 75, 46
+  orig: 75, 46
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/nose
+  rotate: true
+  xy: 1939, 64
+  size: 39, 31
+  orig: 39, 31
+  offset: 0, 0
+  index: -1
+female-african-10-15/nose
+  rotate: true
+  xy: 1939, 64
+  size: 39, 31
+  orig: 39, 31
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/pupils
+  rotate: true
+  xy: 1953, 111
+  size: 112, 33
+  orig: 112, 33
+  offset: 0, 0
+  index: -1
+female-african-10-15/pupils
+  rotate: true
+  xy: 1953, 111
+  size: 112, 33
+  orig: 112, 33
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/shade
+  rotate: false
+  xy: 464, 44
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-african-10-15/shade
+  rotate: false
+  xy: 464, 44
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/skirt
+  rotate: false
+  xy: 464, 147
+  size: 254, 326
+  orig: 254, 326
+  offset: 0, 0
+  index: -1
+female-african-10-15-egypt/wijzen_R
+  rotate: true
+  xy: 1788, 28
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+female-african-10-15/wijzen_R
+  rotate: true
+  xy: 1788, 28
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+female-african-10-15/arm_L
+  rotate: true
+  xy: 999, 8
+  size: 110, 221
+  orig: 110, 221
+  offset: 0, 0
+  index: -1
+female-african-10-15/arm_R
+  rotate: false
+  xy: 1650, 42
+  size: 136, 219
+  orig: 136, 219
+  offset: 0, 0
+  index: -1
+female-african-10-15/body
+  rotate: false
+  xy: 233, 87
+  size: 229, 386
+  orig: 229, 386
+  offset: 0, 0
+  index: -1
+female-african-10-15/hair
+  rotate: false
+  xy: 1516, 263
+  size: 271, 210
+  orig: 271, 210
+  offset: 0, 0
+  index: -1
+female-african-10-15/skirt
+  rotate: false
+  xy: 720, 147
+  size: 254, 326
+  orig: 254, 326
+  offset: 0, 0
+  index: -1

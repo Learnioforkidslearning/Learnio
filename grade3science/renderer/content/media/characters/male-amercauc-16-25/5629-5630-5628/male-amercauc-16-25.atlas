@@ -1,0 +1,629 @@
+
+male-amercauc-16-25.png
+size: 1931, 840
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-amercauc-16-25-cook/arm_L
+  rotate: true
+  xy: 1606, 552
+  size: 142, 310
+  orig: 142, 310
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/arm_R
+  rotate: false
+  xy: 1168, 513
+  size: 144, 325
+  orig: 144, 325
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/body
+  rotate: false
+  xy: 584, 305
+  size: 290, 533
+  orig: 290, 533
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/eyebrows
+  rotate: false
+  xy: 2, 9
+  size: 138, 14
+  orig: 138, 14
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/eyebrows
+  rotate: false
+  xy: 2, 9
+  size: 138, 14
+  orig: 138, 14
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/eyebrows
+  rotate: false
+  xy: 2, 9
+  size: 138, 14
+  orig: 138, 14
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/eyes_closed
+  rotate: false
+  xy: 142, 13
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/eyes_closed
+  rotate: false
+  xy: 142, 13
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/eyes_closed
+  rotate: false
+  xy: 142, 13
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/eyes_open
+  rotate: false
+  xy: 380, 5
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/eyes_open
+  rotate: false
+  xy: 380, 5
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/eyes_open
+  rotate: false
+  xy: 380, 5
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/foot_L
+  rotate: false
+  xy: 1714, 278
+  size: 215, 128
+  orig: 215, 128
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/foot_L
+  rotate: false
+  xy: 1714, 278
+  size: 215, 128
+  orig: 215, 128
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/foot_R
+  rotate: false
+  xy: 1714, 148
+  size: 215, 128
+  orig: 215, 128
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/foot_R
+  rotate: false
+  xy: 1714, 148
+  size: 215, 128
+  orig: 215, 128
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/forearm_R
+  rotate: false
+  xy: 316, 36
+  size: 95, 212
+  orig: 114, 218
+  offset: 13, 4
+  index: -1
+male-amercauc-16-25/forearm_R
+  rotate: false
+  xy: 316, 36
+  size: 95, 212
+  orig: 114, 218
+  offset: 13, 4
+  index: -1
+male-amercauc-16-25-cook/forerarm_L
+  rotate: true
+  xy: 1499, 11
+  size: 87, 213
+  orig: 87, 213
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/forerarm_L
+  rotate: true
+  xy: 1499, 11
+  size: 87, 213
+  orig: 87, 213
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/hair
+  rotate: false
+  xy: 2, 25
+  size: 215, 181
+  orig: 215, 181
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/hair
+  rotate: false
+  xy: 2, 25
+  size: 215, 181
+  orig: 215, 181
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/hair
+  rotate: false
+  xy: 2, 25
+  size: 215, 181
+  orig: 215, 181
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/hand_L
+  rotate: false
+  xy: 219, 36
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/hand_L
+  rotate: false
+  xy: 219, 36
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/hand_L
+  rotate: false
+  xy: 219, 36
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/hand_R
+  rotate: false
+  xy: 510, 78
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/hand_R
+  rotate: false
+  xy: 510, 78
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/hand_R
+  rotate: false
+  xy: 510, 78
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/hat
+  rotate: false
+  xy: 603, 78
+  size: 249, 225
+  orig: 249, 225
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/head
+  rotate: false
+  xy: 1389, 100
+  size: 218, 254
+  orig: 218, 254
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/head
+  rotate: false
+  xy: 1389, 100
+  size: 218, 254
+  orig: 218, 254
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/head
+  rotate: false
+  xy: 1389, 100
+  size: 218, 254
+  orig: 218, 254
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/leg_L
+  rotate: false
+  xy: 2, 208
+  size: 144, 630
+  orig: 144, 630
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/leg_L
+  rotate: false
+  xy: 2, 208
+  size: 144, 630
+  orig: 144, 630
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/leg_R
+  rotate: false
+  xy: 294, 250
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/leg_R
+  rotate: false
+  xy: 294, 250
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-a
+  rotate: false
+  xy: 501, 5
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-x
+  rotate: false
+  xy: 501, 5
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-a
+  rotate: false
+  xy: 501, 5
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-x
+  rotate: false
+  xy: 501, 5
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-a
+  rotate: false
+  xy: 501, 5
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-x
+  rotate: false
+  xy: 501, 5
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-b
+  rotate: false
+  xy: 300, 4
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-b
+  rotate: false
+  xy: 300, 4
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-b
+  rotate: false
+  xy: 300, 4
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-c
+  rotate: false
+  xy: 510, 39
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-c
+  rotate: false
+  xy: 510, 39
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-c
+  rotate: false
+  xy: 510, 39
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-d
+  rotate: true
+  xy: 650, 7
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-d
+  rotate: true
+  xy: 650, 7
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-d
+  rotate: true
+  xy: 650, 7
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-e
+  rotate: false
+  xy: 265, 2
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-e
+  rotate: false
+  xy: 265, 2
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-e
+  rotate: false
+  xy: 265, 2
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-f
+  rotate: false
+  xy: 593, 51
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-f
+  rotate: false
+  xy: 593, 51
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-f
+  rotate: false
+  xy: 593, 51
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-g
+  rotate: true
+  xy: 738, 12
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-g
+  rotate: true
+  xy: 738, 12
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-g
+  rotate: true
+  xy: 738, 12
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/mouth-h
+  rotate: false
+  xy: 585, 2
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/mouth-h
+  rotate: false
+  xy: 585, 2
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/mouth-h
+  rotate: false
+  xy: 585, 2
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/neck
+  rotate: false
+  xy: 1389, 4
+  size: 108, 94
+  orig: 108, 94
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/neck
+  rotate: false
+  xy: 1389, 4
+  size: 108, 94
+  orig: 108, 94
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/neck
+  rotate: false
+  xy: 1389, 4
+  size: 108, 94
+  orig: 108, 94
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/nose
+  rotate: false
+  xy: 695, 9
+  size: 41, 67
+  orig: 41, 67
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/nose
+  rotate: false
+  xy: 695, 9
+  size: 41, 67
+  orig: 41, 67
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/nose
+  rotate: false
+  xy: 695, 9
+  size: 41, 67
+  orig: 41, 67
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/pupils
+  rotate: false
+  xy: 1168, 323
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/pupils
+  rotate: false
+  xy: 1168, 323
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/pupils
+  rotate: false
+  xy: 1168, 323
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-cook/wijzen_R
+  rotate: false
+  xy: 1168, 347
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/wijzen_R
+  rotate: false
+  xy: 1168, 347
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/wijzen_R
+  rotate: false
+  xy: 1168, 347
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/arm_L
+  rotate: true
+  xy: 1606, 408
+  size: 142, 310
+  orig: 142, 310
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/arm_R
+  rotate: false
+  xy: 1314, 513
+  size: 144, 325
+  orig: 144, 325
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/body
+  rotate: false
+  xy: 876, 306
+  size: 290, 532
+  orig: 290, 532
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/foot_L
+  rotate: false
+  xy: 1714, 18
+  size: 215, 128
+  orig: 215, 128
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/foot_R
+  rotate: false
+  xy: 1714, 18
+  size: 215, 128
+  orig: 215, 128
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/forearm_R
+  rotate: false
+  xy: 413, 36
+  size: 95, 212
+  orig: 114, 218
+  offset: 13, 4
+  index: -1
+male-amercauc-16-25-sport/forerarm_L
+  rotate: false
+  xy: 1609, 193
+  size: 87, 213
+  orig: 87, 213
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/hat_sport
+  rotate: false
+  xy: 1258, 356
+  size: 266, 155
+  orig: 266, 225
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/leg_L
+  rotate: false
+  xy: 148, 208
+  size: 144, 630
+  orig: 144, 630
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25-sport/leg_R
+  rotate: false
+  xy: 439, 250
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/arm_L
+  rotate: true
+  xy: 1606, 696
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/arm_R
+  rotate: false
+  xy: 1460, 514
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-amercauc-16-25/body
+  rotate: true
+  xy: 854, 13
+  size: 290, 533
+  orig: 290, 533
+  offset: 0, 0
+  index: -1

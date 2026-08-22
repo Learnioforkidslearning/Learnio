@@ -1,0 +1,153 @@
+
+male-sheep-adult.png
+size: 1677, 475
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 9
+  size: 714, 464
+  orig: 714, 464
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 805, 26
+  size: 98, 18
+  orig: 98, 18
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 718, 2
+  size: 85, 8
+  orig: 85, 8
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 718, 12
+  size: 85, 32
+  orig: 85, 32
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 915, 164
+  size: 267, 206
+  orig: 267, 206
+  offset: 0, 0
+  index: -1
+hindleg_L
+  rotate: false
+  xy: 718, 46
+  size: 195, 324
+  orig: 195, 324
+  offset: 0, 0
+  index: -1
+hindleg_R
+  rotate: true
+  xy: 1184, 192
+  size: 178, 286
+  orig: 178, 286
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 915, 32
+  size: 130, 334
+  orig: 130, 334
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 1251, 93
+  size: 97, 340
+  orig: 97, 340
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: true
+  xy: 1526, 4
+  size: 87, 84
+  orig: 87, 84
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 1526, 4
+  size: 87, 84
+  orig: 87, 84
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 1580, 293
+  size: 87, 87
+  orig: 87, 87
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 1344, 4
+  size: 87, 90
+  orig: 87, 90
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 1580, 382
+  size: 87, 91
+  orig: 87, 91
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 1436, 4
+  size: 87, 88
+  orig: 87, 88
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1573, 206
+  size: 87, 85
+  orig: 87, 85
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 1593, 117
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 1251, 4
+  size: 87, 91
+  orig: 87, 91
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 805, 3
+  size: 77, 21
+  orig: 77, 21
+  offset: 0, 0
+  index: -1
+shade
+  rotate: false
+  xy: 718, 372
+  size: 860, 101
+  orig: 860, 101
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 1472, 200
+  size: 99, 170
+  orig: 99, 170
+  offset: 0, 0
+  index: -1

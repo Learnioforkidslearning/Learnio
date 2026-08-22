@@ -1,0 +1,447 @@
+
+male-african-25-40.png
+size: 2014, 822
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-african-25-40-egypt/arm_L
+  rotate: true
+  xy: 1650, 532
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/arm_R
+  rotate: true
+  xy: 1172, 304
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/body
+  rotate: false
+  xy: 588, 288
+  size: 290, 532
+  orig: 290, 532
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/collar
+  rotate: true
+  xy: 665, 6
+  size: 280, 165
+  orig: 280, 165
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/crown
+  rotate: true
+  xy: 832, 7
+  size: 279, 369
+  orig: 279, 369
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/crown_back
+  rotate: true
+  xy: 1203, 43
+  size: 259, 212
+  orig: 259, 212
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/eyebrows
+  rotate: false
+  xy: 296, 232
+  size: 136, 13
+  orig: 136, 13
+  offset: 0, 0
+  index: -1
+male-african-25-40/eyebrows
+  rotate: false
+  xy: 296, 232
+  size: 136, 13
+  orig: 136, 13
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/eyes_closed
+  rotate: false
+  xy: 434, 234
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-african-25-40/eyes_closed
+  rotate: false
+  xy: 434, 234
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/eyes_open
+  rotate: true
+  xy: 1963, 384
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-african-25-40/eyes_open
+  rotate: true
+  xy: 1963, 384
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/foot_L
+  rotate: true
+  xy: 1501, 143
+  size: 201, 112
+  orig: 201, 112
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/foot_R
+  rotate: true
+  xy: 1615, 143
+  size: 201, 112
+  orig: 201, 112
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/forearm_R
+  rotate: true
+  xy: 1729, 305
+  size: 81, 200
+  orig: 81, 200
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/forerarm_L
+  rotate: false
+  xy: 1417, 89
+  size: 82, 213
+  orig: 82, 213
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/hair
+  rotate: true
+  xy: 253, 5
+  size: 225, 182
+  orig: 225, 182
+  offset: 0, 0
+  index: -1
+male-african-25-40/hair
+  rotate: true
+  xy: 253, 5
+  size: 225, 182
+  orig: 225, 182
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/hand_L
+  rotate: false
+  xy: 1729, 10
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-african-25-40/hand_L
+  rotate: false
+  xy: 1729, 10
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/hand_R
+  rotate: false
+  xy: 1826, 10
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-african-25-40/hand_R
+  rotate: false
+  xy: 1826, 10
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/head
+  rotate: true
+  xy: 2, 2
+  size: 228, 249
+  orig: 259, 249
+  offset: 31, 0
+  index: -1
+male-african-25-40/head
+  rotate: true
+  xy: 2, 2
+  size: 228, 249
+  orig: 259, 249
+  offset: 31, 0
+  index: -1
+male-african-25-40-egypt/leg_L
+  rotate: false
+  xy: 2, 232
+  size: 145, 588
+  orig: 145, 630
+  offset: 0, 21
+  index: -1
+male-african-25-40-egypt/leg_R
+  rotate: false
+  xy: 296, 247
+  size: 144, 573
+  orig: 144, 589
+  offset: 0, 8
+  index: -1
+male-african-25-40-egypt/mouth-a
+  rotate: false
+  xy: 1203, 12
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-x
+  rotate: false
+  xy: 1203, 12
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-a
+  rotate: false
+  xy: 1203, 12
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-x
+  rotate: false
+  xy: 1203, 12
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-b
+  rotate: true
+  xy: 1963, 505
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-b
+  rotate: true
+  xy: 1963, 505
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-c
+  rotate: true
+  xy: 1976, 739
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-c
+  rotate: true
+  xy: 1976, 739
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-d
+  rotate: false
+  xy: 588, 243
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-d
+  rotate: false
+  xy: 588, 243
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-e
+  rotate: false
+  xy: 1963, 585
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-e
+  rotate: false
+  xy: 1963, 585
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-f
+  rotate: false
+  xy: 1287, 16
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-f
+  rotate: false
+  xy: 1287, 16
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-g
+  rotate: false
+  xy: 1314, 18
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-g
+  rotate: false
+  xy: 1314, 18
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/mouth-h
+  rotate: true
+  xy: 1976, 674
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-african-25-40/mouth-h
+  rotate: true
+  xy: 1976, 674
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/neck
+  rotate: true
+  xy: 1498, 346
+  size: 106, 141
+  orig: 106, 141
+  offset: 0, 0
+  index: -1
+male-african-25-40/neck
+  rotate: true
+  xy: 1498, 346
+  size: 106, 141
+  orig: 106, 141
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/nose
+  rotate: true
+  xy: 1963, 618
+  size: 54, 43
+  orig: 54, 43
+  offset: 0, 0
+  index: -1
+male-african-25-40/nose
+  rotate: true
+  xy: 1963, 618
+  size: 54, 43
+  orig: 54, 43
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/pupils
+  rotate: false
+  xy: 1380, 19
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-african-25-40/pupils
+  rotate: false
+  xy: 1380, 19
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/skirt
+  rotate: false
+  xy: 1356, 454
+  size: 292, 366
+  orig: 292, 366
+  offset: 0, 0
+  index: -1
+male-african-25-40-egypt/wijzen_R
+  rotate: false
+  xy: 1919, 16
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-african-25-40/wijzen_R
+  rotate: false
+  xy: 1919, 16
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1
+male-african-25-40/arm_L
+  rotate: true
+  xy: 1650, 388
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+male-african-25-40/arm_R
+  rotate: true
+  xy: 1650, 676
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+male-african-25-40/body
+  rotate: false
+  xy: 880, 288
+  size: 290, 532
+  orig: 290, 532
+  offset: 0, 0
+  index: -1
+male-african-25-40/foot_L
+  rotate: true
+  xy: 437, 17
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-african-25-40/foot_R
+  rotate: true
+  xy: 551, 17
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+male-african-25-40/forearm_R
+  rotate: false
+  xy: 1931, 182
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+male-african-25-40/forerarm_L
+  rotate: true
+  xy: 1482, 5
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+male-african-25-40/hat
+  rotate: true
+  xy: 1172, 450
+  size: 370, 182
+  orig: 370, 182
+  offset: 0, 0
+  index: -1
+male-african-25-40/leg_L
+  rotate: false
+  xy: 149, 232
+  size: 145, 588
+  orig: 145, 630
+  offset: 0, 21
+  index: -1
+male-african-25-40/leg_R
+  rotate: false
+  xy: 442, 247
+  size: 144, 573
+  orig: 144, 589
+  offset: 0, 8
+  index: -1

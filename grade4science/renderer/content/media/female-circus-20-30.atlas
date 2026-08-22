@@ -1,0 +1,237 @@
+
+female-circus-20-30.png
+size: 1981, 411
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 250, 94
+  size: 133, 315
+  orig: 133, 315
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 105, 83
+  size: 143, 326
+  orig: 143, 326
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 385, 128
+  size: 281, 534
+  orig: 281, 534
+  offset: 0, 0
+  index: -1
+collar
+  rotate: true
+  xy: 697, 10
+  size: 116, 53
+  orig: 116, 53
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 752, 2
+  size: 128, 15
+  orig: 128, 15
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 250, 83
+  size: 116, 9
+  orig: 116, 9
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 667, 6
+  size: 120, 28
+  orig: 120, 28
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 752, 19
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 752, 19
+  size: 205, 107
+  orig: 205, 107
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 368, 4
+  size: 88, 200
+  orig: 88, 200
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 135, 6
+  size: 75, 189
+  orig: 75, 189
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 1596, 7
+  size: 219, 166
+  orig: 219, 166
+  offset: 0, 0
+  index: -1
+hair_behind
+  rotate: true
+  xy: 921, 152
+  size: 257, 246
+  orig: 257, 246
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: true
+  xy: 1589, 175
+  size: 88, 155
+  orig: 88, 155
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 1417, 172
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 1817, 36
+  size: 138, 140
+  orig: 138, 140
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1169, 167
+  size: 220, 242
+  orig: 220, 242
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 984, 6
+  size: 144, 610
+  orig: 144, 610
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 1391, 265
+  size: 144, 588
+  orig: 144, 588
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 921, 129
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 326, 18
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 64, 7
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 2, 2
+  size: 60, 37
+  orig: 60, 37
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 442, 96
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 535, 104
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 472, 104
+  size: 61, 22
+  orig: 61, 22
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 385, 96
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 959, 66
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 570, 3
+  size: 95, 123
+  orig: 95, 123
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 105, 42
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 1391, 164
+  size: 99, 24
+  orig: 99, 24
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 2, 41
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 1746, 176
+  size: 87, 164
+  orig: 89, 165
+  offset: 1, 0
+  index: -1

@@ -1,0 +1,440 @@
+
+male-dutch-50.png
+size: 2001, 777
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+male-dutch-50-novazembla/arm_L
+  rotate: true
+  xy: 1546, 497
+  size: 133, 296
+  orig: 133, 296
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/arm_R
+  rotate: true
+  xy: 1227, 498
+  size: 132, 317
+  orig: 132, 317
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/beard
+  rotate: false
+  xy: 766, 19
+  size: 110, 95
+  orig: 110, 95
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/body
+  rotate: false
+  xy: 299, 243
+  size: 294, 532
+  orig: 294, 532
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/collar_white
+  rotate: false
+  xy: 1316, 297
+  size: 216, 199
+  orig: 216, 199
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/eyebrows
+  rotate: true
+  xy: 1986, 535
+  size: 131, 13
+  orig: 131, 13
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/eyes_closed
+  rotate: true
+  xy: 1501, 43
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/eyes_open
+  rotate: true
+  xy: 1141, 2
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/foot_L
+  rotate: false
+  xy: 1316, 166
+  size: 195, 129
+  orig: 195, 129
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/foot_R
+  rotate: false
+  xy: 1757, 315
+  size: 186, 126
+  orig: 186, 126
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/forearm_R
+  rotate: true
+  xy: 1534, 265
+  size: 114, 220
+  orig: 114, 220
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/forerarm_L
+  rotate: true
+  xy: 162, 8
+  size: 88, 221
+  orig: 88, 221
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/hair_back
+  rotate: false
+  xy: 1305, 51
+  size: 194, 113
+  orig: 194, 113
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/hand_L
+  rotate: true
+  xy: 1821, 668
+  size: 107, 170
+  orig: 107, 170
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/hand_R
+  rotate: true
+  xy: 385, 5
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/head
+  rotate: true
+  xy: 891, 253
+  size: 223, 294
+  orig: 223, 294
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/leg_L
+  rotate: true
+  xy: 595, 478
+  size: 143, 593
+  orig: 143, 593
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/leg_R
+  rotate: true
+  xy: 2, 98
+  size: 143, 580
+  orig: 143, 580
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-a
+  rotate: false
+  xy: 1887, 194
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-x
+  rotate: false
+  xy: 1887, 194
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-b
+  rotate: true
+  xy: 1211, 2
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-c
+  rotate: false
+  xy: 1757, 458
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-d
+  rotate: false
+  xy: 1358, 6
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-e
+  rotate: true
+  xy: 1894, 28
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-f
+  rotate: false
+  xy: 557, 5
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-g
+  rotate: true
+  xy: 557, 32
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/mouth-h
+  rotate: true
+  xy: 1190, 558
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/neck
+  rotate: false
+  xy: 1756, 194
+  size: 129, 119
+  orig: 129, 119
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/nose
+  rotate: false
+  xy: 1887, 225
+  size: 48, 88
+  orig: 48, 88
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/pupils
+  rotate: true
+  xy: 1957, 343
+  size: 98, 22
+  orig: 98, 22
+  offset: 0, 0
+  index: -1
+male-dutch-50-novazembla/wijzen_R
+  rotate: false
+  xy: 1622, 7
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1
+male-dutch-50/arm_L
+  rotate: true
+  xy: 595, 116
+  size: 133, 296
+  orig: 133, 296
+  offset: 0, 0
+  index: -1
+male-dutch-50/arm_R
+  rotate: true
+  xy: 893, 119
+  size: 132, 317
+  orig: 132, 317
+  offset: 0, 0
+  index: -1
+male-dutch-50/body
+  rotate: false
+  xy: 2, 243
+  size: 295, 532
+  orig: 295, 532
+  offset: 0, 0
+  index: -1
+male-dutch-50/collar
+  rotate: false
+  xy: 2, 2
+  size: 158, 94
+  orig: 158, 94
+  offset: 0, 0
+  index: -1
+male-dutch-50/eyebrows
+  rotate: true
+  xy: 1986, 402
+  size: 131, 13
+  orig: 131, 13
+  offset: 0, 0
+  index: -1
+male-dutch-50/eyes_closed
+  rotate: true
+  xy: 1945, 320
+  size: 121, 10
+  orig: 121, 10
+  offset: 0, 0
+  index: -1
+male-dutch-50/eyes_open
+  rotate: true
+  xy: 1176, 2
+  size: 115, 33
+  orig: 115, 33
+  offset: 0, 0
+  index: -1
+male-dutch-50/foot_L
+  rotate: true
+  xy: 1844, 443
+  size: 223, 140
+  orig: 223, 140
+  offset: 0, 0
+  index: -1
+male-dutch-50/foot_R
+  rotate: true
+  xy: 1187, 254
+  size: 222, 127
+  orig: 222, 127
+  offset: 0, 0
+  index: -1
+male-dutch-50/forearm_R
+  rotate: true
+  xy: 1534, 381
+  size: 114, 221
+  orig: 114, 221
+  offset: 0, 0
+  index: -1
+male-dutch-50/forerarm_L
+  rotate: true
+  xy: 1513, 174
+  size: 89, 219
+  orig: 89, 219
+  offset: 0, 0
+  index: -1
+male-dutch-50/hand_L
+  rotate: false
+  xy: 1513, 2
+  size: 107, 170
+  orig: 107, 170
+  offset: 0, 0
+  index: -1
+male-dutch-50/hand_R
+  rotate: false
+  xy: 1212, 82
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+male-dutch-50/hat
+  rotate: false
+  xy: 893, 19
+  size: 246, 98
+  orig: 246, 98
+  offset: 0, 0
+  index: -1
+male-dutch-50/head
+  rotate: true
+  xy: 595, 251
+  size: 225, 294
+  orig: 225, 294
+  offset: 0, 0
+  index: -1
+male-dutch-50/leg_L
+  rotate: true
+  xy: 595, 623
+  size: 152, 630
+  orig: 152, 630
+  offset: 0, 0
+  index: -1
+male-dutch-50/leg_R
+  rotate: true
+  xy: 1227, 632
+  size: 143, 592
+  orig: 143, 592
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-a
+  rotate: true
+  xy: 1948, 110
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-x
+  rotate: true
+  xy: 1948, 110
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-b
+  rotate: true
+  xy: 1243, 2
+  size: 78, 30
+  orig: 78, 30
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-c
+  rotate: false
+  xy: 1275, 12
+  size: 81, 37
+  orig: 81, 37
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-d
+  rotate: false
+  xy: 1429, 6
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-e
+  rotate: false
+  xy: 1948, 76
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-f
+  rotate: false
+  xy: 1275, 55
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-g
+  rotate: true
+  xy: 1937, 249
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+male-dutch-50/mouth-h
+  rotate: true
+  xy: 1190, 493
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+male-dutch-50/neck
+  rotate: true
+  xy: 1804, 63
+  size: 129, 118
+  orig: 129, 118
+  offset: 0, 0
+  index: -1
+male-dutch-50/nose
+  rotate: true
+  xy: 1804, 12
+  size: 49, 88
+  orig: 49, 88
+  offset: 0, 0
+  index: -1
+male-dutch-50/pupils
+  rotate: true
+  xy: 1924, 94
+  size: 98, 22
+  orig: 98, 22
+  offset: 0, 0
+  index: -1
+male-dutch-50/tie
+  rotate: true
+  xy: 584, 2
+  size: 112, 180
+  orig: 112, 180
+  offset: 0, 0
+  index: -1
+male-dutch-50/wijzen_R
+  rotate: false
+  xy: 1713, 7
+  size: 89, 165
+  orig: 89, 165
+  offset: 0, 0
+  index: -1

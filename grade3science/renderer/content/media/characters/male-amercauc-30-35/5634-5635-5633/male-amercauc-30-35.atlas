@@ -1,0 +1,209 @@
+
+male-amercauc-30-35.png
+size: 735, 1026
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 585, 387
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 585, 700
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 493
+  size: 290, 531
+  orig: 290, 531
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 2, 38
+  size: 138, 14
+  orig: 138, 14
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: true
+  xy: 684, 264
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 440, 405
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 222, 281
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 222, 167
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 219, 2
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 219, 83
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 2, 54
+  size: 215, 181
+  orig: 215, 181
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 439, 223
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 536, 140
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 237
+  size: 218, 254
+  orig: 218, 254
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 294, 395
+  size: 144, 629
+  orig: 144, 629
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 440, 436
+  size: 143, 588
+  orig: 143, 588
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 529, 109
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 529, 109
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 529, 76
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 697, 304
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 222, 448
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: false
+  xy: 697, 271
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 678, 113
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 609, 78
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 613, 103
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 536, 233
+  size: 146, 152
+  orig: 146, 152
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 222, 405
+  size: 41, 67
+  orig: 41, 67
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 2, 14
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 439, 57
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1

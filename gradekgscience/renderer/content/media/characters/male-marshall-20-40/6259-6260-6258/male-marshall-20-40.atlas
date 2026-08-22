@@ -1,0 +1,216 @@
+
+male-marshall-20-40.png
+size: 1779, 459
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 1168, 169
+  size: 142, 311
+  orig: 142, 311
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 2, 21
+  size: 144, 324
+  orig: 144, 324
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 167
+  size: 290, 532
+  orig: 290, 532
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 1759, 321
+  size: 136, 13
+  orig: 136, 13
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 2, 8
+  size: 121, 11
+  orig: 121, 11
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 1708, 192
+  size: 119, 29
+  orig: 119, 29
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 1159, 55
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 538, 14
+  size: 215, 112
+  orig: 215, 112
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 328, 86
+  size: 79, 200
+  orig: 79, 200
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 328, 2
+  size: 82, 208
+  orig: 82, 208
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 1481, 129
+  size: 225, 182
+  orig: 225, 182
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: true
+  xy: 1376, 32
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 1548, 36
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 536, 128
+  size: 370, 182
+  orig: 370, 182
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 908, 93
+  size: 217, 249
+  orig: 217, 249
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 536, 312
+  size: 145, 630
+  orig: 145, 630
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 1168, 313
+  size: 144, 589
+  orig: 144, 589
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 1064, 24
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 1064, 24
+  size: 82, 29
+  orig: 82, 29
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: true
+  xy: 1739, 233
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 1064, 55
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 1708, 147
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 1739, 198
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1335, 28
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1269, 30
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1148, 18
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 755, 20
+  size: 106, 141
+  orig: 106, 141
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 1213, 10
+  size: 54, 43
+  orig: 54, 43
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 1376, 145
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 898, 3
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1

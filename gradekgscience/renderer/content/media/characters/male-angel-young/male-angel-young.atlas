@@ -1,0 +1,230 @@
+
+male-angel-young.png
+size: 1929, 459
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 1626, 62
+  size: 122, 199
+  orig: 122, 199
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 1424, 2
+  size: 144, 200
+  orig: 144, 200
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 70
+  size: 247, 387
+  orig: 251, 388
+  offset: 2, 0
+  index: -1
+eyebrows
+  rotate: false
+  xy: 1318, 148
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 354, 92
+  size: 127, 12
+  orig: 127, 12
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 1626, 11
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: false
+  xy: 672, 4
+  size: 152, 100
+  orig: 152, 100
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: false
+  xy: 1275, 2
+  size: 147, 103
+  orig: 147, 103
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: true
+  xy: 1099, 8
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: true
+  xy: 349, 3
+  size: 84, 246
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 1126, 143
+  size: 314, 170
+  orig: 314, 170
+  offset: 0, 0
+  index: -1
+halo
+  rotate: false
+  xy: 90, 6
+  size: 257, 62
+  orig: 257, 62
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 597, 2
+  size: 73, 102
+  orig: 77, 112
+  offset: 2, 5
+  index: -1
+head
+  rotate: true
+  xy: 1675, 194
+  size: 263, 252
+  orig: 263, 252
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 1579, 186
+  size: 94, 271
+  orig: 94, 295
+  offset: 0, 12
+  index: -1
+leg_R
+  rotate: true
+  xy: 826, 5
+  size: 99, 271
+  orig: 101, 297
+  offset: 1, 13
+  index: -1
+mouth-a
+  rotate: true
+  xy: 2, 3
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: true
+  xy: 2, 3
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 251, 73
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 34, 5
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: false
+  xy: 1126, 106
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 1314, 109
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: true
+  xy: 1298, 144
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 15, 4
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 62, 5
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 1750, 14
+  size: 76, 46
+  orig: 88, 46
+  offset: 6, 0
+  index: -1
+nose
+  rotate: true
+  xy: 1339, 117
+  size: 29, 22
+  orig: 29, 22
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: false
+  xy: 1199, 107
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 251, 89
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+skirt
+  rotate: false
+  xy: 1298, 166
+  size: 279, 291
+  orig: 279, 291
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: false
+  xy: 1827, 79
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
+wings
+  rotate: false
+  xy: 354, 106
+  size: 770, 351
+  orig: 770, 351
+  offset: 0, 0
+  index: -1

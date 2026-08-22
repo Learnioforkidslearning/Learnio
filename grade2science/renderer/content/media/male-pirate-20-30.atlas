@@ -1,0 +1,230 @@
+
+male-pirate-20-30.png
+size: 1904, 491
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 832, 172
+  size: 146, 317
+  orig: 146, 317
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 686, 164
+  size: 144, 325
+  orig: 144, 325
+  offset: 0, 0
+  index: -1
+bandana
+  rotate: true
+  xy: 1115, 6
+  size: 227, 162
+  orig: 227, 162
+  offset: 0, 0
+  index: -1
+bandana_ribbon
+  rotate: false
+  xy: 2, 160
+  size: 154, 329
+  orig: 154, 329
+  offset: 0, 0
+  index: -1
+belt_fabric
+  rotate: true
+  xy: 25, 4
+  size: 154, 321
+  orig: 154, 321
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 158, 161
+  size: 328, 526
+  orig: 328, 526
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 2, 2
+  size: 156, 21
+  orig: 156, 21
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 1279, 13
+  size: 116, 12
+  orig: 116, 12
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: true
+  xy: 1871, 219
+  size: 122, 25
+  orig: 122, 25
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: true
+  xy: 1393, 28
+  size: 216, 112
+  orig: 216, 112
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: true
+  xy: 1279, 27
+  size: 217, 112
+  orig: 217, 112
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 1596, 41
+  size: 81, 210
+  orig: 81, 210
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: false
+  xy: 1507, 33
+  size: 87, 215
+  orig: 87, 215
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 1679, 44
+  size: 190, 207
+  orig: 190, 207
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: true
+  xy: 1230, 246
+  size: 95, 170
+  orig: 95, 170
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: true
+  xy: 1402, 250
+  size: 91, 170
+  orig: 91, 170
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 980, 235
+  size: 226, 254
+  orig: 226, 254
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 496, 12
+  size: 147, 617
+  orig: 147, 617
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 1279, 343
+  size: 146, 623
+  orig: 146, 623
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 1507, 3
+  size: 73, 28
+  orig: 73, 28
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 1657, 8
+  size: 78, 31
+  orig: 78, 31
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: false
+  xy: 1025, 197
+  size: 81, 36
+  orig: 81, 36
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 980, 164
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 1025, 162
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 1058, 170
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: false
+  xy: 1208, 421
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: false
+  xy: 1208, 384
+  size: 63, 35
+  orig: 63, 35
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 1582, 4
+  size: 73, 27
+  orig: 73, 27
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 348, 10
+  size: 149, 146
+  orig: 149, 146
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 1208, 446
+  size: 43, 67
+  orig: 43, 67
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 1208, 245
+  size: 96, 20
+  orig: 96, 20
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 1574, 253
+  size: 88, 164
+  orig: 88, 164
+  offset: 0, 0
+  index: -1

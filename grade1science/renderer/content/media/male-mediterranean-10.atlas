@@ -1,0 +1,216 @@
+
+male-mediterranean-10.png
+size: 605, 1032
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+arm_L
+  rotate: false
+  xy: 426, 242
+  size: 122, 199
+  orig: 122, 199
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: false
+  xy: 426, 443
+  size: 146, 202
+  orig: 146, 202
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 639
+  size: 247, 391
+  orig: 247, 391
+  offset: 0, 0
+  index: -1
+eyebrows
+  rotate: true
+  xy: 550, 297
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+eyes_closed
+  rotate: false
+  xy: 2, 23
+  size: 127, 12
+  orig: 127, 12
+  offset: 0, 0
+  index: -1
+eyes_open
+  rotate: false
+  xy: 411, 27
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+foot_L
+  rotate: true
+  xy: 315, 113
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+foot_R
+  rotate: true
+  xy: 422, 78
+  size: 162, 105
+  orig: 162, 105
+  offset: 0, 0
+  index: -1
+forearm_R
+  rotate: false
+  xy: 217, 142
+  size: 96, 174
+  orig: 96, 174
+  offset: 0, 0
+  index: -1
+forerarm_L
+  rotate: false
+  xy: 509, 779
+  size: 91, 251
+  orig: 91, 251
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 290
+  size: 347, 195
+  orig: 347, 195
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 217, 28
+  size: 77, 112
+  orig: 77, 112
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 2, 37
+  size: 251, 213
+  orig: 251, 213
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 251, 772
+  size: 256, 258
+  orig: 256, 258
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 251, 647
+  size: 123, 324
+  orig: 123, 324
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 199, 318
+  size: 122, 319
+  orig: 122, 319
+  offset: 0, 0
+  index: -1
+mouth-a
+  rotate: false
+  xy: 131, 24
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+mouth-x
+  rotate: false
+  xy: 131, 24
+  size: 65, 11
+  orig: 65, 11
+  offset: 0, 0
+  index: -1
+mouth-b
+  rotate: false
+  xy: 2, 7
+  size: 61, 14
+  orig: 61, 14
+  offset: 0, 0
+  index: -1
+mouth-c
+  rotate: true
+  xy: 577, 714
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+mouth-d
+  rotate: true
+  xy: 568, 370
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+mouth-e
+  rotate: true
+  xy: 535, 2
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+mouth-f
+  rotate: false
+  xy: 560, 17
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+mouth-g
+  rotate: true
+  xy: 568, 304
+  size: 64, 17
+  orig: 64, 17
+  offset: 0, 0
+  index: -1
+mouth-h
+  rotate: true
+  xy: 577, 649
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 535, 37
+  size: 88, 46
+  orig: 88, 46
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 577, 618
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+pupils
+  rotate: true
+  xy: 529, 127
+  size: 113, 34
+  orig: 113, 34
+  offset: 0, 0
+  index: -1
+shade
+  rotate: true
+  xy: 323, 277
+  size: 368, 101
+  orig: 368, 101
+  offset: 0, 0
+  index: -1
+wijzen_R
+  rotate: true
+  xy: 296, 36
+  size: 75, 113
+  orig: 75, 113
+  offset: 0, 0
+  index: -1
