@@ -833,23 +833,19 @@ button::before{
 
     pointer-events:none;
 
-    animation:btnShine 3.4s ease-in-out infinite;
-
-    animation-delay:calc(var(--shine-order, 0) * 0.45s);
+    /* No default animation — shine only plays on hover now, so
+       buttons don't look like they're perpetually loading. */
 }
 
 .btn:hover::before,
 button:hover::before{
 
-    animation-duration:1.1s;
-
-    animation-delay:0s;
+    animation:btnShine 1.1s ease-in-out 1;
 }
 
 @keyframes btnShine{
 
     0%{ left:-60%; }
-    45%{ left:130%; }
     100%{ left:130%; }
 }
 

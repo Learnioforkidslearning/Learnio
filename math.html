@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Math Learning</title>
+    <title>Numbers & Math | Learniokidslearning</title>
 
     <style>
         * {
@@ -15,83 +15,242 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f7fb;
+            background: linear-gradient(135deg, #e8fbff, #f8f5ff);
+            color: #173b4d;
         }
 
         .math-page {
             min-height: 100vh;
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
         }
 
-        h1 {
-            font-size: 36px;
-            margin: 0 0 10px;
+        .math-header {
+            margin-bottom: 35px;
         }
 
-        .subtitle {
-            color: #666;
+        .math-header h1 {
+            margin: 0;
+            font-size: 42px;
+            color: #173b4d;
+        }
+
+        .math-header p {
+            margin-top: 10px;
             font-size: 18px;
-            margin-bottom: 30px;
+            color: #55727d;
         }
 
-        .grade-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
+        /* =========================
+           GRADE CARDS
+        ========================= */
+
+        .grade-grid {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
         }
 
-        .grade-btn {
-            border: none;
-            border-radius: 15px;
-            padding: 18px 30px;
-            font-size: 20px;
-            font-weight: bold;
+        .grade-card {
+            background: white;
+            border-radius: 24px;
+            padding: 30px 20px;
+
+            min-height: 180px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+
             cursor: pointer;
-            background: #ffffff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .grade-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+        }
+
+        .grade-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .grade-card h2 {
+            margin: 5px 0 8px;
+            font-size: 24px;
+            color: #173b4d;
+        }
+
+        .grade-card p {
+            margin: 0;
+            color: #66818c;
+            font-size: 15px;
+        }
+
+       /* =========================
+   FULLSCREEN MATHWORLD
+========================= */
+
+.content-container {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+
+    background: #360f3e;
+
+    border-radius: 0;
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+.content-header {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 8px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+}
+
+.content-title {
+    display: none;
+}
+
+.back-grade-button {
+    border: none;
+
+    background: #20a99d;
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.back-grade-button:hover {
+    background: #168d84;
+}
+
+#mathFrame {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 700px;
+
+    border: none;
+    display: block;
+}
+        /* =========================
+           HOME BUTTON
+        ========================= */
+
+        .home-button {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 13px 25px;
+
+            border-radius: 14px;
+
+            background: #173b4d;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
             transition: 0.2s;
         }
 
-        .grade-btn:hover {
+        .home-button:hover {
+            background: #28576c;
             transform: translateY(-2px);
         }
 
-        .grade-btn.active {
-            background: #1976d2;
-            color: white;
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .grade-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .math-header h1 {
+                font-size: 34px;
+            }
+
+            #mathFrame {
+                height: 750px;
+            }
         }
 
-        .mathworld-container {
-            width: 100%;
-            height: 750px;
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
+        /* =========================
+           MOBILE
+        ========================= */
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        @media (max-width: 550px) {
 
-        .back-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 24px;
-            border-radius: 12px;
-            background: #333;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+            .math-page {
+                padding: 25px 15px;
+            }
 
-        .back-button:hover {
-            background: #555;
+            .grade-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .grade-card {
+                min-height: 150px;
+                padding: 25px 15px;
+            }
+
+            .math-header h1 {
+                font-size: 30px;
+            }
+
+            .content-header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            #mathFrame {
+                height: 700px;
+            }
         }
     </style>
 </head>
@@ -100,65 +259,181 @@
 
     <section class="math-page">
 
-        <h1>🔢 Math Learning</h1>
+        <!-- =========================
+             HEADER
+        ========================= -->
 
-        <p class="subtitle">
-            Choose your grade
-        </p>
+        <div class="math-header">
 
-        <div class="grade-buttons">
+            <h1>🔢 Numbers & Math</h1>
 
-            <button class="grade-btn active"
-                    onclick="openGrade('kg', this)">
-                KG
-            </button>
-
-            <button class="grade-btn"
-                    onclick="openGrade('grade1', this)">
-                Grade 1
-            </button>
-
-            <button class="grade-btn"
-                    onclick="openGrade('grade2', this)">
-                Grade 2
-            </button>
-
-            <button class="grade-btn"
-                    onclick="openGrade('grade3', this)">
-                Grade 3
-            </button>
-
-            <button class="grade-btn"
-                    onclick="openGrade('grade4', this)">
-                Grade 4
-            </button>
-
-            <button class="grade-btn"
-                    onclick="openGrade('grade5', this)">
-                Grade 5
-            </button>
-
-            <button class="grade-btn"
-                    onclick="openGrade('grade6', this)">
-                Grade 6
-            </button>
+            <p>
+                Choose your grade and start your math adventure!
+            </p>
 
         </div>
 
 
-        <div class="mathworld-container">
+       <!-- =========================
+     GRADE CARDS
+========================= -->
+
+<div class="grade-grid">
+
+    <!-- KG -->
+
+    <div class="grade-card"
+         onclick="openGrade('KG', 'gradekg/renderer/index.html')">
+
+        <div class="grade-icon">🔢</div>
+
+        <h2>KG</h2>
+
+        <p>
+            Fun counting and early math
+        </p>
+
+    </div>
+
+
+    <!-- GRADE 1 -->
+
+    <div class="grade-card"
+         onclick="openGrade('Grade 1', 'grade1/renderer/index.html')">
+
+        <div class="grade-icon">1️⃣</div>
+
+        <h2>Grade 1</h2>
+
+        <p>
+            Numbers and basic operations
+        </p>
+
+    </div>
+
+
+    <!-- GRADE 2 -->
+
+    <div class="grade-card"
+         onclick="openGrade('Grade 2', 'grade2/renderer/index.html')">
+
+        <div class="grade-icon">2️⃣</div>
+
+        <h2>Grade 2</h2>
+
+        <p>
+            Addition, subtraction and more
+        </p>
+
+    </div>
+
+
+    <!-- GRADE 3 -->
+
+    <div class="grade-card"
+         onclick="openGrade('Grade 3', 'grade3/renderer/index.html')">
+
+        <div class="grade-icon">3️⃣</div>
+
+        <h2>Grade 3</h2>
+
+        <p>
+            Multiplication and math skills
+        </p>
+
+    </div>
+
+
+    <!-- GRADE 4 -->
+
+    <div class="grade-card"
+         onclick="openGrade('Grade 4', 'grade4/renderer/index.html')">
+
+        <div class="grade-icon">4️⃣</div>
+
+        <h2>Grade 4</h2>
+
+        <p>
+            Fractions and advanced math
+        </p>
+
+    </div>
+
+
+    <!-- GRADE 5 -->
+
+    <div class="grade-card"
+         onclick="openGrade('Grade 5', 'grade5/renderer/index.html')">
+
+        <div class="grade-icon">5️⃣</div>
+
+        <h2>Grade 5</h2>
+
+        <p>
+            Numbers, geometry and problem solving
+        </p>
+
+    </div>
+
+
+    <!-- GRADE 6 -->
+
+    <div class="grade-card"
+        onclick="openGrade('Grade 6', 'grade6/renderer/index.html')">
+
+        <div class="grade-icon">6️⃣</div>
+
+        <h2>Grade 6</h2>
+
+        <p>
+            Explore advanced mathematics
+        </p>
+
+    </div>
+
+</div>
+
+        <!-- =========================
+             SELECTED GRADE CONTENT
+        ========================= -->
+
+        <div class="content-container" id="contentContainer">
+
+            <div class="content-header">
+
+                <div class="content-title" id="contentTitle">
+                    Math Learning
+                </div>
+
+                <button
+                    class="back-grade-button"
+                    onclick="backToGrades()">
+
+                    ← Choose Another Grade
+
+                </button>
+
+            </div>
+
 
             <iframe
-                id="mathworldFrame"
-                src="http://127.0.0.1:8080/index.html"
-                title="MathWorld">
+                id="mathFrame"
+                title="Math Learning Content">
             </iframe>
 
         </div>
 
 
-        <a href="index.html" class="back-button">
-            ⬅ Back to Home
+        <!-- =========================
+             BACK TO HOME
+        ========================= -->
+
+        <a
+            href="index.html"
+            class="home-button">
+
+            🏠 Back to Home
+
         </a>
 
     </section>
@@ -166,81 +441,102 @@
 
     <script>
 
-        function openGrade(grade, button) {
+        function openGrade(gradeName, gradePath) {
 
-            const frame =
-                document.getElementById("mathworldFrame");
+            const gradeGrid =
+                document.querySelector(".grade-grid");
 
-            document
-                .querySelectorAll(".grade-btn")
-                .forEach(function (btn) {
-                    btn.classList.remove("active");
-                });
+            const contentContainer =
+                document.getElementById("contentContainer");
 
-            button.classList.add("active");
+            const contentTitle =
+                document.getElementById("contentTitle");
 
-
-            // KG
-            if (grade === "kg") {
-
-                frame.src =
-                    "http://127.0.0.1:8080/index.html";
-
-            }
+            const mathFrame =
+                document.getElementById("mathFrame");
 
 
-            // Grade 1
-            else if (grade === "grade1") {
+            /*
+             * Hide grade cards
+             */
 
-                frame.src =
-                    "http://127.0.0.1:8081/index.html";
-
-            }
+            gradeGrid.style.display = "none";
 
 
-            // Grade 2
-            else if (grade === "grade2") {
+            /*
+             * Show selected grade content
+             */
 
-                frame.src =
-                    "http://127.0.0.1:8082/index.html";
-
-            }
+            contentContainer.style.display = "block";
 
 
-            // Grade 3
-            else if (grade === "grade3") {
+            /*
+             * Update title
+             */
 
-                frame.src =
-                    "http://127.0.0.1:8083/index.html";
-
-            }
-
-
-            // Grade 4
-            else if (grade === "grade4") {
-
-                frame.src =
-                    "http://127.0.0.1:8084/index.html";
-
-            }
+            contentTitle.textContent =
+                "🔢 " + gradeName + " Math";
 
 
-            // Grade 5
-            else if (grade === "grade5") {
+            /*
+             * Load the selected grade
+             */
 
-                frame.src =
-                    "http://127.0.0.1:8085/index.html";
-
-            }
+            mathFrame.src = gradePath;
 
 
-         // Grade 6
-else if (grade === "grade6") {
+            /*
+             * Scroll to content
+             */
 
-    frame.src =
-        "http://127.0.0.1:8086/index.html";
+            contentContainer.scrollIntoView({
+                behavior: "smooth"
+            });
 
-}
+        }
+
+
+        function backToGrades() {
+
+            const gradeGrid =
+                document.querySelector(".grade-grid");
+
+            const contentContainer =
+                document.getElementById("contentContainer");
+
+            const mathFrame =
+                document.getElementById("mathFrame");
+
+
+            /*
+             * Hide grade content
+             */
+
+            contentContainer.style.display = "none";
+
+
+            /*
+             * Show grade cards again
+             */
+
+            gradeGrid.style.display = "grid";
+
+
+            /*
+             * Clear iframe
+
+             */
+
+            mathFrame.src = "";
+
+
+            /*
+             * Scroll back to grade selection
+             */
+
+            gradeGrid.scrollIntoView({
+                behavior: "smooth"
+            });
 
         }
 
