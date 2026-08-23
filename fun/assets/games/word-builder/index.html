@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learnio - Word Builder</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+h1,h2,h3{
+font-family:'Baloo 2',cursive;
+}
+
+body{
+min-height:100vh;
+overflow-x:hidden;
+background:linear-gradient(180deg,#fde7ff,#ece6ff,#dfefff);
+color:#2d2d4d;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:20px 12px 60px;
+}
+
+/*==========================
+TOP BAR
+==========================*/
+
+.topBar{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:min(95%,900px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 22px;
+border-radius:20px;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(20px);
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+z-index:50;
+}
+
+.stat{
+text-align:center;
+}
+
+.label{
+font-size:12px;
+color:#7a7a9a;
+}
+
+.value{
+font-size:20px;
+font-weight:700;
+color:#5d4fe6;
+}
+
+.gradeTag{
+background:#6d5dfc;
+color:#fff;
+padding:6px 16px;
+border-radius:50px;
+font-weight:700;
+font-size:14px;
+}
+
+/*==========================
+GAME WRAP
+==========================*/
+
+.gameWrap{
+margin-top:110px;
+width:min(700px,94%);
+text-align:center;
+display:none;
+}
+
+.hintBox{
+background:#fff;
+border-radius:26px;
+padding:26px 20px;
+box-shadow:0 15px 35px rgba(0,0,0,.10);
+margin-bottom:26px;
+}
+
+.hintEmoji{
+font-size:64px;
+line-height:1;
+margin-bottom:10px;
+}
+
+.hintDef{
+color:#666;
+font-size:15px;
+margin-bottom:16px;
+}
+
+.blanks{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.slot{
+width:46px;
+height:52px;
+border-radius:12px;
+background:#f1efff;
+border:2px solid #d8d3ff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+font-weight:700;
+color:#5d4fe6;
+cursor:pointer;
+transition:.2s;
+}
+
+.slot.filled{
+background:#6d5dfc;
+color:#fff;
+border-color:#6d5dfc;
+}
+
+.slot.shake{
+animation:shake .4s;
+}
+
+@keyframes shake{
+0%,100%{transform:translateX(0);}
+25%{transform:translateX(-6px);}
+75%{transform:translateX(6px);}
+}
+
+.tiles{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:24px;
+}
+
+.tile{
+width:52px;
+height:56px;
+border:none;
+border-radius:14px;
+background:#fff;
+box-shadow:0 8px 18px rgba(0,0,0,.10);
+font-size:24px;
+font-weight:700;
+color:#2d2d4d;
+cursor:pointer;
+transition:.2s;
+}
+
+.tile:hover{
+transform:translateY(-4px);
+}
+
+.tile.used{
+visibility:hidden;
+}
+
+.controls{
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+button.action{
+border:none;
+padding:13px 26px;
+border-radius:50px;
+font-size:15px;
+font-weight:700;
+cursor:pointer;
+transition:.25s;
+color:#fff;
+}
+
+button.action:hover{
+transform:scale(1.05);
+}
+
+.checkBtn{ background:#6d5dfc; }
+.hintBtn{ background:#ffb648; }
+.skipBtn{ background:#a0a0c0; }
+
+.timerBarWrap{
+width:100%;
+height:8px;
+border-radius:10px;
+background:#e9e6ff;
+overflow:hidden;
+margin-bottom:18px;
+}
+
+.timerBar{
+height:100%;
+background:linear-gradient(90deg,#6d5dfc,#a78bfa);
+width:100%;
+transition:width 1s linear;
+}
+
+/*==========================
+SCREENS
+==========================*/
+
+.screen{
+position:fixed;
+inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
+background:rgba(45,45,77,.35);
+z-index:2000;
+padding:20px;
+}
+
+.box{
+background:#fff;
+padding:34px 30px;
+border-radius:26px;
+width:min(94%,460px);
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.2);
+}
+
+.box h1{
+color:#5d4fe6;
+margin-bottom:12px;
+font-size:30px;
+}
+
+.box p{
+line-height:1.7;
+margin-bottom:22px;
+color:#666;
+}
+
+.gradeGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-bottom:22px;
+}
+
+.gradeBtn{
+padding:14px 0;
+border-radius:16px;
+border:2px solid #e4e0ff;
+background:#f8f7ff;
+font-weight:700;
+color:#5d4fe6;
+cursor:pointer;
+transition:.2s;
+}
+
+.gradeBtn.selected{
+background:#6d5dfc;
+color:#fff;
+border-color:#6d5dfc;
+}
+
+button.action.wide{
+width:100%;
+padding:15px 0;
+font-size:17px;
+}
+
+#winScreen{ display:none; }
+
+@media(max-width:600px){
+
+.tile{
+width:44px;
+height:48px;
+font-size:20px;
+}
+
+.slot{
+width:38px;
+height:46px;
+font-size:20px;
+}
+
+.hintEmoji{
+font-size:50px;
+}
+
+.gradeGrid{
+grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- TOP BAR (shown once game starts) -->
+<div class="topBar" id="topBar" style="display:none;">
+
+<span class="gradeTag" id="gradeTag">K4</span>
+
+<div class="stat">
+<div class="label">⭐ Score</div>
+<div class="value" id="scoreVal">0</div>
+</div>
+
+<div class="stat">
+<div class="label">🔥 Streak</div>
+<div class="value" id="streakVal">0</div>
+</div>
+
+<div class="stat">
+<div class="label">📝 Word</div>
+<div class="value" id="progressVal">1/6</div>
+</div>
+
+</div>
+
+<!-- GAME AREA -->
+<div class="gameWrap" id="gameWrap">
+
+<div class="timerBarWrap">
+<div class="timerBar" id="timerBar"></div>
+</div>
+
+<div class="hintBox">
+<div class="hintEmoji" id="hintEmoji">🍎</div>
+<div class="hintDef" id="hintDef"></div>
+
+<div class="blanks" id="blanks"></div>
+</div>
+
+<div class="tiles" id="tiles"></div>
+
+<div class="controls">
+<button class="action checkBtn" onclick="checkAnswer()">✔ Check</button>
+<button class="action hintBtn" onclick="revealLetter()">💡 Hint</button>
+<button class="action skipBtn" onclick="skipWord()">⏭ Skip</button>
+</div>
+
+</div>
+
+<!-- START SCREEN -->
+<div class="screen" id="startScreen">
+<div class="box">
+<h1>🔤 Word Builder</h1>
+<p>Unscramble the letters to spell each word. Pick your grade to set the word list and difficulty!</p>
+
+<div class="gradeGrid" id="gradeGrid"></div>
+
+<button class="action checkBtn wide" id="startBtn" onclick="startGame()" disabled>▶ Start Game</button>
+</div>
+</div>
+
+<!-- WIN SCREEN -->
+<div class="screen" id="winScreen">
+<div class="box">
+<h1>🎉 Great Job!</h1>
+<h2 id="resultText">Nice work!</h2>
+<br>
+<button class="action checkBtn wide" onclick="restartSameGrade()">🔄 Play Again</button>
+<br><br>
+<button class="action skipBtn wide" onclick="changeGrade()">🎓 Change Grade</button>
+<br><br>
+<button class="action hintBtn wide" onclick="goBack()">⬅ Back to Fun Activities</button>
+</div>
+</div>
+
+<script>
+
+/*==========================
+WORD LISTS PER GRADE
+==========================*/
+
+const WORD_LISTS = {
+"K4":[
+{word:"CAT",emoji:"🐱",def:"A small furry pet that says meow"},
+{word:"DOG",emoji:"🐶",def:"A loyal pet that barks"},
+{word:"SUN",emoji:"☀️",def:"It shines in the sky in the day"},
+{word:"HAT",emoji:"🎩",def:"You wear it on your head"},
+{word:"PIG",emoji:"🐷",def:"A pink farm animal that oinks"},
+{word:"CUP",emoji:"☕",def:"You drink from it"}
+],
+"K":[
+{word:"FISH",emoji:"🐟",def:"It swims in water"},
+{word:"FROG",emoji:"🐸",def:"A green animal that hops and croaks"},
+{word:"STAR",emoji:"⭐",def:"You see it twinkle at night"},
+{word:"BALL",emoji:"⚽",def:"Round toy you kick or throw"},
+{word:"TREE",emoji:"🌳",def:"Tall plant with leaves and branches"},
+{word:"MOON",emoji:"🌙",def:"It shines in the sky at night"}
+],
+"1st":[
+{word:"APPLE",emoji:"🍎",def:"A red or green fruit"},
+{word:"WATER",emoji:"💧",def:"You drink this to stay healthy"},
+{word:"HOUSE",emoji:"🏠",def:"A place where a family lives"},
+{word:"SMILE",emoji:"😊",def:"You do this when you're happy"},
+{word:"CHAIR",emoji:"🪑",def:"You sit on this"},
+{word:"MOUSE",emoji:"🐭",def:"A tiny animal that likes cheese"}
+],
+"2nd":[
+{word:"GARDEN",emoji:"🌻",def:"A place where flowers and plants grow"},
+{word:"SCHOOL",emoji:"🏫",def:"A place where you go to learn"},
+{word:"RABBIT",emoji:"🐰",def:"A hopping animal with long ears"},
+{word:"PENCIL",emoji:"✏️",def:"You use it to write or draw"},
+{word:"SUMMER",emoji:"☀️",def:"The hottest season of the year"},
+{word:"BRIDGE",emoji:"🌉",def:"It helps you cross a river"}
+],
+"3rd":[
+{word:"VOLCANO",emoji:"🌋",def:"A mountain that can erupt with lava"},
+{word:"DOLPHIN",emoji:"🐬",def:"A smart sea animal that jumps"},
+{word:"RAINBOW",emoji:"🌈",def:"Colorful arc seen after rain"},
+{word:"PENGUIN",emoji:"🐧",def:"A bird that can't fly but swims well"},
+{word:"BASKET",emoji:"🧺",def:"A container used to carry things"},
+{word:"CASTLE",emoji:"🏰",def:"A large building where kings lived"}
+],
+"4th":[
+{word:"ELEPHANT",emoji:"🐘",def:"The largest land animal with a trunk"},
+{word:"DINOSAUR",emoji:"🦕",def:"A giant creature that lived long ago"},
+{word:"MOUNTAIN",emoji:"⛰️",def:"A very tall landform"},
+{word:"SANDWICH",emoji:"🥪",def:"Food made between two slices of bread"},
+{word:"TRIANGLE",emoji:"🔺",def:"A shape with three sides"},
+{word:"BACKPACK",emoji:"🎒",def:"You carry your books in this"}
+],
+"5th":[
+{word:"KNOWLEDGE",emoji:"📚",def:"Information and understanding gained by learning"},
+{word:"CELEBRATE",emoji:"🎉",def:"To do something special for a happy event"},
+{word:"CONTINENT",emoji:"🌍",def:"One of Earth's seven great land masses"},
+{word:"ADVENTURE",emoji:"🗺️",def:"An exciting or unusual experience"},
+{word:"CHOCOLATE",emoji:"🍫",def:"A sweet treat made from cacao"},
+{word:"DANGEROUS",emoji:"⚠️",def:"Able to cause harm or injury"}
+]
+};
+
+const GRADES = ["K4","K","1st","2nd","3rd","4th","5th"];
+
+/*==========================
+STATE
+==========================*/
+
+let currentGrade = null;
+let wordList = [];
+let wordIndex = 0;
+let currentWord = "";
+let answer = [];
+let poolLetters = [];
+let score = 0;
+let streak = 0;
+let hintsUsedThisWord = 0;
+let timeLeft = 0;
+let timerInterval = null;
+
+/*==========================
+GRADE PICKER (start screen)
+==========================*/
+
+const gradeGrid = document.getElementById("gradeGrid");
+
+GRADES.forEach(g=>{
+const btn = document.createElement("div");
+btn.className = "gradeBtn";
+btn.textContent = g;
+btn.onclick = ()=>{
+document.querySelectorAll(".gradeBtn").forEach(b=>b.classList.remove("selected"));
+btn.classList.add("selected");
+currentGrade = g;
+document.getElementById("startBtn").disabled = false;
+};
+gradeGrid.appendChild(btn);
+});
+
+/*==========================
+SOUND
+==========================*/
+
+function playSound(type){
+try{
+const ctx = new (window.AudioContext || window.webkitAudioContext)();
+const osc = ctx.createOscillator();
+const gain = ctx.createGain();
+
+if(type==="place") osc.frequency.value = 500;
+else if(type==="correct") osc.frequency.value = 780;
+else if(type==="wrong") osc.frequency.value = 180;
+else osc.frequency.value = 900;
+
+gain.gain.value = 0.08;
+
+osc.connect(gain);
+gain.connect(ctx.destination);
+
+osc.start();
+gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.18);
+osc.stop(ctx.currentTime + 0.18);
+
+}catch(e){}
+}
+
+function createConfetti(){
+for(let i=0;i<80;i++){
+const c=document.createElement("div");
+c.style.position="fixed";
+c.style.left=Math.random()*100+"vw";
+c.style.top="-20px";
+c.style.width="8px";
+c.style.height="8px";
+c.style.borderRadius="50%";
+
+const colors=["#ff595e","#ffca3a","#8ac926","#1982c4","#6a4c93"];
+c.style.background = colors[Math.floor(Math.random()*colors.length)];
+c.style.transition="transform 3s linear, opacity 3s";
+c.style.zIndex="3000";
+
+document.body.appendChild(c);
+
+requestAnimationFrame(()=>{
+c.style.transform = `translateY(${window.innerHeight+80}px) rotate(${Math.random()*720}deg)`;
+c.style.opacity="0";
+});
+
+setTimeout(()=>c.remove(),3000);
+}
+}
+
+/*==========================
+GAME FLOW
+==========================*/
+
+function startGame(){
+if(!currentGrade) return;
+
+wordList = WORD_LISTS[currentGrade];
+wordIndex = 0;
+score = 0;
+streak = 0;
+
+document.getElementById("startScreen").style.display="none";
+document.getElementById("topBar").style.display="flex";
+document.getElementById("gameWrap").style.display="block";
+document.getElementById("gradeTag").textContent = currentGrade;
+
+updateStatsUI();
+loadWord();
+}
+
+function loadWord(){
+clearInterval(timerInterval);
+
+hintsUsedThisWord = 0;
+const entry = wordList[wordIndex];
+currentWord = entry.word;
+answer = new Array(currentWord.length).fill(null);
+
+document.getElementById("hintEmoji").textContent = entry.emoji;
+document.getElementById("hintDef").textContent = entry.def;
+document.getElementById("progressVal").textContent = `${wordIndex+1}/${wordList.length}`;
+
+renderBlanks();
+renderTiles();
+
+const gradeIdx = GRADES.indexOf(currentGrade);
+timeLeft = 45 - gradeIdx*3;
+document.getElementById("timerBar").style.width = "100%";
+document.getElementById("timerBar").style.transition = "none";
+
+timerInterval = setInterval(()=>{
+timeLeft--;
+const pct = Math.max(0,(timeLeft/(45-gradeIdx*3))*100);
+document.getElementById("timerBar").style.transition = "width 1s linear";
+document.getElementById("timerBar").style.width = pct+"%";
+
+if(timeLeft<=0){
+clearInterval(timerInterval);
+streak = 0;
+updateStatsUI();
+nextWord();
+}
+},1000);
+}
+
+function renderBlanks(){
+const blanksEl = document.getElementById("blanks");
+blanksEl.innerHTML = "";
+
+answer.forEach((letter,i)=>{
+const slot = document.createElement("div");
+slot.className = "slot" + (letter ? " filled" : "");
+slot.textContent = letter || "";
+slot.onclick = ()=> removeLetter(i);
+blanksEl.appendChild(slot);
+});
+}
+
+function renderTiles(){
+const tilesEl = document.getElementById("tiles");
+tilesEl.innerHTML = "";
+
+poolLetters = shuffle(currentWord.split(""));
+
+poolLetters.forEach((letter,i)=>{
+const tile = document.createElement("button");
+tile.className = "tile";
+tile.textContent = letter;
+tile.dataset.index = i;
+tile.onclick = ()=> placeLetter(i,tile);
+tilesEl.appendChild(tile);
+});
+}
+
+function placeLetter(tileIndex,tileEl){
+if(tileEl.classList.contains("used")) return;
+
+const emptySlot = answer.indexOf(null);
+if(emptySlot===-1) return;
+
+answer[emptySlot] = poolLetters[tileIndex];
+tileEl.classList.add("used");
+tileEl.dataset.slot = emptySlot;
+
+playSound("place");
+renderBlanks();
+reattachTileHandlers();
+
+if(answer.indexOf(null)===-1){
+setTimeout(checkAnswer,250);
+}
+}
+
+function reattachTileHandlers(){
+document.querySelectorAll(".slot").forEach((slot,i)=>{
+slot.onclick = ()=> removeLetter(i);
+});
+}
+
+function removeLetter(slotIndex){
+if(!answer[slotIndex]) return;
+
+answer[slotIndex] = null;
+renderBlanks();
+reattachTileHandlers();
+
+const tiles = document.querySelectorAll(".tile");
+for(const tile of tiles){
+if(tile.classList.contains("used") && Number(tile.dataset.slot)===slotIndex){
+tile.classList.remove("used");
+break;
+}
+}
+}
+
+function checkAnswer(){
+if(answer.indexOf(null)!==-1) return;
+
+const built = answer.join("");
+
+if(built===currentWord){
+clearInterval(timerInterval);
+playSound("correct");
+
+const gradeIdx = GRADES.indexOf(currentGrade);
+const base = 50 + gradeIdx*10;
+const hintPenalty = hintsUsedThisWord*10;
+const timeBonus = Math.max(0,Math.floor(timeLeft/2));
+
+score += Math.max(10, base - hintPenalty + timeBonus);
+streak++;
+
+updateStatsUI();
+nextWord();
+}
+else{
+playSound("wrong");
+streak = 0;
+updateStatsUI();
+
+document.querySelectorAll(".slot").forEach(s=>s.classList.add("shake"));
+setTimeout(()=>{
+document.querySelectorAll(".slot").forEach(s=>s.classList.remove("shake"));
+answer = new Array(currentWord.length).fill(null);
+renderBlanks();
+document.querySelectorAll(".tile").forEach(t=>t.classList.remove("used"));
+},400);
+}
+}
+
+function revealLetter(){
+const emptyIndexes = answer
+.map((v,i)=>v===null?i:null)
+.filter(v=>v!==null);
+
+if(emptyIndexes.length===0) return;
+
+const slotIndex = emptyIndexes[0];
+const letterNeeded = currentWord[slotIndex];
+
+const tiles = document.querySelectorAll(".tile");
+for(const tile of tiles){
+if(!tile.classList.contains("used") && tile.textContent===letterNeeded){
+placeLetter(Number(tile.dataset.index),tile);
+break;
+}
+}
+
+hintsUsedThisWord++;
+}
+
+function skipWord(){
+clearInterval(timerInterval);
+streak = 0;
+updateStatsUI();
+nextWord();
+}
+
+function nextWord(){
+wordIndex++;
+
+if(wordIndex>=wordList.length){
+finishGame();
+}
+else{
+loadWord();
+}
+}
+
+function updateStatsUI(){
+document.getElementById("scoreVal").textContent = score;
+document.getElementById("streakVal").textContent = streak;
+}
+
+function finishGame(){
+clearInterval(timerInterval);
+playSound("correct");
+createConfetti();
+
+const bestKey = "learnioWordBuilderBest_"+currentGrade;
+let best = Number(localStorage.getItem(bestKey) || 0);
+
+if(score>best){
+best = score;
+localStorage.setItem(bestKey,best);
+}
+
+document.getElementById("gameWrap").style.display="none";
+document.getElementById("topBar").style.display="none";
+
+document.getElementById("resultText").innerHTML = `
+Grade: <b>${currentGrade}</b><br><br>
+⭐ Score: <b>${score}</b><br><br>
+🏆 Best Score: <b>${best}</b>
+`;
+
+document.getElementById("winScreen").style.display="flex";
+}
+
+function restartSameGrade(){
+document.getElementById("winScreen").style.display="none";
+startGame();
+}
+
+function changeGrade(){
+document.getElementById("winScreen").style.display="none";
+document.getElementById("startScreen").style.display="flex";
+document.querySelectorAll(".gradeBtn").forEach(b=>b.classList.remove("selected"));
+document.getElementById("startBtn").disabled = true;
+currentGrade = null;
+}
+
+function goBack(){
+window.location.href = "../../../index.html";
+}
+
+function shuffle(array){
+for(let i=array.length-1;i>0;i--){
+const j = Math.floor(Math.random()*(i+1));
+[array[i],array[j]] = [array[j],array[i]];
+}
+return array;
+}
+
+</script>
+
+</body>
+</html>
