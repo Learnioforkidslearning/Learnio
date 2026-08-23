@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learnio - Grammar Builder</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+h1,h2,h3{
+font-family:'Baloo 2',cursive;
+}
+
+body{
+min-height:100vh;
+overflow-x:hidden;
+background:linear-gradient(180deg,#d9fbef,#e3f8ff,#eef6ff);
+color:#2d2d4d;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:20px 12px 60px;
+}
+
+/*==========================
+TOP BAR
+==========================*/
+
+.topBar{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:min(95%,900px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 22px;
+border-radius:20px;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(20px);
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+z-index:50;
+}
+
+.stat{
+text-align:center;
+}
+
+.label{
+font-size:12px;
+color:#7a7a9a;
+}
+
+.value{
+font-size:20px;
+font-weight:700;
+color:#12a887;
+}
+
+.gradeTag{
+background:#12a887;
+color:#fff;
+padding:6px 16px;
+border-radius:50px;
+font-weight:700;
+font-size:14px;
+}
+
+/*==========================
+GAME WRAP
+==========================*/
+
+.gameWrap{
+margin-top:110px;
+width:min(700px,94%);
+text-align:center;
+display:none;
+}
+
+.sentenceBox{
+background:#fff;
+border-radius:26px;
+padding:30px 22px;
+box-shadow:0 15px 35px rgba(0,0,0,.10);
+margin-bottom:26px;
+}
+
+.questionLabel{
+color:#888;
+font-size:14px;
+margin-bottom:14px;
+}
+
+.sentence{
+font-size:26px;
+font-weight:600;
+line-height:1.6;
+color:#2d2d4d;
+font-family:'Baloo 2',cursive;
+}
+
+.target{
+color:#12a887;
+text-decoration:underline;
+text-decoration-thickness:3px;
+text-underline-offset:5px;
+}
+
+.options{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+gap:12px;
+margin-bottom:24px;
+}
+
+.option{
+border:2px solid #d3f3ea;
+background:#f4fffb;
+border-radius:16px;
+padding:16px 10px;
+font-size:16px;
+font-weight:700;
+color:#12a887;
+cursor:pointer;
+transition:.2s;
+}
+
+.option:hover{
+transform:translateY(-3px);
+}
+
+.option.correct{
+background:#12a887;
+color:#fff;
+border-color:#12a887;
+}
+
+.option.wrong{
+background:#ff6868;
+color:#fff;
+border-color:#ff6868;
+animation:shake .4s;
+}
+
+.option.disabled{
+opacity:.4;
+pointer-events:none;
+}
+
+@keyframes shake{
+0%,100%{transform:translateX(0);}
+25%{transform:translateX(-6px);}
+75%{transform:translateX(6px);}
+}
+
+.controls{
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+button.action{
+border:none;
+padding:13px 26px;
+border-radius:50px;
+font-size:15px;
+font-weight:700;
+cursor:pointer;
+transition:.25s;
+color:#fff;
+}
+
+button.action:hover{
+transform:scale(1.05);
+}
+
+.hintBtn{ background:#ffb648; }
+.skipBtn{ background:#a0a0c0; }
+
+.timerBarWrap{
+width:100%;
+height:8px;
+border-radius:10px;
+background:#d3f3ea;
+overflow:hidden;
+margin-bottom:18px;
+}
+
+.timerBar{
+height:100%;
+background:linear-gradient(90deg,#12a887,#5fe3c0);
+width:100%;
+transition:width 1s linear;
+}
+
+/*==========================
+SCREENS
+==========================*/
+
+.screen{
+position:fixed;
+inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
+background:rgba(45,45,77,.35);
+z-index:2000;
+padding:20px;
+}
+
+.box{
+background:#fff;
+padding:34px 30px;
+border-radius:26px;
+width:min(94%,460px);
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.2);
+}
+
+.box h1{
+color:#12a887;
+margin-bottom:12px;
+font-size:28px;
+}
+
+.box p{
+line-height:1.7;
+margin-bottom:22px;
+color:#666;
+}
+
+.gradeGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-bottom:22px;
+}
+
+.gradeBtn{
+padding:14px 0;
+border-radius:16px;
+border:2px solid #d3f3ea;
+background:#f4fffb;
+font-weight:700;
+color:#12a887;
+cursor:pointer;
+transition:.2s;
+}
+
+.gradeBtn.selected{
+background:#12a887;
+color:#fff;
+border-color:#12a887;
+}
+
+button.action.checkColor{ background:#12a887; }
+
+button.action.wide{
+width:100%;
+padding:15px 0;
+font-size:17px;
+}
+
+#winScreen{ display:none; }
+
+@media(max-width:600px){
+
+.sentence{
+font-size:21px;
+}
+
+.gradeGrid{
+grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- TOP BAR (shown once game starts) -->
+<div class="topBar" id="topBar" style="display:none;">
+
+<span class="gradeTag" id="gradeTag">K4</span>
+
+<div class="stat">
+<div class="label">⭐ Score</div>
+<div class="value" id="scoreVal">0</div>
+</div>
+
+<div class="stat">
+<div class="label">🔥 Streak</div>
+<div class="value" id="streakVal">0</div>
+</div>
+
+<div class="stat">
+<div class="label">📝 Sentence</div>
+<div class="value" id="progressVal">1/8</div>
+</div>
+
+</div>
+
+<!-- GAME AREA -->
+<div class="gameWrap" id="gameWrap">
+
+<div class="timerBarWrap">
+<div class="timerBar" id="timerBar"></div>
+</div>
+
+<div class="sentenceBox">
+<div class="questionLabel">What part of speech is the underlined word?</div>
+<div class="sentence" id="sentence"></div>
+</div>
+
+<div class="options" id="options"></div>
+
+<div class="controls">
+<button class="action hintBtn" onclick="useHint()">💡 Hint</button>
+<button class="action skipBtn" onclick="skipSentence()">⏭ Skip</button>
+</div>
+
+</div>
+
+<!-- START SCREEN -->
+<div class="screen" id="startScreen">
+<div class="box">
+<h1>📖 Grammar Builder</h1>
+<p>Read each sentence and tap the correct part of speech for the underlined word. Pick your grade to set the difficulty!</p>
+
+<div class="gradeGrid" id="gradeGrid"></div>
+
+<button class="action checkColor wide" id="startBtn" onclick="startGame()" disabled>▶ Start Game</button>
+</div>
+</div>
+
+<!-- WIN SCREEN -->
+<div class="screen" id="winScreen">
+<div class="box">
+<h1>🎉 Great Job!</h1>
+<h2 id="resultText">Nice work!</h2>
+<br>
+<button class="action checkColor wide" onclick="restartSameGrade()">🔄 Play Again</button>
+<br><br>
+<button class="action skipBtn wide" onclick="changeGrade()">🎓 Change Grade</button>
+<br><br>
+<button class="action hintBtn wide" onclick="goBack()">⬅ Back to Fun Activities</button>
+</div>
+</div>
+
+<script>
+
+/*==========================
+GRADE / CATEGORY SETTINGS
+==========================*/
+
+const GRADES = ["K4","K","1st","2nd","3rd","4th","5th"];
+
+const CATEGORIES_BY_GRADE = {
+"K4":["Noun","Verb"],
+"K":["Noun","Verb"],
+"1st":["Noun","Pronoun","Verb"],
+"2nd":["Noun","Pronoun","Verb","Adjective"],
+"3rd":["Noun","Pronoun","Verb","Adjective","Adverb"],
+"4th":["Noun","Pronoun","Verb","Adjective","Adverb"],
+"5th":["Noun","Pronoun","Verb","Adjective","Adverb"]
+};
+
+/*==========================
+SENTENCE BANKS PER GRADE
+each entry: full sentence text, target word (must appear exactly as in sentence), correct category
+==========================*/
+
+const SENTENCE_BANKS = {
+"K4":[
+{sentence:"The cat sits.",target:"cat",answer:"Noun"},
+{sentence:"Dogs run fast.",target:"run",answer:"Verb"},
+{sentence:"I like my ball.",target:"ball",answer:"Noun"},
+{sentence:"Birds fly high.",target:"fly",answer:"Verb"},
+{sentence:"The sun shines.",target:"sun",answer:"Noun"},
+{sentence:"We eat lunch.",target:"eat",answer:"Verb"},
+{sentence:"My mom smiles.",target:"mom",answer:"Noun"},
+{sentence:"Fish swim well.",target:"swim",answer:"Verb"}
+],
+"K":[
+{sentence:"The frog jumps.",target:"frog",answer:"Noun"},
+{sentence:"Kids play games.",target:"play",answer:"Verb"},
+{sentence:"I see a star.",target:"star",answer:"Noun"},
+{sentence:"Birds sing songs.",target:"sing",answer:"Verb"},
+{sentence:"The moon glows.",target:"moon",answer:"Noun"},
+{sentence:"We read books.",target:"read",answer:"Verb"},
+{sentence:"My dad drives.",target:"dad",answer:"Noun"},
+{sentence:"Cats climb trees.",target:"climb",answer:"Verb"}
+],
+"1st":[
+{sentence:"She likes apples.",target:"She",answer:"Pronoun"},
+{sentence:"The dog barks loudly.",target:"dog",answer:"Noun"},
+{sentence:"They play outside.",target:"They",answer:"Pronoun"},
+{sentence:"He runs quickly.",target:"runs",answer:"Verb"},
+{sentence:"We love our school.",target:"We",answer:"Pronoun"},
+{sentence:"The bird sings.",target:"bird",answer:"Noun"},
+{sentence:"It jumps high.",target:"It",answer:"Pronoun"},
+{sentence:"I write letters.",target:"write",answer:"Verb"}
+],
+"2nd":[
+{sentence:"The playground is noisy.",target:"playground",answer:"Noun"},
+{sentence:"She found her keys.",target:"She",answer:"Pronoun"},
+{sentence:"The children laughed loudly.",target:"laughed",answer:"Verb"},
+{sentence:"He wore a blue shirt.",target:"blue",answer:"Adjective"},
+{sentence:"Our teacher is kind.",target:"teacher",answer:"Noun"},
+{sentence:"They finished their homework.",target:"They",answer:"Pronoun"},
+{sentence:"The puppy barked twice.",target:"barked",answer:"Verb"},
+{sentence:"It was a sunny morning.",target:"sunny",answer:"Adjective"}
+],
+"3rd":[
+{sentence:"The river flows quickly.",target:"quickly",answer:"Adverb"},
+{sentence:"She is my best friend.",target:"friend",answer:"Noun"},
+{sentence:"He carefully painted the fence.",target:"carefully",answer:"Adverb"},
+{sentence:"They visited grandma yesterday.",target:"They",answer:"Pronoun"},
+{sentence:"The clever fox escaped.",target:"clever",answer:"Adjective"},
+{sentence:"We laughed happily.",target:"happily",answer:"Adverb"},
+{sentence:"The teacher explained the lesson.",target:"explained",answer:"Verb"},
+{sentence:"It was an amazing show.",target:"amazing",answer:"Adjective"}
+],
+"4th":[
+{sentence:"The scientist studied the results carefully.",target:"carefully",answer:"Adverb"},
+{sentence:"Her project impressed everyone.",target:"impressed",answer:"Verb"},
+{sentence:"The ancient castle stood proudly.",target:"ancient",answer:"Adjective"},
+{sentence:"They organized the event successfully.",target:"successfully",answer:"Adverb"},
+{sentence:"You should finish your homework.",target:"You",answer:"Pronoun"},
+{sentence:"The mountain climbers reached the summit.",target:"climbers",answer:"Noun"},
+{sentence:"The brilliant idea surprised the judges.",target:"brilliant",answer:"Adjective"},
+{sentence:"The engine roared loudly.",target:"loudly",answer:"Adverb"}
+],
+"5th":[
+{sentence:"The committee reviewed the proposal thoroughly.",target:"thoroughly",answer:"Adverb"},
+{sentence:"Her extraordinary talent amazed the audience.",target:"extraordinary",answer:"Adjective"},
+{sentence:"Someone left this message for you.",target:"Someone",answer:"Pronoun"},
+{sentence:"The archaeologists discovered ancient artifacts.",target:"archaeologists",answer:"Noun"},
+{sentence:"The team celebrated their victory enthusiastically.",target:"enthusiastically",answer:"Adverb"},
+{sentence:"The mysterious stranger vanished quickly.",target:"mysterious",answer:"Adjective"},
+{sentence:"They negotiated the contract carefully.",target:"negotiated",answer:"Verb"},
+{sentence:"The government announced new policies.",target:"announced",answer:"Verb"}
+]
+};
+
+/*==========================
+STATE
+==========================*/
+
+let currentGrade = null;
+let categories = [];
+let sentenceSet = [];
+let sentenceIndex = 0;
+let score = 0;
+let streak = 0;
+let hintUsedThisSentence = false;
+let answered = false;
+let timeLeft = 0;
+let timerInterval = null;
+
+/*==========================
+GRADE PICKER (start screen)
+==========================*/
+
+const gradeGrid = document.getElementById("gradeGrid");
+
+GRADES.forEach(g=>{
+const btn = document.createElement("div");
+btn.className = "gradeBtn";
+btn.textContent = g;
+btn.onclick = ()=>{
+document.querySelectorAll(".gradeBtn").forEach(b=>b.classList.remove("selected"));
+btn.classList.add("selected");
+currentGrade = g;
+document.getElementById("startBtn").disabled = false;
+};
+gradeGrid.appendChild(btn);
+});
+
+/*==========================
+SOUND
+==========================*/
+
+function playSound(type){
+try{
+const ctx = new (window.AudioContext || window.webkitAudioContext)();
+const osc = ctx.createOscillator();
+const gain = ctx.createGain();
+
+if(type==="correct") osc.frequency.value = 780;
+else if(type==="wrong") osc.frequency.value = 180;
+else osc.frequency.value = 900;
+
+gain.gain.value = 0.08;
+
+osc.connect(gain);
+gain.connect(ctx.destination);
+
+osc.start();
+gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.18);
+osc.stop(ctx.currentTime + 0.18);
+
+}catch(e){}
+}
+
+function createConfetti(){
+for(let i=0;i<80;i++){
+const c=document.createElement("div");
+c.style.position="fixed";
+c.style.left=Math.random()*100+"vw";
+c.style.top="-20px";
+c.style.width="8px";
+c.style.height="8px";
+c.style.borderRadius="50%";
+
+const colors=["#ff595e","#ffca3a","#8ac926","#1982c4","#6a4c93"];
+c.style.background = colors[Math.floor(Math.random()*colors.length)];
+c.style.transition="transform 3s linear, opacity 3s";
+c.style.zIndex="3000";
+
+document.body.appendChild(c);
+
+requestAnimationFrame(()=>{
+c.style.transform = `translateY(${window.innerHeight+80}px) rotate(${Math.random()*720}deg)`;
+c.style.opacity="0";
+});
+
+setTimeout(()=>c.remove(),3000);
+}
+}
+
+/*==========================
+HELPERS
+==========================*/
+
+function shuffle(array){
+for(let i=array.length-1;i>0;i--){
+const j = Math.floor(Math.random()*(i+1));
+[array[i],array[j]] = [array[j],array[i]];
+}
+return array;
+}
+
+function highlightSentence(sentence,target){
+const re = new RegExp(`\\b${target}\\b`);
+return sentence.replace(re, `<span class="target">${target}</span>`);
+}
+
+/*==========================
+GAME FLOW
+==========================*/
+
+function startGame(){
+if(!currentGrade) return;
+
+categories = CATEGORIES_BY_GRADE[currentGrade];
+sentenceSet = shuffle([...SENTENCE_BANKS[currentGrade]]);
+sentenceIndex = 0;
+score = 0;
+streak = 0;
+
+document.getElementById("startScreen").style.display="none";
+document.getElementById("topBar").style.display="flex";
+document.getElementById("gameWrap").style.display="block";
+document.getElementById("gradeTag").textContent = currentGrade;
+
+updateStatsUI();
+loadSentence();
+}
+
+function loadSentence(){
+clearInterval(timerInterval);
+
+hintUsedThisSentence = false;
+answered = false;
+
+const entry = sentenceSet[sentenceIndex];
+
+document.getElementById("sentence").innerHTML = highlightSentence(entry.sentence,entry.target);
+document.getElementById("progressVal").textContent = `${sentenceIndex+1}/${sentenceSet.length}`;
+
+renderOptions(entry.answer);
+
+const gradeIdx = GRADES.indexOf(currentGrade);
+const fullTime = 25 - Math.floor(gradeIdx*0.5);
+timeLeft = fullTime;
+document.getElementById("timerBar").style.width = "100%";
+document.getElementById("timerBar").style.transition = "none";
+
+timerInterval = setInterval(()=>{
+timeLeft--;
+const pct = Math.max(0,(timeLeft/fullTime)*100);
+document.getElementById("timerBar").style.transition = "width 1s linear";
+document.getElementById("timerBar").style.width = pct+"%";
+
+if(timeLeft<=0){
+clearInterval(timerInterval);
+if(!answered){
+streak = 0;
+updateStatsUI();
+}
+nextSentence();
+}
+},1000);
+}
+
+function renderOptions(correctAnswer){
+const optionsEl = document.getElementById("options");
+optionsEl.innerHTML = "";
+
+const shuffledCats = shuffle([...categories]);
+
+shuffledCats.forEach(cat=>{
+const btn = document.createElement("div");
+btn.className = "option";
+btn.textContent = cat;
+btn.dataset.cat = cat;
+btn.onclick = ()=> selectOption(btn,cat,correctAnswer);
+optionsEl.appendChild(btn);
+});
+}
+
+function selectOption(btn,chosen,correctAnswer){
+if(answered) return;
+answered = true;
+
+clearInterval(timerInterval);
+
+const allOptions = document.querySelectorAll(".option");
+allOptions.forEach(o=>o.classList.add("disabled"));
+
+if(chosen===correctAnswer){
+btn.classList.remove("disabled");
+btn.classList.add("correct");
+playSound("correct");
+
+const gradeIdx = GRADES.indexOf(currentGrade);
+const base = 40 + gradeIdx*8;
+const hintPenalty = hintUsedThisSentence ? 15 : 0;
+const timeBonus = Math.max(0,timeLeft);
+
+score += Math.max(10, base - hintPenalty + timeBonus);
+streak++;
+}
+else{
+btn.classList.remove("disabled");
+btn.classList.add("wrong");
+playSound("wrong");
+streak = 0;
+
+allOptions.forEach(o=>{
+if(o.dataset.cat===correctAnswer){
+o.classList.remove("disabled");
+o.classList.add("correct");
+}
+});
+}
+
+updateStatsUI();
+
+setTimeout(nextSentence,900);
+}
+
+function useHint(){
+if(answered || hintUsedThisSentence) return;
+hintUsedThisSentence = true;
+
+const entry = sentenceSet[sentenceIndex];
+const wrongOptions = document.querySelectorAll(".option");
+
+const wrongOnes = [...wrongOptions].filter(o=>o.dataset.cat!==entry.answer && !o.classList.contains("disabled"));
+
+if(wrongOnes.length>0){
+const toDisable = wrongOnes[Math.floor(Math.random()*wrongOnes.length)];
+toDisable.classList.add("disabled");
+}
+}
+
+function skipSentence(){
+if(answered) return;
+answered = true;
+clearInterval(timerInterval);
+streak = 0;
+updateStatsUI();
+nextSentence();
+}
+
+function nextSentence(){
+sentenceIndex++;
+
+if(sentenceIndex>=sentenceSet.length){
+finishGame();
+}
+else{
+loadSentence();
+}
+}
+
+function updateStatsUI(){
+document.getElementById("scoreVal").textContent = score;
+document.getElementById("streakVal").textContent = streak;
+}
+
+function finishGame(){
+clearInterval(timerInterval);
+playSound("correct");
+createConfetti();
+
+const bestKey = "learnioGrammarBuilderBest_"+currentGrade;
+let best = Number(localStorage.getItem(bestKey) || 0);
+
+if(score>best){
+best = score;
+localStorage.setItem(bestKey,best);
+}
+
+document.getElementById("gameWrap").style.display="none";
+document.getElementById("topBar").style.display="none";
+
+document.getElementById("resultText").innerHTML = `
+Grade: <b>${currentGrade}</b><br><br>
+⭐ Score: <b>${score}</b><br><br>
+🏆 Best Score: <b>${best}</b>
+`;
+
+document.getElementById("winScreen").style.display="flex";
+}
+
+function restartSameGrade(){
+document.getElementById("winScreen").style.display="none";
+startGame();
+}
+
+function changeGrade(){
+document.getElementById("winScreen").style.display="none";
+document.getElementById("startScreen").style.display="flex";
+document.querySelectorAll(".gradeBtn").forEach(b=>b.classList.remove("selected"));
+document.getElementById("startBtn").disabled = true;
+currentGrade = null;
+}
+
+function goBack(){
+window.location.href = "../../../index.html";
+}
+
+</script>
+
+</body>
+</html>
