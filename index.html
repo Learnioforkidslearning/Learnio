@@ -8,6 +8,10 @@
     <title>Learniokidslearning</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Seasonal/festival theme overrides. Loaded after style.css so
+         its body[data-theme="..."] rules take precedence. -->
+    <link rel="stylesheet" href="seasonal-theme.css" />
 </head>
 
 <body>
@@ -787,6 +791,11 @@
         });
     })();
     </script>
+
+    <!-- Seasonal/festival theme system: detects the date, sets
+         body[data-theme], renders lightweight decorations. Fully
+         independent of the AI chat widget below. -->
+    <script src="seasonal-theme.js"></script>
 
 <!-- Learnio AI -->
 <div id="learnio-ai"></div>

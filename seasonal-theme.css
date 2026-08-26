@@ -1,0 +1,257 @@
+/* ==========================================
+   LEARNIO SEASONAL THEME SYSTEM (CSS)
+   ---------------------------------------------
+   Loaded AFTER style.css. Works entirely by overriding the same
+   CSS custom properties style.css already uses everywhere
+   (--c-ink, --c-muted, --c-accent, --c-accent2) plus two new ones
+   for the page background gradient. No component CSS is duplicated
+   here — every element that already reads those variables (headings,
+   buttons, cards, footer, prices, etc.) re-colors itself for free.
+
+   Applied via document.body.dataset.theme, set by seasonal-theme.js:
+     <body data-theme="diwali">
+========================================== */
+
+/* ---------- background gradient vars + base rule ---------- */
+
+:root{
+    --c-bg-start:#ECFEFF;
+    --c-bg-end:#CFFAFE;
+}
+
+body{
+    background:linear-gradient(165deg, var(--c-bg-start), var(--c-bg-end));
+    background-attachment:fixed;
+    transition:background 1.4s ease;
+}
+
+/* ==========================================
+   PER-THEME COLOR OVERRIDES
+   "default" intentionally has no block below — it uses the base
+   values already defined in style.css / above.
+========================================== */
+
+body[data-theme="winter"]{
+    --c-ink:#0F2A38;
+    --c-muted:#3E6B78;
+    --c-accent:#2AA9C4;
+    --c-accent2:#8FD9E8;
+    --c-bg-start:#EAF6FB;
+    --c-bg-end:#CFEFF7;
+}
+
+body[data-theme="christmas"]{
+    --c-ink:#2B0A0A;
+    --c-muted:#6B3A3A;
+    --c-accent:#D3273E;
+    --c-accent2:#1E8A4C;
+    --c-bg-start:#FFF8F0;
+    --c-bg-end:#FBE0DE;
+}
+
+body[data-theme="new-year"]{
+    --c-ink:#241B45;
+    --c-muted:#5C4B8A;
+    --c-accent:#C9A227;
+    --c-accent2:#7C5CFF;
+    --c-bg-start:#F5F0FF;
+    --c-bg-end:#E8DCFF;
+}
+
+body[data-theme="republic-day"]{
+    --c-ink:#0A2A12;
+    --c-muted:#33552E;
+    --c-accent:#FF9933;
+    --c-accent2:#128807;
+    --c-bg-start:#FFF7EC;
+    --c-bg-end:#ECF9EC;
+}
+
+body[data-theme="holi"]{
+    --c-ink:#3A0F5B;
+    --c-muted:#7A3E92;
+    --c-accent:#E8437A;
+    --c-accent2:#F2B705;
+    --c-bg-start:#FFF0F6;
+    --c-bg-end:#FFE9C7;
+}
+
+body[data-theme="poila-boishakh"]{
+    --c-ink:#4A0404;
+    --c-muted:#8A3A3A;
+    --c-accent:#C1121F;
+    --c-accent2:#E8B4B4;
+    --c-bg-start:#FFF7F5;
+    --c-bg-end:#FDE3E1;
+}
+
+body[data-theme="independence-day"]{
+    --c-ink:#0A2340;
+    --c-muted:#33547A;
+    --c-accent:#FF9933;
+    --c-accent2:#0B5FA5;
+    --c-bg-start:#FFF8ED;
+    --c-bg-end:#EAF3FF;
+}
+
+body[data-theme="durga-puja"]{
+    --c-ink:#3A0A12;
+    --c-muted:#7A3D46;
+    --c-accent:#C81E3A;
+    --c-accent2:#D4AF37;
+    --c-bg-start:#FFF6E9;
+    --c-bg-end:#FBE3E7;
+}
+
+body[data-theme="diwali"]{
+    --c-ink:#3B1B00;
+    --c-muted:#7A5230;
+    --c-accent:#E08E00;
+    --c-accent2:#B8860B;
+    --c-bg-start:#FFF6E0;
+    --c-bg-end:#FFE3B0;
+}
+
+body[data-theme="summer"]{
+    --c-ink:#123847;
+    --c-muted:#3B6B75;
+    --c-accent:#F59E0B;
+    --c-accent2:#38BDF8;
+    --c-bg-start:#FFFDEB;
+    --c-bg-end:#E0F7FA;
+}
+
+body[data-theme="monsoon"]{
+    --c-ink:#1B2A38;
+    --c-muted:#45606E;
+    --c-accent:#3B7EA1;
+    --c-accent2:#7C93A8;
+    --c-bg-start:#E7EEF2;
+    --c-bg-end:#CBD9E0;
+}
+
+/* ==========================================
+   DECORATIVE PARTICLES
+   Emoji-based, injected by seasonal-theme.js. Kept lightweight:
+   a handful of elements, pure CSS animation, no JS animation loop.
+========================================== */
+
+.seasonal-decor{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+.decor-item{
+
+    position:absolute;
+
+    top:-10%;
+
+    line-height:1;
+
+    will-change:transform,opacity;
+}
+
+/* Falling particles: snow, confetti, rain, petals */
+
+.decor-fall{
+    animation-name:decorFall;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+@keyframes decorFall{
+
+    0%{
+        transform:translateY(0) translateX(0) rotate(0deg);
+        opacity:0;
+    }
+
+    8%{ opacity:0.9; }
+
+    100%{
+        transform:translateY(115vh) translateX(var(--drift,20px)) rotate(360deg);
+        opacity:0.85;
+    }
+
+}
+
+/* Gently glowing/pulsing particles: diyas */
+
+.decor-glow{
+    animation-name:decorGlow;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+}
+
+@keyframes decorGlow{
+
+    0%,100%{
+        opacity:0.55;
+        transform:scale(1);
+        filter:drop-shadow(0 0 4px color-mix(in srgb, var(--c-accent) 60%, transparent));
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.18);
+        filter:drop-shadow(0 0 12px color-mix(in srgb, var(--c-accent) 70%, transparent));
+    }
+
+}
+
+/* Twinkling particles: kites, stars */
+
+.decor-twinkle{
+    animation-name:decorTwinkle;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+}
+
+@keyframes decorTwinkle{
+
+    0%,100%{ opacity:0.35; transform:scale(0.95); }
+    50%{ opacity:1; transform:scale(1.1); }
+
+}
+
+/* ==========================================
+   RESPECT REDUCED MOTION
+   seasonal-theme.js already skips creating particles when this is
+   set; this is a CSS-level safety net in case any slip through.
+========================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .decor-item{
+        animation:none !important;
+        opacity:0.3;
+    }
+
+    body{
+        transition:none;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+   Slightly smaller/fewer-feeling particles on narrow screens so
+   they don't crowd the mobile layout.
+========================================== */
+
+@media(max-width:600px){
+
+    .decor-item{
+        font-size:0.85em !important;
+    }
+
+}

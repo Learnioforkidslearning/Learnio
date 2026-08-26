@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Learniokidslearning</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Seasonal/festival theme overrides. Loaded after style.css so
+         its body[data-theme="..."] rules take precedence. -->
+    <link rel="stylesheet" href="seasonal-theme.css">
 </head>
 <body>
 
@@ -15,5 +19,8 @@
 </section>
 
 <script type="module" src="script.js"></script>
+
+<!-- Seasonal/festival theme system -->
+<script src="seasonal-theme.js"></script>
 </body>
 </html>
