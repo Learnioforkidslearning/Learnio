@@ -1,381 +1,1121 @@
-// ===========================================
-// Learnio Seasonal Theme System
-// ---------------------------------------------
-// Detects the current date, picks a festival or seasonal theme, and
-// applies it globally via document.body.dataset.theme. Colors are
-// controlled entirely by CSS custom properties in seasonal-theme.css
-// (body[data-theme="..."] blocks) — this file only decides WHICH
-// theme applies and renders a few lightweight decorative particles.
+// ================================================================
+// LEARNIO DYNAMIC SEASONAL + FESTIVAL THEME ENGINE
+// ================================================================
 //
-// Completely separate from ai/ui.js (the chatbot widget). Do not
-// merge the two.
+// 4 SEASONS:
+// ☀️ Summer
+// 🌧️ Monsoon
+// 🍂 Autumn
+// ❄️ Winter
 //
-// Manual preview (does not affect automatic detection for other
-// visitors, and does not persist anywhere):
-//   yoursite.com/index.html?theme=diwali
-//   or, from the browser console: setSeasonalTheme("diwali")
-//   or clear it: clearSeasonalTheme()
-// ===========================================
+// FESTIVALS HAVE HIGHER PRIORITY THAN SEASONS.
+//
+// Example:
+// December 25
+// → Winter season
+// → Christmas detected
+// → Christmas theme applied
+//
+// This file works with:
+//     festival-calendar.js
+//
+// IMPORTANT:
+// festival-calendar.js MUST load BEFORE this file.
+//
+// ================================================================
 
 (function () {
-"use strict";
 
-// -------------------------------------------
-// 1. VALID THEME IDS
-// -------------------------------------------
-const VALID_THEMES = [
-    "default",
-    "winter",
-    "christmas",
-    "new-year",
-    "republic-day",
-    "holi",
-    "poila-boishakh",
-    "independence-day",
-    "durga-puja",
-    "diwali",
-    "summer",
-    "monsoon"
-];
+    "use strict";
 
-// -------------------------------------------
-// 2. FESTIVAL CONFIG
-// -------------------------------------------
-// Two kinds of entries:
-//
-// type: "fixed"  -> same MM-DD range every year (Gregorian holidays).
-//                   "start" > "end" is allowed and means the range
-//                   wraps across the year boundary (e.g. New Year).
-//
-// type: "yearly" -> lunar/luni-solar festivals whose exact dates
-//                   shift every year (Holi, Diwali, Durga Puja).
-//                   Add a new entry to datesByYear each year. If the
-//                   current year isn't listed, that festival is
-//                   simply skipped (falls through to the seasonal
-//                   default) rather than guessing a wrong date.
-//
-// Order = priority if ranges ever overlap (top wins).
-const FESTIVALS = [
-    {
-        theme: "christmas",
-        name: "Christmas",
-        type: "fixed",
-        start: "12-20",
-        end: "12-26"
-    },
-    {
-        theme: "new-year",
-        name: "New Year",
-        type: "fixed",
-        start: "12-31",
-        end: "01-01"
-    },
-    {
-        theme: "republic-day",
-        name: "Republic Day",
-        type: "fixed",
-        start: "01-24",
-        end: "01-27"
-    },
-    {
-        theme: "holi",
-        name: "Holi",
-        type: "yearly",
-        datesByYear: {
-            2026: { start: "2026-03-03", end: "2026-03-05" }
-            // add future years here, e.g. 2027: { start: "...", end: "..." }
-        }
-    },
-    {
-        theme: "poila-boishakh",
-        name: "Poila Boishakh (Bengali New Year)",
-        type: "fixed",
-        start: "04-14",
-        end: "04-15"
-    },
-    {
-        theme: "independence-day",
-        name: "Independence Day",
-        type: "fixed",
-        start: "08-13",
-        end: "08-16"
-    },
-    {
-        theme: "durga-puja",
-        name: "Durga Puja",
-        type: "yearly",
-        datesByYear: {
-            2026: { start: "2026-10-17", end: "2026-10-21" } // Mahalaya -> Vijaya Dashami
-        }
-    },
-    {
-        theme: "diwali",
-        name: "Diwali",
-        type: "yearly",
-        datesByYear: {
-            2026: { start: "2026-11-06", end: "2026-11-10" } // Dhanteras -> Bhai Dooj window
-        }
-    }
-];
 
-// -------------------------------------------
-// 3. GENERIC SEASONAL FALLBACK
-// -------------------------------------------
-// Checked only if no festival is active. Any month not covered here
-// (Oct, Nov) falls through to "default".
-const SEASONS = [
-    { theme: "winter", months: [12, 1, 2] },
-    { theme: "summer", months: [3, 4, 5, 6] },
-    { theme: "monsoon", months: [7, 8, 9] }
-];
+    // ============================================================
+    // 1. VALID THEME IDs
+    // ============================================================
 
-// -------------------------------------------
-// 4. DATE HELPERS
-// -------------------------------------------
+    const VALID_THEMES = [
 
-function pad(n) {
-    return String(n).padStart(2, "0");
-}
+        // Base seasons
+        "summer",
+        "monsoon",
+        "autumn",
+        "winter",
 
-function mmdd(date) {
-    return pad(date.getMonth() + 1) + "-" + pad(date.getDate());
-}
+        // Festivals / occasions
+        "newyear",
+        "new-year",
 
-// True if `date`'s MM-DD falls within [start, end] (both "MM-DD").
-// Handles ranges that wrap the year boundary, e.g. start "12-31",
-// end "01-01".
-function isFixedRangeActive(date, start, end) {
-    const current = mmdd(date);
-    if (start <= end) {
-        return current >= start && current <= end;
-    }
-    // wraps across Dec 31 -> Jan 1
-    return current >= start || current <= end;
-}
+        "republic-day",
 
-// True if `date` falls within [start, end] inclusive, both "YYYY-MM-DD".
-function isYearlyRangeActive(date, start, end) {
-    const startDate = new Date(start + "T00:00:00");
-    const endDate = new Date(end + "T23:59:59");
-    return date >= startDate && date <= endDate;
-}
+        "valentine",
 
-// -------------------------------------------
-// 5. THEME DETECTION
-// -------------------------------------------
+        "womens-day",
 
-function detectSeasonalTheme(date) {
-    date = date || new Date();
+        "earth-day",
 
-    // Festivals take priority over generic seasons.
-    for (const festival of FESTIVALS) {
-        if (festival.type === "fixed") {
-            if (isFixedRangeActive(date, festival.start, festival.end)) {
-                return festival.theme;
-            }
-        } else if (festival.type === "yearly") {
-            const range = festival.datesByYear[date.getFullYear()];
-            if (range && isYearlyRangeActive(date, range.start, range.end)) {
-                return festival.theme;
-            }
-        }
-    }
+        "environment-day",
 
-    // No festival active -> generic season.
-    const month = date.getMonth() + 1;
-    for (const season of SEASONS) {
-        if (season.months.indexOf(month) !== -1) {
-            return season.theme;
-        }
-    }
+        "childrens-day-global",
 
-    // Oct/Nov, or anything unmatched.
-    return "default";
-}
+        "children-day",
 
-// -------------------------------------------
-// 6. DECORATIVE PARTICLES
-// -------------------------------------------
-// Small, emoji-based, CSS-animated. No continuous JS animation loop —
-// each particle is a plain element with a CSS animation, matching how
-// the rest of the site already animates things.
+        "teachers-day",
 
-const DECOR_CONTAINER_ID = "seasonal-decor";
+        "gandhi-jayanti",
 
-const DECOR_MAP = {
-    winter: { symbols: ["❄️"], count: 14, kind: "fall" },
-    christmas: { symbols: ["❄️", "✨"], count: 14, kind: "fall" },
-    "new-year": { symbols: ["🎉", "✨", "🎊"], count: 14, kind: "fall" },
-    "republic-day": { symbols: ["🪁", "✨"], count: 10, kind: "twinkle" },
-    holi: { symbols: ["🎨", "✨", "🌸"], count: 16, kind: "fall" },
-    "poila-boishakh": { symbols: ["🌺", "✨"], count: 10, kind: "twinkle" },
-    "independence-day": { symbols: ["🪁", "✨"], count: 10, kind: "twinkle" },
-    "durga-puja": { symbols: ["🪔", "✨"], count: 10, kind: "glow" },
-    diwali: { symbols: ["🪔"], count: 12, kind: "glow" },
-    summer: { symbols: ["☀️"], count: 0, kind: "fall" }, // color-only, no particles
-    monsoon: { symbols: ["💧"], count: 18, kind: "fall" },
-    default: { symbols: [], count: 0, kind: "fall" }
-};
+        "independence",
+        "independence-day",
 
-function prefersReducedMotion() {
-    return (
-        window.matchMedia &&
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    );
-}
+        "poila-boishakh",
 
-function getDecorContainer() {
-    let el = document.getElementById(DECOR_CONTAINER_ID);
-    if (!el) {
-        el = document.createElement("div");
-        el.id = DECOR_CONTAINER_ID;
-        el.className = "seasonal-decor";
-        el.setAttribute("aria-hidden", "true");
-        document.body.appendChild(el);
-    }
-    return el;
-}
+        "makar-sankranti",
 
-function renderDecorations(theme) {
-    const container = getDecorContainer();
-    container.innerHTML = "";
+        "pongal",
 
-    // Respect reduced-motion: keep the color theme, skip the particles.
-    if (prefersReducedMotion()) {
-        return;
-    }
+        "saraswati-puja",
 
-    const config = DECOR_MAP[theme] || DECOR_MAP.default;
-    if (!config.count || !config.symbols.length) {
-        return;
-    }
+        "shivratri",
 
-    const fragment = document.createDocumentFragment();
+        "holi",
 
-    for (let i = 0; i < config.count; i++) {
-        const item = document.createElement("span");
-        const symbol =
-            config.symbols[Math.floor(Math.random() * config.symbols.length)];
+        "ram-navami",
 
-        item.className = "decor-item decor-" + config.kind;
-        item.textContent = symbol;
+        "buddha-purnima",
 
-        // Randomized placement/timing, kept cheap (inline style only).
-        const left = Math.random() * 100;
-        const duration = 8 + Math.random() * 10; // seconds
-        const delay = Math.random() * 10; // seconds
-        const drift = (Math.random() * 60 - 30) + "px";
-        const size = 0.9 + Math.random() * 0.9; // em multiplier
+        "rath-yatra",
 
-        item.style.left = left + "%";
-        item.style.animationDuration = duration + "s";
-        item.style.animationDelay = "-" + delay + "s";
-        item.style.setProperty("--drift", drift);
-        item.style.fontSize = size + "em";
+        "onam",
 
-        if (config.kind === "glow" || config.kind === "twinkle") {
-            item.style.bottom = 2 + Math.random() * 20 + "%";
+        "raksha-bandhan",
+
+        "janmashtami",
+
+        "ganesh-chaturthi",
+
+        "navratri",
+
+        "durga-puja",
+
+        "dussehra",
+
+        "diwali",
+
+        "kali-puja",
+
+        "jagaddhatri-puja",
+
+        "guru-nanak-jayanti",
+
+        "eid",
+
+        "eid-al-adha",
+
+        "muharram",
+
+        "good-friday",
+
+        "easter",
+
+        "christmas",
+
+        "halloween",
+
+        "default"
+    ];
+
+
+    // ============================================================
+    // 2. FOUR SEASONS
+    // ============================================================
+
+    const SEASONS = {
+
+        summer: {
+            name: "Summer",
+            months: [3, 4, 5]
+        },
+
+        monsoon: {
+            name: "Monsoon",
+            months: [6, 7, 8, 9]
+        },
+
+        autumn: {
+            name: "Autumn",
+            months: [10, 11]
+        },
+
+        winter: {
+            name: "Winter",
+            months: [12, 1, 2]
         }
 
-        fragment.appendChild(item);
-    }
-
-    container.appendChild(fragment);
-}
-
-// -------------------------------------------
-// 7. APPLY / CLEAR
-// -------------------------------------------
-
-function applyTheme(theme) {
-    if (VALID_THEMES.indexOf(theme) === -1) {
-        theme = "default";
-    }
-    document.body.dataset.theme = theme;
-    renderDecorations(theme);
-}
-
-function clearTheme() {
-    delete document.body.dataset.theme;
-    const container = document.getElementById(DECOR_CONTAINER_ID);
-    if (container) {
-        container.innerHTML = "";
-    }
-}
-
-// -------------------------------------------
-// 8. PREVIEW OVERRIDE (?theme=xyz)
-// -------------------------------------------
-
-function getPreviewThemeFromURL() {
-    try {
-        const params = new URLSearchParams(window.location.search);
-        const requested = params.get("theme");
-        if (requested && VALID_THEMES.indexOf(requested) !== -1) {
-            return requested;
-        }
-    } catch (e) {
-        // URLSearchParams unsupported / malformed URL — ignore, fall
-        // through to automatic detection.
-    }
-    return null;
-}
-
-// -------------------------------------------
-// 9. INIT
-// -------------------------------------------
-
-function initializeSeasonalTheme() {
-    const preview = getPreviewThemeFromURL();
-
-    if (preview) {
-        applyTheme(preview);
-        console.info(
-            "[Learnio Seasonal Theme] Preview mode active: \"" +
-                preview +
-                "\". Remove ?theme= from the URL to return to automatic detection."
-        );
-        return;
-    }
-
-    try {
-        const theme = detectSeasonalTheme(new Date());
-        applyTheme(theme);
-    } catch (err) {
-        // Never let a bad date/config break the page — fall back safely.
-        console.error("[Learnio Seasonal Theme] Detection failed, using default.", err);
-        applyTheme("default");
-    }
-}
-
-// Re-render decorations (without changing the chosen theme) if the
-// user's reduced-motion preference changes mid-session.
-if (window.matchMedia) {
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const handleMotionChange = function () {
-        renderDecorations(document.body.dataset.theme || "default");
     };
-    if (motionQuery.addEventListener) {
-        motionQuery.addEventListener("change", handleMotionChange);
-    } else if (motionQuery.addListener) {
-        motionQuery.addListener(handleMotionChange); // older Safari
+
+
+    // ============================================================
+    // 3. GET SEASON FROM DATE
+    // ============================================================
+
+    function getCurrentSeason(date) {
+
+        if (!(date instanceof Date) || isNaN(date.getTime())) {
+            date = new Date();
+        }
+
+        const month = date.getMonth() + 1;
+
+        for (const seasonId in SEASONS) {
+
+            if (
+                SEASONS[seasonId].months.includes(month)
+            ) {
+                return seasonId;
+            }
+
+        }
+
+        // Safe fallback
+        return "winter";
     }
-}
 
-// -------------------------------------------
-// 10. DEV/CONSOLE HELPERS (spec item #19)
-// -------------------------------------------
-// Usable from the browser console without touching the URL:
-//   setSeasonalTheme("christmas")
-//   clearSeasonalTheme()
-window.setSeasonalTheme = applyTheme;
-window.clearSeasonalTheme = clearTheme;
-window.detectSeasonalTheme = detectSeasonalTheme; // handy for testing specific dates
 
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initializeSeasonalTheme);
-} else {
-    initializeSeasonalTheme();
-}
+    // ============================================================
+    // 4. GET FESTIVAL SAFELY
+    // ============================================================
+
+    function getFestivalSafely(date) {
+
+        /*
+         * festival-calendar.js should already provide:
+         *
+         * getFestivalForDate(date)
+         */
+
+        if (
+            typeof window.getFestivalForDate === "function"
+        ) {
+
+            try {
+
+                return window.getFestivalForDate(date);
+
+            } catch (error) {
+
+                console.error(
+                    "[Learnio Seasonal Theme] Festival calendar error:",
+                    error
+                );
+
+                return null;
+            }
+        }
+
+        console.warn(
+            "[Learnio Seasonal Theme] festival-calendar.js was not loaded."
+        );
+
+        return null;
+    }
+
+
+    // ============================================================
+    // 5. DETERMINE THEME
+    // ============================================================
+
+    function detectTheme(date) {
+
+        if (!(date instanceof Date) || isNaN(date.getTime())) {
+            date = new Date();
+        }
+
+
+        // --------------------------------------------------------
+        // FESTIVAL ALWAYS GETS PRIORITY
+        // --------------------------------------------------------
+
+        const festival = getFestivalSafely(date);
+
+
+        if (
+            festival &&
+            festival.theme
+        ) {
+
+            return {
+
+                theme: festival.theme,
+
+                season: getCurrentSeason(date),
+
+                occasion: festival.name || "",
+
+                festival: festival,
+
+                isFestival: true
+
+            };
+
+        }
+
+
+        // --------------------------------------------------------
+        // NO FESTIVAL → USE SEASON
+        // --------------------------------------------------------
+
+        const season = getCurrentSeason(date);
+
+        return {
+
+            theme: season,
+
+            season: season,
+
+            occasion: "",
+
+            festival: null,
+
+            isFestival: false
+
+        };
+
+    }
+
+
+    // ============================================================
+    // 6. DECORATION CONFIGURATION
+    // ============================================================
+
+    const DECOR_MAP = {
+
+        // --------------------------------------------------------
+        // SUMMER
+        // --------------------------------------------------------
+
+        summer: {
+            symbols: ["☀️", "✨"],
+            count: 8,
+            kind: "float"
+        },
+
+
+        // --------------------------------------------------------
+        // MONSOON
+        // --------------------------------------------------------
+
+        monsoon: {
+            symbols: ["💧", "🌧️"],
+            count: 18,
+            kind: "rain"
+        },
+
+
+        // --------------------------------------------------------
+        // AUTUMN
+        // --------------------------------------------------------
+
+        autumn: {
+            symbols: ["🍂", "🍁"],
+            count: 14,
+            kind: "fall"
+        },
+
+
+        // --------------------------------------------------------
+        // WINTER
+        // --------------------------------------------------------
+
+        winter: {
+            symbols: ["❄️", "❄"],
+            count: 18,
+            kind: "snow"
+        },
+
+
+        // --------------------------------------------------------
+        // FESTIVALS
+        // --------------------------------------------------------
+
+        christmas: {
+            symbols: ["❄️", "✨", "⭐"],
+            count: 18,
+            kind: "snow"
+        },
+
+        diwali: {
+            symbols: ["🪔", "✨"],
+            count: 16,
+            kind: "glow"
+        },
+
+        "kali-puja": {
+            symbols: ["🪔", "✨"],
+            count: 14,
+            kind: "glow"
+        },
+
+        "durga-puja": {
+            symbols: ["🌸", "🪔", "✨"],
+            count: 14,
+            kind: "glow"
+        },
+
+        holi: {
+            symbols: ["🎨", "🌈", "✨"],
+            count: 18,
+            kind: "color"
+        },
+
+        "poila-boishakh": {
+            symbols: ["🌸", "🌺", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "saraswati-puja": {
+            symbols: ["🌼", "📚", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "republic-day": {
+            symbols: ["🪁", "✨"],
+            count: 10,
+            kind: "float"
+        },
+
+        independence: {
+            symbols: ["🪁", "✨"],
+            count: 10,
+            kind: "float"
+        },
+
+        "independence-day": {
+            symbols: ["🪁", "✨"],
+            count: 10,
+            kind: "float"
+        },
+
+        "newyear": {
+            symbols: ["🎉", "🎊", "✨"],
+            count: 16,
+            kind: "float"
+        },
+
+        "new-year": {
+            symbols: ["🎉", "🎊", "✨"],
+            count: 16,
+            kind: "float"
+        },
+
+        valentine: {
+            symbols: ["💖", "✨"],
+            count: 10,
+            kind: "float"
+        },
+
+        "raksha-bandhan": {
+            symbols: ["🎀", "✨"],
+            count: 10,
+            kind: "float"
+        },
+
+        janmashtami: {
+            symbols: ["🪷", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "ganesh-chaturthi": {
+            symbols: ["🌺", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        navratri: {
+            symbols: ["🌺", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        dussehra: {
+            symbols: ["✨", "🌸"],
+            count: 10,
+            kind: "float"
+        },
+
+        eid: {
+            symbols: ["🌙", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "eid-al-adha": {
+            symbols: ["🌙", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        easter: {
+            symbols: ["🌸", "🥚", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        halloween: {
+            symbols: ["🎃", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "children-day-global": {
+            symbols: ["🎈", "⭐", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "children-day": {
+            symbols: ["🎈", "⭐", "✨"],
+            count: 12,
+            kind: "float"
+        },
+
+        "teachers-day": {
+            symbols: ["📚", "⭐", "✨"],
+            count: 10,
+            kind: "float"
+        },
+
+        default: {
+            symbols: [],
+            count: 0,
+            kind: "float"
+        }
+
+    };
+
+
+    // ============================================================
+    // 7. REDUCED MOTION CHECK
+    // ============================================================
+
+    function prefersReducedMotion() {
+
+        return (
+            window.matchMedia &&
+            window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            ).matches
+        );
+
+    }
+
+
+    // ============================================================
+    // 8. DECORATION CONTAINER
+    // ============================================================
+
+    const DECOR_CONTAINER_ID = "seasonal-decor";
+
+
+    function getDecorContainer() {
+
+        let container =
+            document.getElementById(
+                DECOR_CONTAINER_ID
+            );
+
+
+        if (!container) {
+
+            container =
+                document.createElement("div");
+
+            container.id =
+                DECOR_CONTAINER_ID;
+
+            container.className =
+                "seasonal-decor";
+
+            container.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            document.body.appendChild(
+                container
+            );
+
+        }
+
+
+        return container;
+
+    }
+
+
+    // ============================================================
+    // 9. RENDER DECORATIONS
+    // ============================================================
+
+    function renderDecorations(theme) {
+
+        const container =
+            getDecorContainer();
+
+
+        container.innerHTML = "";
+
+
+        // Respect accessibility settings
+        if (prefersReducedMotion()) {
+            return;
+        }
+
+
+        const config =
+            DECOR_MAP[theme] ||
+            DECOR_MAP.default;
+
+
+        if (
+            !config.count ||
+            !config.symbols.length
+        ) {
+
+            return;
+
+        }
+
+
+        const fragment =
+            document.createDocumentFragment();
+
+
+        for (
+            let i = 0;
+            i < config.count;
+            i++
+        ) {
+
+            const item =
+                document.createElement("span");
+
+
+            const symbol =
+                config.symbols[
+                    Math.floor(
+                        Math.random() *
+                        config.symbols.length
+                    )
+                ];
+
+
+            item.className =
+                "decor-item decor-" +
+                config.kind;
+
+
+            item.textContent =
+                symbol;
+
+
+            // Random position
+            item.style.left =
+                Math.random() * 100 +
+                "%";
+
+
+            // Random animation duration
+            item.style.animationDuration =
+                7 +
+                Math.random() * 10 +
+                "s";
+
+
+            // Random animation delay
+            item.style.animationDelay =
+                "-" +
+                Math.random() * 10 +
+                "s";
+
+
+            // Random horizontal movement
+            item.style.setProperty(
+                "--drift",
+                (Math.random() * 80 - 40) +
+                "px"
+            );
+
+
+            // Random size
+            item.style.fontSize =
+                0.8 +
+                Math.random() * 0.8 +
+                "rem";
+
+
+            fragment.appendChild(item);
+
+        }
+
+
+        container.appendChild(
+            fragment
+        );
+
+    }
+
+
+    // ============================================================
+    // 10. APPLY THEME
+    // ============================================================
+
+    function applyTheme(themeData) {
+
+        if (!themeData) {
+            themeData = detectTheme(new Date());
+        }
+
+
+        let theme =
+            themeData.theme || "default";
+
+
+        // Safety check
+        if (
+            !VALID_THEMES.includes(theme)
+        ) {
+
+            theme = "default";
+
+        }
+
+
+        // Apply theme
+        document.body.dataset.theme =
+            theme;
+
+
+        // Apply season separately
+        document.body.dataset.season =
+            themeData.season || "";
+
+
+        // Apply occasion
+        document.body.dataset.occasion =
+            themeData.occasion || "";
+
+
+        // Festival flag
+        document.body.dataset.festival =
+            themeData.isFestival
+                ? "true"
+                : "false";
+
+
+        // Render visual decorations
+        renderDecorations(theme);
+
+
+        // Development logging
+        console.info(
+            "[Learnio Theme]",
+            theme
+        );
+
+        console.info(
+            "[Learnio Season]",
+            themeData.season
+        );
+
+
+        if (themeData.occasion) {
+
+            console.info(
+                "[Learnio Occasion]",
+                themeData.occasion
+            );
+
+        }
+
+    }
+
+
+    // ============================================================
+    // 11. CLEAR THEME
+    // ============================================================
+
+    function clearTheme() {
+
+        delete document.body.dataset.theme;
+
+        delete document.body.dataset.season;
+
+        delete document.body.dataset.occasion;
+
+        delete document.body.dataset.festival;
+
+
+        const container =
+            document.getElementById(
+                DECOR_CONTAINER_ID
+            );
+
+
+        if (container) {
+            container.innerHTML = "";
+        }
+
+    }
+
+
+    // ============================================================
+    // 12. URL PREVIEW
+    // ============================================================
+
+    function getPreviewThemeFromURL() {
+
+        try {
+
+            const params =
+                new URLSearchParams(
+                    window.location.search
+                );
+
+
+            const requested =
+                params.get("theme");
+
+
+            if (
+                requested &&
+                VALID_THEMES.includes(requested)
+            ) {
+
+                return requested;
+
+            }
+
+        } catch (error) {
+
+            console.warn(
+                "[Learnio Theme] Invalid preview URL."
+            );
+
+        }
+
+
+        return null;
+
+    }
+
+
+    // ============================================================
+    // 13. INITIALIZE
+    // ============================================================
+
+    function initializeSeasonalTheme() {
+
+        const preview =
+            getPreviewThemeFromURL();
+
+
+        // --------------------------------------------------------
+        // MANUAL URL PREVIEW
+        // Example:
+        // index.html?theme=christmas
+        // --------------------------------------------------------
+
+        if (preview) {
+
+            const season =
+                getCurrentSeason(
+                    new Date()
+                );
+
+
+            applyTheme({
+
+                theme: preview,
+
+                season: season,
+
+                occasion: "Preview",
+
+                festival: null,
+
+                isFestival: true
+
+            });
+
+
+            console.info(
+                "[Learnio Theme] Preview mode:",
+                preview
+            );
+
+
+            return;
+
+        }
+
+
+        // --------------------------------------------------------
+        // AUTOMATIC DAILY DETECTION
+        // --------------------------------------------------------
+
+        try {
+
+            const themeData =
+                detectTheme(
+                    new Date()
+                );
+
+
+            applyTheme(
+                themeData
+            );
+
+
+        } catch (error) {
+
+            console.error(
+                "[Learnio Theme] Theme detection failed:",
+                error
+            );
+
+
+            // Safe fallback
+            applyTheme({
+
+                theme: "default",
+
+                season: "winter",
+
+                occasion: "",
+
+                festival: null,
+
+                isFestival: false
+
+            });
+
+        }
+
+    }
+
+
+    // ============================================================
+    // 14. TESTING SYSTEM
+    // ============================================================
+
+    /*
+     * Test a specific date without changing your computer date.
+     *
+     * Example in browser console:
+     *
+     * setLearnioTestDate(2026, 12, 25);
+     *
+     * → Christmas
+     *
+     * setLearnioTestDate(2026, 7, 15);
+     *
+     * → Monsoon
+     *
+     * setLearnioTestDate(2026, 10, 25);
+     *
+     * → Autumn / festival depending on calendar
+     *
+     * NOTE:
+     * Month is 1-12, NOT JavaScript's normal 0-11.
+     */
+
+    window.setLearnioTestDate =
+        function (year, month, day) {
+
+            const testDate =
+                new Date(
+                    year,
+                    month - 1,
+                    day
+                );
+
+
+            if (
+                isNaN(
+                    testDate.getTime()
+                )
+            ) {
+
+                console.error(
+                    "[Learnio Theme] Invalid test date."
+                );
+
+                return;
+
+            }
+
+
+            const themeData =
+                detectTheme(
+                    testDate
+                );
+
+
+            applyTheme(
+                themeData
+            );
+
+
+            console.info(
+                "[Learnio Theme] TEST DATE:",
+                testDate.toDateString()
+            );
+
+        };
+
+
+    // ============================================================
+    // 15. RESET TO REAL DATE
+    // ============================================================
+
+    window.resetLearnioTheme =
+        function () {
+
+            applyTheme(
+                detectTheme(
+                    new Date()
+                )
+            );
+
+
+            console.info(
+                "[Learnio Theme] Returned to today's real date."
+            );
+
+        };
+
+
+    // ============================================================
+    // 16. PUBLIC API
+    // ============================================================
+
+    window.LearnioTheme = {
+
+        getCurrentSeason:
+            getCurrentSeason,
+
+        detectTheme:
+            detectTheme,
+
+        applyTheme:
+            function (theme) {
+
+                applyTheme({
+
+                    theme: theme,
+
+                    season:
+                        getCurrentSeason(
+                            new Date()
+                        ),
+
+                    occasion: "Manual Preview",
+
+                    festival: null,
+
+                    isFestival: true
+
+                });
+
+            },
+
+        clearTheme:
+            clearTheme,
+
+        renderDecorations:
+            renderDecorations
+
+    };
+
+
+    // Backward-compatible helpers
+    window.setSeasonalTheme =
+        window.LearnioTheme.applyTheme;
+
+    window.clearSeasonalTheme =
+        clearTheme;
+
+
+    // ============================================================
+    // 17. REDUCED MOTION LISTENER
+    // ============================================================
+
+    if (window.matchMedia) {
+
+        const motionQuery =
+            window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            );
+
+
+        const handleMotionChange =
+            function () {
+
+                const currentTheme =
+                    document.body.dataset.theme ||
+                    "default";
+
+
+                renderDecorations(
+                    currentTheme
+                );
+
+            };
+
+
+        if (
+            motionQuery.addEventListener
+        ) {
+
+            motionQuery.addEventListener(
+                "change",
+                handleMotionChange
+            );
+
+        } else if (
+            motionQuery.addListener
+        ) {
+
+            motionQuery.addListener(
+                handleMotionChange
+            );
+
+        }
+
+    }
+
+
+    // ============================================================
+    // 18. START ENGINE
+    // ============================================================
+
+    if (
+        document.readyState ===
+        "loading"
+    ) {
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            initializeSeasonalTheme
+        );
+
+    } else {
+
+        initializeSeasonalTheme();
+
+    }
+
 
 })();
