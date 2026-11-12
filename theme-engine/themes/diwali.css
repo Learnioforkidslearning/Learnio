@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Learnio Theme Engine — DIWALI  (November)
+   Diyas · rangoli · marigold · lanterns · golden sparks · restrained fireworks
+   ========================================================================== */
+
+:root[data-festival="diwali"]{
+  /* palette */
+  --f-primary:#FF9933;      /* saffron       */
+  --f-primary-2:#F4A261;    /* warm amber    */
+  --f-secondary:#F4A261;
+  --f-accent:#FFD166;       /* diwali gold   */
+  --f-ivory:#FFF8E7;
+  --f-deep:#671E32;         /* deep maroon   */
+  --f-midnight:#101B3D;
+  --f-purple:#38205B;
+  --f-on-primary:#3B1220;   /* dark maroon text on saffron/amber = AA contrast */
+  --f-on-primary-2:#3B1220;
+
+  /* DAY */
+  --f-text-day:#3A1426;  --f-muted-day:#6A2E40;  --f-heading-day:#671E32;  --f-link-day:#A63D12;
+  --f-bg-day:
+    radial-gradient(1200px 600px at 88% -10%, rgba(255,209,102,.6), transparent 62%),
+    radial-gradient(800px 420px at 0% 108%, rgba(255,153,51,.18), transparent 62%),
+    linear-gradient(180deg,#FFF8E7 0%,#FFEBC8 58%,#FBD9A8 100%);
+  --f-bg-day-solid:#FFEBC8;
+  --f-orn-day:#C2410C;
+
+  /* NIGHT */
+  --f-text-night:#FFF6E3; --f-muted-night:#EBDDBE; --f-heading-night:#FFD98A; --f-link-night:#FFD166;
+  --f-bg-night:
+    radial-gradient(900px 500px at 12% 108%, rgba(244,162,97,.26), transparent 62%),
+    radial-gradient(700px 420px at 90% -8%, rgba(255,209,102,.10), transparent 60%),
+    linear-gradient(170deg,#101B3D 0%,#38205B 62%,#671E32 132%);
+  --f-bg-night-solid:#1A1A44;
+  --f-night-surface:#1A2050;
+  --f-night-panel:#1C2150;
+  --f-orn-night:#FFD166;
+  --f-glow:rgba(255,209,102,.40);
+}
+
+/* ---- top strip: marigold garland ---- */
+.lt-strip-diwali{
+  position:absolute; inset:0 0 auto 0; height:18px;
+  background:
+    radial-gradient(circle at 50% 8px,#FF9933 0 5px,#FFD166 5px 7px,transparent 8px) 0 0/22px 18px repeat-x,
+    radial-gradient(circle at 50% 12px,#FFB347 0 4px,#F4A261 4px 6px,transparent 7px) 11px 0/22px 18px repeat-x,
+    linear-gradient(#D4AF37,#D4AF37) 0 1px/100% 2px no-repeat;
+  filter:drop-shadow(0 2px 3px rgba(103,30,50,.3));
+}
+
+/* ---- lanterns (hang below the header, sway gently) ---- */
+.lt-lantern{ position:absolute; top:90px; width:54px; transform-origin:50% 0; filter:drop-shadow(0 0 14px rgba(255,170,60,.55)); animation:ltLantern 6.5s ease-in-out infinite alternate; }
+.lt-lantern svg{ display:block; width:100%; height:auto; }
+.lt-lantern-l{ left:2.2%; }
+.lt-lantern-r{ right:3%; animation-delay:-3s; width:46px; }
+@keyframes ltLantern{ from{ rotate:-3.5deg; } to{ rotate:3.5deg; } }
+
+/* ---- rangoli mandalas (very faint, slow rotation) ---- */
+.lt-rangoli{ position:absolute; color:var(--lt-ornament); opacity:.14; animation:ltSpin 180s linear infinite; }
+.lt-rangoli svg{ display:block; width:100%; height:auto; }
+.lt-rangoli-a{ left:-110px; bottom:-110px; width:300px; }
+.lt-rangoli-b{ right:-130px; top:190px; width:300px; animation-direction:reverse; }
+@keyframes ltSpin{ to{ rotate:360deg; } }
+
+/* ---- row of glowing diyas along the bottom edge ---- */
+.lt-diyas{ position:absolute; left:0; right:0; bottom:6px; display:flex; justify-content:space-around; align-items:flex-end; padding:0 12%; }
+.lt-diya{ position:relative; width:44px; }
+.lt-diya svg{ display:block; width:100%; height:auto; overflow:visible; }
+.lt-diya::before{ content:''; position:absolute; left:50%; top:-26px; width:120px; height:120px; margin-left:-60px; border-radius:50%;
+  background:radial-gradient(circle,rgba(255,190,70,.5),transparent 66%); animation:ltGlow 3.2s ease-in-out infinite alternate; }
+.lt-diya:nth-child(2n)::before{ animation-delay:-1.4s; }
+.lt-flame{ transform-box:fill-box; transform-origin:50% 100%; animation:ltFlicker 1.7s ease-in-out infinite alternate; }
+@keyframes ltFlicker{ 0%{ transform:scale(1,1) skewX(0); } 35%{ transform:scale(.94,1.07) skewX(-3deg); } 70%{ transform:scale(1.04,.96) skewX(3deg); } 100%{ transform:scale(.97,1.05) skewX(-1deg); } }
+@keyframes ltGlow{ from{ opacity:.45; transform:scale(.92); } to{ opacity:.9; transform:scale(1.06); } }
+
+/* ---- golden sparks rising ---- */
+.lt-pt-diwali .lt-p{
+  bottom:-4vh; width:calc(var(--sz) * .6); height:calc(var(--sz) * .6); border-radius:50%;
+  background:radial-gradient(circle,#FFF6C0 0,#FFD166 45%,rgba(255,153,51,0) 72%);
+  box-shadow:0 0 10px 2px rgba(255,190,70,.55); opacity:0;
+  animation:ltSparkRise var(--dur) linear var(--del) infinite;
+}
+.lt-pt-diwali .lt-p-gold{ box-shadow:0 0 14px 3px rgba(255,209,102,.8); }
+@keyframes ltSparkRise{
+  0%{ transform:translate3d(0,0,0) scale(.6); opacity:0; }
+  10%{ opacity:.9; }
+  50%{ transform:translate3d(var(--sway),-55vh,0) scale(1); opacity:.6; }
+  100%{ transform:translate3d(calc(var(--sway) * -1),-112vh,0) scale(.5); opacity:0; }
+}
+
+/* ---- two restrained firework bursts (night, desktop only) ---- */
+.lt-burst{
+  position:absolute; width:170px; height:170px; border-radius:50%; opacity:0;
+  background:repeating-conic-gradient(from 0deg,#FFD166 0 2.2deg,transparent 2.2deg 18deg);
+  -webkit-mask:radial-gradient(circle,transparent 36%,#000 38%,#000 46%,transparent 49%);
+          mask:radial-gradient(circle,transparent 36%,#000 38%,#000 46%,transparent 49%);
+  filter:drop-shadow(0 0 6px rgba(255,190,70,.8)); animation:ltBurst 11s ease-out infinite;
+}
+.lt-burst-a{ top:16%; left:24%; }
+.lt-burst-b{ top:24%; right:26%; animation-delay:-5.5s; background:repeating-conic-gradient(from 6deg,#FF9933 0 2.2deg,transparent 2.2deg 15deg); }
+@keyframes ltBurst{
+  0%{ transform:scale(.1); opacity:0; } 6%{ opacity:.85; } 24%{ transform:scale(1); opacity:.5; } 38%,100%{ transform:scale(1.18); opacity:0; }
+}
+
+:root[data-festival="diwali"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--f-accent),var(--f-primary),var(--f-accent),transparent);
+}
+
+:root[data-festival="diwali"]:not([data-calm]) section:not(.hero) h2{ position:relative; }

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Learniokidslearning</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ==========================================
+         FLOATING BACKGROUND
+         Left empty on purpose — theme.js auto-fills this with the
+         bubbles/cubes/pyramids/tori/blobs and the two color-crossfade
+         layers on page load, so nothing here needs manual editing.
+    =========================================== -->
+
+    <div class="floating-3d"></div>
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1 class="logo">🌈 Learniokidslearning</h1>
+
+            <ul class="nav-links">
+
+                <!-- Main Links -->
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#courses">Courses</a></li>
+
+                <li><a href="#pricing">Pricing</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+
+                <!-- Logged OUT -->
+                <li id="loginNav">
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li id="signupNav">
+                    <a href="signup.html">Sign Up</a>
+                </li>
+
+
+                <!-- Logged IN -->
+                <li id="welcomeNav" style="display: none;">
+                    Welcome, <span id="userName"></span>
+                </li>
+
+                <li id="logoutNav" style="display: none;">
+                    <a href="#" onclick="logoutUser(); return false;">
+                        Logout
+                    </a>
+                </li>
+
+
+                <!-- Admin -->
+                <li id="adminNav" style="display: none;">
+                    <a href="admin.html">Admin</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-3d-card">
+
+            <div class="hero-icons">
+
+                <span>🎈</span>
+                <span>🧸</span>
+                <span>🎨</span>
+                <span>📚</span>
+                <span>🌍</span>
+
+            </div>
+
+            <h2 class="hero-title">Learn Through Play & Creativity ✨</h2>
+
+            <p>
+                Animated lessons, interactive games,
+                drawing tools, and fun activities
+                designed especially for children.
+            </p>
+
+            <div class="hero-ctas">
+
+                <a href="#courses" class="btn hero-cta-primary">
+                    🚀 Start Learning
+                </a>
+
+                <a href="#pricing" class="btn premium-btn">
+                    💎 Premium Access
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         WHAT WILL YOU LEARN TODAY
+    =========================================== -->
+
+    <section id="what-today" class="what-today">
+
+        <h2>🤔 What Will You Learn Today?</h2>
+
+        <p class="section-lead">
+            Pick a path and jump right in — every card leads to a
+            different adventure.
+        </p>
+
+        <div class="today-grid">
+
+            <a href="alphabet.html" class="today-pill">
+                <span class="today-emoji">🔤</span>
+                <span>Letters &amp; Sounds</span>
+            </a>
+
+            <a href="math.html" class="today-pill">
+                <span class="today-emoji">🔢</span>
+                <span>Counting &amp; Numbers</span>
+            </a>
+
+            <a href="science.html" class="today-pill">
+                <span class="today-emoji">🌍</span>
+                <span>Animals &amp; Nature</span>
+            </a>
+
+            <a href="drawing.html" class="today-pill">
+                <span class="today-emoji">🎨</span>
+                <span>Drawing &amp; Art</span>
+            </a>
+
+            <a href="fun/index.html" class="today-pill">
+                <span class="today-emoji">🎮</span>
+                <span>Fun &amp; Games</span>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         FEATURED COURSES
+    =========================================== -->
+
+    <section id="featured" class="featured-courses">
+
+        <h2>⭐ Featured Courses</h2>
+
+        <p class="section-lead">
+            The three most-loved courses this month, picked by kids
+            (and their parents).
+        </p>
+
+        <div class="featured-grid">
+
+            <div class="card featured-card">
+
+                <span class="badge badge-hot">🔥 Most Popular</span>
+
+                <img
+                    src="images/alphabet.jpg"
+                    alt="Alphabet Learning"
+                    class="course-image"
+                >
+
+                <h3>🔤 Alphabet & Phonics</h3>
+
+                <p>
+                    Learn letters, sounds, and words through
+                    colorful animations.
+                </p>
+
+                <a href="alphabet.html" class="btn">
+                    Start Learning
+                </a>
+
+            </div>
+
+            <div class="card featured-card">
+
+                <span class="badge badge-new">✨ New</span>
+
+                <img
+                    src="images/drawing.jpg"
+                    alt="Drawing Learning"
+                    class="course-image"
+                >
+
+                <h3>🎨 Drawing & Creativity</h3>
+
+                <p>
+                    Paint, draw, and build imagination with
+                    interactive tools.
+                </p>
+
+                <a href="drawing.html" class="btn">
+                    Open Drawing Board
+                </a>
+
+            </div>
+
+            <div class="card featured-card">
+
+                <span class="badge badge-fave">💛 Kid Favorite</span>
+
+                <img
+                    src="images/fun.jpg"
+                    alt="Fun Activities"
+                    class="course-image"
+                >
+
+                <h3>🎮 Fun Activities</h3>
+
+                <p>
+                    Balloon Pop, Fruit Catch, and Memory Challenges
+                    for focus and problem-solving.
+                </p>
+
+                <a href="fun/index.html" class="btn">
+                    Start Playing
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ==========================================
+     MARKETING VIDEO SECTION
+========================================== -->
+
+<section class="marketing-video-section">
+
+    <div class="marketing-container">
+
+        <h2>🎥 See Why Kids Love Learning With Us</h2>
+
+        <p>
+            Watch how Learniokidslearning makes education fun,
+            interactive, and engaging for children.
+        </p>
+<p>
+  <a href="videos/marketing-video.mp4" target="_blank">
+    Open Video Directly
+  </a>
+</p>
+      <video
+    class="marketing-video"
+    controls
+    preload="metadata"
+    playsinline
+>
+    <source src="videos/marketing-video.mp4" type="video/mp4">
+</video>
+
+    </div>
+
+</section>
+    <!-- ==========================================
+         COURSES
+    =========================================== -->
+
+  <section id="courses" class="courses">
+
+    <h2>📚 Learning Categories</h2>
+
+    <div class="course-grid">
+
+        <!-- Alphabet -->
+        <div class="card">
+
+            <img
+                src="images/alphabet.jpg"
+                alt="Alphabet Learning"
+                class="course-image"
+            >
+
+            <h3>🔤 Alphabet & Phonics</h3>
+
+            <p>
+                Learn letters, sounds,
+                and words through colorful animations.
+            </p>
+
+            <a href="alphabet.html" class="btn">
+                Start Learning
+            </a>
+
+        </div>
+
+
+        <!-- Math -->
+        <div class="card">
+
+            <img
+                src="images/math.jpg"
+                alt="Math Learning"
+                class="course-image"
+            >
+
+            <h3>🔢 Numbers & Math</h3>
+
+            <p>
+                Counting, addition,
+                subtraction, and exciting math adventures.
+            </p>
+
+            <a href="math.html" class="btn">
+                Start Learning
+            </a>
+
+        </div>
+
+
+        <!-- Science -->
+        <div class="card">
+
+            <img
+                src="images/science.jpg"
+                alt="Science Learning"
+                class="course-image"
+            >
+
+            <h3>🌍 Science & Nature</h3>
+
+            <p>
+                Discover animals, planets,
+                weather, and simple experiments.
+            </p>
+
+            <a href="science.html" class="btn">
+                Start Learning
+            </a>
+
+        </div>
+
+
+        <!-- Drawing -->
+        <div class="card">
+
+            <img
+                src="images/drawing.jpg"
+                alt="Drawing Learning"
+                class="course-image"
+            >
+
+            <h3>🎨 Drawing & Creativity</h3>
+
+            <p>
+                Paint, draw, and build imagination
+                with interactive tools.
+            </p>
+
+            <a href="drawing.html" class="btn">
+                Open Drawing Board
+            </a>
+
+        </div>
+
+<!-- Fun Activities -->
+<div class="card">
+
+    <img
+        src="images/fun.jpg"
+        alt="Fun Activities"
+        class="course-image"
+    >
+
+    <h3>🎮 Fun Activities</h3>
+
+    <p>
+    Enjoy interactive educational games including Hand Connect,
+    Balloon Pop, Fruit Catch, and Memory Challenges designed to
+    make learning fun while improving creativity, focus, and
+    problem-solving skills.
+</p>
+
+    <a href="fun/index.html" class="btn">
+        Start Playing
+    </a>
+
+</div>
+</div>
+</section>
+
+    <!-- ==========================================
+         PROGRESS PREVIEW (login-gated)
+
+         Logged-out visitors see a short teaser instead of fake data.
+         The real progress card only appears once #welcomeNav becomes
+         visible (your existing script.js already toggles that on
+         login) — see the small watcher script near the closing
+         </body>
+
+    <section id="progress-preview" class="progress-preview">
+
+        <div class="progress-teaser" id="progressTeaser">
+
+            <h2>📈 Track Your Child's Progress</h2>
+
+            <p class="section-lead">
+                Log in to your Parent Dashboard to see exactly which
+                lessons your child has completed and how they're doing.
+            </p>
+
+            <a href="login.html" class="btn premium-btn">
+                🔑 Login to View Progress
+            </a>
+
+        </div>
+
+        <div class="progress-card login-only" id="progressCard" style="display:none;">
+
+            <div class="progress-text">
+
+                <h2>📈 Watch Your Child Grow</h2>
+
+                <p>
+                    Every lesson, badge, and streak is tracked here —
+                    so you can see exactly how they're progressing,
+                    one fun activity at a time.
+                </p>
+
+            </div>
+
+            <div class="progress-stats">
+
+                <div class="progress-row">
+                    <span>Alphabet & Phonics</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width:82%;"></div></div>
+                    <span class="progress-pct">82%</span>
+                </div>
+
+                <div class="progress-row">
+                    <span>Numbers & Math</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width:64%;"></div></div>
+                    <span class="progress-pct">64%</span>
+                </div>
+
+                <div class="progress-row">
+                    <span>Drawing & Creativity</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width:47%;"></div></div>
+                    <span class="progress-pct">47%</span>
+                </div>
+
+                <div class="progress-row">
+                    <span>Science & Nature</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width:29%;"></div></div>
+                    <span class="progress-pct">29%</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         PARENTS & TEACHERS
+    =========================================== -->
+
+    <section id="parents" class="parents-section">
+
+        <div class="parents-card">
+
+            <h2>👩‍🏫 For Parents &amp; Teachers</h2>
+
+            <p class="section-lead">
+                Built with input from early-childhood educators, so
+                screen time turns into real learning time.
+            </p>
+
+            <div class="parents-grid">
+
+                <div class="parent-point">
+                    <span class="parent-icon">🛡️</span>
+                    <h4>Safe & Ad-Free</h4>
+                    <p>No ads, no strangers — just curriculum-aligned content.</p>
+                </div>
+
+                <div class="parent-point">
+                    <span class="parent-icon">📊</span>
+                    <h4>Real Progress Reports</h4>
+                    <p>Weekly summaries of what your child mastered.</p>
+                </div>
+
+                <div class="parent-point">
+                    <span class="parent-icon">🧑‍🏫</span>
+                    <h4>Classroom Ready</h4>
+                    <p>Worksheets and lesson plans teachers can print and use.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+  <!-- ==========================================
+     PRICING
+========================================== -->
+
+<section id="pricing" class="pricing">
+
+    <h2>💎 Subscription Plans</h2>
+
+    <div class="pricing-grid">
+
+        <!-- FREE PLAN -->
+        <div class="plan">
+
+            <h3>🎁 Free Plan</h3>
+
+            <p class="price">₹0 / month</p>
+
+            <ul>
+
+                <li>5 Free Lessons</li>
+                <li>Basic Activities</li>
+                <li>Community Access</li>
+                <li>Limited Videos</li>
+
+            </ul>
+
+            <button>Get Started</button>
+
+        </div>
+
+
+        <!-- MONTHLY PLAN -->
+        <div class="plan premium">
+
+            <h3>⭐ Monthly Plan</h3>
+
+            <p class="price">₹99 / month</p>
+
+            <ul>
+
+                <li>Unlimited Lessons</li>
+                <li>Premium Videos</li>
+                <li>Drawing Activities</li>
+                <li>Parent Dashboard</li>
+
+            </ul>
+
+            <button>Subscribe Now</button>
+
+        </div>
+
+
+        <!-- 6 MONTHS PLAN -->
+        <div class="plan premium">
+
+            <h3>🔥 6 Months Plan</h3>
+
+            <p class="price">₹499 / 6 Months</p>
+
+            <ul>
+
+                <li>All Premium Features</li>
+                <li>Exclusive Animations</li>
+                <li>Download Worksheets</li>
+                <li>Priority Support</li>
+
+            </ul>
+
+            <button>Subscribe Now</button>
+
+        </div>
+
+
+        <!-- YEARLY PLAN -->
+        <div class="plan premium">
+
+            <h3>👑 Yearly Plan</h3>
+
+            <p class="price">₹999 / year</p>
+
+            <ul>
+
+                <li>Everything Included</li>
+                <li>Unlimited Access</li>
+                <li>Premium Learning Packs</li>
+                <li>Kids Progress Tracking</li>
+
+            </ul>
+
+            <button>Subscribe Now</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ==========================================
+         TESTIMONIALS
+    =========================================== -->
+
+    <section id="testimonials" class="testimonials">
+
+        <h2>💬 What Families Say</h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"My son actually asks to do his 'letters game' every morning now."</div>
+                <div class="testimonial-author">— Priya S., parent</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"The math section made counting click for my daughter in days."</div>
+                <div class="testimonial-author">— Rahul M., parent</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"I use the printable worksheets with my whole kindergarten class."</div>
+                <div class="testimonial-author">— Mrs. Anjali D., teacher</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         CONTACT
+    =========================================== -->
+
+    <section id="contact" class="contact">
+
+        <h2>📧 Contact Us</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            />
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            />
+
+            <textarea
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3 class="footer-logo">🌈 Learniokidslearning</h3>
+                <p>Learn through play, creativity, and curiosity — made for kids, trusted by parents.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>For Families</h4>
+                <ul class="footer-links">
+                    <li><a href="#parents">Parents &amp; Teachers</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#progress-preview">Progress Tracking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <p>Get new lessons and activities in your inbox.</p>
+                <form class="footer-newsletter" onsubmit="return false;">
+                    <input type="email" placeholder="Your email" />
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">
+            © 2026 Learniokidslearning. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ==========================================
+         FLOATING MAIRA BUTTON
+    =========================================== -->
+
+    <button id="maira-float" class="maira-float" type="button" aria-label="Chat with Maira">
+        <span class="maira-emoji">🧚</span>
+        <span class="maira-ping"></span>
+    </button>
+
+
+    <!-- ==========================================
+         FIREBASE SCRIPT
+    =========================================== -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
+    <!-- 3D theme: floating shapes, auto color-changing palette, parallax -->
+    <script src="theme.js"></script>
+
+    <!-- Button redesign: icon wiggle/bounce + click ripple -->
+    <script src="buttons.js"></script>
+
+    <!-- New sections: hero text animation, scroll counters, Maira button -->
+    <script src="sections.js"></script>
+
+    <!-- Progress section login gate: watches #welcomeNav, which your
+         existing script.js already shows/hides on login/logout, and
+         swaps the progress teaser for the real progress card
+         accordingly. No changes to script.js needed. -->
+    <script>
+    (() => {
+        const welcomeNav = document.getElementById('welcomeNav');
+        const teaser = document.getElementById('progressTeaser');
+        const card = document.getElementById('progressCard');
+
+        if (!welcomeNav || !teaser || !card) return;
+
+        function syncFromLoginState(){
+            const isLoggedIn = welcomeNav.style.display !== 'none';
+            card.style.display = isLoggedIn ? 'grid' : 'none';
+            teaser.style.display = isLoggedIn ? 'none' : 'block';
+        }
+
+        syncFromLoginState(); // in case auth state is already resolved on load
+
+        new MutationObserver(syncFromLoginState).observe(welcomeNav, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    })();
+    </script>
+
+<!-- Learnio AI -->
+<div id="learnio-ai"></div>
+<link rel="stylesheet" href="ai/chat.css">
+
+<script src="ai/ui.js"></script>
+</body>
+
+</html>

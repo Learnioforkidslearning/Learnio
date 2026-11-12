@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Learnio Theme Engine — DURGA PUJA  (September – October)
+   Bengali alpana · sindoor red & ivory · antique gold · shola · dhak · lotus
+   Symbolic motifs only (lotus, dhak, shola, shiuli, alpana) — kept elegant
+   and uncluttered for an international audience.
+   ========================================================================== */
+
+:root[data-festival="durga-puja"]{
+  /* palette */
+  --f-primary:#C62828;      /* sindoor red   */
+  --f-primary-2:#BF360C;    /* deep vermilion (button-safe; #E65100 used for accents) */
+  --f-secondary:#E65100;    /* vermilion     */
+  --f-accent:#D4AF37;       /* antique gold  */
+  --f-ivory:#FFF8E7;
+  --f-cream:#F5E6C8;
+  --f-deep:#641E16;         /* burgundy      */
+  --f-on-primary:#FFF8E7;
+  --f-on-primary-2:#FFF8E7;
+
+  /* DAY */
+  --f-text-day:#3A1410;  --f-muted-day:#6B2A22;  --f-heading-day:#641E16;  --f-link-day:#B71C1C;
+  --f-bg-day:
+    radial-gradient(1100px 560px at 92% -8%, rgba(255,214,120,.55), transparent 62%),
+    radial-gradient(900px 420px at 0% 110%, rgba(198,40,40,.12), transparent 62%),
+    linear-gradient(180deg,#FFF8E7 0%,#F5E6C8 62%,#F0D3B0 100%);
+  --f-bg-day-solid:#F5E6C8;
+  --f-orn-day:#C62828;
+
+  /* NIGHT */
+  --f-text-night:#FFF3DC; --f-muted-night:#E9D6B2; --f-heading-night:#FFE3A3; --f-link-night:#F2D27A;
+  --f-bg-night:
+    radial-gradient(900px 480px at 10% 112%, rgba(198,40,40,.30), transparent 62%),
+    radial-gradient(700px 420px at 92% -6%, rgba(212,175,55,.12), transparent 60%),
+    linear-gradient(170deg,#0E1433 0%,#241636 55%,#4A1620 125%);
+  --f-bg-night-solid:#1A1230;
+  --f-night-surface:#1D1838;
+  --f-night-panel:#1F1A3C;
+  --f-orn-night:#F2D27A;
+  --f-glow:rgba(212,175,55,.38);
+}
+
+/* ---- top strip: shola-craft diamond chain (sits above the sticky header) ---- */
+.lt-strip-durga-puja{
+  position:absolute; inset:0 0 auto 0; height:16px;
+  background:linear-gradient(90deg,var(--f-primary),var(--f-accent),var(--f-primary));
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='16' viewBox='0 0 28 16'%3E%3Cpath d='M0 1.2h28' stroke='black' stroke-width='2' fill='none'/%3E%3Cpath d='M14 3l6 6-6 6-6-6z' fill='none' stroke='black' stroke-width='1.8'/%3E%3Ccircle cx='14' cy='9' r='1.6'/%3E%3C/svg%3E") repeat-x 0 0/28px 16px;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='16' viewBox='0 0 28 16'%3E%3Cpath d='M0 1.2h28' stroke='black' stroke-width='2' fill='none'/%3E%3Cpath d='M14 3l6 6-6 6-6-6z' fill='none' stroke='black' stroke-width='1.8'/%3E%3Ccircle cx='14' cy='9' r='1.6'/%3E%3C/svg%3E") repeat-x 0 0/28px 16px;
+  filter:drop-shadow(0 2px 3px rgba(100,30,22,.25));
+}
+
+/* ---- bottom border: Bengali alpana vine (rice-paste style) ---- */
+.lt-alpana{
+  position:absolute; left:0; right:0; bottom:0; height:28px; opacity:.38;
+  background:var(--lt-ornament);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='28' viewBox='0 0 120 28'%3E%3Cg fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round'%3E%3Cpath d='M0 15c10-12 20-12 30 0s20 12 30 0 20-12 30 0 20 12 30 0'/%3E%3Cpath d='M30 15c-5-8 5-11 0-13M30 15c5-8-5-11 0-13M30 15c-5 8 5 11 0 13M30 15c5 8-5 11 0 13'/%3E%3Cpath d='M90 15c-5-8 5-11 0-13M90 15c5-8-5-11 0-13M90 15c-5 8 5 11 0 13M90 15c5 8-5 11 0 13'/%3E%3C/g%3E%3Ccircle cx='30' cy='15' r='2.4'/%3E%3Ccircle cx='90' cy='15' r='2.4'/%3E%3Ccircle cx='60' cy='15' r='1.8'/%3E%3Ccircle cx='0' cy='15' r='1.8'/%3E%3C/svg%3E") repeat-x 0 0/120px 28px;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='28' viewBox='0 0 120 28'%3E%3Cg fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round'%3E%3Cpath d='M0 15c10-12 20-12 30 0s20 12 30 0 20-12 30 0 20 12 30 0'/%3E%3Cpath d='M30 15c-5-8 5-11 0-13M30 15c5-8-5-11 0-13M30 15c-5 8 5 11 0 13M30 15c5 8-5 11 0 13'/%3E%3Cpath d='M90 15c-5-8 5-11 0-13M90 15c5-8-5-11 0-13M90 15c-5 8 5 11 0 13M90 15c5 8-5 11 0 13'/%3E%3C/g%3E%3Ccircle cx='30' cy='15' r='2.4'/%3E%3Ccircle cx='90' cy='15' r='2.4'/%3E%3Ccircle cx='60' cy='15' r='1.8'/%3E%3Ccircle cx='0' cy='15' r='1.8'/%3E%3C/svg%3E") repeat-x 0 0/120px 28px;
+  animation:ltAlpanaDrift 90s linear infinite;
+}
+@keyframes ltAlpanaDrift{ to{ -webkit-mask-position:120px 0; mask-position:120px 0; } }
+
+/* ---- lotus corners + dhak ---- */
+.lt-lotus{ position:absolute; bottom:28px; width:190px; color:var(--lt-ornament); opacity:.13; animation:ltFloat 9s ease-in-out infinite; }
+.lt-lotus svg, .lt-dhak svg{ display:block; width:100%; height:auto; }
+.lt-lotus-l{ left:-18px; }
+.lt-lotus-r{ right:-18px; transform:scaleX(-1); animation-delay:-4s; }
+.lt-dhak{ position:absolute; right:4%; bottom:96px; width:112px; color:var(--lt-ornament); opacity:.12; transform-origin:50% 100%; animation:ltSway 7s ease-in-out infinite; }
+@keyframes ltFloat{ 0%,100%{ translate:0 0; } 50%{ translate:0 -8px; } }
+@keyframes ltSway{ 0%,100%{ rotate:-2deg; } 50%{ rotate:2deg; } }
+
+/* ---- shiuli petals drifting down ---- */
+.lt-pt-durga-puja .lt-p{
+  top:-6vh; height:calc(var(--sz) * 1.6); border-radius:55% 55% 50% 50% / 65% 65% 35% 35%;
+  background:radial-gradient(circle at 50% 86%, #E65100 0 17%, transparent 19%), #FFFFFF;
+  box-shadow:0 1px 4px rgba(100,30,22,.28); opacity:0;
+  animation:ltPetalFall var(--dur) linear var(--del) infinite;
+}
+.lt-pt-durga-puja .lt-p-gold{ background:radial-gradient(circle,#FFF3B0,#D4AF37 70%); box-shadow:0 0 8px rgba(212,175,55,.7); border-radius:50%; height:var(--sz); }
+@keyframes ltPetalFall{
+  0%{ transform:translate3d(0,0,0) rotate(0); opacity:0; }
+  8%{ opacity:.85; }
+  50%{ transform:translate3d(var(--sway),55vh,0) rotate(180deg); }
+  92%{ opacity:.8; }
+  100%{ transform:translate3d(calc(var(--sway) * -1),112vh,0) rotate(360deg); opacity:0; }
+}
+
+/* ---- festive heading touch: gold hairline under section titles ---- */
+:root[data-festival="durga-puja"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--f-accent),var(--f-primary),var(--f-accent),transparent);
+}
+
+:root[data-festival="durga-puja"]:not([data-calm]) section:not(.hero) h2{ position:relative; }

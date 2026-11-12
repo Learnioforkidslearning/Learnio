@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Learnio Theme Engine — NIGHT MODE (moon & stars)   18:00 – 05:59 local time
+   Deep navy skies, warm golden light, comfortable reading contrast.
+   ========================================================================== */
+:root[data-festival][data-time="night"]{
+  --lt-scheme:dark;
+  --lt-text:var(--f-text-night);  --lt-muted:var(--f-muted-night);
+  --lt-heading:var(--f-heading-night);  --lt-link:var(--f-link-night);
+  --lt-primary:var(--f-primary);  --lt-primary-2:var(--f-primary-2);  --lt-accent:var(--f-accent);
+  --lt-on-primary:var(--f-on-primary);  --lt-on-primary-2:var(--f-on-primary-2);
+  --lt-deep:#120C24;
+  --lt-bg:var(--f-bg-night);  --lt-bg-solid:var(--f-bg-night-solid);
+  --lt-ornament:var(--f-orn-night);
+  --lt-surface:color-mix(in srgb,var(--f-night-surface) 82%,transparent);
+  --lt-surface-2:color-mix(in srgb,var(--f-night-surface) 92%,transparent);
+  --lt-panel:var(--f-night-panel);
+  --lt-input-bg:color-mix(in srgb,var(--f-night-surface) 70%,black);
+  --lt-header-bg:color-mix(in srgb,var(--f-bg-night-solid) 80%,transparent);
+  --lt-footer-bg:color-mix(in srgb,var(--f-bg-night-solid) 86%,transparent);
+  --lt-border:color-mix(in srgb,var(--f-accent) 38%,transparent);
+  --lt-inner:rgba(255,255,255,.05);
+  --lt-shadow:rgba(0,0,0,.45);
+  --lt-glow:color-mix(in srgb,var(--f-accent) 32%,transparent);
+  --lt-hover:rgba(255,255,255,.10);
+  --lt-track:rgba(255,255,255,.14);
+  --lt-title-shadow:0 0 18px color-mix(in srgb,var(--f-accent) 35%,transparent);
+  --lt-bar:var(--f-bg-night-solid);
+}
+/* keep native media / light-surface regions readable on dark */
+:root[data-festival][data-time="night"]:not([data-calm]) .course-image,
+:root[data-festival][data-time="night"]:not([data-calm]) .game-image img{ filter:brightness(.92) saturate(1.05); }
+
+/* moon */
+.lt-moon{
+  position:absolute; top:108px; right:10%; width:108px; height:108px; z-index:1;
+  filter:drop-shadow(0 0 22px rgba(255,236,170,.55)) drop-shadow(0 0 60px rgba(255,220,130,.25));
+  animation:ltMoonFloat 14s ease-in-out infinite;
+}
+.lt-moon svg{ display:block; width:100%; height:100%; }
+@keyframes ltMoonFloat{ 0%,100%{ translate:0 0; } 50%{ translate:0 -7px; } }
+
+/* stars */
+.lt-star{
+  position:absolute; display:block; width:var(--s); height:var(--s); border-radius:50%;
+  background:#FFF8E7; box-shadow:0 0 6px 1px rgba(255,236,170,.75);
+  animation:ltTwinkle var(--d) ease-in-out var(--w) infinite;
+}
+@keyframes ltTwinkle{ 0%,100%{ opacity:.25; transform:scale(.8); } 50%{ opacity:1; transform:scale(1.25); } }
+@media (max-width:768px){ .lt-moon{ width:70px; height:70px; top:100px; right:6%; } }

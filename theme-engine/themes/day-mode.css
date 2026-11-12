@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Learnio Theme Engine — DAY MODE (sun)   06:00 – 17:59 local time
+   Maps festival day tokens onto the shared --lt-* tokens and draws the sun.
+   ========================================================================== */
+:root[data-festival][data-time="day"]{
+  --lt-scheme:light;
+  --lt-text:var(--f-text-day);  --lt-muted:var(--f-muted-day);
+  --lt-heading:var(--f-heading-day);  --lt-link:var(--f-link-day);
+  --lt-primary:var(--f-primary);  --lt-primary-2:var(--f-primary-2);  --lt-accent:var(--f-accent);
+  --lt-on-primary:var(--f-on-primary);  --lt-on-primary-2:var(--f-on-primary-2);
+  --lt-deep:var(--f-deep);
+  --lt-bg:var(--f-bg-day);  --lt-bg-solid:var(--f-bg-day-solid);
+  --lt-ornament:var(--f-orn-day);
+  --lt-surface:rgba(255,251,240,.80);  --lt-surface-2:rgba(255,251,240,.90);  --lt-panel:#FFFBF0;
+  --lt-input-bg:rgba(255,255,255,.96);
+  --lt-header-bg:rgba(255,248,231,.82);  --lt-footer-bg:rgba(255,248,231,.80);
+  --lt-border:color-mix(in srgb,var(--f-accent) 55%,transparent);
+  --lt-inner:rgba(255,255,255,.55);
+  --lt-shadow:color-mix(in srgb,var(--f-deep) 18%,transparent);
+  --lt-glow:color-mix(in srgb,var(--f-accent) 45%,transparent);
+  --lt-hover:color-mix(in srgb,var(--f-accent) 24%,transparent);
+  --lt-track:color-mix(in srgb,var(--f-deep) 12%,transparent);
+  --lt-title-shadow:0 1px 0 rgba(255,255,255,.85),0 3px 10px color-mix(in srgb,var(--f-accent) 40%,transparent);
+  --lt-bar:var(--f-bg-day-solid);
+}
+
+/* sun + soft sunlight wash */
+.lt-sky.lt-day::after{ content:''; position:absolute; inset:0; background:radial-gradient(720px 520px at 93% 0,rgba(255,236,170,.55),transparent 66%); }
+.lt-sun{
+  position:absolute; top:112px; right:10%; width:92px; height:92px; border-radius:50%;
+  background:radial-gradient(circle at 40% 36%,#FFF7CF 0,#FFD166 48%,#F4A261 100%);
+  box-shadow:0 0 56px 18px rgba(255,200,80,.42),0 0 140px 50px rgba(255,170,60,.22);
+  animation:ltSunPulse 9s ease-in-out infinite; z-index:1;
+}
+.lt-sun::before{
+  content:''; position:absolute; inset:-38px; border-radius:50%;
+  background:repeating-conic-gradient(from 0deg,rgba(255,209,102,.55) 0 3.5deg,transparent 3.5deg 22.5deg);
+  -webkit-mask:radial-gradient(circle,transparent 50%,#000 53%,transparent 72%);
+          mask:radial-gradient(circle,transparent 50%,#000 53%,transparent 72%);
+  animation:ltSpin 100s linear infinite;
+}
+@keyframes ltSunPulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.04); } }
+@media (max-width:768px){ .lt-sun{ width:64px; height:64px; top:104px; right:6%; } .lt-sun::before{ inset:-26px; } }

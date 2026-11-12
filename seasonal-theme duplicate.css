@@ -1,0 +1,1888 @@
+/* ================================================================
+   LEARNIO DYNAMIC SEASONAL + FESTIVAL UI
+   ================================================================
+
+   BASE SEASONS
+   ☀️ Summer
+   🌧️ Monsoon
+   🍂 Autumn
+   ❄️ Winter
+
+   FESTIVALS
+   Festival themes automatically override the season.
+
+   This file works with:
+       seasonal-theme.js
+       festival-calendar.js
+
+================================================================ */
+
+
+/* ================================================================
+   1. THEME VARIABLES
+================================================================ */
+
+:root {
+
+    /* Default */
+    --season-primary: #4f7cff;
+    --season-secondary: #7c5cff;
+    --season-background: #ffffff;
+    --season-surface: #ffffff;
+    --season-text: #24324a;
+    --season-border: rgba(79, 124, 255, 0.15);
+
+    --season-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    --season-glow: transparent;
+
+    --season-transition:
+        background-color 0.6s ease,
+        color 0.6s ease,
+        border-color 0.6s ease,
+        box-shadow 0.6s ease;
+}
+
+
+/* ================================================================
+   2. FOUR SEASONS
+================================================================ */
+
+
+/* ------------------------------------------------
+   ☀️ SUMMER
+------------------------------------------------ */
+
+body[data-theme="summer"] {
+
+    --season-primary: #f39c12;
+    --season-secondary: #ffd166;
+
+    --season-background: #fffaf0;
+    --season-surface: #ffffff;
+
+    --season-text: #3d3425;
+
+    --season-border:
+        rgba(243, 156, 18, 0.18);
+
+    --season-glow:
+        rgba(255, 193, 7, 0.18);
+}
+
+
+/* ------------------------------------------------
+   🌧️ MONSOON
+------------------------------------------------ */
+
+body[data-theme="monsoon"] {
+
+    --season-primary: #3978a8;
+    --season-secondary: #67b7d1;
+
+    --season-background: #eef6fa;
+    --season-surface: #ffffff;
+
+    --season-text: #263b4a;
+
+    --season-border:
+        rgba(57, 120, 168, 0.18);
+
+    --season-glow:
+        rgba(103, 183, 209, 0.16);
+}
+
+
+/* ------------------------------------------------
+   🍂 AUTUMN
+------------------------------------------------ */
+
+body[data-theme="autumn"] {
+
+    --season-primary: #c96b27;
+    --season-secondary: #e7a23b;
+
+    --season-background: #fff8ed;
+    --season-surface: #ffffff;
+
+    --season-text: #493524;
+
+    --season-border:
+        rgba(201, 107, 39, 0.18);
+
+    --season-glow:
+        rgba(231, 162, 59, 0.16);
+}
+
+
+/* ------------------------------------------------
+   ❄️ WINTER
+------------------------------------------------ */
+
+body[data-theme="winter"] {
+
+    --season-primary: #438bc5;
+    --season-secondary: #83c9ee;
+
+    --season-background: #f1f9ff;
+    --season-surface: #ffffff;
+
+    --season-text: #263d52;
+
+    --season-border:
+        rgba(67, 139, 197, 0.18);
+
+    --season-glow:
+        rgba(131, 201, 238, 0.18);
+}
+
+
+/* ================================================================
+   3. FESTIVAL THEMES
+================================================================ */
+
+
+/* ------------------------------------------------
+   🎄 CHRISTMAS
+------------------------------------------------ */
+
+body[data-theme="christmas"] {
+
+    --season-primary: #c62828;
+    --season-secondary: #2e8b57;
+
+    --season-background: #f3fbf6;
+    --season-surface: #ffffff;
+
+    --season-text: #26382e;
+
+    --season-border:
+        rgba(198, 40, 40, 0.18);
+
+    --season-glow:
+        rgba(255, 255, 255, 0.25);
+}
+
+
+/* ------------------------------------------------
+   🪔 DIWALI
+------------------------------------------------ */
+
+body[data-theme="diwali"] {
+
+    --season-primary: #d88919;
+    --season-secondary: #f0b429;
+
+    --season-background: #fff9ed;
+    --season-surface: #fffdf7;
+
+    --season-text: #4a351d;
+
+    --season-border:
+        rgba(216, 137, 25, 0.22);
+
+    --season-glow:
+        rgba(240, 180, 41, 0.25);
+}
+
+
+/* ------------------------------------------------
+   🎨 HOLI
+------------------------------------------------ */
+
+body[data-theme="holi"] {
+
+    --season-primary: #e84d75;
+    --season-secondary: #7257d9;
+
+    --season-background: #fff8fc;
+    --season-surface: #ffffff;
+
+    --season-text: #413044;
+
+    --season-border:
+        rgba(232, 77, 117, 0.18);
+
+    --season-glow:
+        rgba(232, 77, 117, 0.18);
+}
+
+
+/* ------------------------------------------------
+   🪷 DURGA PUJA
+------------------------------------------------ */
+
+body[data-theme="durga-puja"] {
+
+    --season-primary: #b62d2d;
+    --season-secondary: #d89b28;
+
+    --season-background: #fff8ed;
+    --season-surface: #fffdf8;
+
+    --season-text: #482c24;
+
+    --season-border:
+        rgba(182, 45, 45, 0.20);
+
+    --season-glow:
+        rgba(216, 155, 40, 0.20);
+}
+
+
+/* ------------------------------------------------
+   🌙 EID
+------------------------------------------------ */
+
+body[data-theme="eid"] {
+
+    --season-primary: #287c65;
+    --season-secondary: #b7974e;
+
+    --season-background: #f2faf7;
+    --season-surface: #ffffff;
+
+    --season-text: #29463d;
+
+    --season-border:
+        rgba(40, 124, 101, 0.18);
+
+    --season-glow:
+        rgba(183, 151, 78, 0.18);
+}
+
+
+/* ------------------------------------------------
+   🎉 NEW YEAR
+------------------------------------------------ */
+
+body[data-theme="newyear"],
+body[data-theme="new-year"] {
+
+    --season-primary: #6552b8;
+    --season-secondary: #d5a62a;
+
+    --season-background: #faf8ff;
+    --season-surface: #ffffff;
+
+    --season-text: #352f4c;
+
+    --season-border:
+        rgba(101, 82, 184, 0.18);
+
+    --season-glow:
+        rgba(213, 166, 42, 0.20);
+}
+
+
+/* ------------------------------------------------
+   💖 VALENTINE
+------------------------------------------------ */
+
+body[data-theme="valentine"] {
+
+    --season-primary: #df5b88;
+    --season-secondary: #f39ab5;
+
+    --season-background: #fff5f9;
+    --season-surface: #ffffff;
+
+    --season-text: #4a3040;
+
+    --season-border:
+        rgba(223, 91, 136, 0.18);
+
+    --season-glow:
+        rgba(243, 154, 181, 0.20);
+}
+
+
+/* ------------------------------------------------
+   🇮🇳 REPUBLIC DAY
+------------------------------------------------ */
+
+body[data-theme="republic-day"] {
+
+    --season-primary: #e07835;
+    --season-secondary: #2d8b57;
+
+    --season-background: #fffaf5;
+    --season-surface: #ffffff;
+
+    --season-text: #3d352e;
+
+    --season-border:
+        rgba(224, 120, 53, 0.18);
+}
+
+
+/* ------------------------------------------------
+   🇮🇳 INDEPENDENCE DAY
+------------------------------------------------ */
+
+body[data-theme="independence"],
+body[data-theme="independence-day"] {
+
+    --season-primary: #df7938;
+    --season-secondary: #31865a;
+
+    --season-background: #fffaf4;
+    --season-surface: #ffffff;
+
+    --season-text: #3e352d;
+
+    --season-border:
+        rgba(223, 121, 56, 0.18);
+}
+
+
+/* ------------------------------------------------
+   🎃 HALLOWEEN
+------------------------------------------------ */
+
+body[data-theme="halloween"] {
+
+    --season-primary: #d76a28;
+    --season-secondary: #6546a5;
+
+    --season-background: #faf6ff;
+    --season-surface: #ffffff;
+
+    --season-text: #352b40;
+
+    --season-border:
+        rgba(215, 106, 40, 0.20);
+}
+
+
+/* ------------------------------------------------
+   📚 TEACHERS DAY
+------------------------------------------------ */
+
+body[data-theme="teachers-day"] {
+
+    --season-primary: #4e79a7;
+    --season-secondary: #e0a458;
+
+    --season-background: #f7fbff;
+    --season-surface: #ffffff;
+
+    --season-text: #304052;
+
+    --season-border:
+        rgba(78, 121, 167, 0.18);
+}
+
+
+/* ------------------------------------------------
+   🎈 CHILDREN'S DAY
+------------------------------------------------ */
+
+body[data-theme="children-day"],
+body[data-theme="children-day-global"] {
+
+    --season-primary: #5a78d6;
+    --season-secondary: #e58a5c;
+
+    --season-background: #fffaf5;
+    --season-surface: #ffffff;
+
+    --season-text: #3a3740;
+
+    --season-border:
+        rgba(90, 120, 214, 0.18);
+}
+
+
+/* ================================================================
+   4. GLOBAL THEME TRANSITIONS
+================================================================ */
+
+body {
+
+    background-color:
+        var(--season-background);
+
+    color:
+        var(--season-text);
+
+    transition:
+        background-color 0.6s ease,
+        color 0.6s ease;
+}
+
+
+/* ================================================================
+   5. COMMON LEARNIO COMPONENTS
+================================================================ */
+
+
+/* Cards */
+
+.card,
+.course-card,
+.lesson-card,
+.learning-card,
+.subject-card,
+.feature-card {
+
+    transition:
+        background-color 0.5s ease,
+        border-color 0.5s ease,
+        box-shadow 0.5s ease,
+        transform 0.3s ease;
+
+}
+
+
+/* Buttons */
+
+button,
+.btn,
+.primary-btn,
+.primary-button {
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* Links */
+
+a {
+
+    transition:
+        color 0.3s ease;
+
+}
+
+
+/* ================================================================
+   6. THEME-AWARE COMMON ELEMENTS
+================================================================ */
+
+body[data-theme] .card,
+body[data-theme] .course-card,
+body[data-theme] .lesson-card,
+body[data-theme] .learning-card,
+body[data-theme] .subject-card,
+body[data-theme] .feature-card {
+
+    border-color:
+        var(--season-border);
+
+}
+
+
+/* Theme-aware buttons */
+
+body[data-theme] .primary-btn,
+body[data-theme] .primary-button {
+
+    border-color:
+        var(--season-primary);
+
+}
+
+
+/* ================================================================
+   7. SEASONAL DECORATION CONTAINER
+================================================================ */
+
+.seasonal-decor {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 9999;
+
+}
+
+
+/* Individual decoration */
+
+.decor-item {
+
+    position: absolute;
+
+    top: -60px;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    will-change:
+        transform,
+        opacity;
+
+    opacity: 0.75;
+
+}
+
+
+/* ================================================================
+   8. SUMMER EFFECT
+================================================================ */
+
+.decor-float {
+
+    animation:
+        seasonalFloat
+        10s
+        linear
+        infinite;
+
+}
+
+
+@keyframes seasonalFloat {
+
+    0% {
+
+        transform:
+            translate3d(
+                0,
+                -60px,
+                0
+            )
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: 0.75;
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(
+                var(--drift),
+                50vh,
+                0
+            )
+            rotate(90deg);
+
+    }
+
+    85% {
+
+        opacity: 0.75;
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                calc(var(--drift) * -1),
+                110vh,
+                0
+            )
+            rotate(180deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================================================
+   9. MONSOON / RAIN EFFECT
+================================================================ */
+
+.decor-rain {
+
+    animation:
+        seasonalRain
+        6s
+        linear
+        infinite;
+
+}
+
+
+@keyframes seasonalRain {
+
+    0% {
+
+        transform:
+            translate3d(
+                0,
+                -60px,
+                0
+            );
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: 0.55;
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                var(--drift),
+                110vh,
+                0
+            );
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================================================
+   10. AUTUMN / FALLING LEAVES
+================================================================ */
+
+.decor-fall {
+
+    animation:
+        seasonalFall
+        11s
+        linear
+        infinite;
+
+}
+
+
+@keyframes seasonalFall {
+
+    0% {
+
+        transform:
+            translate3d(
+                0,
+                -60px,
+                0
+            )
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    12% {
+
+        opacity: 0.85;
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(
+                var(--drift),
+                50vh,
+                0
+            )
+            rotate(180deg);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                calc(var(--drift) * -1),
+                110vh,
+                0
+            )
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================================================
+   11. WINTER / SNOW
+================================================================ */
+
+.decor-snow {
+
+    animation:
+        seasonalSnow
+        12s
+        linear
+        infinite;
+
+}
+
+
+@keyframes seasonalSnow {
+
+    0% {
+
+        transform:
+            translate3d(
+                0,
+                -60px,
+                0
+            )
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: 0.85;
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(
+                var(--drift),
+                50vh,
+                0
+            )
+            rotate(180deg);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                calc(var(--drift) * -1),
+                110vh,
+                0
+            )
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================================================
+   12. FESTIVAL GLOW
+================================================================ */
+
+.decor-glow {
+
+    animation:
+        festivalGlow
+        7s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes festivalGlow {
+
+    0% {
+
+        transform:
+            translateY(-40px)
+            scale(0.8);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 0.75;
+
+    }
+
+    50% {
+
+        transform:
+            translateY(50vh)
+            scale(1.15);
+
+    }
+
+    80% {
+
+        opacity: 0.75;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            scale(0.8);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================================================
+   13. HOLI COLOR EFFECT
+================================================================ */
+
+.decor-color {
+
+    animation:
+        holiFloat
+        8s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes holiFloat {
+
+    0% {
+
+        transform:
+            translate3d(
+                0,
+                -50px,
+                0
+            )
+            scale(0.7);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 0.7;
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(
+                var(--drift),
+                50vh,
+                0
+            )
+            scale(1.2);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                calc(var(--drift) * -1),
+                110vh,
+                0
+            )
+            scale(0.8);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* ================================================================
+   14. FESTIVAL-SPECIFIC BACKGROUND DETAILS
+================================================================ */
+
+
+/* Diwali */
+
+body[data-theme="diwali"]::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(240, 180, 41, 0.12),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(216, 137, 25, 0.10),
+            transparent 25%
+        );
+
+    z-index: 0;
+
+}
+
+
+/* Christmas */
+
+body[data-theme="christmas"]::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 20% 15%,
+            rgba(46, 139, 87, 0.10),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(198, 40, 40, 0.08),
+            transparent 24%
+        );
+
+    z-index: 0;
+
+}
+
+
+/* ================================================================
+   15. KEEP WEBSITE CONTENT ABOVE DECORATIONS
+================================================================ */
+
+body > *:not(.seasonal-decor) {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* ================================================================
+   16. REDUCED MOTION
+================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .decor-item {
+
+        animation: none !important;
+
+    }
+
+    body {
+
+        transition: none;
+
+    }
+
+    button,
+    .btn,
+    .card {
+
+        transition: none;
+
+    }
+
+}
+
+
+/* ================================================================
+   17. MOBILE PERFORMANCE
+================================================================ */
+
+@media (max-width: 768px) {
+
+    .decor-item {
+
+        opacity: 0.55;
+
+    }
+
+}
+
+
+/* ================================================================
+   END OF LEARNIO SEASONAL THEME
+================================================================ */
+/* ============================================================
+   LEARNIO PREMIUM FESTIVAL UI
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   🪔 DIWALI
+------------------------------------------------------------ */
+
+body[data-theme="diwali"] .card,
+body[data-theme="diwali"] .course-card,
+body[data-theme="diwali"] .lesson-card {
+
+    box-shadow:
+        0 10px 30px rgba(216, 137, 25, 0.16);
+
+    border-color:
+        rgba(216, 137, 25, 0.25);
+}
+
+body[data-theme="diwali"] .primary-btn,
+body[data-theme="diwali"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #d88919,
+            #f0b429
+        );
+}
+
+
+/* ------------------------------------------------------------
+   🎨 HOLI
+------------------------------------------------------------ */
+
+body[data-theme="holi"] .card,
+body[data-theme="holi"] .course-card,
+body[data-theme="holi"] .lesson-card {
+
+    border-color:
+        rgba(232, 77, 117, 0.20);
+
+    box-shadow:
+        0 10px 30px rgba(232, 77, 117, 0.12);
+}
+
+body[data-theme="holi"] .primary-btn,
+body[data-theme="holi"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e84d75,
+            #7257d9
+        );
+}
+
+
+/* ------------------------------------------------------------
+   🪷 DURGA PUJA
+------------------------------------------------------------ */
+
+body[data-theme="durga-puja"] .card,
+body[data-theme="durga-puja"] .course-card,
+body[data-theme="durga-puja"] .lesson-card {
+
+    border-color:
+        rgba(182, 45, 45, 0.22);
+
+    box-shadow:
+        0 10px 30px rgba(182, 45, 45, 0.12);
+}
+
+body[data-theme="durga-puja"] .primary-btn,
+body[data-theme="durga-puja"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #b62d2d,
+            #d89b28
+        );
+}
+
+
+/* ------------------------------------------------------------
+   🎄 CHRISTMAS
+------------------------------------------------------------ */
+
+body[data-theme="christmas"] .card,
+body[data-theme="christmas"] .course-card,
+body[data-theme="christmas"] .lesson-card {
+
+    border-color:
+        rgba(46, 139, 87, 0.20);
+
+    box-shadow:
+        0 10px 30px rgba(46, 139, 87, 0.12);
+}
+
+body[data-theme="christmas"] .primary-btn,
+body[data-theme="christmas"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #c62828,
+            #2e8b57
+        );
+}
+
+
+/* ------------------------------------------------------------
+   🌙 EID
+------------------------------------------------------------ */
+
+body[data-theme="eid"] .card,
+body[data-theme="eid"] .course-card,
+body[data-theme="eid"] .lesson-card {
+
+    border-color:
+        rgba(40, 124, 101, 0.20);
+
+    box-shadow:
+        0 10px 30px rgba(40, 124, 101, 0.12);
+}
+
+body[data-theme="eid"] .primary-btn,
+body[data-theme="eid"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #287c65,
+            #b7974e
+        );
+}
+
+
+/* ------------------------------------------------------------
+   🎉 NEW YEAR
+------------------------------------------------------------ */
+
+body[data-theme="newyear"] .card,
+body[data-theme="newyear"] .course-card,
+body[data-theme="newyear"] .lesson-card {
+
+    border-color:
+        rgba(101, 82, 184, 0.20);
+
+    box-shadow:
+        0 10px 30px rgba(101, 82, 184, 0.13);
+}
+
+body[data-theme="newyear"] .primary-btn,
+body[data-theme="newyear"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #6552b8,
+            #d5a62a
+        );
+}
+
+
+/* ------------------------------------------------------------
+   🎃 HALLOWEEN
+------------------------------------------------------------ */
+
+body[data-theme="halloween"] .card,
+body[data-theme="halloween"] .course-card,
+body[data-theme="halloween"] .lesson-card {
+
+    border-color:
+        rgba(215, 106, 40, 0.20);
+
+    box-shadow:
+        0 10px 30px rgba(215, 106, 40, 0.12);
+}
+
+body[data-theme="halloween"] .primary-btn,
+body[data-theme="halloween"] .primary-button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #d76a28,
+            #6546a5
+        );
+}
+
+
+/* ============================================================
+   FESTIVAL HEADER ATMOSPHERE
+   ============================================================ */
+
+body[data-festival="true"] header,
+body[data-festival="true"] nav,
+body[data-festival="true"] .navbar {
+
+    border-bottom:
+        1px solid var(--season-border);
+
+    box-shadow:
+        0 4px 20px var(--season-glow);
+}
+
+
+/* ============================================================
+   FESTIVAL HERO AREA
+   ============================================================ */
+
+body[data-festival="true"] .hero,
+body[data-festival="true"] .hero-section,
+body[data-festival="true"] .banner {
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            var(--season-glow),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            var(--season-glow),
+            transparent 35%
+        );
+}
+
+
+/* ============================================================
+   FESTIVAL CARD HIGHLIGHT
+   ============================================================ */
+
+body[data-festival="true"] .card:hover,
+body[data-festival="true"] .course-card:hover,
+body[data-festival="true"] .lesson-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 18px 40px var(--season-glow);
+}
+
+
+/* ============================================================
+   FESTIVAL PAGE EDGE GLOW
+   ============================================================ */
+
+body[data-festival="true"]::after {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 9997;
+
+    box-shadow:
+        inset 0 0 80px var(--season-glow);
+
+    opacity: 0.45;
+}
+
+/* ============================================================
+   LEARNIO — GRAND MONSOON LEARNING CARNIVAL
+   June 2027 Premium Seasonal UI
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. MONSOON DESIGN TOKENS
+   ------------------------------------------------------------ */
+
+body[data-season="monsoon"] {
+    --season-primary: #1769aa;
+    --season-secondary: #35c6d8;
+
+    --season-background: #eef7fc;
+    --season-surface: #ffffff;
+
+    --season-text: #17334b;
+
+    --season-border: rgba(23, 105, 170, 0.16);
+
+    --season-glow: rgba(53, 198, 216, 0.22);
+
+    --season-gradient:
+        linear-gradient(
+            135deg,
+            #1769aa 0%,
+            #258dbf 45%,
+            #35c6d8 100%
+        );
+
+    --season-gradient-soft:
+        linear-gradient(
+            135deg,
+            rgba(23, 105, 170, 0.10),
+            rgba(53, 198, 216, 0.08)
+        );
+}
+
+/* Early-monsoon transition:
+   Warm pre-monsoon sunlight blending into rain clouds. */
+
+body[data-season="monsoon"]::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    background:
+        radial-gradient(
+            ellipse at 10% 0%,
+            rgba(255, 209, 102, 0.14),
+            transparent 42%
+        ),
+        radial-gradient(
+            ellipse at 90% 10%,
+            rgba(53, 198, 216, 0.18),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(235, 247, 255, 0.18),
+            transparent 70%
+        );
+}
+
+/* ------------------------------------------------------------
+   2. FESTIVAL COLOR THEMES
+   ------------------------------------------------------------ */
+
+/* World Environment Day — Eco Green */
+
+body[data-theme="environment-day"] {
+    --season-primary: #16834a;
+    --season-secondary: #72c94b;
+
+    --season-background: #f1fbf2;
+    --season-surface: #ffffff;
+
+    --season-text: #183b29;
+
+    --season-border: rgba(22, 131, 74, 0.20);
+
+    --season-glow: rgba(114, 201, 75, 0.24);
+
+    --season-gradient:
+        linear-gradient(
+            135deg,
+            #087f4f 0%,
+            #20a464 48%,
+            #8ad64d 100%
+        );
+
+    --season-gradient-soft:
+        linear-gradient(
+            135deg,
+            rgba(22, 131, 74, 0.12),
+            rgba(138, 214, 77, 0.10)
+        );
+}
+
+/* Ganga Dussehra — River Blue */
+
+body[data-theme="ganga-dussehra"] {
+    --season-primary: #1266a8;
+    --season-secondary: #5bd4e5;
+
+    --season-background: #eef9ff;
+    --season-surface: #ffffff;
+
+    --season-text: #17364e;
+
+    --season-border: rgba(18, 102, 168, 0.20);
+
+    --season-glow: rgba(91, 212, 229, 0.24);
+
+    --season-gradient:
+        linear-gradient(
+            135deg,
+            #075da8,
+            #18a6c8,
+            #7be2e8
+        );
+}
+
+/* Raja Parba — Earth, Flowers and Rain */
+
+body[data-theme="raja-parba"] {
+    --season-primary: #a23f72;
+    --season-secondary: #65a85b;
+
+    --season-background: #fff6f8;
+    --season-surface: #ffffff;
+
+    --season-text: #483044;
+
+    --season-border: rgba(162, 63, 114, 0.20);
+
+    --season-glow: rgba(101, 168, 91, 0.22);
+
+    --season-gradient:
+        linear-gradient(
+            135deg,
+            #a23f72,
+            #c65b86,
+            #65a85b
+        );
+}
+
+/* Muharram / Ashura — Calm, respectful palette */
+
+body[data-theme="muharram"],
+body[data-theme="ashura"] {
+    --season-primary: #426c58;
+    --season-secondary: #b8a56b;
+
+    --season-background: #f4f8f5;
+    --season-surface: #ffffff;
+
+    --season-text: #243d31;
+
+    --season-border: rgba(66, 108, 88, 0.18);
+
+    --season-glow: rgba(184, 165, 107, 0.16);
+
+    --season-gradient:
+        linear-gradient(
+            135deg,
+            #315d49,
+            #56866b,
+            #b8a56b
+        );
+}
+
+/* ------------------------------------------------------------
+   3. PREMIUM HERO BANNERS
+   Add .seasonal-hero to your main hero/banner element.
+   ------------------------------------------------------------ */
+
+.seasonal-hero {
+    position: relative;
+    isolation: isolate;
+
+    overflow: hidden;
+
+    border: 1px solid var(--season-border);
+
+    border-radius: 28px;
+
+    background:
+        var(--season-gradient, linear-gradient(
+            135deg,
+            var(--season-primary),
+            var(--season-secondary)
+        ));
+
+    color: #ffffff;
+
+    box-shadow:
+        0 18px 45px var(--season-glow),
+        0 6px 18px rgba(16, 40, 70, 0.10);
+
+    transform: translate3d(0, 0, 0);
+}
+
+.seasonal-hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: -1;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(255, 255, 255, 0.28),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(255, 255, 255, 0.12),
+            transparent 40%
+        );
+}
+
+.seasonal-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------------
+   4. PREMIUM FROSTED-GLASS AUTHENTICATION
+   Add .seasonal-auth-card to login/signup containers.
+   ------------------------------------------------------------ */
+
+.seasonal-auth-card {
+    position: relative;
+    isolation: isolate;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.88),
+            rgba(255, 255, 255, 0.70)
+        );
+
+    box-shadow:
+        0 24px 70px rgba(19, 66, 108, 0.12),
+        0 4px 14px rgba(19, 66, 108, 0.06);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.seasonal-auth-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: -70px;
+    right: -70px;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            var(--season-glow),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+/* ------------------------------------------------------------
+   5. ANIMATED FESTIVAL PRIMARY ACTION BUTTONS
+   ------------------------------------------------------------ */
+
+body[data-theme] .seasonal-primary-btn,
+body[data-season] .seasonal-primary-btn {
+    position: relative;
+
+    isolation: isolate;
+
+    overflow: hidden;
+
+    border: 0;
+
+    border-radius: 14px;
+
+    color: #ffffff;
+
+    background:
+        var(--season-gradient, linear-gradient(
+            135deg,
+            var(--season-primary),
+            var(--season-secondary)
+        ));
+
+    background-size: 200% 200%;
+
+    box-shadow:
+        0 8px 22px var(--season-glow);
+
+    transition:
+        transform 220ms ease,
+        box-shadow 220ms ease,
+        background-position 400ms ease;
+}
+
+.seasonal-primary-btn:hover {
+    background-position: 100% 50%;
+
+    transform: translate3d(0, -2px, 0);
+
+    box-shadow:
+        0 12px 30px var(--season-glow);
+}
+
+.seasonal-primary-btn:active {
+    transform: translate3d(0, 0, 0);
+}
+
+.seasonal-primary-btn:focus-visible {
+    outline: 3px solid var(--season-secondary);
+    outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------
+   6. DASHBOARD / COURSE CARD ENHANCEMENTS
+   ------------------------------------------------------------ */
+
+body[data-theme] .course-card,
+body[data-theme] .lesson-card,
+body[data-theme] .learning-card,
+body[data-theme] .subject-card,
+body[data-theme] .feature-card {
+    position: relative;
+
+    border: 1px solid var(--season-border);
+
+    background: var(--season-surface);
+
+    box-shadow:
+        0 8px 24px rgba(18, 55, 88, 0.06);
+
+    transition:
+        transform 240ms ease,
+        box-shadow 240ms ease,
+        border-color 240ms ease;
+}
+
+body[data-theme] .course-card:hover,
+body[data-theme] .lesson-card:hover,
+body[data-theme] .learning-card:hover,
+body[data-theme] .subject-card:hover,
+body[data-theme] .feature-card:hover {
+    transform: translate3d(0, -5px, 0);
+
+    border-color: var(--season-secondary);
+
+    box-shadow:
+        0 18px 42px var(--season-glow),
+        0 8px 20px rgba(18, 55, 88, 0.08);
+}
+
+/* Seasonal badges */
+
+.seasonal-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 6px 12px;
+
+    border: 1px solid var(--season-border);
+
+    border-radius: 999px;
+
+    background: var(--season-gradient-soft);
+
+    color: var(--season-primary);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
+}
+
+/* ------------------------------------------------------------
+   7. DRAWING / CREATIVE SECTION
+   ------------------------------------------------------------ */
+
+.drawing-toolbar,
+.drawing-tools,
+.drawing-canvas-wrapper,
+.creative-workspace {
+    border-color: var(--season-border);
+
+    transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease;
+}
+
+.drawing-toolbar,
+.drawing-tools {
+    background:
+        linear-gradient(
+            135deg,
+            var(--season-surface),
+            var(--season-gradient-soft)
+        );
+
+    border: 1px solid var(--season-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 24px rgba(18, 55, 88, 0.06);
+}
+
+.drawing-canvas-wrapper {
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid var(--season-border);
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 32px var(--season-glow);
+}
+
+/* Canvas interaction remains untouched.
+   Decorative effects must never capture pointer events. */
+
+.drawing-canvas-wrapper canvas {
+    position: relative;
+
+    z-index: 1;
+
+    touch-action: none;
+}
+
+.drawing-toolbar button,
+.drawing-tools button {
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        background-color 180ms ease;
+}
+
+.drawing-toolbar button:hover,
+.drawing-tools button:hover {
+    transform: translate3d(0, -2px, 0);
+
+    box-shadow:
+        0 6px 16px var(--season-glow);
+}
+
+/* Active drawing tool */
+
+.drawing-toolbar button[aria-pressed="true"],
+.drawing-tools button[aria-pressed="true"] {
+    border-color: var(--season-primary);
+
+    background: var(--season-gradient-soft);
+
+    box-shadow:
+        0 0 0 2px var(--season-border);
+}
+
+/* ------------------------------------------------------------
+   8. ATMOSPHERIC GLOW
+   ------------------------------------------------------------ */
+
+body[data-theme="environment-day"]::before,
+body[data-theme="ganga-dussehra"]::before,
+body[data-theme="raja-parba"]::before {
+    background:
+        radial-gradient(
+            ellipse at 10% 10%,
+            var(--season-glow),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 90% 15%,
+            var(--season-border),
+            transparent 40%
+        );
+
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------
+   9. HIGH-PERFORMANCE DECORATION ANIMATIONS
+   ------------------------------------------------------------ */
+
+.seasonal-decor {
+    contain: layout style paint;
+}
+
+.decor-item {
+    transform: translate3d(0, 0, 0);
+
+    backface-visibility: hidden;
+
+    will-change: transform, opacity;
+}
+
+/* Avoid unnecessary painting on small screens */
+
+@media (max-width: 768px) {
+    .decor-item {
+        opacity: 0.45;
+
+        will-change: auto;
+    }
+
+    .seasonal-hero {
+        border-radius: 20px;
+    }
+
+    .seasonal-auth-card {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+}
+
+/* ------------------------------------------------------------
+   10. ACCESSIBILITY — REDUCED MOTION
+   ------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+    .decor-item,
+    .seasonal-hero,
+    .seasonal-auth-card,
+    .seasonal-primary-btn,
+    .course-card,
+    .lesson-card,
+    .learning-card,
+    .subject-card,
+    .feature-card,
+    .drawing-toolbar button,
+    .drawing-tools button {
+        animation: none !important;
+
+        transition: none !important;
+
+        transform: none !important;
+
+        will-change: auto;
+    }
+}
+
+/* ============================================================
+   END — JUNE 2027 PREMIUM MONSOON UI
+   ============================================================ */
