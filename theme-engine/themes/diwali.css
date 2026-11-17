@@ -49,8 +49,9 @@
 }
 
 /* ---- lanterns (hang below the header, sway gently) ---- */
-.lt-lantern{ position:absolute; top:90px; width:54px; transform-origin:50% 0; filter:drop-shadow(0 0 14px rgba(255,170,60,.55)); animation:ltLantern 6.5s ease-in-out infinite alternate; }
-.lt-lantern svg{ display:block; width:100%; height:auto; }
+.lt-lantern{ position:absolute; top:90px; width:54px; transform-origin:50% 0; animation:ltLantern 6.5s ease-in-out infinite alternate; }
+.lt-lantern::before{ content:''; position:absolute; left:50%; top:30%; width:150%; aspect-ratio:1; margin-left:-75%; border-radius:50%; background:radial-gradient(circle,rgba(255,170,60,.38),transparent 68%); }
+.lt-lantern svg{ position:relative; display:block; width:100%; height:auto; }
 .lt-lantern-l{ left:2.2%; }
 .lt-lantern-r{ right:3%; animation-delay:-3s; width:46px; }
 @keyframes ltLantern{ from{ rotate:-3.5deg; } to{ rotate:3.5deg; } }
@@ -88,16 +89,14 @@
   100%{ transform:translate3d(calc(var(--sway) * -1),-112vh,0) scale(.5); opacity:0; }
 }
 
-/* ---- two restrained firework bursts (night, desktop only) ---- */
+/* ---- two restrained firework bursts (night, desktop only): dotted rings, transform+opacity only ---- */
 .lt-burst{
-  position:absolute; width:170px; height:170px; border-radius:50%; opacity:0;
-  background:repeating-conic-gradient(from 0deg,#FFD166 0 2.2deg,transparent 2.2deg 18deg);
-  -webkit-mask:radial-gradient(circle,transparent 36%,#000 38%,#000 46%,transparent 49%);
-          mask:radial-gradient(circle,transparent 36%,#000 38%,#000 46%,transparent 49%);
-  filter:drop-shadow(0 0 6px rgba(255,190,70,.8)); animation:ltBurst 11s ease-out infinite;
+  position:absolute; width:160px; height:160px; border-radius:50%; opacity:0;
+  border:4px dotted #FFD166; animation:ltBurst 11s ease-out infinite;
 }
+.lt-burst::after{ content:''; position:absolute; inset:26px; border-radius:50%; border:3px dotted #FF9933; }
 .lt-burst-a{ top:16%; left:24%; }
-.lt-burst-b{ top:24%; right:26%; animation-delay:-5.5s; background:repeating-conic-gradient(from 6deg,#FF9933 0 2.2deg,transparent 2.2deg 15deg); }
+.lt-burst-b{ top:24%; right:26%; animation-delay:-5.5s; }
 @keyframes ltBurst{
   0%{ transform:scale(.1); opacity:0; } 6%{ opacity:.85; } 24%{ transform:scale(1); opacity:.5; } 38%,100%{ transform:scale(1.18); opacity:0; }
 }

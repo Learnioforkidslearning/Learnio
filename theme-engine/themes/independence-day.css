@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Learnio Theme Engine — INDEPENDENCE DAY  (August)
+   Tasteful tricolour accents · 24-spoke chakra ring (decorative, circular, never distorted)
+   · flowing ribbon. The tricolour is used as accents only — components are NOT turned into flags,
+   and the chakra is never placed on a flag-like field (Flag Code respected).
+   13–15 Aug: <html data-emphasis> adds a slightly bolder ribbon + chakra.
+   ========================================================================== */
+
+:root[data-festival="independence-day"]{
+  --f-primary:#FF9933;      /* saffron      */
+  --f-primary-2:#138808;    /* India green  */
+  --f-secondary:#FF9933;
+  --f-accent:#FF9933;
+  --f-deep:#152238;         /* deep navy    */
+  --f-navy:#000080;
+  --f-on-primary:#152238;   /* navy on saffron = 7.5:1 */
+  --f-on-primary-2:#FFFFFF; /* white on green  = 4.6:1 */
+
+  /* DAY */
+  --f-text-day:#152238;  --f-muted-day:#3B4A66;  --f-heading-day:#000080;  --f-link-day:#000080;
+  --f-bg-day:
+    radial-gradient(1000px 500px at 90% -10%, rgba(255,153,51,.30), transparent 60%),
+    radial-gradient(1000px 500px at 5% 112%, rgba(19,136,8,.16), transparent 60%),
+    linear-gradient(180deg,#FFFDF5 0%,#FFFFFF 55%,#F4FAF0 100%);
+  --f-bg-day-solid:#FFFDF5;
+  --f-orn-day:#000080;
+
+  /* NIGHT */
+  --f-text-night:#F4F7FF; --f-muted-night:#CBD5EA; --f-heading-night:#FFC27A; --f-link-night:#FFB566;
+  --f-bg-night:
+    radial-gradient(900px 480px at 90% -6%, rgba(255,153,51,.18), transparent 60%),
+    radial-gradient(900px 480px at 8% 112%, rgba(19,136,8,.24), transparent 60%),
+    linear-gradient(170deg,#0B1428 0%,#152238 55%,#1B2E4F 125%);
+  --f-bg-night-solid:#152238;
+  --f-night-surface:#17233F;
+  --f-night-panel:#192645;
+  --f-orn-night:#9DB2FF;
+  --f-glow:rgba(255,153,51,.35);
+}
+
+/* top strip: slim saffron / white / green band */
+.lt-strip-independence-day{
+  position:absolute; inset:0 0 auto 0; height:6px;
+  background:linear-gradient(90deg,#FF9933 0 33.34%,#FFFFFF 33.34% 66.67%,#138808 66.67% 100%);
+  box-shadow:0 1px 3px rgba(21,34,56,.40);
+}
+:root[data-emphasis="true"] .lt-strip-independence-day{ height:9px; }
+
+/* bottom: three flowing ribbons (transform-only animation → smooth) */
+.lt-ribbon{
+  position:absolute; left:-120px; right:0; bottom:0; height:22px; opacity:.8;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='22' viewBox='0 0 120 22'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M0 5q15-6 30 0t30 0 30 0 30 0' stroke='%23FF9933' stroke-width='3'/%3E%3Cpath d='M0 11q15-6 30 0t30 0 30 0 30 0' stroke='%23152238' stroke-opacity='.28' stroke-width='5'/%3E%3Cpath d='M0 11q15-6 30 0t30 0 30 0 30 0' stroke='%23FFFFFF' stroke-width='3'/%3E%3Cpath d='M0 17q15-6 30 0t30 0 30 0 30 0' stroke='%23138808' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E") repeat-x 0 0/120px 22px;
+  animation:ltRibbon 45s linear infinite;
+}
+:root[data-emphasis="true"] .lt-ribbon{ opacity:1; }
+@keyframes ltRibbon{ to{ transform:translateX(120px); } }
+
+/* decorative chakra rings (faint, slow, always circular) */
+.lt-chakra{ position:absolute; color:var(--lt-ornament); opacity:.09; animation:ltSpin 240s linear infinite; }
+.lt-chakra svg{ display:block; width:100%; height:auto; }
+.lt-chakra-a{ left:-100px; top:190px; width:280px; }
+.lt-chakra-b{ right:-130px; bottom:-120px; width:340px; animation-direction:reverse; }
+:root[data-emphasis="true"] .lt-chakra{ opacity:.16; }
+
+/* soft tricolour confetti rising slowly */
+.lt-pt-independence-day .lt-p{
+  bottom:-4vh; width:calc(var(--sz) * .55); height:calc(var(--sz) * .55); border-radius:50%; opacity:0;
+  background:#FF9933; animation:ltSparkRise var(--dur) linear var(--del) infinite;
+}
+.lt-pt-independence-day .lt-p:nth-child(3n+2){ background:#FFFFFF; box-shadow:0 0 0 1px rgba(21,34,56,.28); }
+.lt-pt-independence-day .lt-p:nth-child(3n){ background:#138808; }
+
+:root[data-festival="independence-day"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="independence-day"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none;
+  background:linear-gradient(90deg,#FF9933 0 33.3%,#FFFFFF 33.3% 66.6%,#138808 66.6% 100%); box-shadow:0 0 0 1px rgba(21,34,56,.25);
+}

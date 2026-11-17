@@ -7,8 +7,8 @@
 (function () {
   var s = document.currentScript; if (!s) return;
   var base = s.src.replace(/theme-loader\.js(\?.*)?$/, '');
-  var css = ['theme-base.css', 'durga-puja.css', 'diwali.css', 'day-mode.css', 'night-mode.css'];
-  var js  = ['theme-config.js', 'festival-engine.js', 'day-night-engine.js', 'theme-effects.js', 'theme-controller.js'];
+  var css = ['theme-base.css', 'durga-puja.css', 'diwali.css', 'rath-yatra.css', 'independence-day.css', 'day-mode.css', 'night-mode.css'];
+  var js  = ['theme-config.js', 'festival-engine.js', 'day-night-engine.js', 'theme-art.js', 'theme-people.js', 'theme-effects.js', 'theme-controller.js'];
   var out = '';
   css.forEach(function (f) { out += '<link rel="stylesheet" href="' + base + 'themes/' + f + '">'; });
   js.forEach(function (f)  { out += '<script src="' + base + f + '"><\/script>'; });

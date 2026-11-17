@@ -9,8 +9,10 @@
   var LT = global.LearnioTheme = global.LearnioTheme || {};
 
   LT.config = {
-    storageKey: 'learnio.themeMode',          // 'auto' | 'day' | 'night'
+    storageKey: 'learnio.themeMode',          // 'auto' | 'day' | 'night'   (unchanged)
     defaultMode: 'auto',
+    festivalStorageKey: 'learnio.themeFestival', // 'auto' | 'none' | <festival id>  (manual festival choice)
+    defaultFestival: 'auto',
 
     /* Day / night boundaries in the user's LOCAL time (24h clock).
        Day = [dayStartHour, nightStartHour)  → 06:00–17:59 */
@@ -31,19 +33,23 @@
          an empty list means "everyone".
        - Later entries win when windows overlap and priority is equal. */
     festivals: [
-      { id: 'durga-puja', name: 'Durga Puja', start: '09-01', end: '10-31', priority: 1, regions: [] },
-      { id: 'diwali',     name: 'Diwali',     start: '11-01', end: '11-30', priority: 1, regions: [] }
+      { id: 'rath-yatra',       name: 'Rath Yatra',       icon: '🛕', start: '06-01', end: '07-31', priority: 1, regions: [] },
+      { id: 'independence-day', name: 'Independence Day', icon: '☸️', start: '08-01', end: '08-31', priority: 1, regions: [],
+        emphasis: { start: '08-13', end: '08-15' } },   // extra-festive days around 15 August
+      { id: 'durga-puja', name: 'Durga Puja', icon: '🪷', start: '09-01', end: '10-31', priority: 1, regions: [] },
+      { id: 'diwali',     name: 'Diwali',     icon: '🪔', start: '11-01', end: '11-30', priority: 1, regions: [] }
       /* Examples for later:
       { id: 'diwali', start: '11-08', end: '11-14', year: 2026, priority: 5 },
+      { id: 'rath-yatra', start: '06-27', end: '07-08', year: 2027, priority: 5 }  // exact dates → year-specific
       { id: 'holi',   start: '03-01', end: '03-14', priority: 1 }                */
     ],
 
     /* Festivals that actually have CSS in /themes. Unknown ids are ignored
        (site simply keeps its default look) so the calendar can grow safely. */
-    availableThemes: ['durga-puja', 'diwali'],
+    availableThemes: ['rath-yatra', 'independence-day', 'durga-puja', 'diwali'],
 
     /* Decorative particles (kept tiny for mobile performance). */
-    particles: { desktop: 22, mobile: 12, stars: 38, starsMobile: 20 },
+    particles: { desktop: 10, mobile: 6, stars: 26, starsMobile: 12 },   // kept small: smoother on phones
 
     /* Pages whose body is a game/canvas: engine runs in "calm" mode there
        (colours + thin ribbon only, no floating effects) so gameplay,

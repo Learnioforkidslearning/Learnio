@@ -30,5 +30,24 @@
     return n - now;
   }
 
-  LT.festival = { detect: detectFestival, msUntilNextDay: msUntilNextDay };
+  /* Extra-emphasis days (e.g. 13–15 Aug) → true/false for the festival that is showing. */
+  function emphasis(date, id) {
+    var key = mmdd(date), hit = false;
+    LT.config.festivals.forEach(function (f) {
+      if (f.id === id && f.emphasis && (!f.year || f.year === date.getFullYear()) && inWindow(key, f.emphasis.start, f.emphasis.end)) hit = true;
+    });
+    return hit;
+  }
+
+  /* Manual festival choice: 'auto' (follow the calendar) | 'none' (original look) | a festival id. */
+  function getPref() {
+    var c = LT.config, v = null;
+    try { v = localStorage.getItem(c.festivalStorageKey); } catch (e) {}
+    if (v === 'auto' || v === 'none' || c.availableThemes.indexOf(v) > -1) return v;
+    return c.defaultFestival;
+  }
+  function setPref(v) { try { localStorage.setItem(LT.config.festivalStorageKey, v); } catch (e) {} }
+  function list() { return LT.config.festivals.filter(function (f, i, a) { return LT.config.availableThemes.indexOf(f.id) > -1 && a.findIndex(function (x) { return x.id === f.id; }) === i; }); }
+
+  LT.festival = { detect: detectFestival, msUntilNextDay: msUntilNextDay, emphasis: emphasis, getPref: getPref, setPref: setPref, list: list };
 })(window);

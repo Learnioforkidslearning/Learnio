@@ -12,10 +12,11 @@
     if (!LT.config.allowPreviewParams) return;
     try {
       var q = new URLSearchParams(global.location.search);
-      var d = q.get('theme-date'), t = q.get('theme-time'), m = q.get('theme-mode');
+      var d = q.get('theme-date'), t = q.get('theme-time'), m = q.get('theme-mode'), fe = q.get('theme-festival');
       if (d && /^\d{4}-\d{2}-\d{2}$/.test(d)) { var p = d.split('-'); preview.date = new Date(+p[0], +p[1] - 1, +p[2], 12, 0, 0); }
       if (t === 'day' || t === 'night') preview.time = t;
       if (m === 'day' || m === 'night' || m === 'auto') preview.mode = m;
+      if (fe && (fe === 'none' || LT.config.availableThemes.indexOf(fe) > -1)) preview.festival = fe;
     } catch (e) {}
   }
   function now() {
@@ -27,9 +28,10 @@
 
   function compute() {
     var n = now(), mode = preview.mode || LT.dayNight.getMode();
-    var festival = LT.festival.detect(n);
+    var fpref = preview.festival || LT.festival.getPref();
+    var festival = fpref === 'none' ? null : (fpref !== 'auto' ? fpref : LT.festival.detect(n));
     var time = preview.time || LT.dayNight.resolve(mode, n);
-    return { festival: festival, time: time, mode: mode, calm: isCalm() };
+    return { festival: festival, fpref: fpref, time: time, mode: mode, calm: isCalm(), emphasis: !!festival && LT.festival.emphasis(n, festival) };
   }
 
   /* ---------- apply ---------- */
@@ -48,6 +50,7 @@
     set('data-time', active || LT.config.dayNightOutsideFestival ? state.time : null);
     set('data-theme-mode', active ? state.mode : null);
     set('data-calm', state.calm && active ? 'true' : null);
+    set('data-emphasis', active && state.emphasis ? 'true' : null);
     var meta = doc.querySelector('meta[name="theme-color"]');
     if (active) { var c = global.getComputedStyle(root).getPropertyValue('--lt-bar').trim(); if (c && meta) meta.setAttribute('content', c); }
 
@@ -90,27 +93,39 @@
     { v: 'day',   label: 'Always Day',   icon: '☀️' },
     { v: 'night', label: 'Always Night', icon: '🌙' }
   ];
+  function festivalChoices() {
+    var out = [{ v: 'auto', label: 'Automatic (by date)', icon: '📅' }];
+    LT.festival.list().forEach(function (f) { out.push({ v: f.id, label: f.name, icon: f.icon || '🎉' }); });
+    out.push({ v: 'none', label: 'Original look', icon: '🌈' });
+    return out;
+  }
+  function radios(attr, items) {
+    return items.map(function (m) { return '<button type="button" role="radio" aria-checked="false" ' + attr + '="' + m.v + '"><span class="lt-ico" aria-hidden="true">' + m.icon + '</span><span>' + m.label + '</span></button>'; }).join('');
+  }
   function buildWidget() {
     if (widget || !doc.body) return;
     widget = doc.createElement('div');
     widget.id = 'lt-settings';
     widget.innerHTML =
       '<button type="button" class="lt-set-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lt-set-menu" aria-label="Theme settings"><span class="lt-set-ico" aria-hidden="true">🌗</span></button>' +
-      '<div id="lt-set-menu" class="lt-set-menu" role="radiogroup" aria-label="Day and night theme" hidden>' +
-      '<p class="lt-set-title">Theme</p>' +
-      MODES.map(function (m) { return '<button type="button" role="radio" aria-checked="false" data-mode="' + m.v + '"><span aria-hidden="true">' + m.icon + '</span> ' + m.label + '</button>'; }).join('') +
+      '<div id="lt-set-menu" class="lt-set-menu" hidden>' +
+        '<div role="radiogroup" aria-labelledby="lt-t-fest"><p class="lt-set-title" id="lt-t-fest">Festival</p>' + radios('data-fest', festivalChoices()) + '</div>' +
+        '<div role="radiogroup" aria-labelledby="lt-t-mode"><p class="lt-set-title" id="lt-t-mode">Day / Night</p>' + radios('data-mode', MODES) + '</div>' +
       '</div>';
     root.appendChild(widget);
     var btn = widget.querySelector('.lt-set-btn'), menu = widget.querySelector('.lt-set-menu');
     function toggle(open) { btn.setAttribute('aria-expanded', open ? 'true' : 'false'); if (open) menu.removeAttribute('hidden'); else menu.setAttribute('hidden', ''); }
     btn.addEventListener('click', function (e) { e.stopPropagation(); toggle(menu.hasAttribute('hidden')); });
     menu.addEventListener('click', function (e) {
-      var b = e.target.closest('[data-mode]'); if (!b) return;
-      LT.dayNight.setMode(b.getAttribute('data-mode')); preview.mode = null; refresh(true); schedule(); toggle(false); btn.focus();
+      var b = e.target.closest('[data-mode],[data-fest]'); if (!b) return;
+      if (b.hasAttribute('data-fest')) { LT.festival.setPref(b.getAttribute('data-fest')); preview.festival = null; }
+      else { LT.dayNight.setMode(b.getAttribute('data-mode')); preview.mode = null; }
+      refresh(true); schedule();                       // menu stays open so festival + day/night can both be picked
     });
     doc.addEventListener('click', function (e) { if (!widget.contains(e.target)) toggle(false); });
     doc.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hasAttribute('hidden')) { toggle(false); btn.focus(); } });
   }
+
   /* Never sit on top of existing floating UI (AI tutor button, Maira, etc.):
      nudge upward until no other fixed, clickable element is under the button. */
   var avoidTimer = null;
@@ -143,13 +158,13 @@
 
   function updateWidget(state) {
     if (!widget) return;
-    var show = !!state.festival && !state.calm;
+    var show = !state.calm;
     widget.style.display = show ? '' : 'none';
     if (show) scheduleAvoid();
-    var m = state.mode;
-    widget.querySelectorAll('[data-mode]').forEach(function (b) { b.setAttribute('aria-checked', b.getAttribute('data-mode') === m ? 'true' : 'false'); });
+    widget.querySelectorAll('[data-mode]').forEach(function (b) { b.setAttribute('aria-checked', b.getAttribute('data-mode') === state.mode ? 'true' : 'false'); });
+    widget.querySelectorAll('[data-fest]').forEach(function (b) { b.setAttribute('aria-checked', b.getAttribute('data-fest') === state.fpref ? 'true' : 'false'); });
     var ico = widget.querySelector('.lt-set-ico');
-    if (ico) ico.textContent = (MODES.filter(function (x) { return x.v === m; })[0] || MODES[0]).icon;
+    if (ico) ico.textContent = (MODES.filter(function (x) { return x.v === state.mode; })[0] || MODES[0]).icon;
   }
 
   /* ---------- init ---------- */
@@ -165,11 +180,21 @@
     if (!watchTutor()) { var tries = 0, iv = setInterval(function () { if (watchTutor() || ++tries > 20) clearInterval(iv); }, 500); }
     doc.addEventListener('visibilitychange', function () { if (!doc.hidden) { refresh(true); schedule(); } });
     global.addEventListener('focus', function () { refresh(true); schedule(); });
-    global.addEventListener('storage', function (e) { if (e.key === LT.config.storageKey) refresh(true); });
+    global.addEventListener('storage', function (e) { if (e.key === LT.config.storageKey || e.key === LT.config.festivalStorageKey) refresh(true); });
+    /* Smoothness: freeze decorative animation while the user is tapping / scrolling / typing,
+       resume 700ms after they stop, so buttons and the chat panel always get the full frame budget. */
+    var idle = null, busy = false;
+    function setBusy() {
+      if (!busy) { busy = true; root.classList.add('lt-busy'); }
+      clearTimeout(idle); idle = setTimeout(function () { busy = false; root.classList.remove('lt-busy'); }, 700);
+    }
+    ['pointerdown', 'touchstart', 'keydown', 'wheel'].forEach(function (ev) { global.addEventListener(ev, setBusy, { passive: true, capture: true }); });
+    global.addEventListener('scroll', setBusy, { passive: true, capture: true });
   }
 
   LT.refresh = refresh;
   LT.setMode = function (m) { LT.dayNight.setMode(m); refresh(true); schedule(); };
+  LT.setFestival = function (f) { LT.festival.setPref(f); preview.festival = null; refresh(true); schedule(); };
   LT.preview = function (o) { preview = o || {}; if (preview.date && !(preview.date instanceof Date)) preview.date = new Date(preview.date); refresh(true); schedule(); return current; };
   LT.state = function () { return compute(); };
 

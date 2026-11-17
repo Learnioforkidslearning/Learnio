@@ -21,11 +21,12 @@
   --season-surface: var(--lt-surface);
   --season-border: var(--lt-border);
   --season-glow: var(--lt-glow);
-  background: var(--lt-bg);
-  background-attachment: fixed;
-  background-color: var(--lt-bg-solid);
+  background: var(--lt-bg-solid);
   color-scheme: var(--lt-scheme, light);
   scrollbar-color: var(--lt-primary) var(--lt-bg-solid);
+}
+:root[data-festival]:not([data-calm])::before{                                          /* viewport-fixed gradient: composited, so scrolling never repaints it */
+  content: ''; position: fixed; inset: 0; z-index: -2; pointer-events: none; background: var(--lt-bg);
 }
 :root[data-festival]:not([data-calm]) body{ background: transparent !important; color: var(--lt-text); }
 :root[data-festival]:not([data-calm]) .bg-layer{ opacity: 0 !important; }                 /* old colour-crossfade layers sit this season out */
@@ -144,20 +145,21 @@
   border: 2px solid var(--lt-accent, #D4AF37); box-shadow: 0 6px 18px var(--lt-shadow, rgba(0,0,0,.25));
 }
 #lt-settings .lt-set-btn:hover{ transform: scale(1.06); }
-#lt-settings .lt-set-btn:focus-visible, #lt-settings [data-mode]:focus-visible{ outline: 3px solid var(--lt-accent, #D4AF37); outline-offset: 3px; }
+#lt-settings .lt-set-btn:focus-visible, #lt-settings [data-mode]:focus-visible, #lt-settings [data-fest]:focus-visible{ outline: 3px solid var(--lt-accent, #D4AF37); outline-offset: 3px; }
 #lt-settings .lt-set-menu{
-  position: absolute; left: 0; bottom: 56px; min-width: 190px; padding: 10px;
+  position: absolute; left: 0; bottom: 56px; min-width: 214px; padding: 8px 10px 10px;
+  max-height: min(72vh, 480px); overflow-y: auto; overscroll-behavior: contain;
   background: var(--lt-panel, #fff); color: var(--lt-text, #222); border: 1px solid var(--lt-accent, #D4AF37);
   border-radius: 16px; box-shadow: 0 16px 40px var(--lt-shadow, rgba(0,0,0,.3));
 }
 #lt-settings .lt-set-menu[hidden]{ display: none; }
-#lt-settings .lt-set-title{ margin: 2px 8px 8px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--lt-muted, #666); }
-#lt-settings [data-mode]{
+#lt-settings .lt-set-title{ margin: 8px 8px 4px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--lt-muted, #666); }
+#lt-settings [data-mode], #lt-settings [data-fest]{
   all: unset; box-sizing: border-box; display: flex; width: 100%; align-items: center; gap: 10px; cursor: pointer;
-  padding: 10px 12px; border-radius: 10px; font-size: 15px; font-weight: 600; color: var(--lt-text, #222);
+  padding: 8px 10px; border-radius: 10px; font-size: 14.5px; font-weight: 600; color: var(--lt-text, #222);
 }
-#lt-settings [data-mode]:hover{ background: var(--lt-hover, rgba(0,0,0,.06)); }
-#lt-settings [data-mode][aria-checked="true"]{ background: var(--lt-primary, #C62828); color: var(--lt-on-primary, #fff); }
+#lt-settings [data-mode]:hover, #lt-settings [data-fest]:hover{ background: var(--lt-hover, rgba(0,0,0,.06)); }
+#lt-settings [data-mode][aria-checked="true"], #lt-settings [data-fest][aria-checked="true"]{ background: var(--lt-primary, #C62828); color: var(--lt-on-primary, #fff); }
 
 /* ---- 11. Effects layer scaffolding (all decorative, never clickable) ---- */
 #lt-fx, #lt-top{ position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
@@ -169,7 +171,7 @@
 .lt-sky, .lt-orn, .lt-particles{ position: absolute; inset: 0; }
 
 /* particles: CSS-only drift; duration/delay/sway randomised per node */
-.lt-p{ position: absolute; display: block; width: var(--sz); height: var(--sz); will-change: transform, opacity; }
+.lt-p{ position: absolute; display: block; width: var(--sz); height: var(--sz); }
 
 /* ---- 12. Calm mode (game pages): colours only + a thin ribbon. No effects, no restyling of game UI ---- */
 :root[data-calm]::before{
@@ -187,3 +189,67 @@
   #lt-fx *, #lt-top *, #lt-settings *{ animation: none !important; transition: none !important; }
   .lt-layer{ transition: none; }
 }
+
+#lt-settings .lt-ico{ width: 1.6em; text-align: center; flex: none; }
+#lt-settings .lt-set-btn, #lt-settings [data-mode], #lt-settings [data-fest]{ transition: none; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+/* ==========================================================================
+   SMOOTHNESS — keeps buttons, the Maira panel and scrolling lag-free
+   (all scoped to active festival pages; original look outside festivals is untouched)
+   ========================================================================== */
+/* a) glass blur sits on top of animated layers = expensive. Surfaces are already translucent colours, so drop the blur. */
+:root[data-festival]:not([data-calm]) header, :root[data-festival]:not([data-calm]) .topbar, :root[data-festival]:not([data-calm]) .card, :root[data-festival]:not([data-calm]) .plan, :root[data-festival]:not([data-calm]) .testimonial-card, :root[data-festival]:not([data-calm]) .parents-card, :root[data-festival]:not([data-calm]) .parent-point, :root[data-festival]:not([data-calm]) .progress-card,
+:root[data-festival]:not([data-calm]) .today-pill, :root[data-festival]:not([data-calm]) .stat-item, :root[data-festival]:not([data-calm]) .lesson-card, :root[data-festival]:not([data-calm]) .game-card, :root[data-festival]:not([data-calm]) .site-footer, :root[data-festival]:not([data-calm]) .hero-3d-card, :root[data-festival]:not([data-calm]) .marketing-container,
+:root[data-festival]:not([data-calm]) .contact form, :root[data-festival]:not([data-calm]) .nav-links a, :root[data-festival]:not([data-calm]) .ai-window, :root[data-festival]:not([data-calm]) [class*="maira"], :root[data-festival]:not([data-calm]) [class*="chat"], :root[data-festival]:not([data-calm]) [class*="tutor"], :root[data-festival]:not([data-calm]) [class*="assistant"]{
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+/* b) buttons: no 3D-Z hover (forces re-rasterising inside the perspective body), no 2s colour fade, shine via transform instead of `left` */
+:root[data-festival]:not([data-calm]) button, :root[data-festival]:not([data-calm]) .btn{ transition: transform .14s ease-out, box-shadow .14s ease-out; will-change: auto; }
+:root[data-festival]:not([data-calm]) button:hover, :root[data-festival]:not([data-calm]) .btn:hover{ transform: translateY(-3px) scale(1.02); }
+:root[data-festival]:not([data-calm]) button:active, :root[data-festival]:not([data-calm]) .btn:active{ transform: translateY(2px) scale(.97); transition-duration: .06s; }
+@media (hover: none){ :root[data-festival]:not([data-calm]) button:hover, :root[data-festival]:not([data-calm]) .btn:hover{ transform: none; } }   /* no "sticky hover" after a tap on phones */
+:root[data-festival]:not([data-calm]) .btn:hover::before, :root[data-festival]:not([data-calm]) button:hover::before{ left: -60%; animation: ltShine .8s ease-in-out 1; }
+@keyframes ltShine{ from{ transform: translateX(0) skewX(-20deg); } to{ transform: translateX(560%) skewX(-20deg); } }
+/* c) existing floating 3D shapes: keep them, but without per-shape blur filters */
+:root[data-festival]:not([data-calm]) .floating-3d, :root[data-festival]:not([data-calm]) .floating-3d *{ filter: none !important; will-change: auto !important; }
+/* d) freeze decorative motion while the user is tapping / scrolling / typing (class toggled by the controller) */
+:root.lt-busy #lt-fx *, :root.lt-busy #lt-top *, :root.lt-busy .floating-3d, :root.lt-busy .floating-3d *{ animation-play-state: paused !important; }
+/* the site's global button shine pseudo-element must not leak onto the theme menu */
+#lt-settings button::before, #lt-settings button::after{ content: none !important; display: none !important; }
+/* Keep the hero card rendering exactly as before: with backdrop-filter removed (smoothness), the browser would
+   stop flattening the card and its translateZ children would suddenly "pop" ~5% larger. Pin the original flat look. */
+:root[data-festival]:not([data-calm]) .hero-3d-card{ transform-style: flat; }
+
+/* ==========================================================================
+   FESTIVAL ARTWORK  (Durga murti · Rath with Jagannath, Balabhadra & Subhadra · Indian flag)
+   Home page: banner above the hero.  Other pages: quiet fixed background piece.
+   Purely decorative: aria-hidden, click-through, hidden from print, off on game pages.
+   ========================================================================== */
+.lt-scene{
+  position: relative; z-index: 2; pointer-events: none; display: flex; justify-content: center; align-items: flex-end;
+  height: clamp(230px, 30vw, 350px); margin: 0 auto -84px; padding: 14px 12px 0; box-sizing: border-box;
+  opacity: 1; transition: opacity .9s ease;
+}
+.lt-scene.lt-in, .lt-scene.lt-out{ opacity: 0; }
+.lt-scene::before{                                         /* soft light behind the artwork — fades to nothing on every side */
+  content: ''; position: absolute; left: 50%; bottom: -8%; width: min(900px, 98vw); height: 135%; transform: translateX(-50%);
+  background: radial-gradient(closest-side, var(--lt-glow), transparent); opacity: .85;
+}
+.lt-scene-art{ position: relative; height: 100%; display: flex; align-items: flex-end; }
+.lt-scene-art .lt-art-svg{ display: block; height: 100%; width: auto; max-width: 92vw; filter: none; }
+.lt-crowd{ position: absolute; bottom: 0; height: min(78vh, 540px); aspect-ratio: 340 / 520; }
+.lt-crowd .lt-art-svg{ display: block; width: 100%; height: 100%; }
+.lt-crowd-l{ left: 0; } .lt-crowd-r{ right: 0; }
+@media (max-width: 1000px){ .lt-crowd{ display: none; } }          /* no gutters on small screens: the banner carries the scene */
+@media print{ .lt-scene, #lt-fx, #lt-top, #lt-settings{ display: none !important; } }
+
+/* gentle life in the artwork (transform / opacity only) */
+.lt-halo{ animation: ltHalo 5s ease-in-out infinite alternate; }
+@keyframes ltHalo{ from{ opacity: .82; } to{ opacity: 1; } }
+.lt-rath-flag{ transform-box: fill-box; transform-origin: 0 50%; animation: ltFlutter 2.6s ease-in-out infinite alternate; }
+@keyframes ltFlutter{ from{ transform: skewY(-5deg) scaleX(.96); } to{ transform: skewY(5deg) scaleX(1.04); } }
+.lt-flag-sway{ transform-origin: 66px 294px; animation: ltPole 7s ease-in-out infinite alternate; }   /* the whole pole sways; the flag itself is never distorted */
+@keyframes ltPole{ from{ transform: rotate(-1.1deg); } to{ transform: rotate(1.1deg); } }
+:root.lt-busy .lt-scene *{ animation-play-state: paused !important; }
+@media (prefers-reduced-motion: reduce){ .lt-scene *{ animation: none !important; } .lt-scene{ transition: none; } }
+:root[data-emphasis="true"] .lt-scene-independence-day::before{ opacity: 1; filter: saturate(1.2); }

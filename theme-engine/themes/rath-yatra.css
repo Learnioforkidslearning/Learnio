@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Learnio Theme Engine — RATH YATRA  (June – July)
+   Festival flags · Odia/Sambalpuri-inspired border · chariot wheels · marigold petals.
+   Respectful & restrained: abstract chariot + wheel motifs only, no deity imagery.
+   Day/night tokens come from the shared day-mode.css / night-mode.css.
+   ========================================================================== */
+
+:root[data-festival="rath-yatra"]{
+  --f-primary:#C62828;      /* festival red   */
+  --f-primary-2:#347C59;    /* traditional green */
+  --f-secondary:#F28C28;    /* warm orange    */
+  --f-accent:#F4C542;       /* golden yellow  */
+  --f-deep:#721C24;         /* deep maroon    */
+  --f-brown:#513322;
+  --f-ivory:#FFF8E7;
+  --f-on-primary:#FFF8E7;
+  --f-on-primary-2:#FFF8E7;
+
+  /* DAY */
+  --f-text-day:#3A2312;  --f-muted-day:#5A3A27;  --f-heading-day:#721C24;  --f-link-day:#B3232A;
+  --f-bg-day:
+    radial-gradient(1100px 560px at 90% -8%, rgba(244,197,66,.50), transparent 62%),
+    radial-gradient(900px 420px at 0% 112%, rgba(52,124,89,.15), transparent 62%),
+    linear-gradient(180deg,#FFF8E7 0%,#FBEBC6 62%,#F3D9A4 100%);
+  --f-bg-day-solid:#FBEBC6;
+  --f-orn-day:#721C24;
+
+  /* NIGHT */
+  --f-text-night:#FFF3DC; --f-muted-night:#EBD9B8; --f-heading-night:#F9D77A; --f-link-night:#F4C542;
+  --f-bg-night:
+    radial-gradient(900px 480px at 8% 112%, rgba(52,124,89,.24), transparent 62%),
+    radial-gradient(800px 420px at 92% -6%, rgba(244,197,66,.12), transparent 60%),
+    linear-gradient(170deg,#1A1020 0%,#2D1424 55%,#4A1A1E 125%);
+  --f-bg-night-solid:#231420;
+  --f-night-surface:#2A1620;
+  --f-night-panel:#2C1824;
+  --f-orn-night:#F4C542;
+  --f-glow:rgba(244,197,66,.38);
+}
+
+/* top strip: festival flag bunting (sits above the sticky header) */
+.lt-strip-rath-yatra{
+  position:absolute; inset:0 0 auto 0; height:20px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='20' viewBox='0 0 96 20'%3E%3Cpath d='M0 2h96' stroke='%23513322' stroke-width='1.6'/%3E%3Cpath d='M2 2h20l-10 15z' fill='%23C62828'/%3E%3Cpath d='M26 2h20l-10 15z' fill='%23F4C542'/%3E%3Cpath d='M50 2h20l-10 15z' fill='%23347C59'/%3E%3Cpath d='M74 2h20l-10 15z' fill='%23F28C28'/%3E%3C/svg%3E") repeat-x 0 0/96px 20px;
+  filter:drop-shadow(0 2px 2px rgba(81,51,34,.25));
+}
+
+/* bottom border: Sambalpuri-ikat inspired diamond band (static) */
+.lt-odia{
+  position:absolute; left:0; right:0; bottom:0; height:26px; opacity:.38; background:var(--lt-ornament);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='26' viewBox='0 0 56 26'%3E%3Cg fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M0 1h56M0 25h56'/%3E%3Cpath d='M28 4L48 13 28 22 8 13z'/%3E%3Cpath d='M28 9L38 13 28 17 18 13z'/%3E%3C/g%3E%3Ccircle cx='0' cy='13' r='2'/%3E%3Ccircle cx='56' cy='13' r='2'/%3E%3C/svg%3E") repeat-x 0 0/56px 26px;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='26' viewBox='0 0 56 26'%3E%3Cg fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M0 1h56M0 25h56'/%3E%3Cpath d='M28 4L48 13 28 22 8 13z'/%3E%3Cpath d='M28 9L38 13 28 17 18 13z'/%3E%3C/g%3E%3Ccircle cx='0' cy='13' r='2'/%3E%3Ccircle cx='56' cy='13' r='2'/%3E%3C/svg%3E") repeat-x 0 0/56px 26px;
+}
+
+/* chariot wheels (very faint, slow) + chariot silhouette */
+.lt-wheel{ position:absolute; color:var(--lt-ornament); opacity:.12; animation:ltSpin 140s linear infinite; }
+.lt-wheel svg, .lt-chariot svg{ display:block; width:100%; height:auto; }
+.lt-wheel-a{ left:-90px; bottom:-80px; width:280px; }
+.lt-wheel-b{ right:-110px; top:200px; width:260px; animation-direction:reverse; }
+.lt-chariot{ position:absolute; right:5%; bottom:40px; width:200px; color:var(--lt-ornament); opacity:.12; animation:ltChariot 10s ease-in-out infinite; }
+@keyframes ltChariot{ 0%,100%{ translate:0 0; } 50%{ translate:-10px 0; } }
+
+/* marigold & hibiscus petals drifting down */
+.lt-pt-rath-yatra .lt-p{
+  top:-6vh; height:calc(var(--sz) * 1.5); border-radius:55% 55% 50% 50% / 65% 65% 35% 35%;
+  background:linear-gradient(135deg,#F28C28,#F4C542); box-shadow:0 1px 3px rgba(81,51,34,.3); opacity:0;
+  animation:ltPetalFall var(--dur) linear var(--del) infinite;
+}
+.lt-pt-rath-yatra .lt-p-gold{ background:linear-gradient(135deg,#C62828,#E5533D); }
+
+:root[data-festival="rath-yatra"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="rath-yatra"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--f-accent),var(--f-primary),var(--f-primary-2),transparent);
+}

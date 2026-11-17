@@ -30,7 +30,7 @@
   position:absolute; top:112px; right:10%; width:92px; height:92px; border-radius:50%;
   background:radial-gradient(circle at 40% 36%,#FFF7CF 0,#FFD166 48%,#F4A261 100%);
   box-shadow:0 0 56px 18px rgba(255,200,80,.42),0 0 140px 50px rgba(255,170,60,.22);
-  animation:ltSunPulse 9s ease-in-out infinite; z-index:1;
+  z-index:1;
 }
 .lt-sun::before{
   content:''; position:absolute; inset:-38px; border-radius:50%;
@@ -39,5 +39,4 @@
           mask:radial-gradient(circle,transparent 50%,#000 53%,transparent 72%);
   animation:ltSpin 100s linear infinite;
 }
-@keyframes ltSunPulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.04); } }
 @media (max-width:768px){ .lt-sun{ width:64px; height:64px; top:104px; right:6%; } .lt-sun::before{ inset:-26px; } }
