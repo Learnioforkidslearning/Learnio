@@ -253,3 +253,29 @@
 :root.lt-busy .lt-scene *{ animation-play-state: paused !important; }
 @media (prefers-reduced-motion: reduce){ .lt-scene *{ animation: none !important; } .lt-scene{ transition: none; } }
 :root[data-emphasis="true"] .lt-scene-independence-day::before{ opacity: 1; filter: saturate(1.2); }
+
+/* ---- shared keyframes (used by several festival stylesheets, which load on demand) ---- */
+@keyframes ltSpin{ to{ rotate:360deg; } }
+@keyframes ltPetalFall{
+  0%{ transform:translate3d(0,0,0) rotate(0); opacity:0; }
+  8%{ opacity:.85; }
+  50%{ transform:translate3d(var(--sway),55vh,0) rotate(180deg); }
+  92%{ opacity:.8; }
+  100%{ transform:translate3d(calc(var(--sway) * -1),112vh,0) rotate(360deg); opacity:0; }
+}
+@keyframes ltSparkRise{
+  0%{ transform:translate3d(0,0,0) scale(.6); opacity:0; }
+  10%{ opacity:.9; }
+  50%{ transform:translate3d(var(--sway),-55vh,0) scale(1); opacity:.6; }
+  100%{ transform:translate3d(calc(var(--sway) * -1),-112vh,0) scale(.5); opacity:0; }
+}
+@keyframes ltBurst{
+  0%{ transform:scale(.1); opacity:0; } 6%{ opacity:.85; } 24%{ transform:scale(1); opacity:.5; } 38%,100%{ transform:scale(1.18); opacity:0; }
+}
+
+/* festival picker: compact 2-column grid so 11 festivals stay short */
+#lt-settings .lt-set-menu{ min-width: 300px; }
+#lt-settings .lt-fest-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 2px 4px; }
+#lt-settings .lt-fest-grid [data-fest]{ font-size: 13.5px; padding: 7px 8px; gap: 6px; }
+#lt-settings .lt-fest-grid [data-fest="auto"], #lt-settings .lt-fest-grid [data-fest="none"]{ grid-column: span 2; }
+@media (max-width: 420px){ #lt-settings .lt-set-menu{ min-width: 0; width: min(300px, calc(100vw - 24px)); } }

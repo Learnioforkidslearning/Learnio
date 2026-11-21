@@ -1,0 +1,31 @@
+/* Learnio Theme Engine — HOLI (March). Bright gulal colours: pink, yellow, blue, green, orange — soft colour splashes and powder puffs. */
+:root[data-festival="holi"]{
+  --f-primary:#D81B60; --f-primary-2:#1565C0; --f-secondary:#1565C0; --f-accent:#FFD600; --f-deep:#4A148C;
+  --f-on-primary:#FFFFFF; --f-on-primary-2:#FFFFFF;
+  /* DAY */
+  --f-text-day:#2B1235; --f-muted-day:#5A3A6B; --f-heading-day:#AD1457; --f-link-day:#AD1457;
+  --f-bg-day:radial-gradient(700px 420px at 12% 8%, rgba(255,64,129,.22), transparent 62%), radial-gradient(700px 420px at 88% 20%, rgba(255,214,0,.30), transparent 62%), radial-gradient(800px 420px at 50% 112%, rgba(30,136,229,.20), transparent 62%), linear-gradient(180deg,#FFFFFF 0%,#FFF7FB 100%);
+  --f-bg-day-solid:#FFF7FB;
+  --f-orn-day:#AD1457;
+  /* NIGHT */
+  --f-text-night:#FFF4FB; --f-muted-night:#E8D3F0; --f-heading-night:#FFE95C; --f-link-night:#FF9EC0;
+  --f-bg-night:radial-gradient(700px 420px at 12% 10%, rgba(255,64,129,.28), transparent 62%), radial-gradient(700px 420px at 90% 22%, rgba(255,214,0,.16), transparent 62%), radial-gradient(800px 440px at 50% 112%, rgba(30,136,229,.30), transparent 62%), linear-gradient(170deg,#12061F 0%,#26104A 60%,#3A1260 125%);
+  --f-bg-night-solid:#1E0C3A;
+  --f-night-surface:#24104A; --f-night-panel:#28134F;
+  --f-orn-night:#FFE95C;
+  --f-glow:rgba(255,64,129,.38);
+}
+.lt-strip-holi{ position:absolute; inset:0 0 auto 0; height:16px;
+  background:radial-gradient(circle at 12px 8px,#E91E63 0 6px,transparent 7px) 0 0/72px 16px repeat-x, radial-gradient(circle at 30px 8px,#FFD600 0 6px,transparent 7px) 0 0/72px 16px repeat-x, radial-gradient(circle at 48px 8px,#1E88E5 0 6px,transparent 7px) 0 0/72px 16px repeat-x, radial-gradient(circle at 66px 8px,#43A047 0 6px,transparent 7px) 0 0/72px 16px repeat-x; filter:drop-shadow(0 2px 2px rgba(74,20,140,.25)); }
+.lt-splash{ position:absolute; width:420px; height:420px; border-radius:50%; opacity:.55; }
+.lt-splash-a{ left:-140px; top:120px; background:radial-gradient(circle,rgba(233,30,99,.55),transparent 68%); }
+.lt-splash-b{ right:-150px; bottom:-130px; background:radial-gradient(circle,rgba(30,136,229,.55),transparent 68%); }
+.lt-splash-c{ right:-120px; top:90px; width:340px; height:340px; background:radial-gradient(circle,rgba(255,214,0,.55),transparent 68%); }
+:root[data-time="night"] .lt-splash{ opacity:.4; }
+.lt-pt-holi .lt-p{ bottom:-6vh; width:calc(var(--sz) * 3.2); height:calc(var(--sz) * 3.2); border-radius:50%; opacity:0; background:radial-gradient(circle,#E91E63 0,rgba(233,30,99,0) 68%); animation:ltSparkRise var(--dur) linear var(--del) infinite; }
+.lt-pt-holi .lt-p:nth-child(6n+2){ background:radial-gradient(circle,#FFD600 0,rgba(255,214,0,0) 68%); } .lt-pt-holi .lt-p:nth-child(6n+3){ background:radial-gradient(circle,#1E88E5 0,rgba(30,136,229,0) 68%); }
+.lt-pt-holi .lt-p:nth-child(6n+4){ background:radial-gradient(circle,#43A047 0,rgba(67,160,71,0) 68%); } .lt-pt-holi .lt-p:nth-child(6n+5){ background:radial-gradient(circle,#FF9800 0,rgba(255,152,0,0) 68%); } .lt-pt-holi .lt-p:nth-child(6n){ background:radial-gradient(circle,#8E24AA 0,rgba(142,36,170,0) 68%); }
+:root[data-festival="holi"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="holi"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none; background:linear-gradient(90deg,#E91E63,#FFD600,#43A047,#1E88E5);
+}

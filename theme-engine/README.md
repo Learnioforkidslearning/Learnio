@@ -1,5 +1,19 @@
 Learnio Theme Engine
-Rath Yatra (Jun–Jul), Independence Day (Aug), Durga Puja (Sep–Oct) and Diwali (Nov), each with automatic Day (sun) / Night (moon + stars) modes.
+Year-round calendar (all dates configurable in theme-config.js; each has Day (sun) and Night (moon & stars) modes):
+Dates	Theme
+1 Jan	New Year
+2–22 Jan, 24–25 Jan, 27 Jan–Feb	Winter
+23 Jan	Netaji Jayanti
+26 Jan	Republic Day
+March	Holi
+April	Eid
+May	original look (no theme)
+Jun–Jul	Rath Yatra
+August	Independence Day (13–15 Aug extra emphasis)
+Sep–Oct	Durga Puja
+November	Diwali
+December	Christmas
+Holi and Eid move every year: pin exact dates with a year-specific entry (see the commented example in theme-config.js). Outside these windows nothing is applied.
 Outside the configured dates nothing is applied — the site keeps its original look.
 Add it to a page (one line, inside <head>, after the page's own CSS)
     <script src="theme-engine/theme-loader.js"></script>        <!-- root pages -->
@@ -16,7 +30,10 @@ theme-controller.js    combines both, sets <html data-festival data-time>, timer
 theme-art.js           hand-built SVG artwork: Durga murti, Rath + Jagannath/Balabhadra/Subhadra, Indian flag
 theme-people.js        cartoon people generator (dhuti/panjabi, saree, students, kids, dhak players) + banner scenes + side crowds
 theme-effects.js       the single click-through decoration layer (+ places the artwork)
-themes/                theme-base.css, durga-puja.css, diwali.css, rath-yatra.css, independence-day.css, day-mode.css, night-mode.css
+theme-scenes.js        banner scenes + side crowds for Christmas, New Year, Winter, Holi, Eid, Netaji Jayanti, Republic Day
+themes/                theme-base.css, day-mode.css, night-mode.css (always loaded) + one stylesheet per festival, loaded ON DEMAND
+(only the active festival's CSS is fetched): winter, new-year, netaji-jayanti, republic-day, holi, eid,
+rath-yatra, independence-day, durga-puja, diwali, christmas
 Festival artwork & people
 Durga Puja: Maa Durga murti on a stage, dhak players (dhuti, white panjabi, gamchha), women in red-bordered white sarees, kids.
 Independence Day: the National Flag (exact 3:2, 24-spoke chakra) on a pole in the background; students saluting, kids with flags, elders and families below.
@@ -28,7 +45,7 @@ Behaviour
 <html data-festival="durga-puja|diwali" data-time="day|night"> drives everything via CSS variables.
 Auto-updates at 06:00 / 18:00 local time and at midnight (festival change) — no reload.
 Settings button (always visible on normal pages, so any festival can be picked any time of year):
-Festival:   Automatic (by date) · Rath Yatra · Independence Day · Durga Puja · Diwali · Original look   (localStorage "learnio.themeFestival")
+Festival:   Automatic (by date) · every festival above · Original look   (localStorage "learnio.themeFestival")
 Day/Night:  Automatic · Always Day · Always Night                                                       (localStorage "learnio.themeMode", unchanged)
 13–15 Aug: <html data-emphasis="true"> gives Independence Day a slightly bolder ribbon + chakra.
 Smoothness: decorative motion pauses while the user taps/scrolls/types (html.lt-busy); the glass blur, 3D-Z hover and 2s button

@@ -5,7 +5,16 @@
 (function (global) {
   'use strict';
   var LT = global.LearnioTheme, doc = document, root = doc.documentElement;
-  var timer = null, current = {}, preview = {}, widget = null, transTimer = null;
+  var timer = null, current = {}, preview = {}, widget = null, transTimer = null, loadedCss = {};
+
+  /* Festival stylesheets load on demand: only the active festival's CSS is ever fetched. */
+  function cssHref(id) { return (LT.base || '') + 'themes/' + id + '.css'; }
+  function ensureCss(id, cb) {
+    if (!id || loadedCss[id]) { if (cb) cb(); return; }
+    var l = doc.createElement('link'); l.rel = 'stylesheet'; l.href = cssHref(id);
+    l.onload = l.onerror = function () { loadedCss[id] = true; if (cb) cb(); };
+    doc.head.appendChild(l);
+  }
 
   /* ---------- helpers ---------- */
   function readPreview() {
@@ -63,7 +72,11 @@
     return state;
   }
 
-  function refresh(animate) { return apply(compute(), animate !== false); }
+  function refresh(animate) {
+    var s = compute();
+    if (s.festival && !loadedCss[s.festival]) { ensureCss(s.festival, function () { apply(compute(), animate !== false); }); return s; }
+    return apply(s, animate !== false);
+  }
 
   /* ---------- scheduling ---------- */
   function schedule() {
@@ -109,7 +122,7 @@
     widget.innerHTML =
       '<button type="button" class="lt-set-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lt-set-menu" aria-label="Theme settings"><span class="lt-set-ico" aria-hidden="true">🌗</span></button>' +
       '<div id="lt-set-menu" class="lt-set-menu" hidden>' +
-        '<div role="radiogroup" aria-labelledby="lt-t-fest"><p class="lt-set-title" id="lt-t-fest">Festival</p>' + radios('data-fest', festivalChoices()) + '</div>' +
+        '<div role="radiogroup" aria-labelledby="lt-t-fest"><p class="lt-set-title" id="lt-t-fest">Festival</p><div class="lt-fest-grid">' + radios('data-fest', festivalChoices()) + '</div></div>' +
         '<div role="radiogroup" aria-labelledby="lt-t-mode"><p class="lt-set-title" id="lt-t-mode">Day / Night</p>' + radios('data-mode', MODES) + '</div>' +
       '</div>';
     root.appendChild(widget);
@@ -200,7 +213,13 @@
 
   /* first paint: set attributes immediately (before DOM is ready) to avoid a flash */
   readPreview();
-  (function early() { var s = compute(); if (s.festival) { root.setAttribute('data-festival', s.festival); root.setAttribute('data-time', s.time); root.setAttribute('data-theme-mode', s.mode); if (s.calm) root.setAttribute('data-calm', 'true'); } })();
+  (function early() {
+    var s = compute(); if (!s.festival) return;
+    /* while the <head> is still parsing, write the festival stylesheet synchronously: it blocks first paint, so there is no flash */
+    if (doc.readyState !== 'loading') return;
+    doc.write('<link rel="stylesheet" href="' + cssHref(s.festival) + '">'); loadedCss[s.festival] = true;
+    root.setAttribute('data-festival', s.festival); root.setAttribute('data-time', s.time); root.setAttribute('data-theme-mode', s.mode); if (s.calm) root.setAttribute('data-calm', 'true');
+  })();
 
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', init); else init();
 })(window);

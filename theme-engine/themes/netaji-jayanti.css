@@ -1,0 +1,27 @@
+/* Learnio Theme Engine — NETAJI JAYANTI (23 January). Khaki-olive, saffron, white & green; marigold petals. */
+:root[data-festival="netaji-jayanti"]{
+  --f-primary:#5B5B25; --f-primary-2:#138808; --f-secondary:#138808; --f-accent:#FF9933; --f-deep:#2B2A14;
+  --f-on-primary:#FFFDF0; --f-on-primary-2:#FFFFFF;
+  /* DAY */
+  --f-text-day:#2B2A14; --f-muted-day:#4F4E22; --f-heading-day:#4A4A1A; --f-link-day:#5B5B25;
+  --f-bg-day:radial-gradient(1000px 500px at 90% -10%, rgba(255,153,51,.28), transparent 60%), radial-gradient(1000px 500px at 5% 112%, rgba(19,136,8,.14), transparent 60%), linear-gradient(180deg,#FFFDF0 0%,#F7F1D8 60%,#EDE4BC 100%);
+  --f-bg-day-solid:#F7F1D8;
+  --f-orn-day:#5B5B25;
+  /* NIGHT */
+  --f-text-night:#F8F6E6; --f-muted-night:#DAD7B4; --f-heading-night:#FFC27A; --f-link-night:#FFB566;
+  --f-bg-night:radial-gradient(900px 480px at 90% -6%, rgba(255,153,51,.18), transparent 60%), radial-gradient(900px 480px at 8% 112%, rgba(19,136,8,.22), transparent 60%), linear-gradient(170deg,#12150A 0%,#1F2410 55%,#2C3216 125%);
+  --f-bg-night-solid:#1B2010;
+  --f-night-surface:#1D2210; --f-night-panel:#212714;
+  --f-orn-night:#D8D890;
+  --f-glow:rgba(255,153,51,.34);
+}
+.lt-strip-netaji-jayanti{ position:absolute; inset:0 0 auto 0; height:6px; background:linear-gradient(90deg,#FF9933 0 33.34%,#FFFFFF 33.34% 66.67%,#138808 66.67% 100%); box-shadow:0 1px 3px rgba(43,42,20,.4),0 3px 0 #5B5B25; }
+.lt-khaki{ position:absolute; left:0; right:0; bottom:0; height:22px; opacity:.45; background:var(--lt-ornament);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cg fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M0 1h44M0 21h44'/%3E%3Cpath d='M22 4l3.5 7h7.6l-6.1 4.5 2.4 7L22 18.3 14.6 22.5l2.4-7-6.1-4.5h7.6z' transform='translate(0 -3) scale(1 .9)'/%3E%3C/g%3E%3C/svg%3E") repeat-x 0 0/44px 22px;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cg fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M0 1h44M0 21h44'/%3E%3Cpath d='M22 4l3.5 7h7.6l-6.1 4.5 2.4 7L22 18.3 14.6 22.5l2.4-7-6.1-4.5h7.6z' transform='translate(0 -3) scale(1 .9)'/%3E%3C/g%3E%3C/svg%3E") repeat-x 0 0/44px 22px; }
+.lt-pt-netaji-jayanti .lt-p{ top:-6vh; height:calc(var(--sz) * 1.5); border-radius:55% 55% 50% 50% / 65% 65% 35% 35%; background:linear-gradient(135deg,#FF9933,#FFC04D); box-shadow:0 1px 3px rgba(43,42,20,.3); opacity:0; animation:ltPetalFall var(--dur) linear var(--del) infinite; }
+.lt-pt-netaji-jayanti .lt-p-gold{ background:linear-gradient(135deg,#138808,#4CAF50); }
+:root[data-festival="netaji-jayanti"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="netaji-jayanti"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none; background:linear-gradient(90deg,#FF9933 0 33.3%,#FFFFFF 33.3% 66.6%,#138808 66.6% 100%);
+}

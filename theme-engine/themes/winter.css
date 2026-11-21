@@ -1,0 +1,28 @@
+/* Learnio Theme Engine — WINTER (Jan–Feb backdrop; one-day festivals override it). Icy blues, soft snow, warm orange accents. */
+:root[data-festival="winter"]{
+  --f-primary:#2F6FA8; --f-primary-2:#F2994A; --f-secondary:#F2994A; --f-accent:#9CD3F5; --f-deep:#17335A;
+  --f-on-primary:#FFFFFF; --f-on-primary-2:#1B2A41;
+  /* DAY */
+  --f-text-day:#1B2A41; --f-muted-day:#42566F; --f-heading-day:#1F4E7A; --f-link-day:#1F5C99;
+  --f-bg-day:radial-gradient(1000px 520px at 90% -8%, rgba(255,236,190,.55), transparent 62%), radial-gradient(900px 420px at 0% 112%, rgba(156,211,245,.40), transparent 62%), linear-gradient(180deg,#F4FAFF 0%,#E3F1FB 60%,#CFE6F6 100%);
+  --f-bg-day-solid:#E3F1FB;
+  --f-orn-day:#2F6FA8;
+  /* NIGHT */
+  --f-text-night:#F2F8FF; --f-muted-night:#C5D6EA; --f-heading-night:#BFE3FF; --f-link-night:#A8D8F8;
+  --f-bg-night:radial-gradient(900px 480px at 10% 112%, rgba(95,160,220,.28), transparent 62%), linear-gradient(170deg,#0B1830 0%,#17294D 55%,#233B66 125%);
+  --f-bg-night-solid:#13244A;
+  --f-night-surface:#14264A; --f-night-panel:#172A52;
+  --f-orn-night:#BFE3FF;
+  --f-glow:rgba(156,211,245,.45);
+}
+:root[data-festival="winter"][data-time="day"]{ --lt-snow:#FFFFFF; }
+:root[data-festival="winter"][data-time="night"]{ --lt-snow:#DCEBFA; }
+.lt-strip-winter{ position:absolute; inset:0 0 auto 0; height:18px; filter:drop-shadow(0 2px 2px rgba(31,78,122,.25));
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='18' viewBox='0 0 48 18'%3E%3Cpath d='M0 0h48v3l-5 0-4 13-4-13-8 0-3 10-3-10-9 0-3 8-3-8z' fill='%23F2F9FF' stroke='%239CD3F5' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x 0 0/48px 18px; }
+.lt-snowbank{ position:absolute; left:0; right:0; bottom:0; height:46px; filter:drop-shadow(0 -2px 4px rgba(31,78,122,.18));
+  background:radial-gradient(circle at 50% 100%,var(--lt-snow) 0 24px,transparent 25px) 0 100%/64px 46px repeat-x, radial-gradient(circle at 50% 100%,var(--lt-snow) 0 17px,transparent 18px) 32px 100%/64px 34px repeat-x; }
+.lt-pt-winter .lt-p{ top:-6vh; width:calc(var(--sz) * .62); height:calc(var(--sz) * .62); border-radius:50%; background:#fff; box-shadow:0 0 5px rgba(255,255,255,.9),0 0 0 1px rgba(47,111,168,.22); opacity:0; animation:ltPetalFall var(--dur) linear var(--del) infinite; }
+:root[data-festival="winter"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="winter"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none; background:linear-gradient(90deg,transparent,var(--f-accent),var(--f-primary),var(--f-accent),transparent);
+}

@@ -61,8 +61,6 @@
 .lt-rangoli svg{ display:block; width:100%; height:auto; }
 .lt-rangoli-a{ left:-110px; bottom:-110px; width:300px; }
 .lt-rangoli-b{ right:-130px; top:190px; width:300px; animation-direction:reverse; }
-@keyframes ltSpin{ to{ rotate:360deg; } }
-
 /* ---- row of glowing diyas along the bottom edge ---- */
 .lt-diyas{ position:absolute; left:0; right:0; bottom:6px; display:flex; justify-content:space-around; align-items:flex-end; padding:0 12%; }
 .lt-diya{ position:relative; width:44px; }
@@ -82,13 +80,6 @@
   animation:ltSparkRise var(--dur) linear var(--del) infinite;
 }
 .lt-pt-diwali .lt-p-gold{ box-shadow:0 0 14px 3px rgba(255,209,102,.8); }
-@keyframes ltSparkRise{
-  0%{ transform:translate3d(0,0,0) scale(.6); opacity:0; }
-  10%{ opacity:.9; }
-  50%{ transform:translate3d(var(--sway),-55vh,0) scale(1); opacity:.6; }
-  100%{ transform:translate3d(calc(var(--sway) * -1),-112vh,0) scale(.5); opacity:0; }
-}
-
 /* ---- two restrained firework bursts (night, desktop only): dotted rings, transform+opacity only ---- */
 .lt-burst{
   position:absolute; width:160px; height:160px; border-radius:50%; opacity:0;
@@ -97,10 +88,6 @@
 .lt-burst::after{ content:''; position:absolute; inset:26px; border-radius:50%; border:3px dotted #FF9933; }
 .lt-burst-a{ top:16%; left:24%; }
 .lt-burst-b{ top:24%; right:26%; animation-delay:-5.5s; }
-@keyframes ltBurst{
-  0%{ transform:scale(.1); opacity:0; } 6%{ opacity:.85; } 24%{ transform:scale(1); opacity:.5; } 38%,100%{ transform:scale(1.18); opacity:0; }
-}
-
 :root[data-festival="diwali"]:not([data-calm]) section:not(.hero) h2::after{
   content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none;
   background:linear-gradient(90deg,transparent,var(--f-accent),var(--f-primary),var(--f-accent),transparent);

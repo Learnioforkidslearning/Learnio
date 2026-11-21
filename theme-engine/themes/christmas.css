@@ -1,0 +1,29 @@
+/* Learnio Theme Engine — CHRISTMAS (December). Red & green, string lights, snow. */
+:root[data-festival="christmas"]{
+  --f-primary:#C62828; --f-primary-2:#1B7A3A; --f-secondary:#1B7A3A; --f-accent:#F4C542; --f-deep:#7A1010;
+  --f-on-primary:#FFF8E7; --f-on-primary-2:#FFF8E7;
+  /* DAY */
+  --f-text-day:#3A1212; --f-muted-day:#6B2A2A; --f-heading-day:#9E1B1B; --f-link-day:#B3232A;
+  --f-bg-day:radial-gradient(900px 500px at 90% -10%, rgba(244,197,66,.35), transparent 60%), radial-gradient(900px 420px at 0% 110%, rgba(27,122,58,.15), transparent 60%), linear-gradient(180deg,#FFFBF2 0%,#FDEFE6 60%,#F6DCD0 100%);
+  --f-bg-day-solid:#FDEFE6;
+  --f-orn-day:#9E1B1B;
+  /* NIGHT */
+  --f-text-night:#FFF4E6; --f-muted-night:#EBD8C6; --f-heading-night:#FFD98A; --f-link-night:#F4C542;
+  --f-bg-night:radial-gradient(900px 480px at 8% 112%, rgba(27,122,58,.30), transparent 62%), radial-gradient(700px 420px at 92% -6%, rgba(244,197,66,.12), transparent 60%), linear-gradient(170deg,#0C1A14 0%,#14281F 55%,#3A1414 125%);
+  --f-bg-night-solid:#142419;
+  --f-night-surface:#162A22; --f-night-panel:#183026;
+  --f-orn-night:#F4C542;
+  --f-glow:rgba(244,197,66,.38);
+}
+:root[data-festival="christmas"][data-time="day"]{ --lt-snow:#FFFFFF; }
+:root[data-festival="christmas"][data-time="night"]{ --lt-snow:#E8F0F6; }
+.lt-strip-christmas{ position:absolute; inset:0 0 auto 0; height:22px; animation:ltTwinkleStrip 2.6s ease-in-out infinite alternate;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='22' viewBox='0 0 96 22'%3E%3Cpath d='M0 3Q12 9 24 3T48 3 72 3 96 3' stroke='%23244' stroke-width='1.6' fill='none'/%3E%3Cg stroke='%23222' stroke-width='.8'%3E%3Ccircle cx='12' cy='11' r='4.6' fill='%23E53935'/%3E%3Ccircle cx='36' cy='11' r='4.6' fill='%23FFC107'/%3E%3Ccircle cx='60' cy='11' r='4.6' fill='%2343A047'/%3E%3Ccircle cx='84' cy='11' r='4.6' fill='%231E88E5'/%3E%3C/g%3E%3C/svg%3E") repeat-x 0 0/96px 22px; filter:drop-shadow(0 0 4px rgba(255,200,80,.7)); }
+@keyframes ltTwinkleStrip{ from{ opacity:.78; } to{ opacity:1; } }
+.lt-snowbank{ position:absolute; left:0; right:0; bottom:0; height:46px; filter:drop-shadow(0 -2px 4px rgba(31,78,122,.18));
+  background:radial-gradient(circle at 50% 100%,var(--lt-snow) 0 24px,transparent 25px) 0 100%/64px 46px repeat-x, radial-gradient(circle at 50% 100%,var(--lt-snow) 0 17px,transparent 18px) 32px 100%/64px 34px repeat-x; }
+.lt-pt-christmas .lt-p{ top:-6vh; width:calc(var(--sz) * .62); height:calc(var(--sz) * .62); border-radius:50%; background:#fff; box-shadow:0 0 5px rgba(255,255,255,.9),0 0 0 1px rgba(150,40,40,.18); opacity:0; animation:ltPetalFall var(--dur) linear var(--del) infinite; }
+:root[data-festival="christmas"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="christmas"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none; background:linear-gradient(90deg,#C62828 0 33.3%,#FFFFFF 33.3% 66.6%,#1B7A3A 66.6% 100%);
+}

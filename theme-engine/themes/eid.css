@@ -1,0 +1,32 @@
+/* Learnio Theme Engine — EID (April). Emerald & gold, crescent and stars, fanoos lanterns, Islamic geometric patterns. */
+:root[data-festival="eid"]{
+  --f-primary:#0F7B5A; --f-primary-2:#D4AF37; --f-secondary:#D4AF37; --f-accent:#D4AF37; --f-deep:#0B3B2E;
+  --f-on-primary:#FFFFFF; --f-on-primary-2:#0B2B22;
+  /* DAY */
+  --f-text-day:#0E2B22; --f-muted-day:#3A5A4E; --f-heading-day:#0B5D45; --f-link-day:#0B6B4F;
+  --f-bg-day:radial-gradient(1000px 500px at 90% -10%, rgba(212,175,55,.30), transparent 60%), radial-gradient(900px 420px at 0% 112%, rgba(15,123,90,.18), transparent 62%), linear-gradient(180deg,#FBFAF0 0%,#EEF5EA 60%,#DCEBDD 100%);
+  --f-bg-day-solid:#EEF5EA;
+  --f-orn-day:#0B6B4F;
+  /* NIGHT */
+  --f-text-night:#F4FFF8; --f-muted-night:#C8E4D8; --f-heading-night:#F2D27A; --f-link-night:#E8C766;
+  --f-bg-night:radial-gradient(800px 440px at 88% -6%, rgba(212,175,55,.16), transparent 60%), linear-gradient(170deg,#06201F 0%,#0B3A38 55%,#124B45 125%);
+  --f-bg-night-solid:#0B3532;
+  --f-night-surface:#0D3331; --f-night-panel:#103936;
+  --f-orn-night:#E8C766;
+  --f-glow:rgba(212,175,55,.40);
+}
+.lt-strip-eid{ position:absolute; inset:0 0 auto 0; height:16px; background:linear-gradient(90deg,#B8860B,#F2D27A,#B8860B); filter:drop-shadow(0 2px 2px rgba(11,59,46,.3));
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M0 1.5h32' stroke='black' stroke-width='2'/%3E%3Cpath d='M16 3l3 3 4-.5-.5 4 3 3-4 .5-1.5 3.5L16 14l-3 2.5-1.5-3.5-4-.5 3-3-.5-4 4 .5z' fill='none' stroke='black' stroke-width='1.3' transform='translate(0 -1) scale(1 .85)'/%3E%3C/svg%3E") repeat-x 0 0/32px 16px;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M0 1.5h32' stroke='black' stroke-width='2'/%3E%3Cpath d='M16 3l3 3 4-.5-.5 4 3 3-4 .5-1.5 3.5L16 14l-3 2.5-1.5-3.5-4-.5 3-3-.5-4 4 .5z' fill='none' stroke='black' stroke-width='1.3' transform='translate(0 -1) scale(1 .85)'/%3E%3C/svg%3E") repeat-x 0 0/32px 16px; }
+.lt-geo{ position:absolute; color:var(--lt-ornament); opacity:.10; animation:ltSpin 200s linear infinite; }
+.lt-geo svg{ display:block; width:100%; height:auto; }
+.lt-geo-a{ left:-110px; bottom:-110px; width:320px; } .lt-geo-b{ right:-120px; top:190px; width:300px; animation-direction:reverse; }
+.lt-crescent{ position:absolute; left:5%; top:96px; width:62px; transform-origin:50% 0; animation:ltLantern 7s ease-in-out infinite alternate; }
+.lt-crescent::before{ content:''; position:absolute; left:50%; top:40%; width:170%; aspect-ratio:1; margin-left:-85%; border-radius:50%; background:radial-gradient(circle,rgba(242,210,122,.36),transparent 68%); }
+.lt-crescent svg{ position:relative; display:block; width:100%; height:auto; }
+@keyframes ltLantern{ from{ rotate:-3.5deg; } to{ rotate:3.5deg; } }
+.lt-pt-eid .lt-p{ bottom:-4vh; width:calc(var(--sz) * .6); height:calc(var(--sz) * .6); border-radius:50%; opacity:0; background:radial-gradient(circle,#FFF6C0 0,#F2D27A 45%,rgba(212,175,55,0) 72%); box-shadow:0 0 10px 2px rgba(242,210,122,.5); animation:ltSparkRise var(--dur) linear var(--del) infinite; }
+:root[data-festival="eid"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="eid"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none; background:linear-gradient(90deg,transparent,#D4AF37,#0F7B5A,#D4AF37,transparent);
+}

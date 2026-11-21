@@ -73,14 +73,6 @@
   animation:ltPetalFall var(--dur) linear var(--del) infinite;
 }
 .lt-pt-durga-puja .lt-p-gold{ background:radial-gradient(circle,#FFF3B0,#D4AF37 70%); box-shadow:0 0 8px rgba(212,175,55,.7); border-radius:50%; height:var(--sz); }
-@keyframes ltPetalFall{
-  0%{ transform:translate3d(0,0,0) rotate(0); opacity:0; }
-  8%{ opacity:.85; }
-  50%{ transform:translate3d(var(--sway),55vh,0) rotate(180deg); }
-  92%{ opacity:.8; }
-  100%{ transform:translate3d(calc(var(--sway) * -1),112vh,0) rotate(360deg); opacity:0; }
-}
-
 /* ---- festive heading touch: gold hairline under section titles ---- */
 :root[data-festival="durga-puja"]:not([data-calm]) section:not(.hero) h2::after{
   content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none;

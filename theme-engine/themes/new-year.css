@@ -1,0 +1,28 @@
+/* Learnio Theme Engine — NEW YEAR (1 January). Midnight navy, gold & magenta, confetti and restrained fireworks. */
+:root[data-festival="new-year"]{
+  --f-primary:#D4A017; --f-primary-2:#C2185B; --f-secondary:#C2185B; --f-accent:#FFD54F; --f-deep:#2A1060;
+  --f-on-primary:#1B1230; --f-on-primary-2:#FFFFFF;
+  /* DAY */
+  --f-text-day:#2A1B3D; --f-muted-day:#51406B; --f-heading-day:#5B1F8C; --f-link-day:#6A1B9A;
+  --f-bg-day:radial-gradient(1000px 520px at 50% -10%, rgba(255,213,79,.55), transparent 62%), radial-gradient(900px 420px at 0% 112%, rgba(194,24,91,.14), transparent 62%), linear-gradient(180deg,#FFFBF0 0%,#FFF1CC 60%,#FBE3A3 100%);
+  --f-bg-day-solid:#FFF1CC;
+  --f-orn-day:#5B1F8C;
+  /* NIGHT */
+  --f-text-night:#F7F3FF; --f-muted-night:#D3CBEA; --f-heading-night:#FFD54F; --f-link-night:#FFD54F;
+  --f-bg-night:radial-gradient(900px 500px at 50% -10%, rgba(212,160,23,.25), transparent 60%), radial-gradient(800px 420px at 8% 112%, rgba(194,24,91,.22), transparent 62%), linear-gradient(170deg,#080B24 0%,#141042 55%,#2A1060 125%);
+  --f-bg-night-solid:#101040;
+  --f-night-surface:#17154A; --f-night-panel:#1A1850;
+  --f-orn-night:#FFD54F;
+  --f-glow:rgba(255,213,79,.40);
+}
+.lt-strip-new-year{ position:absolute; inset:0 0 auto 0; height:20px; filter:drop-shadow(0 2px 2px rgba(42,16,96,.3));
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='20' viewBox='0 0 96 20'%3E%3Cpath d='M0 2h96' stroke='%23B8860B' stroke-width='1.6'/%3E%3Cpath d='M2 2h20l-10 15z' fill='%23FFD54F'/%3E%3Cpath d='M26 2h20l-10 15z' fill='%23DDE3EA'/%3E%3Cpath d='M50 2h20l-10 15z' fill='%23C2185B'/%3E%3Cpath d='M74 2h20l-10 15z' fill='%235B1F8C'/%3E%3C/svg%3E") repeat-x 0 0/96px 20px; }
+.lt-burst{ position:absolute; width:170px; height:170px; border-radius:50%; opacity:0; border:4px dotted #FFD54F; animation:ltBurst 10s ease-out infinite; }
+.lt-burst::after{ content:''; position:absolute; inset:28px; border-radius:50%; border:3px dotted #FF4081; }
+.lt-burst-a{ top:14%; left:22%; } .lt-burst-b{ top:20%; right:24%; animation-delay:-5s; border-color:#FF4081; }
+.lt-pt-new-year .lt-p{ top:-6vh; width:calc(var(--sz) * .7); height:calc(var(--sz) * 1.4); border-radius:1.5px; opacity:0; background:#FFD54F; animation:ltPetalFall var(--dur) linear var(--del) infinite; }
+.lt-pt-new-year .lt-p:nth-child(5n+2){ background:#E91E63; } .lt-pt-new-year .lt-p:nth-child(5n+3){ background:#7C4DFF; } .lt-pt-new-year .lt-p:nth-child(5n+4){ background:#26C6DA; } .lt-pt-new-year .lt-p:nth-child(5n){ background:#C0C7D0; }
+:root[data-festival="new-year"]:not([data-calm]) section:not(.hero) h2{ position:relative; }
+:root[data-festival="new-year"]:not([data-calm]) section:not(.hero) h2::after{
+  content:''; position:absolute; left:50%; bottom:-24px; width:84px; height:3px; margin-left:-42px; border-radius:3px; pointer-events:none; background:linear-gradient(90deg,transparent,#FFD54F,#E91E63,#7C4DFF,transparent);
+}

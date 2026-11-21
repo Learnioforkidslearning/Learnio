@@ -7,9 +7,9 @@
 (function () {
   var s = document.currentScript; if (!s) return;
   var base = s.src.replace(/theme-loader\.js(\?.*)?$/, '');
-  var css = ['theme-base.css', 'durga-puja.css', 'diwali.css', 'rath-yatra.css', 'independence-day.css', 'day-mode.css', 'night-mode.css'];
-  var js  = ['theme-config.js', 'festival-engine.js', 'day-night-engine.js', 'theme-art.js', 'theme-people.js', 'theme-effects.js', 'theme-controller.js'];
-  var out = '';
+  var css = ['theme-base.css', 'day-mode.css', 'night-mode.css']   /* festival stylesheets load on demand (only the active one) */;
+  var js  = ['theme-config.js', 'festival-engine.js', 'day-night-engine.js', 'theme-art.js', 'theme-people.js', 'theme-scenes.js', 'theme-effects.js', 'theme-controller.js'];
+  var out = ''; window.LearnioTheme = window.LearnioTheme || {}; window.LearnioTheme.base = base;
   css.forEach(function (f) { out += '<link rel="stylesheet" href="' + base + 'themes/' + f + '">'; });
   js.forEach(function (f)  { out += '<script src="' + base + f + '"><\/script>'; });
   if (document.readyState === 'loading') { document.write(out); }

@@ -8,7 +8,7 @@
   var fx = null, top = null, swapTimer = null;
 
   /* ---- festival artwork: Durga murti / Rath with the three deities / Indian flag ---- */
-  function artKey(festival) { return festival === 'durga-puja' ? 'durga' : festival === 'rath-yatra' ? 'rath' : festival === 'independence-day' ? 'flag' : null; }
+  function artKey(festival) { return (festival === 'durga-puja' || festival === 'rath-yatra' || festival === 'independence-day' || (LT.art && LT.art._newScenes && LT.art._newScenes[festival])) ? festival : null; }
   function hasHero() { return !!document.querySelector('.hero'); }
 
   var SVG = {
@@ -33,6 +33,14 @@
     var sp = '', i;
     for (i = 0; i < 24; i++) sp += '<path d="M100 100L100 24" transform="rotate(' + (i * 15) + ' 100 100)" stroke-width="2.6"/><circle cx="100" cy="17" r="2.6" transform="rotate(' + (i * 15 + 7.5) + ' 100 100)" fill="currentColor" stroke="none"/>';
     SVG.chakra = '<svg viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor"><circle cx="100" cy="100" r="92" stroke-width="5"/>' + sp + '<circle cx="100" cy="100" r="10" fill="currentColor" stroke="none"/></svg>';
+  })();
+
+  /* Eid: eight-pointed-star rosette (Islamic geometric pattern) and hanging crescent & star */
+  (function () {
+    var r = '', i;
+    for (i = 0; i < 8; i++) r += '<path d="M100 100L100 18" transform="rotate(' + (i * 45) + ' 100 100)" stroke-width="2.4"/>';
+    SVG.geo = '<svg viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3"><rect x="34" y="34" width="132" height="132"/><rect x="34" y="34" width="132" height="132" transform="rotate(45 100 100)"/><circle cx="100" cy="100" r="62"/><circle cx="100" cy="100" r="34"/>' + r + '<circle cx="100" cy="100" r="8" fill="currentColor" stroke="none"/></svg>';
+    SVG.crescent = '<svg viewBox="0 0 80 120" aria-hidden="true"><defs><linearGradient id="ltCresG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1B8"/><stop offset="1" stop-color="#D4AF37"/></linearGradient><mask id="ltCresM"><rect width="80" height="120" fill="#fff"/><circle cx="48" cy="56" r="26" fill="#000"/></mask></defs><line x1="40" y1="0" x2="40" y2="30" stroke="#D4AF37" stroke-width="2"/><circle cx="34" cy="62" r="32" fill="url(#ltCresG)" mask="url(#ltCresM)" stroke="#B8860B" stroke-width="1"/><path d="M58 46l3.2 7 7.6.8-5.7 5.1 1.7 7.5-6.8-4-6.8 4 1.7-7.5-5.7-5.1 7.6-.8z" fill="url(#ltCresG)" stroke="#B8860B" stroke-width="1"/></svg>';
   })();
 
   function el(cls, html) { var d = document.createElement('div'); d.className = cls; if (html) d.innerHTML = html; return d; }
@@ -83,6 +91,13 @@
       wrap.appendChild(row);
       if (time === 'night' && !reduced() && !isSmall()) { wrap.appendChild(el('lt-burst lt-burst-a')); wrap.appendChild(el('lt-burst lt-burst-b')); }
     }
+    /* seasonal / national themes */
+    if (festival === 'winter' || festival === 'christmas') wrap.appendChild(el('lt-snowbank'));
+    if (festival === 'new-year' && time === 'night' && !reduced() && !isSmall()) { wrap.appendChild(el('lt-burst lt-burst-a')); wrap.appendChild(el('lt-burst lt-burst-b')); }
+    if (festival === 'holi') { wrap.appendChild(el('lt-splash lt-splash-a')); wrap.appendChild(el('lt-splash lt-splash-b')); wrap.appendChild(el('lt-splash lt-splash-c')); }
+    if (festival === 'eid') { wrap.appendChild(el('lt-geo lt-geo-a', SVG.geo)); wrap.appendChild(el('lt-geo lt-geo-b', SVG.geo)); wrap.appendChild(el('lt-crescent', SVG.crescent)); }
+    if (festival === 'netaji-jayanti') wrap.appendChild(el('lt-khaki'));
+    if (festival === 'republic-day') { wrap.appendChild(el('lt-chakra lt-chakra-a', SVG.chakra)); wrap.appendChild(el('lt-chakra lt-chakra-b', SVG.chakra)); }
     return wrap;
   }
 
@@ -146,7 +161,7 @@
     var n = document.createElement('div');
     n.id = 'lt-scene'; n.className = 'lt-scene lt-scene-' + state.festival + ' lt-in';
     n.setAttribute('aria-hidden', 'true'); n.setAttribute('data-art', key);
-    n.innerHTML = '<div class="lt-scene-art">' + (LT.art.banner ? LT.art.banner(state.festival) : LT.art[key]()) + '</div>';
+    n.innerHTML = '<div class="lt-scene-art">' + LT.art.banner(state.festival) + '</div>';
     hero.parentNode.insertBefore(n, hero);
     requestAnimationFrame(function () { requestAnimationFrame(function () { n.classList.remove('lt-in'); }); });
     if (old) fadeRemove(old);
